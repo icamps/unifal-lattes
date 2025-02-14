@@ -79,6 +79,19 @@ L3  -
 ER  - 
 
 TY  - JOUR
+AU  - APRIGIO, T. L. F. ; SOLTAU, S. B.
+TI  - A apropriação de conceito da Mecânica Quântica no filme 'Quem somos nós!? Uma nova evolução'
+JO  - https://doi.org/10.5281/zenodo.14604896
+VL  - 4
+IS  - 
+SP  - 1
+EP  - 11
+PY  - 2024
+L2  - http://dx.doi.org/10.5281/zenodo.14604896
+L3  - 
+ER  - 
+
+TY  - JOUR
 AU  - ARRUDA, TIAGO JOSÉ
 TI  - Electric and magnetic toroidal dipole excitations in core-shell spheres
 JO  - PHYSICAL REVIEW B
@@ -153,6 +166,19 @@ SP  - 137081
 EP  - 
 PY  - 2024
 L2  - http://dx.doi.org/10.1016/j.foodchem.2023.137081
+L3  - 
+ER  - 
+
+TY  - JOUR
+AU  - INACIO, C. F. ; SOLTAU, S. B.
+TI  - Um software para a visualização 3D de linhas de universo no contexto das Teorias da Relatividade
+JO  - https://doi.org/10.5281/zenodo.14604896
+VL  - 4
+IS  - 
+SP  - 1
+EP  - 7
+PY  - 2024
+L2  - http://dx.doi.org/10.5281/zenodo.14605908
 L3  - 
 ER  - 
 
@@ -2011,7 +2037,7 @@ IS  -
 SP  - 1
 EP  - 9
 PY  - 2013
-L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.12785/jocr/010101&md5=6b5b50768a1b57b9ca92ac3f0e68e572
+L2  - http://dx.doi.org/10.12785/jocr/010101
 L3  - 
 ER  - 
 
@@ -2895,7 +2921,7 @@ IS  -
 SP  - 1
 EP  - 
 PY  - 2005
-L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
+L2  - 
 L3  - 
 ER  - 
 
@@ -2908,7 +2934,7 @@ IS  -
 SP  - 1
 EP  - 
 PY  - 2005
-L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
+L2  - 
 L3  - 
 ER  - 
 
@@ -3025,7 +3051,7 @@ IS  -
 SP  - 52
 EP  - 
 PY  - 2004
-L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
+L2  - 
 L3  - 
 ER  - 
 
@@ -3443,6 +3469,16 @@ EP  -
 PY  - 1991
 L2  - 
 L3  - 
+ER  - 
+
+TY  - BOOK
+AU  - IRINEU, J. E. O. ; OLIVEIRA, A. J. S. ; ROBERTO JUNIOR, A. J.
+TI  - Carta celeste de São Luís do Maranhão
+IS  - 1
+PY  - 2025
+VL  - 1
+SP  - 109
+EP  - 
 ER  - 
 
 TY  - BOOK

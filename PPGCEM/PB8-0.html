@@ -1,0 +1,1307 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Apresentações de trabalho'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1990,
+1],
+[1992,
+2],
+[1996,
+2],
+[1998,
+9],
+[1999,
+6],
+[2000,
+3],
+[2002,
+7],
+[2003,
+8],
+[2004,
+11],
+[2005,
+10],
+[2006,
+18],
+[2007,
+12],
+[2008,
+13],
+[2009,
+30],
+[2010,
+39],
+[2011,
+26],
+[2012,
+32],
+[2013,
+40],
+[2014,
+48],
+[2015,
+21],
+[2016,
+46],
+[2017,
+19],
+[2018,
+37],
+[2019,
+21],
+[2020,
+8],
+[2021,
+14],
+[2022,
+22],
+[2023,
+22],
+[2024,
+24]]}]});
+        });
+        </script>
+        
+                <h3>Apresentações de trabalho</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 551<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, T. G. ; de Andrade, F. V.. <b>Obtaining barium ferrite from niobium mining tailings: a potential technology for manufacturing permanent magnets</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ASSIS, P. V. ; SILVEIRA, M. E. ; Panzera, T. H. ; ANCELOTTI JUNIOR, A.C.. <b>Mechanical and physical characterization of composites reinforced with unidirectional jute fibres and bidirectional fabrics</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BARBOSA, A. G. ; FIGUEREDO, A. T. ; Alves, V.N. ; Barrado, C.M. ; GIRALDI, T. R. ; SILVA, T. F.. <b>Influence of the synthesis method for SrTiO3 particles on their adsorption capacity for Cd(II) ions</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BORGES, S. H. ; FERNANDEZ, R. ; VILELA, V. L. ; CHAIA, N. ; PASINI, W. M. ; MARIANO, N.A.. <b>Efeitos da Adição de Cromo e Alumínio em Ligas de Alta Entropia do Sistema NbTiCrAl: Desenvolvimento e Caracterização</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Cassanjes, F.C. <b>Desmitificando os cristais</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CRUZ, S. N. M. ; de Andrade, F. V.. <b>Synthesis of self-cleaning thin films based on niobium pentoxide: effect of the number of layers on the self-cleaning properties</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>dos Santos, A.L. ; DIAS, J. A. ; SANTOS, G. T. ; Bonifácio, R.L. ; OLIVEIRA, C. R. ; MENDONCA, V. R. ; GIRALDI, T. R.. <b>Synthesis and characterization of Nb2O5 for adsorption of Mn2+ in aqueous solution</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>GELFUSO, M.V.; ROSA, J.P.M.M. ; Thomazini, D. ; TORRES, S.O.A.. <b>Microstructure influences on thermal conductivity of CaMn0.96V0.04O3 thermoelectric ceramics</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Giarola, V.M. ; Vermeersch, L. A. F. ; PARIS, E. C. ; GIRALDI, T. R.. <b>TiO2:WO3 para aplicação em fotocatálise na região do visível</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>GIRALDI, T. R.; BATISTA, G. ; PETRECA, Y. S. ; SILVA, V. M. R. ; CASSANJES, F. C. ; POIRIER, G. Y.. <b>Preparation and characterization of zinc niobium phosphate glasses and glassceramics for photocatalytic application</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>GIRALDI, T. R.; Costa, T.S. ; LIBANIO, M. F. R. ; MOURA, T. L. M. ; dos Santos, A.L. ; PARIS, E. C.. <b>Characterization of comercial zeolite and its application in adsorption of Mn2+ and Zn2+ in aqueous solution</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GUEDES, A. H. C. ; CORREA, E. O. ; CORREA, E. O. ; BALBINO, N. A. N.. <b>Estudo comparativo da resistência ao desgaste micro-abrasivo dos metais duros WC-Ni-Mo2C e WC-Co</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>GUEDES, A. H. C. ; STREY, N. F. ; BALBINO, N. A. N. ; CORREA, E. O. ; CORREA, E. O.. <b>Avaliação comparativa da resistência ao desgaste microabrasivo dos metais duros WC-10 (Ni-Al) e WC-10 Co produzidos por metalurgia do pós convencional</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>GUIDA, I.F. ; Pereira, O.A.P. ; GIRALDI, T. R. ; Thomazini, D. ; GELFUSO, M. V.. <b>Esferas de carbono aplicadas em processos de adsorção</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MARIANO, N.A.; BORGES, S. H. ; DAINEZI, I. ; APOLINARIO, R. C. ; MISTURA, M. V.. <b>Caracterização das Transformações de Fases e Avaliação da Resistência a Corrosão do Aço UNS S31803 Envelhecidos a 400ºC de autoria Mariano, N.A.; Borges, S.H.; Dainezi, I.; Apolinário, R.C.; Mistura, M.V</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>PEREIRA, M. A. ; de Andrade, F. V. ; M. JUNIOR, I. ; MOREIRA, R. P. L.. <b>Pechini synthesis of NaNbO3 for use in obtaining hydrogen from sodium borohydride</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Pereira, O.A.P. ; de Araújo, K.C. ; Moreira, A.J. ; PEREIRA, E. C. ; PARIS, E. C. ; FRESCHI, G. P. G. ; GIRALDI, T. R. ; BERTHOLDO, R.. <b>STUDY OF PHOTOCATALYTIC DEGRADATION OF EMERGING CONTAMINANTS IN SURFACE WATER BY SILVER TUNGSTATE</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>RODRIGUES, R. O. ; de Andrade, F. V.. <b>Development of Floating Adsorbent Based on Carbon Nanomaterials and Autoclaved Cellular Concrete</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Santos, L.B. ; Melo, J.V. ; SANTOS, E. V. F. ; Andrade, G.S.S. ; GIRALDI, T. R.. <b>Produção e caracterização de biocompósitos com biomassa Aspergillus oryzae e ZnO</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Santos, L.B. ; Moreira, A.J. ; MAESTRELLI, S. C. ; GIRALDI, T. R.. <b>Caracterização de óxido de grafeno e obtenção de TiO2:óxido de grafeno com potencial para fotocatálise</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SILVA, F. C. ; SIQUEIRA, G. O. ; de Andrade, F. V.. <b>Synthesis optimization of nanoparticulate materials of NaNbO3 via the hydrothermal route for use in photocatalytic processes</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SILVA, L. G. ; de Andrade, F. V.. <b>Obtaining nanostructured ferrites for application in advanced oxidation processes</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Silva, M.M. ; GIRALDI, T. R. ; RODRIGUEZ, R. P.. <b>Innovative strategy for phosphorus removal using granular anaerobic sludge pellets</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>SILVA, T. H. R. ; de Andrade, F. V. ; SIQUEIRA, G. O. ; MACIEL, L. J. L. ; PEREIRA, M. A. ; SOUSA, F. L. N. ; MACHADO, G.. <b>Water Splitting Process promoted by NaNbo3</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Amâncio, D.A. ; CORREA, E. O. ; CORREA, E. O.. <b>Microstructure and mechancial properties of WC-316L SS cemented carbides</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARBOZA, C. S. ; FERREIRA, C. C. ; MARIANO, N.A.. <b>ENSAIO DE BIOATIVIDADE EM FITAS DE Sn-9Zn COM HIDROXIAPATITA</b>. 2023. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BERNARDES, L. G. F. ; Roveri, C.D. ; Pereira, A.O. ; Goda, R.T. ; SILVA, G.R.P.. <b>ESTABILIZAÇÃO IN LOCO DE REJEITO DE MINERAÇÃO DE URÂNIO EM MATRIZ CIMENTÍCIA</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BORGES, S. H. ; MARIANO, N.A. ; SILVA, I. R. M.. <b>Avaliação Microestrutural do Aço Inoxidável Duplex UNS S31803 Após Tratamento Térmico de Envelhecimento a 400ºC</b>. 2023. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CASSANJES, F. C. <b>Como seria sua vida sem os vidros?</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CASSANJES, F. C. <b>Dias de luta, dias de glória, como a pesquisa transformou minha vida?</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>GIRALDI, T. R.; dos Santos, A.L. ; DIAS, J. A. ; SANTOS, G. T. ; MENDONCA, V. R.. <b>Estudo da transição de fase e do potencial de adsorção de nanopartículas de Nb2O5 obtidas pelo método de oxidação por peróxido</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Maestrelli, S.C. ; Roveri, C.D. ; SILVA, G.R.P. ; ALVES, M. F. ; OLIVEIRA, M. S.. <b>CARACTERIZAÇÃO TECNOLÓGICA DE MATERIAL CERÂMICO ORIUNDO DO MUNICÍPIO DE SÃO JOSÉ DO RIO PARDO</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Maestrelli, S.C. ; Roveri, C.D. ; SILVA, G.R.P. ; ALVES, M. F. ; OLIVEIRA, M. S.. <b>CARACTERIZAÇÃO TECNOLÓGICA DE MATERIAL CERÂMICO ORIUNDO DO MUNICÍPIO DE SÃO JOSÉ DO RIO PARDO</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>POIRIER, GAEL YVES. <b>Linear and non linear optical properties induced by thermal poling in niobium and tantalum-based glasses and glass-ceramics</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>POIRIER, GAEL YVES. <b>Fundamentos, multifuncionalidade e aplicações futuras ? parte 1</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>RAMOS, L. B. H. ; BORGES, S. H. ; MARIANO, N.A.. <b>Efeito do revenimento simples e duplo na resistência à corrosão por pite de um aço inoxidável CA6NM</b>. 2023. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>RODRIGUES, G. <b>Desafios no armazenamento do hidrogênio</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Roveri, C.D.; Maestrelli, S.C. ; SILVA, G.R.P. ; XAVIER, A.R.C.. <b>A Experiência da Aprendizagem Baseada em Projetos na Educação em Materiais Cerâmicos em disciplinas da graduação e pós-graduação</b>. 2023. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Roveri, C.D.; SILVA, G.R.P. ; ANDRADE, G.S.S. ; SILVA, G. R. P.. <b>ESTUDO DA ATIVAÇÃO DE ARGILA TURFOSA PROVENIENTE DE REJEITO DE MINERAÇÃO - RESULTADOS PRELIMINARES</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Roveri, C.D.; XAVIER, A.R.C.. <b>A SALA DE AULA INVERTIDA EM UMA UNIDADE CURRICULAR DO CURSO DE ENGENHARIA DE MINAS: EFETIVIDADE NA APLICAÇÃO DA METODOLOGIA ATIVA X MOMENTO DE UTILIZAÇÃO</b>. 2023. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>SILVA, E. M. ; SANTOS, G. ; Roveri, C.D. ; OLIVEIRA, I. B. ; ALVES, E. H. ; FERREIRA, L. M.. <b>Economia Circular na Engenharia Civil: uso de rejeitos de louça sanitária na fabricação de concretos</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>SILVA, G.R.P. ; Roveri, C.D. ; Hirano, L.A. ; PEREIRA, A. L. ; NAKACHIMA, P. M.. <b>Estudo Exploratório da condutividade térmica de areias de fundição utilizando o método do fio quente paralelo</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>SILVA, G.R.P. ; Roveri, C.D. ; Hirano, L.A. ; PEREIRA, A. L. ; NAKACHIMA, P. M.. <b>Estudo Exploratório da condutividade térmica de areias de fundição utilizando o método do fio quente paralelo</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SILVA, I. R. M. ; BORGES, S. H. ; MARIANO, N.A.. <b>EFEITO DO TRATAMENTO TÉRMICO DE ENVELHECIMENTO À 1100°C NA MICROESTRUTURA DO AÇO INOX DUPLEX SAF2205</b>. 2023. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SILVA, J. I. ; BORGES, S. H. ; MARIANO, N.A.. <b>Efeito do tempo de envelhecimento artificial na microestrutura da liga 6005A</b>. 2023. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>VIEIRA, I. Z. E. ; FERREIRA, C. C. ; BARBOZA, C. S. ; VERCIK, A. ; VERCIK, L. C. O. ; MARIANO, N.A.. <b>Recobrimento híbrido e bioativo em ligas de titânio cp. grau 4 para uso em dispositivos médicos</b>. 2023. Apresentação de Trabalho/Simpósio</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Antunes, P.D. ; SILVA, C. C. ; CORREA, E. O. ; CORREA, E. O.. <b>Influência do metal de adição e do tratamento térmico de envelhecimento na susceptibilidade à corrosão sob tensão de juntas soldadas do aço AISI 317L</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARBOZA, C. S. ; VIEIRA, I. Z. E. ; FERREIRA, C. C. ; MAGALHOES JUNIOR, H. ; MARIANO, N.A.. <b>BIOATIVIDADE DE FITAS METÁLICAS E TITÂNIO COMO BIOMATERIAIS AVANÇADOS</b>. 2022. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BORGES, S. H. ; DAINEZI, I. ; RODRIGUES JUNIOR, D. ; MARIANO, N.A.. <b>EFEITO DO TRATAMENTO TÉRMICO À 1100ºC POR CURTOS PERÍODOS DE TEMPOS NA MICROESTRUTURA DO AÇO INOXIDÁVEL DUPLEX SAF 2205,</b>. 2022. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CORREA, E. <b>O.; CORREA, E. O. ; Influência da microestrtutura na resistência ao desgaste dos metais duros WC-10Co e WC-8Ni-2Cr2C3 produzidos por metalurgia do pó convencional</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>COSTA, A. M. P. ; Sorce, A.R. ; GAGLIERI, M. V. V. ; Rigo, E.C.S. ; MAESTRELLI, S. C.. <b>OBTAINING AND CHARACTERIZING CONCRETE WITH SODIUM ALGINATE CAPSULES ADDITIONS</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>da Costa, B.C. ; GIRALDI, T. R. ; RODRIGUEZ, R. P. ; Silva, M.M. ; FIGUEREDO, A. T. ; Barrado, C.M. ; dos Santos, A.L.. <b>Obtenção e avaliação de compósitos de Nb2O5 com biomassa inativa para aplicação em processos de adsorção</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Ferreira, T.F. ; Bueno, L.C.G. ; GIRALDI, T. R. ; Andrade, G.S.S.. <b>Resíduo de malte de cervejaria artesanal como alternativa de biossorvente na remoção de cobre de soluções aquosas</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>GELFUSO, M.V. <b>Estudos de Espetroscopia de Impedância em cerâmicas não estequiométricas de CCTO Sinterizadas por meio da técnica de duas etapas controlada</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>GIRALDI, T. R.; dos Santos, A.L. ; SANTOS, G. T. ; DIAS, J. A. ; Bonifácio, R.L. ; MENDONCA, V. R.. <b>Obtenção de Nb2O5 nanoestruturado para adsorção de Mn2+ em meio aquoso</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>J Ider ; Rubinger, R.M. ; OLIVEIRA, A. F.. <b>A robust system for thermoelectric device characterization</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Jacon, B.V. ; Ferreira, T.F. ; Bueno, L.C.G. ; Andrade, G.S.S. ; GIRALDI, T. R.. <b>Estudo da utilização da serragem de eucalipto como adsorvente do corante Alaranjado de Metila</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>LUIZ, T. M. ; SIQUEIRA, J. S. ; SIQUEIRA, G. O. ; RENZETTI, R. A.. <b>EVALUATING THE REDUCTION OF POROSITY OF Fe-Cr ALLOY PRODUCED BY POWDER METALLURGY</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MARIANO, N.A.; BORGES, S. H. ; APOLINARIO, R. C.. <b>EFEITO DA TEMPERATURA DE SOLUBILIZAÇÃO NO SAF 2205 PRODUZIDO POR SOLIDIFICAÇÃO RÁPIDA</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MARIANO, N.A.; SOUZA, J. J. ; APOLINARIO, R. C. ; SILVA, J. I.. <b>ESTUDO DAS BANDAS DE CISALHAMENTO ADIABÁTICO EM CHAPA PARA BLINDAGEM</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MUNOZ, A. D. T. ; DAMASCENO, K. G. ; Roveri, C.D. ; ANDRADE, G.S.S.. <b>ESTUDO DO POTENCIAL DE DIFERENTES FONTES DE BIOMASSAS NO PROCESSO DE BIOSSORÇÃO DE GLICEROL</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>POIRIER, GAEL YVES. <b>Luminescent and non-linear optical properties of niobium and tantalum-based glasses and glass-ceramics</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>RODRIGUES, GEOVANI. <b>Desafios no armazenamento do hidrogênio</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Roveri, C.D.; XAVIER, A.R.C.. <b>COMPARAÇÃO DO USO DE SALA DE AULA INVERTIDA EM PERÍODO DE ENSINO PRESENCIAL E REMOTO NA UNIDADE CURRICULAR DE PESQUISA MINERAL,</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Roveri, C.D.; XAVIER, A.R.C.. <b>O IMPACTO DO TÉDIO ESTUDANTIL NA APLICAÇÃO DE SALA DE AULA INVERTIDA EM UMA UNIDADE CURRICULAR DURANTE O ENSINO REMOTO EMERGENCIAL</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SILVA, J. I. ; MARIANO, N.A.. <b>COMPARAÇÃO DO EFEITO DO TRATAMENTO TÉRMICO DE ENVELHECIMENTO ARTIFICIAL NA MICROESTRUTURA E DUREZA DAS LIGAS DE ALUMÍNIO 6005A E 6351</b>. 2022. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SILVA, L.L. ; ANDRADE, G.S.S. ; Roveri, C.D.. <b>DESAFIOS NA FABRICAÇÃO DE CERVEJA ARTESANAL: O ESTUDO DE CASO DE PRODUÇÃO DE UMA VIENNA LAGER</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>VIEIRA, I. Z. E. ; FERREIRA, C. C. ; BARBOZA, C. S. ; SOUSA, L. L. ; MARIANO, N.A.. <b>AVALIAÇÃO DA BIOATIVIDADE DE RECOBRIMENTOS HÍBRIDOS EM LIGAS DE TITÂNIO</b>. 2022. Apresentação de Trabalho/Simpósio</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, T. G. ; SANTIAGO, M. V. ; DE ANDRADE, FABRÍCIO V. ; SIQUEIRA, G. O.. <b>OBTENÇÃO VIA PECHINI DE NANOPARTÍCULAS DE CeO2 DOPADAS COM N, UM MÉTODO EFICIENTE PARA MODIFICAÇÕES NA ESTRUTURA ELETRÔNICA DO MATERIAL</b>. 2021. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARROS, N. M. ; DE ANDRADE, FABRÍCIO V.. <b>Desenvolvimento de Fotocatalisadores Flotantes: uma potencial tecnologia para degradação de contaminantes emergentes em estações de tratamento de água</b>. 2021. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Cardoso, A.L.F. ; MAESTRELLI, SYLMA C. ; Fernandez, C.P. ; KIMINAMI, R. H. G. A. ; Gunnewiek, R.F.. <b>Microwave sinterability of nanostructured ZnO macroporous ceramic foams produced by bioinspired replica technique</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CRUZ, S. N. M. ; SANTIAGO, M. V. ; DE ANDRADE, FABRÍCIO V. ; SIQUEIRA, G. O.. <b>Nanopartículas de Nb2O5 dopadas com N, síntese e investigação de suas propriedades ópticas</b>. 2021. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>dos Santos, A.L. ; GOMES, J.F. ; MENDONCA, V. R. ; GIRALDI, T. R.. <b>Synthesis and characterization of Nb2O5 for adsorption of methylene blue dye</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FRE, L. V. B. V. ; CAPELLATO, P. ; SACHS, D. <b>TITANIUM NANOTUBE SURFACE LOADED WITH NOVEL ANTIBIOTICS FOR IMPLANT LOCAL ACTION</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>OLIVEIRA, A. B. ; DE ANDRADE, FABRÍCIO V.. <b>Desenvolvimento de Fotocatalisadores Flotantes: uma potencial tecnologia para degradação de contaminantes emergentes em estações de tratamento de água</b>. 2021. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PEREIRA, M. A. ; DE ANDRADE, FABRÍCIO V.. <b>Desenvolvimento de Fotocatalisadores Flotantes: uma potencial tecnologia para degradação de contaminantes emergentes em estações de tratamento de água</b>. 2021. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ROSSONI, M. S. ; DE ANDRADE, FABRÍCIO V. ; SANTIAGO, M. V. ; SIQUEIRA, G. O.. <b>MODIFICAÇÃO DAS PROPRIEDADES ÓPTICAS DO ZnO NANOPARTICULADO ATRAVÉS DA INSERÇÃO DE NITROGÊNIO NA ESTRUTURA</b>. 2021. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>RUELLAS, THAMARA M.O. ; SCIENA, C.R. ; GIRALDI, T. R. ; SCHILDT, l.f.l. ; PARIS, E. C.. <b>ADSORPTION STUDY OF MANGANESE (II) BY HYDROXYAPATITE NANOPARTICLES</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>SACHS, D; VILELA, FILIPE BUENO ; GILBERT, SILVA ; PATRICIA, CAPELLATO. <b>DEVELOPMENT OF AN ORTHOSIS PRINTED USING THERMOPLASTIC BIOPOLYMERS COUPLED WITH AN ELECTROSTIMULATOR OF COMBINED MAGNETIC FIELD</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Souza, G. ; MALAFATTI, J. O. D. ; Nery, L.H. ; PARIS, E. C. ; GUNNEWIEK, R.F.K. ; GIRALDI, T. R.. <b>Nanostructured zinc oxide filmes obtained by the microwave hydrothermal method for application in photocatalysis</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>STORION, ANA GABRIELA ; ferreira, J.A. ; MAESTRELLI, SYLMA CARVALHO ; Pallone, E. M. J. A. <b>Flash Sintering of ZnO ceramics: forming methods influences on the microstructural evolution</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>VIVAS, M.G. <b>Espectroscopia Óptica não linear de nanomateriais</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BORGES, S. H. ; MAGALHOES JUNIOR, H. ; BARBOZA, C. S. ; MARIANO, N.A.. <b>Ensaio de corrosão em solução corpórea de fitas metálicas para aplicação em biomaterial</b>. 2020. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Moreira, A.J. ; MALAFATTI, J. O. D. ; GIRALDI, T. R. ; PARIS, E. C. ; PEREIRA, E. C. ; MENDONCA, V. R. ; FRESCHI, G. P. G.. <b>Prozac® photodegradation mediated by Mn-doped TiO2 nanoparticles: evaluation of by-products and mechanism proposal</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PETINARDI, G. M. ; THOMAZINI, D. ; GELFUSO, M. V.. <b>Propriedades dielétricas de cerâmicas a base de CaCu3Ti4O12 sintetizadas em diferentes atmosferas e temperaturas de sinterização</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SILVA FILHO, E. V. ; MARIANO, N.A. ; SOUSA, L. L.. <b>Ensaios eletroquímicos em solução corpórea do titânio recoberto por hidroxiapatita em diferentes bactericidas</b>. 2020. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SOUZA, B. F. G. ; MARIANO, N.A. ; SOUSA, L. L.. <b>Desenvolvimento do processo corrosivo de ligas metálicas utilizadas como biomaterial</b>. 2020. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>TORRES, S. O. A. ; ROSA, J. P. M. M. ; THOMAZINI, D. ; GELFUSO, M. V.. <b>Caracterização microestrutural e condutividade térmica de cerâmicas CaMnO3 dopadas com lantânio</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>URIBE, J. O. M. ; THOMAZINI, D. ; GELFUSO, M. V.. <b>Estudo de rotas de síntese e de crescimento de grão em cerâmicas de CaCu3Ti4O12 com deficiência de fase CuOTiO2 e seus efeitos na resposta dielétrica</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>VIVAS, M. <b>G. Processos Ópticos em nanocristais semicondutores: Fundamentos e propriedades</b>. 2020. Apresentação de Trabalho/Seminário</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>APOLINARIO, R. C. ; DAINEZI, I. ; CUNHA, C. R. ; SOUSA, L. L. ; MARIANO, NEIDE APARECIDA. <b>The effect of rapid solidification processing on austenitic stainless steel AISI 316L,</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BRACHINI, M. L. O. ; MANZO, A. L. F. ; MENDES, B. G. ; GONCALVES, P. C. ; SANTOS, V. C. ; GUIMARÃES, Adinele Gomes ; MELO, M. L. N. M.. <b>Comparação entre a resistência à compressão de argamassa autoadensável com e sem utilização da técnica de superfície de resposta In: 61 Congresso Brasileiro do Concreto CBC 019 (IBRACON)</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CORREA, E. <b>O.; CORREA, E. O. ; Influência da energia de soldagem e do envelhecimento na microestrutura e propriedades mecânicas de juntas soldadas do aço inoxidável AISI 317L</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>DAINEZI, I. ; SOUSA, L. L. ; MARIANO, N.A.. <b>The effect of thermal aging treatment on the microstructure of SAF 2205 duplex stainless steel,</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Estorari, L.F.B. ; Semensato, L.M.S. ; Mancini, M.H. ; GIRALDI, T. R. ; PALLONE, E. M. J. A. ; MAESTRELLI, S. C.. <b>Use of porous ceramics as catalysts in the treatment of effluents contaminated by dyes</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FRAGA, B. C. R. ; ALVES, D.F. ; MATT, V.S. ; MAESTRELLI, S. C. ; Roveri, C.D.. <b>Caracterização de matérias-primas argilosas oriundas de mineração localizada no município de Aguaí, SP</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>GIRALDI, T. R.; Nery, L.H. ; Cantadori, B. ; Guidio, J.D.C.. <b>ESTUDO DA CAPACIDADE DE ADSORÇÃO DE ÍONS Mn 2+ EM CABELO</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MAESTRELLI, S. C. ; Roveri, C.D. ; CARVALHO, L. ; LUIZ, A.A.. <b>INFLUÊNCIA DA FORMULAÇÃO CERÂMICA NA OBTENÇÃO DE REFRATÁRIOS COM BAIXO TEOR DE BOLHAS</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Poirier, Gaël; DUSSAUZE, MARC ; FARGIN, EVELYNE ; CARDINAL, THIERRY ; RODRIGUEZ, VINCENT. <b>Second order non linear optical properties in thermally poled tantalum germanate glasses and glass-ceramics</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>RANIERI, M. G. A. ; MARTINS, M. A. B. ; MELO, M. L. N. M. ; MELLO, A. S.. <b>Mechanical strength of cement blocks with scrap tires In: XL Congresso Brasileiro de Aplicações de Vácuo na Indústria e na Ciência (CBrAVIC)</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>RIBEIRO, T. A. N. ; NOVAKOSKI, M. S. ; ALVES CLARO, A.P.R. ; PATRICIA, CAPELLATO ; DANIELA, SACHS. <b>Avaliação da Formação Biofilme Microbiano de Staphylococcus Aureus na Liga Ti30Ta com Modificação de Superfície pelo Processo de Eletrofiação de PCL</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ROQUE-SILVA, L. R. ; MELO, M. L. N. M. ; RIBEIRO, V. A. S.. <b>Influência da adição de resíduos poliméricos nas propriedades físicas, mecânicas e microestrutural do concreto autoadensável In: XIV Seminário de Meio Ambiente e Energias Renováveis (SEMEAR)</b>. 2019. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Roveri, C.D.; Martucci, P.H.Z. ; SILVA, G.R.P. ; MAESTRELLI, S. C.. <b>ESTUDO DE QUARTZO ORIUNDO DE UMA ÁREA EM ETAPA DE PESQUISA MINERAL, VISANDO APLICAÇÃO COMO CORPO MOEDOR EM MOINHOS DE BOLAS</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Roveri, C.D.; RABELO, S.S. ; MOREIRA, L. ; Rodovalho, E.C.. <b>MODELAMENTO GEOLÓGICO DE UM CORPO ARGILOSO SITUADO NA REGIÃO DE ARCOS/MG</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Siqueira, A.M. ; GIRALDI, T. R. ; Brondi, A.M. ; Bonifácio, R.L. ; PARIS, E. C.. <b>Synthesis, characterization and adsorption potential of nanostructured zeolites obtained by microwave synthesis</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SOUZA, B. F. G. ; FERREIRA, C. C. ; SILVA, Y. M. V. S. ; SOUSA, L. L. ; RIGO, E. C. S. ; Campos, M.G.N. ; MARIANO, N.A.. <b>Efeito da Corrosão em Titânio Recoberto com Policaprolactona incorporada com óleo essencial de Melaleuca em meio enxaguante bucal</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Souza, F. ; Figueiredo, A.C. ; GIRALDI, T. R. ; Cappucio, K.C. ; Andrade, G.S.S.. <b>THE EFFECT OF CULTURE MEDIUM COMPOSITION IN THE RODHAMINE B BIOSORPTION BY DEAD BIOMASS OF Aspergillus oryzae</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>SOUZA, T.C. ; Navarro, F.C. ; Gouvêa Junior, J.T. ; Roveri, C.D.. <b>Estudo da utilização de rochas potássicas da região de Caldas e Poços de Caldas/MG como matérias-primas fundentes alternativas ao feldspato na fabricação de produtos cerâmicos</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>VASCONCELOS, A. J. ; KONNO, C. Y. N. ; BARROS, A. S. ; RODRIGUES, J. A. F. ; MELO, M. L. N. M. ; ROCHA, O. F. L.. <b>Correlation Between Primary Dendritic Arm Spacing And thermal parameters and influence of iron alloying to Directionally Solidified Al-Si-Mg Alloy In: XVIII Brasilian Materials Research Society (SBPMat)</b>. 2019. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>VASCONCELOS, L. V. B. ; CAPELLATO, P. ; MARINO, C. E. B. ; SILVA, G. ; CARDOSO, R. P. ; HAMDAR, K. H. ; DANIELA, SACHS. <b>Antimicrobial activity effects of surface treatment with silver particles isles on titanium CP</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>VIVAS, M. <b>G. Óptica não linear: Fundamentos e Aplicações em Fotônica</b>. 2019. Apresentação de Trabalho/Seminário</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, F. V.; BARROS, N. M. ; COSTA, C. F. ; SIQUEIRA, G. O.. <b>Obtenção de semicondutor nanoparticulado à base de pentóxido de nióbio para aplicação em catálise heterogênea</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANDRADE, F. V.; COSTA, C. F. ; CABRAL, A. C. T. ; BARROS, N. M. ; SIQUEIRA, G. O.. <b>Síntese de Nanopartículas de FeNbO4: um semicondutor para catálise heterogênea ambiental</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BARBOSA, L. C. M. ; BORTOLUZZI, D. B. ; OLIVEIRA, T. L. L. ; RAPONI, OLIVIA DE ANDRADE ; ANCELOTTI JUNIOR, A. C.. <b>Efeito do condicionamento higrotérmico nas propriedades mecânicas e viscoelásticas de compósitos termoplásticos à base de resina termoplástica líquida/fibras de carbono</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bombard, Antonio J. F.; RAQUEL GOMES DE SOUSA, SARA. <b>16th International Conference on Electrorheological Fluids and Magnetorheological Suspensions (ERMR2018)</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BORGES, A. C. ; Moreira, A.J. ; FRESCHI, G. P. G. ; GIRALDI, TANIA REGINA ; MALAFATTI, J. O. D.. <b>Avaliação do potencial fotocatalítico do TiO2 obtido por diferentes metodologias</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CARDINAL, THIERRY ; DUSSAUZE, MARC ; FARGIN, EVELYNE ; Poirier, Gaël ; RODRIGUEZ, VINCENT. <b>Optical properties induced by thermal poling in tantalum germanate glasses</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CARDINAL, THIERRY ; DUSSAUZE, MARC ; FARGIN, EVELYNE ; Poirier, Gaël ; RODRIGUEZ, VINCENT. <b>Second order non linear optical properties induced by thermal poling in microstructured tantalum germanate glasses and glass-ceramics</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CHAIA, N.; S. Mathieu ; VILASI, M. ; DAVID, N.. <b>The effect of Ti and Cr on the growth of multilayered silicide coatings for the V-4Cr-4Ti alloy</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>DEL ROVERI, CAROLINA; ALMEIDA, D. H. ; GRILLO, RODOLFO H.F ; MAESTRELLI, SYLMA C.. <b>PROPERTIES OF CONCRETE FORMULATION WITH ADDITION OF CERAMIC SCRAP LIKE AGGREGATE</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DUQUE, G. R. V. ; BARBOSA, L. C. M. ; ANCELOTTI JUNIOR, A. C.. <b>Estudo e caracterização de compósitos a base de resina termoplástica líquida reforçados com fibras de sisal</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ESPANHOL-SOARES, MELINA ; NASCIMENTO, A. B. ; GIMENES, R. ; SILVA, M. R. A. ; SILVA, F.S.. <b>Assesment of malathion in multifunctional fabric used in protective clothing tecido multifuncional by GC/MS</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ESPANHOL-SOARES, MELINA ; SILVA, M. R. A. ; Gimenes, Rossano ; SILVA, F.S.. <b>Contaminants in Transformer Oil: Mass Spectrometry-based Diagnostics</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Faria, F. P. ; STORION, A. G. ; GIRALDI, T. R. ; ROVERI, C. ; MAESTRELLI, S. C.. <b>Study of the influence of the porosity in ZnO samples applied to advanced oxidation process</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>GELFUSO, M. V.; CAMPELO, R. A. ; THOMAZINI, D.. <b>Manganita de Lantânio Sintetizada por Método Hidrotermal Assistido por Micro-Ondas</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Goda, R.T. ; OLIVEIRA, A. P. ; REIS, S.S. ; REIS, L. ; DEL ROVERI, CAROLINA. <b>IMMOBILIZATION OF SLUDGE FROM ACID WATER TREATMENT: PRELIMINARY RESULTS</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Gouvêa Junior, J.T. ; SILVA, LUCIANO L. ; Maestrelli, S.C. ; DEL ROVERI, CAROLINA. <b>Characterization and Evaluation of Syenite rocks of Poços de Caldas (MG) in the Manufacture of Frits and Glazes</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>LEITE, P. S. ; BENEDETTO, R. M. ; RAPONI, OLIVIA DE ANDRADE ; BARBAN, GABRIEL BISSARO ; ANCELOTTI JUNIOR, A. C.. <b>Efeito da Saturação Salina na Resistência ao Cisalhamento Interlaminar e Temperatura de Transição Vítrea do Compósito Termoplástico FV/PMMA</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MARIANO, N. A.; SOUZA, J. J. ; DOLLINGER, C. F. A. V. ; MELO, F. C. L. ; SOUSA, LUCÍOLA LUCENA DE. <b>CARACTERIZAÇÃO DAS BANDAS DE CISALHAMENTO ADIABÁTICO FORMADAS EM CHAPA DE AÇO-LIGA PARA BLINDAGEM DECORRENTE DE IMPACTOS DE PROJÉTEIS DE ALTA ENERGIA</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MARIANO, N. A.; SOUZA, J. J. ; DOLLINGER, C. F. A. V. ; MELO, Francisco Cristovão Lourenço de ; SOUSA, LUCÍOLA LUCENA DE. <b>INFLUÊNCIA DA MORFOLOGIA MARTENSÍTICA NO DESEMPENHO BALÍSTICO DE UMA CHAPA DE AÇO-LIGA</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MARQUES, M. C. ; RIBEIRO, T. A. N. ; PEREIRA, C. A. ; CAPELLATO, P. ; SACHS, D.. <b>Pseudomonas aeruginosa biofilm on Ti30Ta alloy</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>OLIVEIRA, T. L. L. ; BORTOLUZZI, D. B. ; BARBOSA, L. C. M. ; ANCELOTTI JUNIOR, A. C.. <b>Análise por ensaios não-destrutivos da delaminação de compósitos de fibra de carbono com resina epóxi com reforço 3D</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>PATRICIA, CAPELLATO ; ALMEIDA, J. A. M. ; Kuffner BHB ; GILBERT, SILVA ; DANIELA, SACHS. <b>Analysis of the influence of two deagglomeration processes on the particle size of β-TCP obtained via solid state reaction</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>PEREIRA, A. C. ; MOURONER, A. A. M. C. ; QUEIROZ, A. A. A. ; DANIELA, SACHS. <b>Evaluation of the cytotoxicity of bioreabsorbable polymer matrices of different molecular weight</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>RANIERI, M. G. A. ; MARTINS, M. A. B. ; MELO, M. L. N. M. ; MELLO, A. S.. <b>Utilização de resíduos de marmoraria para fabricação de materiais alternativos para a construção civil In: XXIII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECiMat)</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>RAPONI, OLIVIA DE ANDRADE ; LEITE, P. S. ; BALDO JUNIOR, J. E. ; ANCELOTTI JUNIOR, A. C. ; GUIMARAES, A.. <b>Análise Dinâmico-Mecânica (DMA) como metodologia de monitoramento dos efeitos do envelhecimento na qualidade da matéria prima pré impreguinada e do compósito final. 2018</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>RIBEIRO, T. A. N. ; MARQUES, M. C. ; PEREIRA, C. A. ; PATRICIA, CAPELLATO ; SACHS, D.. <b>Evaluation of the microbial biofilm of Staphylococcus epidermidis on the Ti-30Ta alloy</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>RUELLAS, T. M. O. ; DOMINGOS, G. H. S. ; PECANHA, L. O. O. ; MAESTRELLI, S. C. ; GIRALDI, TANIA REGINA. <b>Photodegradation of Rhodamine B Catalyzed by ZnO Pellets</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>SANTOS, M. P. ; BARBOSA, L. C. M. ; OLIVEIRA, T. L. L. ; ANCELOTTI JUNIOR, A. C.. <b>Efeito do condicionamento higrotérmico nas propriedades de cisalhamento no plano de compósitos termoplásticos à base de resina ELIUM 150/ fibras de carbono</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>SANTOS, R. L. B. ; PENHA, R. N. ; VITORINO, J. R. ; MELO, M. L. N. M.. <b>Avaliação das propriedades mecânicas de um aço bifásico tratado por têmpera e partição In: XXIII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECiMat)</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>SILVA, ALINE DA ; SANTOS, J. M. P. ; VASCONCELOS, A. J. ; PENHA, R. N. ; SILVA, G. ; RODRIGUES, C. A. ; MELO, M. L. N. M.. <b>Correlação entre taxas de resfriamento, microdureza e condutividade elétrica da liga de alumínio AA2024 In: XXIII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECiMat)</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Silva, B.F. ; Damasceno, L.H.S. ; Costa, R.B. ; Guarda, A.L. ; DEL ROVERI, CAROLINA. <b>CERAMIC CHARACTERIZATION OF RAW MATERIAL WITH A HIGH CONTENT OF ORGANIC MATTER REDUCED BY COMPOSTING</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SILVA, J. A. ; FRANCESCHINI, R. H. S. ; GONCALVES, P. C. ; SANTOS, V. C. ; MELO, M. L. N. M.. <b>Reologia da pasta de cimento com aditivos superplastificantes In: 60 Congresso Brasileiro de Concreto (CBC)</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SILVA, L. G. ; RIBEIRO, G. C. ; PEREIRA, A. C. ; QUEIROZ, A. A. A. ; DANIELA, SACHS. <b>Evaluation of antimicrobial effect and Tetracycline release of poly(epsilon-caprolactone) obtained by iodine polymerization</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>TORRES, S. O. A. ; BALTHAZAR, G. P. ; THOMAZINI, D. ; GELFUSO, M. V.. <b>Caracterização estrutural e microestrutural de cerâmicas de CaMnO3 dopadas com La3+ e Nb5+</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>URIBE, JUAN OSWALDO MONTOYA ; GELFUSO, M. V. ; THOMAZINI, D.. <b>INFLUÊNCIA DA FASE CUO-TIO2 NA RESPOSTA DIELÉTRICA DE CERÂMICAS DE CACU3TI4O12</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>VITORINO, J. R. ; SANTOS, R. L. B. ; PENHA, R. N. ; MELO, M. L. N. M. ; CORREA, E. O.. <b>Análise da microestrutura de um aço bifásico tratado por têmpera e partição In: XXIII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECiMat)</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>VIVAS, M.G. <b>Óptica não linear: Fundamentos e Aplicações</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BAGGIO, CARLY MIRELA ; OLIVEIRA, J. A. ; GIRALDI, TANIA REGINA. <b>Obtenção de filmes finos de ZnO e sua aplicação e reutilização em fotocatálise</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CHAIA, NABIL; MORAES, J. M. ; PARRISH, C. ; COTTON, J. D. ; COELHO, G. ; NUNES, C. A.. <b>Microstructure and mechanical properties of HEAs in the Al-Ti-V-Zr-Nb system for aerospace applications</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CORDIOLLI, L. ; CAL, T. M. L. ; SOUSA, L. L. ; GARGARELLA, P. ; Ramos, A.S. ; MARIANO, N.A.. <b>SN-ZN RIBBONS FORMEDICAL IMPLANTS</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CORREA, E. <b>O.; CORREA, E. O. ; Otimização do processo P-GMAW para soldagem de chapas finas em aço inoxidável 304</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Gonçalves, P. ; OLIVEIRA, J. A. ; BERTHOLDO, R. ; GIRALDI, TANIA REGINA. <b>SÍNTESE DE MATERIAIS À BASE DE TiO2, ZnO E SiO2 E AVALIAÇÃO DE SEU POTENCIAL NA ADSORÇÃO DE Mn2+</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>KNYCHALA, M. S. ; MENDONÇA, C. S. P. ; MELO, M. L. N. M. ; SILVA, G. ; Andrade, B. G. ; OLIVEIRA, V. D.. <b>Recycling of duplex steel through of powder metallurgy with isostatic compactation. In: XXIV International Congress of Mechanical Engineering</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MAESTRELLI, SYLMA CARVALHO ; PALLONE, E. M. J. A. ; GIRALDI, TANIA REGINA ; STORION, A. G.. <b>Estudo da descontaminação de ferro proveniente dos meios e frascos de moagem em misturas de óxidos cerâmicos processados por moagem de alta energia</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MEDINA, E. G. ; SUAREZ, M. M. S. ; QUINTERO, Y. F. ; MELO, M. L. N. M.. <b>Influence on thermal treatments in the hardness and micro hardness of the alloy 7075. In: XXIV Congresso Brasileiro de Engenharia Mecânica (COBEM)</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MENDONÇA, C. S. P. ; GATAMORTA, F. ; JUNQUEIRA, M. M. ; SILVEIRA, L. R. ; GOMES, J. H. F. ; MELO, M. L. N. M. ; SILVA, G.. <b>Development Analysis of a Stainless Stell Produced by High Energy Milling Using Chips and the Addition of Vanaduim Carbide In: III International Symposium on the Mechanics of Composite and Multifunctional Materials, Indianápolis/Estados Unidos</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>OLIVEIRA, B. ; SOUSA, L. L. ; MARIANO, N.A. ; RAMOS, E. C. T. ; Nunes, C. A. ; RAMOS, A. S.. <b>Corrosion behavior of mechanically alloyed and sintered Ti+Ti6Si2B alloys in the artificial saliva</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>OLIVEIRA, J. A. ; Nogueira, A.E. ; PARIS, E. C. ; OLIVEIRA, C. R. ; POIRIER, G. Y. ; GIRALDI, TANIA REGINA. <b>FOTOCATALISADORES DE ZnO:N UTILIZADOS EM FOTOSSÍNTESE ARTIFICIAL</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Padilha, S. R. R. ; Moreira, A.J. ; FRESCHI, G. P. G. ; GIRALDI, T. R.. <b>Utilização de TiO2 e TiO2-N para degradação da fluoxetina por fotocatálise</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>PECANHA, L. O. O. ; MAESTRELLI, S. C. ; GIRALDI, T. R.. <b>Imobilização e reaproveitamento de semicondutores a base de ZnO para aplicação em fotocatálise</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>RAMOS, A S. <b>Materiais e Dispositivos Dentários</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Roveri, C.D. <b>Argilas para a Produção de Refratários</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SANTOS, C. M. A. ; REZENDE, S. C. ; RUEDA, A. L. ; SOUZA, L. L. ; SOUSA, L. L. ; MARIANO, N.A.. <b>Efeito da temperatura de solubilização na microestrutura e na resistência a corrosão do aço inoxidável duplex</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>SOUSA, L. L. ; PEREIRA, G. V. ; CORDIOLLI, L. ; RICCI, V. P. ; RIGO, Eliana C S ; MARIANO, N.A.. <b>Silver Nanoparticles in Recoating for Biomaterials</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>SOUSA, L. L. ; PEREIRA, G. V. ; RICCI, V. P. ; MARIANO, N.A.. <b>Doping of Silver Nanoparticles in Alloys for Biomaterials</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>STORION, A. G. ; GIRALDI, T. R. ; PALLONE, E. M. J. A. ; MAESTRELLI, S. C.. <b>ESTUDO DA INFLUÊNCIA DA MOAGEM DE ALTA ENERGIA E LIXIVIAÇÃO ÁCIDA NA ATIVIDADE FOTOCATALÍTICA DO ÓXIDO DE ZINCO</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BALBINO, N. A. N. ; CORREA, E. O. ; CORREA, E. O. ; VALERIANO, L. C. ; SANTOS, J. N.. <b>MIcrostructure and Mechanical Properties of Wc-Ni-Mo2C cemented carbide developed by powder metallurgy</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bombard, Antonio J. F.; MORILLAS, JOSE R ; DE VICENTE, JUAN. <b>Off-state Characterization of Dispersions of Carbonyl Iron in PAO Oil / 1- Octanol</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CABRAL, A. C. T. ; Vaz, I. C. F. ; FILHO, F. M.. <b>CCTO modificado com doador de elétrons</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAMPOS, F. M. O. ; FILHO, F. M.. <b>Titanato de Cálcio e Cobre (CCTO) dopado com doador de elétrons</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CHAIA, N.; COELHO, G.C. ; NUNES, C. A. ; Parrish C ; Cotton JD. <b>Thermodynamic assessment of Nb?V? Zr and Ti?V?Zr systems to build a database for Nb ? Zr ? V ? Ti ? Al high entropy alloys</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CHAIA, N.; DAVID, N. ; MATHIEU, S. ; VILASI, M.. <b>Thermodynamic study of the V?Cr?Si system</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CHAIA, N.; MATHIEU, S. ; DAVID, N. ; VILASI, M.. <b>On the inter-diffusion in multilayered silicide coatings for vanadium based alloy V ? 4Cr ? 4T</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>COUGO, M. P. ; MAGALHAES, E. S. ; LIMA e SILVA, S. M. M. ; MELO, M. L. N. M. ; SILVA, G.. <b>Evaluation of heat transfer applied to the welding of dissimilar metals (ASTM A240-13C in carbono steel USI-AR-400) In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>DEL ROVERI, CAROLINA; MORENO, MARIA MARGARITA T. ; ROCHA, R. R. ; ZANARDO, A. ; Cunha, R.A. ; Maestrelli, S.C. ; GARCÍA-ROMERO, E.. <b>COMPORTAMENTO DE UMA ARGILA RICA EM MATÉRIA ORGÂNICA FRENTE AO AUMENTO DE TEMPERATURA: ACOMPANHAMENTO POR MEV E MICROSCOPIA DE AQUECIMENTO</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DIAS, A. N. O. ; MENDONCA, C. S. P. ; OLIVEIRA, L. A. ; RODRIGUES, G. ; MELO, M. L. N. M. ; SILVA, G.. <b>Investigation on sintering temperature of aluminum bronze alloy obtainde by powder melallurgy with additon of niobium carbide In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>DIAS, A. N. O. ; SILVA, A. ; MENDONCA, C. S. P. ; RODRIGUES, G. ; MELO, M. L. N. M. ; SILVA, G.. <b>Study of high energy milling time of the aluminum bronze alloy obtained by powder metallurgy with niobium carbide addition In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>FIGUEIREDO, H. C. ; OLIVEIRA, P. J. ; MELO, M. L. N. M. ; CAIXETA, D.. <b>Estudo da relação entre a condutividade elétrica e o estágio dos tratamentos térmicos de envelhecimento e superenvelhecimento da liga de alumínio 2024. In: XXII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>FIGUEIREDO, H. C. ; SILVA, M. R. ; MELO, M. L. N. M. ; MENDONCA, C. S. P. ; CIACCO, P. S. ; SACHS, D.. <b>Influência da formação da fase sigma nas propriedades mecânicas e magnéticas de um aço inoxidável duplex. In: XXII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>GIRALDI, T. R.; Padilha, S. R. R. ; Lopes, M. F. ; OLIVEIRA, J. A.. <b>N:ZnO nanoparticles used as in atrazine photodegradation</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>GOMES, J. E. M. ; TOLEDO, J. V. R. ; SANTOS, M. C. ; MELO, M. L. N. M. ; FERREIRA, J. R. ; SILVA, G.. <b>Analysis of surfasse finish after turning process of the steel AISI 52100 hardened In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Gonçalves, P. ; BERTHOLDO, R. ; MAESTRELLI, S. C. ; GIRALDI, T. R.. <b>Avaliação do potencial fotocatalítico de TiO2 e ZnO obtidos por diferentes metodologias</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Gonçalves, P. ; GIRALDI, T. R. ; BERTHOLDO, R.. <b>Síntese e avaliação fotocatalítica de materiais multifuncionais: TiO2, ZnO e SiO2</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Kuffner BHB ; SACHS, D ; Rodrigues G ; Silva G ; OLIVEIRA, L. F.. <b>Estudo da influência da adição de carbeto de vanádio na moagem e nas propriedades mecânicas aço AISI 52100, produzido por metalurgia do pó In: 22 Congresso Brasileiro de Engenharia e Ciência dos Materiais</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Leyva, Maria Elena. <b>Desenvolvimento de eletrodos modificados com hidrogéis eletroativos</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MATOS, R. A. G. ; RODRIGUES, C. A. ; MENDES, J. ; KUFFNER, B. H. B. ; MELO, M. L. N. M. ; SILVA, G.. <b>Comparison of the particles size of X22 grade superalloy scraps after 60 hours of milling with and without vanadium carbide addition In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>MATOS, R. A. G. ; RODRIGUES, C. A. ; MENDES, J. ; KUFFNER, B. H. B. ; MELO, M. L. N. M. ; SILVA, G.. <b>Evolution of particle morphology of chip series alloy X22 after high energy milling In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>MEDINA, E. G. ; SILVA, A. ; QUINTERO, Y. F. ; SILVA, A. A. A. P. ; MELO, M. L. N. M.. <b>Avaliação dos efeitos microestruturais na dureza da liga Al7075 In: XXII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MEDINA, E. G. ; SILVA, A. ; QUINTERO, Y. F. ; SILVA, A. A. A. P. ; MELO, M. L. N. M.. <b>Validation of the relationship Hall-Petch for aluminum alloy 7075 In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>MENDONCA, C. S. P. ; DIAS, A. N. O. ; SILVEIRA, L. R. ; SANTOS, M. C. ; RIBEIRO, V. A. S. ; SACHS, D. ; MELO, M. L. N. M. ; SILVA, G.. <b>Produção de um aço inoxidável Duplex por metalurgia do pó. In: XXII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>MENDONCA, C. S. P. ; JUNQUEIRA, M. M. ; OLIVEIRA, L. A. ; SILVA, M. R. ; RIBEIRO, V. A. S. ; MELO, M. L. N. M. ; SILVA, G.. <b>Moagem de cavacos de aço inoxidável Duplex com adição de carbetos. In: XXII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>MENDONCA, C. S. P. ; MELO, M. L. N. M. ; OLIVEIRA, L. A. ; DIAS, A. N. O. ; GOMES, J. H. F. ; SILVA, G.. <b>Reuse of chips of the stainless steel using the high energy milling ? The analysis of experimental factors on milling using full factorial design In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>MENDONCA, C. S. P. ; SANTOS, G. B. ; MELO, M. L. N. M. ; RIBEIRO, V. A. S. ; OLIVEIRA, V. D. ; SILVA, G.. <b>Study of the milling process efficiency of the chips of duplex stainless steel UNS S31803 using vanaium carbide by high energy milling In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Mérilin Cristina dos Santos Fernandes ; NAKAMATSU, S. ; RUEDA, A. L. ; MAESTRELL, S. C. ; BRUNI, L. M. ; SOUSA, L. L. ; MARIANO, N.A.. <b>INFLUÊNCIA DA TEMPERATURA DO REVENIDO NA RESISTÊNCIA À CORROSÃO DE AÇO INOXIDÁVEL EMPREGADO NA INDÚSTRIA PETROQUÍMICA</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Mérilin Cristina dos Santos Fernandes ; NAKAMATSU, S. ; RUEDA, A. L. ; SOUZA, L. L. ; SOUZA, J. J. ; SOUSA, L. L. ; MARIANO, N.A.. <b>RESISTÊNCIA À CORROSÃO POR PITES EM AÇOS DO SISTEMA Fe-Cr-Ni-C</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>NOVAES, P. A. A. ; COSTA, A. A. M. ; QUEIROZ, A. A. A. ; SACHS, D ; PEREIRA, A. C.. <b>Estudo da Biodegradação in-vitro de Blendas de PCL associadas a hidroxiapatita e tetraciclina In: 22 Congresso Brasileiro de Engenharia e Ciência dos Materiais</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>NOVAES, P. A. A. ; COSTA, A. A. M. ; QUEIROZ, A. A. A. ; SACHS, D ; PEREIRA, A. C.. <b>In vitro degradation of polymer blends scaffolds (poly-epsilon-caprolactone, PCL) of high and low molecular weight associated with tetracycline and hydroxyapatite In: XV Brazilian MATERIAL RESEARCH SOCIETY Meeting, 2016</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>OLIVEIRA, J. A. ; Nogueira, A.E. ; PARIS, E. C. ; OLIVEIRA, C. R. ; GIRALDI, T. R.. <b>Artificial Photosynthesis assisted by N:ZnO nanoparticles</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>OLIVEIRA, L. A. ; PONTES, A. M. P. ; MELO, M. L. N. M. ; MENDONCA, C. S. P. ; CORRÊA, E. O. ; SANTOS, M. C. ; SILVA, G.. <b>Investigação sobre temperatura de sinterização de pó da liga de alumínio 7075 T6 obtido por moagem de cavacos, com adição de carboneto de vanádio. In: XXII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>OLIVEIRA, P. J. ; MELO, M. L. N. M. ; SILVA, R. S. M. ; SANTOS, C. C. O.. <b>Optimization of heat treatment of aluminum alloys using techiques of Artificial Neural Networks (ANN) In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>OLIVEIRA, P. J. ; MELO, M. L. N. M. ; SILVA, R. S. M. ; SANTOS, C. C. O. ; PALHARES, R. C. B.. <b>Otimização de tratamentos térmicos da liga de alumínio 2024 utilizando redes neurais artificiais. In: XXII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>POIRIER, G; CUNHA, C. R. ; CASSANJES, F. C. ; RIBEIRO, Sidney José Lima ; GONCALVES, R. R.. <b>Optical Properties of Tantalum Germanate Glasses, Glassceramics and Planar Waveguides</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>SALOMAO, P. E. A. ; CAMPOS, F. M. O. ; FILHO, F. M.. <b>Synthesis and characterization of calcium copper titanate (CCTO) doped niobium</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>SANTOS, C. J. ; FILHO, F. M.. <b>Synthesis and characterization of nanoparticles Zn1-xMxWO4 obtained via hydrothermal microwave route</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>SANTOS, G. B. ; SILVA, M. R. ; MENDONCA, C. S. P. ; OLIVEIRA, L. A. ; MELO, M. L. N. M. ; SILVA, G.. <b>Study of magnetic properties and microestructural a inox obtained by high energy milling In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>SANTOS, J. M. P. ; SILVA, A. ; SILVA, G. ; MELO, M. L. N. M.. <b>Reuse of solid waste of rectifies of the piston rings by poder melallurgy In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>SILVA, A. ; RODRIGUES, C. A. ; MEDINA, E. G. ; SANTOS, J. M. P. ; MELO, M. L. N. M.. <b>Study of microstructural evolution of the alloy 2024 during homogenization In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>SILVA, A. ; RODRIGUES, C. A. ; MELO, M. L. N. M.. <b>Influência dos tratamentos térmicos nas propriedades mecânicas e na condutividade elétrica da liga 2024. In: XXII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>SIQUEIRA, M. L. ; MELO, M. L. N. M.. <b>Influence of cold rolllng in aging time for the aluminium 2024 alloy. In: XXII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>SIQUEIRA, M. L. ; MELO, M. L. N. M.. <b>Influence of plastic deformation degree on aging time and mechanical properties of aluminium alloy AA2024 In: XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>SOUSA, L. L. ; COELHO, M. F. C. ; RICCI, V. P. ; PEREIRA, G. V. ; RIGO, Eliana C S ; Mérilin Cristina dos Santos Fernandes ; MARIANO, N.A.. <b>Avaliação das propriedades bactericidas do recobrimento biomimético de HA dopado com AgNO3</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>SOUSA, L. L. ; RICCI, V. P. ; PEREIRA, G. V. ; MAGALHAES, L. S. ; VERCIK, L. C. O. ; RIGO, Eliana C S ; Mérilin Cristina dos Santos Fernandes ; MARIANO, N.A.. <b>Efeito de bactericida em recobrimento de hidroxiapatita e quitosana em superfície metálica</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CHAIA, N.; BORGES, E. R. O. ; LUZ, M. S. ; MACHADO, A. J. S.. <b>The growth of the new superconductor ZrTe2 doped with Cu by vapor transport technique</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CHAVES, A. S. ; GELFUSO, M. V. ; THOMAZINI, D.. <b>Calcinação e sinterização de titanato de estrôncio por irradiação de micro-ondas</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Cunha, R.A. ; Roveri, C.D. ; NAVARRO, FABIANO C. ; Maestrelli, S.C.. <b>Caracterização Químico-mineralógica de argila da região de Cedro do Abaeté, MG, visando aplicação na fabricação de revestimentos cerâmicos</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>de Souza F.F.G. ; RUBINGER, Rero Marques ; Sartorelli jc. <b>Controle de Parâmetros do Circuito de Chua Experimental com um Potenciômetro Digital</b>. 2015. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>DIAS, A. N. O. ; MENDONCA, C. S. P. ; CAMARGO G. A. V. ; CORTÊS, L. C ; RODRIGUES, C. A. ; SILVA, G. ; RODRIGUES, G. ; MELO, M. L. N. M.. <b>Mechanical and microstructural characterization of Aluminum Bronze alloy cold rolled and submitted to recrystallization In: XIV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>DIAS, J. A. ; Ramos, A.S. ; Minucci M.Z. ; Arantes, V.L. ; GIRALDI, T. R.. <b>Degradação Fotocatalítica do corante Rodamina B através de óxido de zinco obtido por moagem de alta energia</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>GONCALVES, F. R. ; THOMAZINI, D. ; GELFUSO, M. V.. <b>Propriedades térmicas e elétricas de cerâmicas de CaCu3Ti4O12 com variação do eutético CuO-TiO2</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MACHADO, J. C. F. ; RENZETTI, R. A.. <b>ESTUDO DA ESTAMPABILIDADE E DA CORROSÃO SOB TENSÃO DE UM AÇO INOXIDÁVEL FERRÍTICO</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MATOS, R. A. G. ; MENDES, J. ; RODRIGUES, C. A. ; KUFFNER, B. H. B. ; MELO, M. L. N. M. ; SILVA, G.. <b>Evolution of the duralumin's microstructural after reduction in area of 54 and 76% In: XIV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MATOS, R. A. G. ; MENDES, J. ; RODRIGUES, C. A. ; KUFFNER, B. H. B. ; MELO, M. L. N. M. ; SILVA, G.. <b>Study of precipitates Al2Cu flow after rotary forging and annealing to 350 oC of de duralumin In: XIV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MENDONCA, C. S. P. ; DIAS, A. N. O. ; OLIVEIRA, C. F. A. ; VICENTE, R. B. ; MELO, M. L. N. M. ; SILVA, M. R. ; SILVA, G.. <b>Magnetic and mechanical behavior of Lean duplex steel submitted to deformation plastic and treatment of 650°C In: XIV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>OLIVEIRA, F. N. ; RENZETTI, R. A.. <b>ESTUDO DA CORROSÃO SOB TENSÃO DE UM AÇO FERRÍTICO ESTAMPADO</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>OLIVEIRA, J. A. ; LOPES, O. F. ; PARIS, E. C. ; OLIVEIRA, C. R. ; POIRIER, G. Y. ; GIRALDI, T. R.. <b>Synthesis of particles of ZnO:N by different doping methods and using urea as nitrogen precursor reagent</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>RODRIGUES, G. <b>A relação entre a microestrutura e as propriedades dos materiais</b>. 2015. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Roveri, C.D. ; MAESTRELLI, S. C.. <b>MATÉRIAS PRIMAS CERÂMICAS: DA EXTRAÇÃO À PRODUÇÃO ? UMA INTRODUÇÃO</b>. 2015. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Roveri, C.D.; Gonçalves, P. ; Bergerman, M.G. ; NAVARRO, FABIANO C. ; MAESTRELLI, SYLMA C.. <b>Caracterização de Nefelina Sienitos do Maciço Alcalino de Poços de Caldas, MG, como alternativa aos feldspatos clássicos em Massas Cerâmicas</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Roveri, C.D.; MOTTA, J.F.M. ; CHRISTOLFOLETTI, Sérgio R. <b>Painel de Mineração e Matérias-primas</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>SACHS, D. <b>Aspectos Moleculares da dor Inflamatória aguda e crônica</b>. 2015. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>SACHS, D. <b>Caracterização Farmacológica de plantas Brasileiras</b>. 2015. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SALOMAO, P. E. A. ; LI, M. S. ; SANTOS, C. J. ; FILHO, F. M.. <b>Synthesis and characterization of calcium titanate and copper (CCTO) doped donor/accetor of electrons</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SANFELICE, R. C.; MERCANTE, L. A. ; MATTOSO, L. H. C. ; CORREA, D. S.. <b>PMMA/P3HT Nanofibers: Electrical and Optical characterization</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, N. P. ; FILHO, F. M.. <b>Síntese de Pós-Cerâmicos Ccto Modificados com Molibdênio pelo Método dos Precursores Poliméricos</b>. 2014. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AMANCIO, D. A. ; TOLEDO, J. V. R. ; DIAS, A. N. O. ; LOPES, A. O. ; MELO, M. L. N. M. ; SILVA, G.. <b>Influence of addition of NbC in sintering powder metallurgy of aluminium-bronze In: XIII Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>AMANCIO, D. A. ; TOLEDO, J. V. R. ; RIBEIRO, M. V. ; MELO, M. L. N. M. ; CORRÊA, E. O. ; LOPES, A. O. ; SILVA, G.. <b>Influence of the addition of TiC in powder metallurgy sintering of superalloy inconel 718 In: XIII Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat),</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BENEDETTO, R. M. ; GELFUSO, M. V. ; THOMAZINI, D.. <b>INFLUÊNCIA DA RADIAÇÃO UV NAS PROPRIEDADES FÍSICO-QUIMICAS E MECÂNICAS DE FIBRAS DE BANANEIRA EXTRAÍDAS EM AUTOCLAVE</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BOUIZI, Y. ; CHAIA, N. ; PRORIOL-SERRE, I. ; MATHIEU, S. ; ROUILLARD, F. ; VOGT, J. B. ; VILASI, M.. <b>Développement de revêtements pour composants de RNR-Na par packcémentation</b>. 2014. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CABRAL, A. C. T. ; FILHO, F. M.. <b>Influência do Pr nas propriedades ópticas do CeO2</b>. 2014. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CABRAL, A. C. T. ; Vaz, I. C. F. ; FILHO, F. M. ; LAGE JUNIOR, M. M. ; SILVA, M. R. ; ROMANELLI, J. P. R. ; Longo, E.. <b>A combined theorical and experimental study of eletronic structure of CeO2 nanocrystalline</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CABRAL, A.C. ; MOURA, F. ; Longo, E.. <b>preparation and characterization of ceria nanostructures by microwave-hydrothermal method</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CHAVES, A. S. ; ANDRADE RAPONI, OLÍVIA ; GELFUSO, M. V. ; THOMAZINI, D.. <b>PÓS CERÂMICOS DE SrTiO3 OBTIDOS PELO MÉTODO HIDROTERMAL ASSITIDO POR MICRO-ONDAS</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CHAVES, A. S. ; ANDRADE RAPONI, OLÍVIA ; GELFUSO, M. V. ; THOMAZINI, D.. <b>Síntese por ultrassom de pós de SrTiO3 puro e dopados</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CHINELATTO, A. S. A. ; CHINELATTO, A. L. ; LAGO, C. ; PINTO, A. P. ; GELFUSO, M. V. ; THOMAZINI, D.. <b>Effects of Different Sintering Processes on Microstructure of Alumina Ceramics</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>CORREA, E. <b>O.; CORREA, E. O. ; Estudo da influência do metal de adição na resistência a corrosão sob tensão de juntas soldadas dissimilares de aço inoxidável austenítico e aço inoxidável duplex</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Corsi, F.G.V. ; da Silva, C.L. ; Rodrigues, P.R.D. ; GIRALDI, T. R.. <b>Síntese de partículas de ZnO:Co e sua aplicação como fotocatalisadores na degradação do corante azul de metileno</b>. 2014. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>CRUZ, L. G. A. ; YAMANE, F. O. ; SOUZA, ANGELO ; MELO, M. L. N. M. ; PARDINI, L. C. ; ANCELOTTI JR, A. C.. <b>Desenvolvimento de compósitos laminados carbono/epóxi de alta performance fabricados por VARTM In: VIII Congresso Nacional de Engenharia Mecânica (CONEM)</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>DIAS, J. A. ; TOLEDO, M.F. ; ARANTES, V.L. ; Ramos, A.S. ; GIRALDI, T. R. ; MINUCCI, M.Z. ; MAESTRELLI, S. C.. <b>Síntese e avaliação fotocatalítica de óxido de zinco nanoparticulado obtido por moagem de alta energia</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>DIOGO, W. S. ; KUFFNER, B. H. B. ; AMANCIO, D. A. ; TOLEDO, J. V. R. ; RODRIGUES, G. ; MELO, M. L. N. M. ; SILVA, G.. <b>Obtaining of the powder of the steel AISI 2100 with addition of NbC and TiC using high energy milling In: XIII Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>FERREIRA, E. J. C. ; FILHO, F. M.. <b>SÍNTESE DE CCTO MODIFICADO COM ZIRCÔNIA PELO MÉTODO DOS PRECURSORES POLIMÉRICOS PARA APLICAÇÃO EM DISPOSITIVOS FOTOLUMINESCENTES</b>. 2014. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>FONSECA NETO, P. E. ; GELFUSO, M. V. ; THOMAZINI, D.. <b>Síntese de pós de CaCu3Ti4O12 com deficiência e excesso de Cu2+</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>GELFUSO, M. V.; ANGELO, G. ; SANTOS, M. C. ; THOMAZINI, D.. <b>Caixas Para Medidores Elétricos Injetadas A Partir De Compósitos Poliméricos Contendo Fibras De Coco Curtas</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>GELFUSO, M. V.; FURUTANI, C. H. ; SILVA, F. G. P. ; SABARIZ, A. L. R. ; THOMAZINI, D.. <b>LIGA DE MAGNÉSIO SINTERIZADA EM FORNO DE MICROONDAS</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>GELFUSO, M. V.; LANZA, A.C. ; THOMAZINI, D.. <b>PZT Powders Produced from Recycled Ceramics</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>JANE, D. A. ; ANCELOTTI JR, A. C. ; MELO, M. L. N. M. ; CANDIDO, G. C. P.. <b>Modelagem computacional de uma barra de seção circular em compósito (fibra de vidro/epóxi), com base em constantes de engenharia obtidas empiricamente In: VIII Congresso Nacional de Engenharia Mecânica (CONEM)</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>JANE, D. A. ; ANCELOTTI JR, A. C. ; MELO, M. L. N. M. ; SOUZA, ANGELO ; SOUZA, J. C. S. ; CANDIDO, G. C. P.. <b>Estudo experimental sobre o processo de acumulo de dano em uma barra de seção circular de compósito fibra de vidro/epóxi, submetida a uma excitação variável In: VIII Congresso Nacional de Engenharia Mecânica (CONEM)</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>JANE, D. A. ; CANDIDO, G. C. P. ; ANCELOTTI JR, A. C. ; MELO, M. L. N. M.. <b>Caracterização mecânica de material compósito (fibra de vidro/epóxi) através de ensaios estáticos e uso de conceitos de micromecânica para determinação de suas constantes de engenharia In: VIII Congresso Nacional de Engenharia Mecânica (CONEM)</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>LANZA, A.C. ; THOMAZINI, D. ; GELFUSO, M. V.. <b>Reciclagem do titanato-zirconato de chumbo (PZT) pelo método coprecipitado</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>LEYVA, M.E. <b>Eletrossintese e Caracterização de Hidrogéis Inteligentes</b>. 2014. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>LOPES, E. N. ; ANDRADE, F. V.. <b>Degradação de Contaminantes Emergentes em Meio Aquoso por Fotocatálise Heterogênea</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>MATOS, R. A. G. ; MENDES, J. ; RODRIGUES, C. A. ; MELO, M. L. N. M. ; SILVA, G.. <b>Study of Recrystallization Kinetics of The Al 4.5% wt Cu after Reduction in Area of 91% by Rotary Forging In: XIII Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>MATOS, R. A. G. ; MENDES, J. ; RODRIGUES, C. A. ; MELO, M. L. N. M. ; SILVA, G.. <b>Study of the Microstructure of the Al 4.5% wt Cu after Hardening by Precipitation In: XIII Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>MATOS, R. A. G. ; RODRIGUES, C. A. ; MELO, M. L. N. M. ; CUNHA JR, S. S. ; SILVA, G.. <b>Estudo da recristalização da liga de alumínio 4,5% cobre com microestrutura de grãos equiaxiais e submetida a forjamento rotativo In: VIII Congresso Nacional de Engenharia Mecânica (CONEM)</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Novaes PAA ; PEREIRA, A. C. ; de Queiroz AAA ; SACHS, D. <b>In vitro degradation study of bioactive PCL composites</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>OLIVEIRA, J. A. ; CASTRO, I. A. ; PARIS, E. C. ; OLIVEIRA, C. R. ; POIRIER, G. Y. ; GIRALDI, T. R.. <b>Heteroestruturas de WO3:TiO2 aplicadas na fotodegradação de corantes</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>OLIVEIRA, J. A. ; PARIS, E. C. ; MENDONCA, V. R. ; OLIVEIRA, C. R. ; GIRALDI, T. R.. <b>Obtenção de partículas de ZnO:Co para aplicação como fotocatalisadores na degradação do corante Rodamina B</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>PIRRALHO, M. ; GELFUSO, M. V. ; THOMAZINI, D.. <b>ESTUDO PRELIMINAR DAS PROPRIEDADES DE NANOTUBOS DE CARBONO SINTETIZADOS ATRAVÉS DO PROCESSO HIDROTERMAL ASSISTIDO POR MICROONDAS</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>POIRIER, G.; PIETRO, G. M. ; CASSANJES, F. C. ; Ribeiro, Sidney J.L. ; GONCALVES, R. R.. <b>Thermal, structural and luminescence properties of new tantalum germanate glass and glass-ceramic compositions</b>. 2014. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>POIRIER, G.; PIETRO, G. M. ; CASSANJES, F. C. ; Ribeiro, Sidney J.L. ; GONCALVES, R. R.. <b>Luminescent properties of tantalum germanate glasses and glass-ceramics</b>. 2014. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>RODRIGUES, R. R. ; SOUSA, F. B. ; SACHS, D. <b>Avaliação Da Atividade Antimicrobiana De Complexo De Inclusão De Ciprofloxacina Com Β-Ciclodextrina</b>. 2014. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>ROVERI, CAROLINA D.; Maestrelli, S.C. ; R.R. MARTINS ; Pirillo, G. ; Bergerman, M.G. ; NAVARRO, FABIANO C.. <b>Mining for all: divulgation of engineering, mining activities in the region of Poços de Caldas, MG</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>SANFELICE, R. C.; GONCALVEZ, V. C. ; BALOGH, D. <b>Behavior of Langmuir ?Schaefer (LS) films containing P3HT and gold nanoparticles as optical gas sensor</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>SANFELICE, R. C.; GONÇALVES, VANESSA C. ; BALOGH, D. T.. <b>Synthesis of gold nanoparticles with Poly[2-(3-thienyl)ethyloxy-4-butylsulfonate] sodium (ADS2000P)</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>SANFELICE, R. C.; GONÇALVES, VANESSA C. ; BALOGH, D. T.. <b>Influence of gold nanoparticles on sensor properties of P3HT Langmuir ?Schaefer (LS) films</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>SILVA, P. V. ; SOUSA, F. B. ; SACHS, D. <b>Avaliação da Atividade Antimicrobiana de Compostos de Inclusão Formados entre Sulfadiazina de Sódio e Ciclodextrinas</b>. 2014. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>SWERTS, J. P. ; OLIVEIRA, J. A. ; PARIS, E. C. ; OLIVEIRA, C. R. ; GIRALDI, T. R.. <b>Utilização de partículas de ZnO:Mn na fotodegradação do corante Rodamina B</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>TOLEDO, J. V. R. ; AMANCIO, D. A. ; KUFFNER, B. H. B. ; SOUZA, F. B. A. ; CORRÊA, E. O. ; MELO, M. L. N. M. ; SILVA, G.. <b>Influence of milling time on the particle size of powders tungsten carbide wc using inert gas In: XIII Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>Vaz, I. C. F. ; CABRAL, A. C. T. ; LAGE JUNIOR, M. M. ; ROMANELLI, J. P. R. ; YASUDA, M. T. ; Longo, E. ; FILHO, F. M.. <b>Synthesis and Raman spectroscopy of CaCu3Ti4O12</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>Vaz, I. C. F. ; FILHO, F.M.. <b>Síntese e caracterização estrutural e microestrutural de CCTO pelo método tradicional de mistura de óxidos</b>. 2014. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>Vicente, M.A. ; SWERTS, J. P. ; GIRALDI, T. R.. <b>Síntese de partículas de ZnO:Mn na fotodegradação do corante azul de metileno</b>. 2014. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>VILELA, L. R. ; ANDRADE, F. V.. <b>Novos desafios aos cuidados do idoso: uma abordagem multidisciplinar</b>. 2014. Apresentação de Trabalho/Outra</td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AMANCIO, D. A. ; TOLEDO, J. V. R. ; FERREIRA, J. R. ; SILVA, G. ; MELO, M. L. N. M. ; PAES, LUIZ EDUARDO SOUZA. <b>Torneamento da Superliga aeronáutica bronze de alumínio utilizando ferramentas de metal duro revistas com geometria positiva e negativa In: VII Congresso Brasileiro de Engenharia de Fabricação (COBEF)</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AMANCIO, D. A. ; TOLEDO, J. V. R. ; PAES, L. E. S. ; COELHO, G. C. ; MELO, M. L. N. M. ; FERREIRA, J. R.. <b>Study of Surface Finish and Cutting Efforts in the Process of Turning the Aluminum Bronze Alloy (UNS C63020) Using Tungsten Carbide Tools With Standard and Geometry Wiper Using Design of Experiments In: XXII International Congress of Mechanical Engineering (COBEM)</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANDRADE, F. V. <b>Formação de Futuros Cientistas</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CABRAL, A. C. T. ; Vaz, I. C. F. ; FILHO, F.M.. <b>Síntese de CCTO pelo método hidrotermal assistido por micro-ondas</b>. 2013. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CABRAL, A. C. T. ; Vaz, I. C. F. ; SILVA, E. E. ; ZAGHETE, M. A. ; SIMÕES, A. Z. ; LONGO, E. ; FILHO, F.M.. <b>Characterization structural in CCTO:Mg obtained by the soft chemical method</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CASTRO, I. A. ; OLIVEIRA, J. A. ; PARIS, E. C. ; Ribeiro C ; GIRALDI, T. R.. <b>Nanoestruturas de WO3/TiO2 obtidas pelo Método dos Precursores Poliméricos: Avaliação das propriedades fotocatalíticas</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CASTRO, I. A. ; OLIVEIRA, J. A. ; PARIS, E. C. ; Ribeiro C ; GIRALDI, T. R.. <b>WO3-TiO2 Nano-heterostructures obtained by Polymeric Precursor Method</b>. 2013. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CASTRO, I. A. ; PARIS, E. C. ; OLIVEIRA, J. A. ; Ribeiro C ; GIRALDI, T. R.. <b>Desenvolvimento de partículas de WO3:Ti aplicadas a processos oxidativos avançados para despoluição d eáguas</b>. 2013. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CHAIA, N.; MATHIEU, S. ; VILASI, M.. <b>Étude de la cinétique de croissance de revêtements de siliciures sur le vanadium et ses alliages</b>. 2013. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CHAIA, N.; MATHIEU, S. ; VILASI, M. ; ROUILLARD, F. ; LE FLEM, M.. <b>Silicide coatings on vanadium based alloys for fuel cladding in Gen-IV reactors ?A survey on oxidation performance'</b>. 2013. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>F.V. ANDRADE; G. M. Lima ; AUGUSTI, R. ; COELHO, M. G. ; PERTENCE, Y. ; MACHADO, I. R.. <b>Utilização de Nb2O5 como suporte para o TiO2: aplicação na remediação ambiental</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>F.V. ANDRADE; G. M. Lima ; AUGUSTI, R. ; COELHO, M. G. ; PERTENCE, Y. ; MACHADO, I. R.. <b>Utilização de Hidroxiapatita obtida a partir de rejeito de matadouros como suporte para TiO2: aplicação na degradação de poluentes emergentes em meio aquoso</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Gislene Tonise ; LEYVA, M. E. ; Sueli Pina ; Andreia Fonseca. <b>Refletindo Sobre o Autismo</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MACHADO, I. R. ; COELHO, M. G. ; G. M. Lima ; Augusti, R. ; F.V. ANDRADE ; R. de Oliveira. <b>Fotocatalisador Flutuante e Magnético Utilizado na Degradação de Contaminantes em Meio Aquoso</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MACHADO, I. R. ; COELHO, M. G. ; G. M. Lima ; Augusti, R. ; F.V. ANDRADE ; SILVA, J. C. C.. <b>Obtenção e Utilização de um Novo Compósito Catalisador da Degradação Fotocatalítica do Fármaco Diclofenaco de Sódio em Solução Aquosa</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>MAESTRELLI, S. C.; Costa, C.D. ; Pirillo, G.R. ; Gallo, M.P. ; Tavares, M. ; Melo, S.S.M.. <b>Palestra de divulgação do curso de engenharia de minas</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>MAESTRELLI, S. C.; Costa, C.D. ; Pirillo, G.R. ; Gallo, M.P. ; Tavares, M. ; Melo, S.S.M.. <b>Palestra de divulgação do curso de engenharia de minas</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MAESTRELLI, S. C.; Pirillo, G.R. ; Costa, C.D. ; Gallo, M.P. ; Melo, S.S.M.. <b>Palestra de divulgação do curso de engenharia de minas</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MAESTRELLI, S. C.; Pirillo, G.R. ; Costa, C.D. ; Gallo, M.P. ; Melo, S.S.M. ; Tavares, M.. <b>Palestra de divulgação do curso de engenharia de minas</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MAESTRELLI, S. C.; Pirillo, G.R. ; Costa, C.D. ; Gallo, M.P. ; Melo, S.S.M. ; Tavares, M.. <b>Palestra de divulgação do curso de engenharia de minas</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>MAESTRELLI, S. C.; Pirillo, G.R. ; Costa, C.D. ; Tavares, M. ; Gallo, M.P. ; Melo, S.S.M.. <b>Palestra de divulgação do curso de engenharia de minas</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>MARIANO, N.A. <b>Palestra de divulgação do curso de Pós Graduação em Ciência e Engenharia de Materiais-PPGCEM</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MARIANO, N.A.; COELHO, M. F. C. ; CRONEMBERGER, M. E. R. ; RIGO, Eliana C S. <b>Hydroxyapatite Coating by simulated body fluid solution on titanium and stainless steel used in implants</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>MARIANO, N.A.; CRONEMBERGER, M. E. R. ; COELHO, M. F. C. ; MELO, M. L. N. M. ; RAMOS, E. C. T.. <b>Evaluation of corrosion resistance of SAF 2205 duplex stainless steel after solution annealing treatment</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>MARIANO, N.A.; Mendonça, R.. <b>Tempering effect in stainless martensitic steel with low carbon concentration</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>MARIANO, N.A.; Mendonça, R. ; OLIVEIRA, O. L. ; LORO, L. C. M. B. ; OLIVEIRA, L. A. B.. <b>Study of steel drills as a motivational tool in the materials science teaching</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>MELO, B. ; COELHO, M. G. ; G. M. Lima ; AUGUSTI, R. ; F.V. ANDRADE. <b>Degradação dos corantes azul de metileno e índigo carmim catalisados com TiO2-p25: degradação ou descoloração?</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>MELO, B. ; MACHADO, I. R. ; COELHO, M. G. ; G. M. Lima ; AUGUSTI, R. ; F.V. ANDRADE ; R. de Oliveira. <b>Degradação do pesticida atrazina catalisada por C.C.A. impregnado com (CoFe2O4)-ensaios de toxicidade dos produtos de degradação</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>MENDONCA, C. S. P. ; RIBEIRO, V. A. S. ; SILVA, M. R. ; RODRIGUES, C. A. ; MELO, M. L. N. M. ; CORRÊA, E. O. ; SILVA, E. M. ; OLIVEIRA, V. D.. <b>Magnetic Behavior of Duplex Steel Submited to Aging Treatment In: XII Encontro Anual da Sociedade Brasileira de Pesquisa em Materiais (SBPMat),</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>MOURA, F. <b>Dispositivos nanoestruturados obtidos por rota química</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>OLIVEIRA, J. A. ; GIRALDI, T. R. ; CASTRO, I. A. ; PARIS, E. C. ; Ribeiro C. <b>WO3-TiO2 heterostructures: photocatalysis in water treatment</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>PORTEBOIS, L. ; CHAIA, N. ; MATHIEU, S.. <b>Boron distribution in high temperature silicide coating for niobium alloys: An analytical problem solved using a coupled WDS-EDS system</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>RODRIGUES, G. <b>Determinação de Expansão Térmica via Difração de Raios X em Altas Temperaturas</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>SANFELICE, R. C.; GONCALVEZ, V. C. ; BALOGH, D. <b>Langmuir Films of poly(3-hexylthiophene) and thiol-capped gold nanoparticles ? Application of in situ techniques to explore their compatibility</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>SANFELICE, R. C.; GONCALVEZ, V. C. ; BALOGH, D. T.. <b>Langmuir and Langmuir-Schaefer (LS) films of Poly(3-hexylthiophene) and thiol-capped gold nanoparticle</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>SILVA, A. ; RODRIGUES, C. A. ; OLIVEIRA, P. J. ; MELO, M. L. N. M.. <b>Study of the Influence of aging treatment in the hardness of alloy remelting In: XII Encontro Anual da Sociedade Brasileira de Pesquisa em Materiais (SBPMat)</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>Vaz, I. C. F. ; CABRAL, A. C. T. ; FILHO, F.M.. <b>Síntese e caracterização morfológica de CCTO pelo método de reação no estado sólido</b>. 2013. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>Vaz, I. C. F. ; CABRAL, A. C. T. ; Lage, M. M. ; SILVA, M. R. ; PERAZOLLI, L. A. ; LONGO, E. ; FILHO, F.M.. <b>Morphological properties of Mo doped CCTO ceramics</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>VIVAS, M. G.; CURY, JOHN F. ; SCHIAVON, MARCO A. ; MENDONCA, C. R.. <b>Two-photon absorption of ZnS quantum dots: interpreting the nonlinear spectrum</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>VIVAS, M. G.; De Boni, L. ; COOPER, T. M. ; MENDONCA, C. R.. <b>Interpreting Strong Two-photon absorption of trans-Pt(PBu3)2(C=C-C6H4-C=C-C6H4-C=C-C6H5)2 platinum acetylide: Double Resonance and Excited State Absorption</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AMANCIO, D. A. ; PAES, L. E. S. ; MELO, M. L. N. M. ; FERREIRA, J. R.. <b>Determinação da Rugosidade Superficial no Torneamento da Super liga de Bronze de Alumínio (UNS C 63020) utilizando ferramentas de corte de Metal Duro com Geometria Positiva e Negativa In: XX Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMAT)</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CABRAL, A. C. T. ; Vaz, I. C. F. ; FILHO, F.M. ; SIMÕES, A. Z. ; LONGO, E. ; ZAGHETE, M. A.. <b>Photoluminescence at room temperature in CCTO:Zr nanoparticles obtained by the soft chemical method</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CABRAL, A. C. T. ; Vaz, I. C. F. ; RENZETTI, R. A. ; SIMÕES, Alexandre Zirpoli ; Longo, E. ; FILHO, F. M.. <b>Synthesis and structural characterization of CCTO powder</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CHAIA, N. <b>Développement de revêtements anti-corrosion pour le gainage combustible en alliages de vanadium pour les RNR-Na</b>. 2012. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CHAIA, N.; DAVID, N. ; FIORANI, J.M. ; COELHO, G.C. ; NUNES, C.A. ; MATHIEU, S. ; VILASI, M.. <b>The assessment of phase equilibria in V-Cr-Si system</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CHAIA, N.; MATHIEU, S. ; COZZIKA, T. ; ROUILLARD, F. ; COUROUAU, J.L. ; PETITJEAN, C. ; VILASI, M.. <b>Oxidation performances overview of silicides diffusion coatings for vanadium based alloy</b>. 2012. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CHAIA, N.; MATHIEU, S. ; PETITJEAN, C. ; LE FLEM, M. ; VILASI, M.. <b>Silicide coating on V4Cr4Ti alloy and their oxidation behaviour at moderate temperatures (450-650°C)</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CORREA, E. <b>O.; CORREA, E. O. ; Comportamento Eletroquímico do aço inoxidável superduplex UNS S32520 Solubilizado e envelhecido</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>GELFUSO, M. V.; FOGAGNOLO, J. B. ; LIMA, G. M. ; Battiston, K. M ; THOMAZINI, D.. <b>Liga de Alumínio Sinteriza em Microondas</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>GELFUSO, M. V.; Volpi, G. M. S. ; CHINELATTO, A. L. ; CHINELATTO, A. S. A. ; THOMAZINI, D.. <b>PÓS DE CCTO OBTIDOS PELO MÉTODO COPRECIPITADO E SINTERIZADOS SOB MICROONDAS</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>GIMENES, R. <b>Biomateriais</b>. 2012. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Gonçalves, P. ; Roveri, C.D. ; Sena, M.D. ; Gonçalves, C.C. ; Jerônimo, G.C.C.. <b>Caracterização Granuloquímica de Rochas Potássicas da Região de Poços de Caldas, MG</b>. 2012. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MACHADO, G.S. ; RODRIGUES, C. A. ; MELO, M. L. N. M.. <b>Influência do Tempo de Solubilização na Resistência a Tração de um Aço Inoxidável Duplex In: VI Conferência Brasileira sobre Temas de Tratamento Térmico (TTT)</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MAESTRELLI, S. C.; Mariano, N. A. ; Cardoso, F. J. ; SILVA, B. P. ; Almeida, E.J.M.. <b>OTIMIZAÇÃO DO PROCESSO DE ENSINO-APRENDIZAGEM EM CURSOS DE ENGENHARIA ATRAVÉS DA CONSTRUÇÃO E AVALIAÇÃO DE PONTES DE MACARRÃO. 2012. (Apresentação de Trabalho/Congresso)</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MELO, M. L. N. M.; SILVA, A. ; RODRIGUES, C. A.. <b>Estudo da influência da temperatura de precipitação na dureza da liga 2024 fundida In: XXXIII Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC)</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>PAES, L. E. S. ; RODRIGUES, C. A. ; MELO, M. L. N. M. ; CUNHA JR, S. S.. <b>Evolução microestrutural da liga de Bronze de Alumínio C63020 após diferentes tratamentos térmicos In: VII Congresso Nacional de Engenharia Mecânica (CONEM)</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PERINOTTO, José Alexandre de Jesus ; ZANARDO, A. ; ETCHEBERE, M. L. C. ; Roveri, C.D.. <b>Petrografia dos diques clásticosda Formação Corumbataí (P), nordeste da Bacia Sedimentar do Paraná (Brasil)</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Poirier, Gaël; CASSANJES FC ; Pereira C.. <b>New oxide and oxyfluoride glasses and glass-ceramics based on TeO2</b>. 2012. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>RODRIGUES, C. A. ; CORRÊA, E. O. ; MELO, M. L. N. M. ; SILVA, A. ; MACHADO, G.S. ; GRASSI, F. H. ; TOLEDO, F. F. S.. <b>Precipitação de Fase Sigma em Aços Inoxidáveis Duplex In: VII Congresso Nacional de Engenharia Mecânica (CONEM)</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Roveri, C.D.; ZANARDO, Antenor ; MORENO, Maria Margarita Torres ; Letícia Hirata Godoy ; SILVA, Luciano Luis da ; Navarro, F.C.. <b>CARACTERIZAÇÃO PETROGRÁFICA OBJETIVANDO TÉCNICAS DE BENEFICIAMENTO PARA APROVEITAMENTO DA MATÉRIA-PRIMA DENOMINADA NEFELINA - ALVO LAVRINHAS</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SANFELICE, R. C.; GONCALVEZ, V. C. ; BALOGH, D. <b>Solvatochromic effects in poly[3-(2-hydroxyethyl)thiophene] (PHET) solutions</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SANFELICE, R. C.; GONCALVEZ, V. C. ; BALOGH, D. <b>Langmuir and Langmuir-Blodgett (LB) films of Polythiophene and gold nanoparticles</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Sanfelice, Rafaela C.; GONCALVEZ, V. C. ; BALOGH, D. T.. <b>Optical anisotropy in Poly (3-hexylthiophene) Langmuir-Schaefer(LS) films</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Sanfelice, Rafaela C.; GONCALVEZ, V. C. ; Balogh, Débora T.. <b>Optical anisotropy in Poly(3-hexylthiophene) Langmuir-Schaefer (LS) films with gold nanoparticles</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>THOMAZINI, D. ; LANZA, A.C. ; EIRAS, J. A. ; BERTI, T. G. ; GELFUSO, M. V.. <b>Utilização de Microondas no Processamento Nanoestruturado de Cerâmicas de PZT</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>TOBIAS, P. H. R. ; SILVA, A. ; MELO, M. L. N. M.. <b>Influência da Temperatura de Envelhecimento na Tenacidade ao Impacto da Liga AA2024 In: VI Conferência Brasileira sobre Temas de Tratamento Térmico (TTT)</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Vaz, I. C. F. ; CABRAL, A. C. T. ; LAGE JUNIOR, M. M. ; SILVA, M. R. ; PERAZOLLI, L. A. ; Longo, E. ; FILHO, F. M.. <b>Nonlinear electrical behavior of the Nb doped CCTO ceramics</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Vaz, I. C. F. ; CABRAL, A. C. T. ; Lage, M. M. ; PERAZOLLI, L. A. ; LONGO, E. ; SIMÕES, A. Z. ; FILHO, F.M.. <b>Analyse spectroscopy by ceramic nonlinear behavior of the Mo doped CCTO ceramics</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>VIVAS, M. G.; De Boni, L. ; Bretonniere, Y. ; Andraud, C. ; MENDONCA, C. R.. <b>Polarization Effect on the Two-photon Absorption of a Chiral Compound</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>VIVAS, M. G.; Silva, Daniel L. ; De Boni, L. ; CANUTO, SYLVIO. <b>Combined Experimental and Theoretical Study on the One- and two-photon Absorption Properties of a novel Class of Phenylacetylene and Azoaromatic Compounds</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>ZANARDO, Antenor ; MORENO, Maria Margarita Torres ; ROVERI, C.D. ; ROCHA, Rogers Raphael da ; CARVALHO, Sebastião Gomes ; ANDREZZA DE ALMEIDA AZZI. <b>A FORMAÇÃO CORUMBATAÍ, NA REGIÃO DE RIO CLARO/SP, E OS TIPOS DE MINÉRIO PASSÍVEIS DE EXTRAÇÃO</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>ZANARDO, Antenor ; PERINOTTO, José Alexandre de Jesus ; ETCHEBERE, M. L. C. ; Roveri, C.D.. <b>Petrografia dos diques clásticosda Formação Corumbataí (P), nordeste da Bacia Sedimentar do Paraná (Brasil)</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, F. V.; G. M. Lima ; G. V. Pereira ; J. C. Belchior ; R. de Oliveira. <b>CO2- Captura e Estocagem- uma proposta química</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CABRAL, A. C. T. ; Vaz, I. C. F. ; Peres, M. M. ; Lage, M. M. ; SIMÕES, A. Z. ; MOURA, F. <b>Synthesis of ceria doped praseodymium nanoparticles by microwave hydrothermal</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Caltabiano, P. C. R. O. ; Souza, M. A. ; Marques, R. F. C. ; Campos, M. G. N. ; Hein, L. R. O ; RAMOS, A. S.. <b>PREPARATION OF Al2O3-TiO2 CERAMICS BY HIGH-ENERGY BALL MILLING AND SINTERING</b>. 2011. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Chaves A. S. ; Rubinger, R. M. ; Peres, M.L.. <b>DESENVOLVIMENTO DE UM CRIOSTATO PARA CARACTERIZAÇÃO ELÉTRICA DE MATERIAIS</b>. 2011. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CORREA, E. <b>O.; CORREA, E. O. ; Efeito da temperatura do meio corrosivo no comportamento à corrosão sob tensão dos aços inoxidáveis AISI 316 E 310 no estado laminado</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>de Castro S ; Rubinger, R. M. ; Rubinger, C.P.L. ; MARTINS, Cristiane Reis. <b>Desenvolvimento e caracterização de um sensor de umidade polimérico</b>. 2011. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Ferraretto, A. C. ; RAMOS, Erika Coaglia Trindade ; RAMOS, A. S.. <b>On the Phase Transformation in Mechanically Alloyed Ni-Nb and Ni-Ta and Ni-Nb-Ta Powders</b>. 2011. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>GELFUSO, M. V.; OTTOBONI, F. S. ; VIEIRA, G. N. A. T. ; THOMAZINI, D.. <b>PROPRIEDADES MECÂNICAS E ABSORÇÃO DE ÁGUA EM COMPÓSITOS DE MATRIZ TERMOFIXA CONTENDO FIBRAS DE COCO ORIENTADAS</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>GIRALDI, T. R.; ROCHA, K. O. ; Zanetti, S. M. ; CHIQUITO, A.J. ; Ribeiro C ; PERES, C. H. M. A.. <b>Development of sensor chamber to detect ethanol vapor in SnO2 thin film</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Junqueira V ; Rubinger, C.P.L. ; Rubinger, R. M.. <b>CARACTERIZAÇÂO ELÉTRICA DE COMPÓSITOS POLIVINIL/NEGRO DE FUMO E POLIURETANA/NEGRO DE FUMO</b>. 2011. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MAESTRELLI, S. C.; SILVA, B. P. ; Almeida, E.J.M. ; Cardoso, F. J.. <b>construção e avaliação mecânica de pontes de macarrão como ferramenta auxiliar no processo ensino-aprendizagem</b>. 2011. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MERIGO, R. F. ; COUTINHO, C. C. ; PEREIRA, N. H. A. ; OLIVEIRA, P. J. ; MELO, M. L. N. M.. <b>Influência de Diferentes Tempos de Solubilização na Microestrutura e na Dureza da Liga Al-4,5%Cu In: XXXII Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC) e Latindisplay 2011</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>OLIVEIRA, J. A. ; GIRALDI, T. R.. <b>Síntese de suspensões de SnO2 e SnO2:Sb e obtenção:de filmes finos para aplicação como sensores de etanol</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>OLIVEIRA, J. A. ; PARIS, E. C. ; GIRALDI, T. R.. <b>Obtenção de filmes finos de SnO2 puro e dopado com Sb, depositados a partir de suspensões coloidais</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Pereira, G. M. C. ; Souza, M. A. ; HASHIMOTO, Tomaz Manabu ; HENRIQUES, Vinícius A R ; RAMOS, A. S.. <b>Preparation of Ni-Ti-Mo and Ni-Ti-Mo-Zr alloys by high-energy ball milling and subsequent hot pressing</b>. 2011. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Peres, M.L. ; Chaves A. S. ; Rubinger, R. M. ; Chitta VA ; de Oliveira, A.G.. <b>ANNEALING DEPENDENCY OF THE CONDUCTION REGIMES IN SEMI-INSULATING GaAs</b>. 2011. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>RAMOS, A. S.; Marzullo, A. C. M. ; Souza, A. C. ; RAMOS, E. C. T. ; HENRIQUES, Vinícius A R ; Santos D. R.. <b>2. Metastable structures in mechanically alloyed (85-x)Ti-xZr-10Si-5B and (70-x)Ti-xZr-20Si-10B powders</b>. 2011. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Ribeiro LH ; Peres, M.L. ; Rubinger, R. M. ; Chitta VA ; Rappl PHO. <b>TRANSPORT PROPERTIES OF P-TYPE Pb1-x EuxTe FILMS IN THE INSULATOR REGIME</b>. 2011. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Rubinger, C.P.L. ; Leyva, M. E. ; Rubinger, R. M. ; Soares BG ; Ribeiro, G.M.. <b>ELECTRICAL CARACTERIZATION OF CARBON BLACK/STYRENE?BUTADIENE?STYRENE COMPOSITES</b>. 2011. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Rubinger, R. M.; Padilha, A.F. ; Chaves A. S. ; Peres, M.L. ; Melo, M.L.N.M.. <b>VARIAÇÃO DA RESISTIVIDADE ELÉTRICA COM A TEMPERATURA EM UM AÇO MARAGING EXPERIMENTAL</b>. 2011. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Rubinger, R. M.; Peres, M.L. ; Chaves A. S. ; Ribeiro, G.M. ; de Oliveira, A.G.. <b>LOCALIZATION AND MAGNETORESISTANCE EFFECT ON PHOTO-GENERATED CARRIERS IN ILLUMINATED SEMI-INSULATING GAAS SAMPLE</b>. 2011. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SANFELICE, R. C.; GONCALVEZ, V. C. ; BALOGH, D. T.. <b>Incorporation of metal nanoparticles into conjugated polymers</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SANFELICE, R. C.; GONCALVEZ, V. C. ; Silva, M. A. P. ; BALOGH, D. T.. <b>Preparation of gold nanoparticles in the presence of poly [3-(2-hydroxyethyl)thiophene] (PHET) in methoxyethanol</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>SANFELICE, R. C.; GONCALVEZ, V. C. ; Silva, M. A. P. ; BALOGH, D. T.. <b>PREPARAÇÃO DE NANOPARTÍCULAS DE OURO NA PRESENÇA DE UM POLÍMERO DERIVADO DO POLITIOFENO</b>. 2011. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>VIVAS, M. G.; Silva, Daniel L. ; De Boni, L. ; MENDONCA, C. R.. <b>Linear and nonlinear optical properties of chiral compounds: a theoretical-experimental study</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Zaroni D ; Rubinger, R. M. ; Chaves A. S. ; S. Ribeiro. <b>APLICAÇÃO DE LEDS COMERCIAIS BRANCOS PARA ILUMINÇÃO: INTENSIDADE LUMINOSA, TEMPERATURA, CORRENTE E POTÊNCIA</b>. 2011. Apresentação de Trabalho/Comunicação</td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Antunes, P.D. ; CORREA, E. O. ; CORREA, E. O. ; CORTEZ, R. M. ; Nascimento, A.. <b>Mechanical and Microstructural Characterization of Welded Joints of Ferritic Stainless Steel AISI 444</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ARRUDA, C.C. ; GIRALDI, T. R. ; Ribeiro C. <b>Influence of precursor salt in properties of ferrites doped with Co</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CABRAL, A. C. T. ; Vaz, I. C. F. ; Ferreira, M. S. ; MOURA, F. <b>Síntese de pigmentos nanoestruturados de Ce1-3/4xPrxO2 obtidos por novo método hidrotermal assistido por microondas</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CABRAL, A. C. T. ; Vaz, I. C. F. ; Filho, F. <b>Processamento e caracterização de pós e cerâmicas multifuncionais a base de CaCu3Ti4-xMoxO12</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CASSANJES, F. C. <b>Materiais Vítreos: Natureza, Estrutura e Aplicações</b>. 2010. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CHAIA, N.; PETITJEAN, C. ; PANTEIX, P. J. ; RAPIN, C. ; VILASI, M.. <b>Corrosion des revêtements de nickel électrochimique et chimique dans un verre aux fluorures liquide</b>. 2010. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>COUTINHO, C. C. ; CHUSTER, F. G. ; PEREIRA, N. H. A. ; OLIVEIRA, P. J. ; MELO, M. L. N. M.. <b>Influência de Diferentes Tratamentos Térmicos na Microestrutura e na Dureza ca Liga Al-4,5%Cu In: XIX Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>de Castro S ; Rubinger, R. M. ; Rubinger, C.P.L. ; da Cruz AGB. <b>Polymer Humidity Sensor</b>. 2010. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Ferreira, M. S. ; MOURA, F. <b>estudo fotoluminescente de nanopartículas de CeO2 modificadas com Er e Gd</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>GIRALDI, T. R.; MENDONCA, V. R. ; FONSECA, G.V. ; Ribeiro C ; WEBER, I. T.. <b>Influence of surface effects and crystallinity of ZnO nanoparticles in photocatalysis</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>GIRALDI, T. R.; SANTOS, G. V. F. ; MENDONCA, V. R. ; Ribeiro C ; WEBER, I. T.. <b>Influence of precursor salt in the synthesis and photocatalytical properties of ZnO</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GOMES, R. F. ; POIRIER, G ; CASSANJES FC. <b>Preparation and Characterization of Lead Tungsten Fluorophosphate Glasses</b>. 2010. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Guarany, C. A. ; Antonelli, E. ; Lage, M. M. ; Thomazini, D. ; SILVA, E. E. ; YASUDA, M. T. ; Tafur, M. ; M. Zamboni ; MOURA, FRANCISCO. <b>Synthesis and characterization of nanopowders BaFe12O19 obtained by hybrid hydrothermal method</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>M. G. Vivas; D. L. Silva ; ZALESNY, R. ; BARTKOWIAK, W. ; MENDONCA, C. R.. <b>Two-photon absorption cross-section spectra of carotenoids compounds</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>M. G. Vivas; DE BONI, Leonardo ; MENDONCA, C. R.. <b>Polarization-dependent two-photon absorption of bio-molecules</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>M. G. Vivas; DE BONI, Leonardo ; MENDONCA, C. R.. <b>Caracterização espectral do processo de absorção de dois fótons de compostos quirais</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>M. G. Vivas; MENDONCA, C. R.. <b>Temperature dependence of the two-photon absorption of carotenoids</b>. 2010. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>M. G. Vivas; P. H. D. Ferreira ; Mendonça, C. R.. <b>Two-photon absorption cross-section in Y-shaped molecules</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>M.A. Fernades ; MARIANO, N. A.. <b>Microstructural evaluation and effects of austenite resulting from tempering of 13Cr4Ni martensitic steel weld metals</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MAESTRELLI, S. C.; Satolo, E.G. ; Mariano, N. A.. <b>Construção de uma mini fábrica cerâmica como ferramenta auxiliar no processo de ensino-aprendizagem</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>MENDONCA, V. R. ; Berger, D. ; GIRALDI, T. R. ; LAZARO, ; TEBCHERANI, S. M. ; Ribeiro C. <b>Degradation of Rhodamine B dye by semiconductor oxides: A kinetic Study</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>MORENO, Maria Margarita Torres ; ZANARDO, Antenor ; ROVERI, C.D.. <b>Seleção de Matérias-primas argilosas para compor massas cerâmicas para revestimento</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MOURA, F; G. A. Shimazu. <b>Método híbrido para obtenção de nanopartículas de SrFe12O19</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Onofre, T. B. ; MOURA, F. <b>Estudo e aplicação de aperfeiçoamento de sistemas de reconhecimento de padrões fundamentados em redes neurais artificiais</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>PERALTA, J. L. ; RODRIGUES, J. R. P. ; MELO, M. L. N. M. ; SANTOS, R. G. ; ANDRADE, R. B.. <b>Investigação do Material do Molde na Estrutura Dendritica do Aço Inoxidável Austenítico AISI 304 In: XIX Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PERES, C. H. M. A. ; GIRALDI, T. R. ; Ribeiro C. <b>Development and characterization of thin films for application as ethanol sensors</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>POIRIER, G. <b>Caracterização estrutural de Materiais desordenados</b>. 2010. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Prebianca F ; Albuquerque, H. A. ; RUBINGER, Rero Marques ; Lambert G.. <b>On The Effect of a Parallel Resistor in The Chua's Circuit</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>RODRIGUES, J. R. P. ; PERALTA, J. L. ; MELO, M. L. N. M. ; SANTOS, R. G.. <b>Estudo Microestrutural do Aço Inoxidável Austenítico AISI 304 em diferentes Moldes In: XXXI Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC)</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Rubinger, R. M.; Viana, E.R. Jr ; Sartorelli jc ; Baptista M.S. ; Marques AD ; Albuquerque, H. A. ; de Oliveira, A.G.. <b>Mutual information and synchronism on a network of four chaotic circuits</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>SANFELICE, R. C.; GONCALVEZ, V. C. ; BALOGH, D. T.. <b>Incorporação de nanopartículas metálicas a polímeros conjugados. Preparação, caracterização e utilização na fabricação de filmes nanoestruturados</b>. 2010. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SANFELICE, R. C.; PAVINATTO, F. J. ; BALOGH, D. T. ; OLIVEIRA JR., O. N.. <b>Toward super-hydrophobic surfaces in Langmuir-Blodgett films of fluorinated azopolymers</b>. 2010. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SANFELICE, R. C.; PAVINATTO, F. J. ; CARDOSO, M ; BALOGH, D. T. ; MENDONCA, C ; OLIVEIRA JR., O. N.. <b>CONFECÇÃO DE FILMES LANGMUIR-BLODGETT (LB) DE HOMOPOLÍMEROS E COPOLÍMEROS EM BLOCO CONTENDO AZOCORANTES</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>SANTOS, J. N. ; CORREA, E. O. ; CORREA, E. O. ; Klein, A.N.. <b>Development of a WC-Ni-Si-Al based cemented carbide for engineering applications</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>SILVA, V. F. ; GIRALDI, T. R. ; WEBER, I. T.. <b>Heterogeneous photocatalytic process for wastewater treatment: A study of reusing</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>Viana, E.R. Jr ; Ribeiro, G.M. ; de Oliveira, A.G. ; Rubinger, R. M. ; Peres, M.L.. <b>Magnetotransport Measurements in an Il- luminated Semi-insulating GaAs Sample</b>. 2010. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>Viana, E.R. Jr ; Rubinger, R. M. ; Albuquerque, H. A. ; de Oliveira, A.G.. <b>Parameter-Space of an Experimental Chaotic Circui</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>Viana, E.R. Jr ; Rubinger, R. M. ; Albuquerque, H. A. ; de Oliveira, A.G. ; Ribeiro, G.M.. <b>Parameter-Space of an Experimental Chaotic Circuit</b>. 2010. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>Viana, E.R. Jr ; Rubinger, R. M. ; Albuquerque, H. A. ; de Oliveira, A.G. ; Ribeiro, G.M.. <b>High Resolution parameter spaces for a forced Chua's Circuit</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ARRUDA, C.C. ; GIRALDI, T. R. ; LONGO, E. ; Ribeiro C. <b>Morphologic Properties of Ferrites nanoparticles applied to Heterogeneous Catalysis</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CORREA, E. <b>O.; CORREA, E. O. ; Caracterização mecânica e microestrutural de um metal duro desenvolvido com ligante a base de níquel endurecido com silício</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FIGUEIREDO, J. F. D. ; ALVES, N. C. ; GIRALDI, T. R. ; MARINHO, E. P. ; WEBER, I. T.. <b>Development of SnO2:Sb and SnO2:Nb films to obtain gas sensors</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GIRALDI, T. R.; ARRUDA, C.C. ; Ribeiro C ; LONGO, E.. <b>Dye's Degradation for Heterogeneous Fenton Process</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Lazaro de, S. R. ; Berger, D. ; TEBCHERANI, S. M. ; Oliveira de, C.R. ; GIRALDI, T. R. ; Cury. L.A.M. ; LONGO, E.. <b>Investigação experimental-teórica sobre o sistema Sn1-xTixO2 (x=0; 0,25; 0,5; 0,75; 1)</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>M. G. Vivas; D. L. Silva ; Mendonça, C. R.. <b>Investigation of the Degenerate Two-Photon Absorption Cross-Section in all-trans Retinal: Nonlinear Spectrum and Molecular Structure</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>M. G. Vivas; D. L. Silva ; Mendonça, C. R.. <b>Absorção de dois fótons degenerada de compostos carotenóides: Espectro não linear e cálculos teóricos</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>M. G. Vivas; Tina Shih ; Erick Mazur ; Tobias Voss ; Mendonça, C. R.. <b>Multiphoton absorption spectra of ZnO</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>M. G. Vivas; Waldomiro Corsi ; Mendonça, C. R.. <b>Two-photon absorption spectra of all-trans retinal</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>M.A. Fernades ; MARIANO, N. A.. <b>Efeito da soldagem na resitência a corrosão do aço inoxidável martensítico</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>M.A. Fernades ; MARIANO, N. A. ; CARDOSO JUNIOR, R.. <b>Soldagem do Aço Inoxidável Martensítico CA6NM: Caracterização da Estrutura, Propriedades Mecânicas e Resistência à Corrosão</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Márcio G. Coelho ; G. M. Lima ; Rodinei August ; José D. Ardisson ; ANDRADE, F. V.. <b>Decomposição de um óxido organoestânico em Al(OH)3: um método de obtenção de nanopartículas de SnO2 suportadas</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>PEREIRA, C. ; CASSANJES, F. C. ; POIRIER, G.. <b>Materiais Vítreos e Vitrocerâmicas com alta porcentagem de óxido de telúrio</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>POIRIER, G. ; CASSANJES, F. C. ; OTTOBONI, F. S.. <b>Optical properties of phosphate glasses</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Polegato P.H. ; Rubinger, R M ; Sartorelli jc ; Baptista M.S. ; Albuquerque, H. A.. <b>Synchronism of four chaotic circuits</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>RODRIGUES, J. R. P. ; EID, M. A. ; MELO, M. L. N. M. ; SANTOS, R. G.. <b>Estudo do coeficiente de transferência de calor de ligas Al-Cu In: XXX Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC)</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>ROVERI, C.D. <b>Geología de Brasil</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>ROVERI, C.D. <b>Caracterização Mineralógica de Matérias-Primas da Formação Corumbataí (Região de Rio Claro - SP) através de Microscopia Eletrônica de Varredura e Microssonda - Resultados Preliminares</b>. 2009. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>ROVERI, C.D.; GARCÍA-ROMERO, E. ; MORENO, Maria Margarita Torres ; ROCHA, Rogers Raphael da ; ZANARDO, Antenor. <b>Caracterização de Defeitos Gerados pela Presença de Matéria-Orgânica em Matéria-Prima Cerâmica da Formação Corumbataí (Limeira, SP) Através de Microscopia Eletrónica de Varredura</b>. 2009. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>ROVERI, C.D.; GARCÍA-ROMERO, E. ; MORENO, Maria Margarita Torres ; ZANARDO, Antenor ; ROCHA, Rogers Raphael da. <b>Caracterização Mineralógica de Matérias-Primas da Formação Corumbataí (Região de Rio Claro - SP) Através de Microscopia Eletrônica de Varredura e Microsssonda - Resultados Preliminares</b>. 2009. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>ROVERI, C.D.; GARCÍA-ROMERO, E. ; ZANARDO, Antenor ; MORENO, Maria Margarita Torres ; ROCHA, Rogers Raphael da. <b>Geoquímica de Rochas Provenientes da Formação Corumbataí (Região de Rio Claro - SP)</b>. 2009. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>ROVERI, C.D.; Letícia Hirata Godoy ; ZANARDO, Antenor ; MORENO, M.M.T.. <b>MATÉRIA-PRIMA CERÂMICA PROVENIENTE DA FORMAÇÃO AQUIDAUANA</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>ROVERI, C.D.; MORENO, Maria Margarita Torres ; ZANARDO, Antenor. <b>Geoquímica de Rochas da Formação Corumbataí (Permiano da Bacia do Paraná), na Região de Rio Claro, SP - Resultados Preliminares</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Sanfelice, Rafaela C.; PAVINATTO, F. J. ; BALOGH, D. T. ; OLIVEIRA JR., O. N.. <b>Langmuir and Langmuir-Blodgett (LB) films of hydrophobic azopolýmers</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Sanfelice, Rafaela C.; PAVINATTO, F. J. ; BALOGH, D. T. ; OLIVEIRA JR., O. N.. <b>Synthesis and Caracterization of Hydrophobic Azopolymers</b>. 2009. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Sanfelice, Rafaela C.; PAVINATTO, F. J. ; BALOGH, D. T. ; OLIVEIRA JR., O. N.. <b>Synthesis of Hydrophobic Azopolymers and the Study of their Langmuir and Langmuir-Blodgett (LB) films</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>SANTOS, J. N. ; Klein, A.N. ; CORREA, E. O. ; CORREA, E. O.. <b>Microestrutura e Propriedades mecânicas de metais duros com ligante de níquel endurecido com alumínio</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Viana, E.R. Jr ; Rubinger, R. M. ; Albuquerque, H. A. ; F. O. Dias ; de Oliveira, A.G. ; Ribeiro, G.M.. <b>Experimental period-adding bifurcation in a modified Chua's circuit</b>. 2009. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Viana, E.R. Jr ; Rubinger, R. M. ; Sartorelli jc ; Baptista M.S. ; Albuquerque, H. A.. <b>Experimental synchronism of four Chuas circuits</b>. 2009. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>ZATTA, K. R. ; MELO, M. L. N. M. ; AMORIM, A. ; MORO, J. R.. <b>Estudo da Brasagem Molibdênio-Aço para Obtenção de Coroas de Perfuração In: XXX Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC)</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ARRUDA, C.C. ; GIRALDI, T. R. ; Ribeiro C. <b>Degradation of Rodhamine by Fenton process using Magnetic ferrites Nanoparticles</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARBOSA, R. P. ; BUSCHINELLI, A. J. A. ; CORREA, E. O. ; CORREA, E. O.. <b>Influência do Aporte Térmico e do Metal de Adição na Susceptibilidade à Corrosão sob Tensão de Juntas Soldadas do Aço AISI 304</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CASSANJES, F. C. <b>Glasses for optical applications</b>. 2008. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CORREA, E. O.; CORREA, E. O. ; SANTOS, J. N. ; Matos, A.H.S.. <b>Determinação da tenacidade a fratura de um metal duro sem cobalto utilizando indentação Vickers</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>M. G. Vivas; PIOVESAN, E. ; MENDONCA, C. R.. <b>Estudo de processos ópticos não lineares em filmes finos de compostos orgânicos utilizando Varredura-Z reflexiva</b>. 2008. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>M. G. Vivas; PIOVESAN, E. ; Mendonça, C. R.. <b>Estudo de processos ópticos não lineares em filmes finos de compostos orgânicos utilizando Varredura-Z reflexiva</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>M. G. Vivas; Waldomiro Corsi ; Mendonça, C. R.. <b>Estudo do processo de absorção de dois fótons no retinal</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MARIANO, N. A.; Lavelli, C. A. ; Camargo, M.S. ; M.A. Fernades ; TOMMASELLI, M. A. G.. <b>Efeitos da têmpera na resistência à corrosão e transformação de fase da liga 13Cr-1,0Ni</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>POIRIER, G. ; CASSANJES, F. C. ; OTTOBONI, F. S.. <b>Redox behavior of tungsten and molybdenum in sodium phosphate glasses</b>. 2008. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ROVERI, C.D. <b>Estratigrafia Tecnológica da Formação Corumbataí (Região de Rio Claro-SP) e Produtos Cerâmicos</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ROVERI, C.D.; ZANARDO, Antenor ; MORENO, Maria Margarita Torres ; ROCHA, Rogers Raphael da ; Letícia Hirata Godoy. <b>Diagénesis de la Formación Corumbataí (pérmico de la cuenca del Paraná) en la región de Río Claro, São Paulo, Brasil</b>. 2008. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>SANFELICE, R; PAVINATTO, F. J. ; BALOGH, D. T. ; OLIVEIRA JR., O. N.. <b>Optical Estorage in Langmuir-Blodgett (LB) films of a DR13-containing triblock</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>SANTOS, G. V. F. ; WEBER, I. T. ; MENDONCA, V. R. ; Ribeiro C ; GIRALDI, T. R.. <b>Quantum confinement effect in ZnO nanoparticles obtained by colloidal suspensions</b>. 2008. Apresentação de Trabalho/Seminário</td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CORREA, E. <b>O.; CORREA, E. O. ; Utilização de simulações termodinamicas como ferramenta auxiliar no desenvolvimento de ligas ferrosas para solda de revestimento duro</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CORREA, E. O.; CORREA, E. O. ; ALCÂNTARA, N. G. ; TECCO, D. G. ; KUMAR, R. V.. <b>Desenvolvimento de uma liga no sistema Fe-Cr-C-Nb para solda de revestimento duro pelo processo Arco Aberto (Open Arc)</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GELFUSO, M. V.; SILVA, A. N. ; THOMAZINI, D.. <b>Thermal and Mechanical Properties of Coconut Fibers Composites</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GIRALDI, T. R.; Ribeiro C ; LONGO, E. ; LEITE, E. R. ; VARELA, J. A.. <b>Electrical Characterization of SnO2:Sb ultrathin films obtained by controlled thickness deposition</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>M. G. Vivas; GIAROLA, V. M. ; de QUEIROZ, A.A.A.. <b>Estudo das propriedades Hemocompatíveis do Poliglicerol dendrítico por Ressonância de Plásmon de Superície</b>. 2007. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARIANO, N. A.; SALLES, T.H.C. ; OLIVEIRA, R. G. ; RIGO, Eliana C S. <b>Corrosion characterization of titanium alloys by electrochemical techniques in artificial saliva solution</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MARIANO, N. A.; STROBEL FILHO, Eloy ; PEREIRA, V.F. ; PALLONE NETO, A. S. ; TOMMASELLI, M. A. G.. <b>Pitting corrosion behaviour and microstructural characterization of 13Cr4Ni stainless steel used in the oil industry</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>RANALLI, G. A. ; PEREIRA, V.F. ; PALLONE NETO, A. S. ; MARIANO, N. A.. <b>Características de endurecimento superficial na nitretação a plasma em aço empregado na confecção de ferramentas para trabalho a quente</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ROVERI, C.D.; MORENO, Maria Margarita Torres ; ZANARDO, Antenor. <b>VARIAÇÃO MINERALÓGICA DE MATERIAIS DA MINA TUTE (RIO CLARO, SP)</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ROVERI, C.D.; Raimundo Humberto C. Lima ; MORENO, Maria Margarita Torres ; ZANARDO, Antenor ; ROCHA, Rogers Raphael da. <b>COMPARAÇÃO GEOLÓGICA E TECNOLÓGICA DE MATÉRIAS-PRIMAS LOCALIZADAS NA BASE DA FORMAÇÃO CORUMBATAÍ - SP</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ROVERI, C.D.; ROCHA, Rogers Raphael da ; PRADO, Ana Cândida de Almeida ; ZANARDO, Antenor ; MORENO, Maria Margarita Torres. <b>PANORAMA MÍNERO-ECONÔMICO DO PÓLO CERÂMICO DE SANTA GERTRUDES ? SP</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ROVERI, C.D.; ROCHA, Rogers Raphael da ; ZANARDO, Antenor ; MORENO, Maria Margarita Torres. <b>É POSSÍVEL A VIA ÚMIDA UTILIZANDO ARGILAS DA REGIÃO?</b>. 2007. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALBERT, A. S. ; EID, M. A. ; MELO, M. L. N. M. ; SANTOS, R. G.. <b>Simulação Numérica da Solidificação com Fluxo de Calor Radial In: XVII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CHINELATTO, A. S. A. ; TEIXEIRA NETO, Francisco ; CHINELATTO, A. L. ; GELFUSO, M. V. ; THOMAZINI, D.. <b>Sinterização de alumina obtida por síntese química utilizando microondas</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CORREA, E. O.; ALCÂNTARA, N. G. ; TECCO, D. G. ; KUMAR, R. V.. <b>Avaliação da Resistência ao Desgaste de uma Liga Fe-Cr-C-Nb-V Desenvolvida para Solda de Revestimento Duro para Uso sob Condições Altamente Abrasivas</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CORREA, E. O.; ALCÂNTARA, N. G. ; TECCO, D. G. ; KUMAR, R. V.. <b>Desenvolvimento de uma Liga para Solda de Revestimento Duro Reforçada com Carbonetos Complexos</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>GELFUSO, M. V.; ALCÓCER, J. C. A. ; THOMAZINI, D.. <b>Using Internet for Cooperative</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>GIRALDI, T. R.; Ribeiro C ; ESCOTE, M. T. ; LEITE, E. R. ; LONGO, E. ; CHIQUITO, A.J. ; VARELA, J. A.. <b>Production and Characterization of SnO2:Sb Ultrathin filmsby a Layer-by-Layer</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>M. G. Vivas; GIAROLA, V. M. ; de QUEIROZ, A.A.A.. <b>Study of the blood compatibility of polyglycerol dendrimers by using the surface plasmon resonance sensor</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MARIANO, N. A.; LIMA, Alex Pereira de ; MUROLO, João Paulo ; TOMMASELLI, M. A. G.. <b>Efeito da taxa de resfriamento na resistência à corrosão em aços inoxidáveis martensíticos fundidos</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MELO, M. L. N. M. <b>Modelagem da Formação de Microporosidades em Ligas Fundidas de Alumínio (PPG Engenharia e Ciência dos Materiais da Universidade São Francisco)</b>. 2006. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MELO, M. L. N. M. <b>Análise Numérico/Experimental da formação de Microporosidades durante a Solidificação em Ligas de Alumínio (PPG Engenharia Mecânica da FEM/UNICAMP)</b>. 2006. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>PENHALBER, C. A. L. ; PEREIRA, N. H. A. ; MELO, M. L. N. M.. <b>Efeito das Condições de Solidificação na Microestrutura Formada durante a Solidificação de um Aço Inoxidável Ferrítico AISI 430 In: XXVII Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC)</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ROVERI, C.D.; ZANARDO, Antenor ; MOTTA, J.F.M. ; MASSON, Marcos Roberto. <b>Viabilidade de Uso de Argilas Provenientes da MIna Tute (Rio Claro-SP) para a Produção de Revestimentos Cerâmicos Via úmida</b>. 2006. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>SANFELICE, R; David S. dos Santos Jr. ; OLIVEIRA JR., O. N.. <b>Layer-by-layer films with metal nanoparticle</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>SCUTTI, J. A. B. ; GIMENES, R. ; Dellalibera R. J. ; Vendron R. O. ; Castro M. C.. <b>Síntese e Caracterização de um compósito bifuncional Piezoelétrico e não Piezoelétrico P(VDF-TrFE)/BT quanto a Hemocompatibilidade, candidado a Scaffold na Engenharia de Tecidos</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>SCUTTI, J. A. B. ; GIMENES, R. ; Vendron R. O. ; Castro M. C. ; Dellalibera R. J.. <b>Síntese e Caracterização de um compósito bifuncional Piezoelétrico e não Piezoelétrico P(VDF-TrFE)/BT quanto a Hemocompatibilidade</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SOUZA, E. R. C. ; PENHALBER, C. A. L. ; PEREIRA, N. H. A. ; MELO, M. L. N. M.. <b>Comparação entre Microestruturas Brutas de Fusão do Aço Inoxidável AISI 304 e Tratadas Termicamente em Diferentes Condições (CBRAVIC)</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>THOMAZINI, D. ; GELFUSO, M. V.. <b>Caracterização mecânica e ação da água sobre placas compósitas de fibra vegetal em base polimérica segundo normas técnicas</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>ZANARDO, Antenor ; ROVERI, C.D. ; MORENO, Maria Margarita Torres ; IBRAHIM, Liliane ; MARQUES, Leandro G ; MASSON, Marcos Roberto ; MOTTA, J.F.M. ; NATAL, Marcos Natal de Souza ; PRADO, Ana Cândida Almeida. <b>Argilas de Santa Gertrudes: de onde vieram e a razão de sua qualidade</b>. 2006. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GELFUSO, M. V.; TEIXEIRA NETO, Francisco ; THOMAZINI, D.. <b>MICROWAVE SINTERING OF PZT BASED CERAMICS</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GIRALDI, T. R.; Ribeiro C ; CONTI. T.G. ; LONGO, E. ; LEITE, E. R. ; VARELA, J. A.. <b>Layer-by-layer Deposition of ultra thin films SnO2:Sb by spin-coating</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GIRALDI, T. R.; Ribeiro C ; LONGO, E. ; LEITE, E. R. ; VARELA, J. A.. <b>SnO2 ultrathin films processed by colloidal suspension</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Libanori, R. ; Ribeiro C ; GIRALDI, T. R. ; LONGO, E. ; LEITE, E. R.. <b>Photoactivated electronic transference in dye sensitized TiO2 Y2O3 encapsulated nanoparticules</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LOPES, I. P. ; ORLANDI, M. O. ; Ribeiro C ; ESCOTE, M. T. ; GIRALDI, T. R. ; LONGO, E. ; LEITE, E. R.. <b>Investigation on SnO2 nanorods arrays at different reaction times and several substrates</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARIANO, N. A.; STROBEL FILHO, Eloy ; FONSECA, Jefferson. <b>Caracterização microestrutural do aço inoxidável martensítico CA15</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MELO, M. L. N. M. <b>Desenvolvimento e aplicação de um dispositivo para obtenção de solidificação direcional do aço inoxidável AISI 304 (IPT ?SP)</b>. 2005. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MELO, M. L. N. M.; SANTOS, C. A. ; PEREIRA, N. H. A. ; PENHALBER, C. A. L. ; LIMA, C.R.P.. <b>Avaliação dos Modelos de Redistribuição de Soluto na Solidificação Direcional do Aço Inoxidável Austenítico In: XXVI Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC)</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ROVERI, C.D.; PRADO, A.C.A. ; ZANARDO, Antenor ; MOTTA, J.F.M. ; MORENO, Maria Margarita Torres. <b>Variação Mineralógica da Matéria-Prima Proveniente da Formação Corumbataí: Região de Rio Claro - Pólo Cerâmico de Santa Gertrudes - SP</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>THOMAZINI, D. ; TEIXEIRA NETO, Francisco ; GELFUSO, M. V.. <b>Sinterização por microondas de cerâmicas de CaCu3Ti4O12</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FONSECA, Jefferson ; MARIANO, N. A. ; MUROLO, João Paulo ; MADIUTO, Paulo Fernando. <b>Análise do comportamento das propriedades mecânicas da liga CA6NM</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GIRALDI, T. R.; AVELLANEDA, C. ; LONGO, E. ; LEITE, E. R. ; VARELA, J. A.. <b>Development of the nanostructured WO3 thin films</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GIRALDI, T. R.; AVELLANEDA, C. ; LONGO, E. ; LEITE, E. R. ; VARELA, J. A.. <b>Optical and electrochemical properties of SnO2:Sb thin films prepared by polymeric route</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GIRALDI, T. R.; ESCOTE, M. T. ; LONGO, E. ; LEITE, E. R. ; VARELA, J. A.. <b>Effect of Thickness on the Electrical and Optical Properties of Sb Doped SnO2 (ATO) Thin Films</b>. 2004. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>M. G. Vivas; RODRIGUES, A. M. ; TEIXEIRA, H. Z. ; DUARTE, M. A. ; ALMEIDA, A. -C. G.. <b>Modelagem Matemática de Burstings Epileptiformes em Tecidos Neuronais</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MELO, M. L. N. M.; BITTENCOURT, C. S. F. M.. <b>Construção de um Banco de Dados com Propriedades Termofísicas de Ligas Metálicas In: XVI Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MELO, M. L. N. M.; CAMPOS, M. F. ; GOLDENSTEIN, H. ; SANTOS, R. G.. <b>Textura de Solidificação de uma Liga Al-4,5%Cu In: XVI Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MELO, M. L. N. M.; SANTOS, C. A.. <b>Efeito da Taxa de Resfriamento sobre a Microestrutura formada durante a Solidificação Direcional de um Aço Inoxidável Austenítico In: XVI Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ROVERI, C.D. <b>Potencial Econômico de Argilas da Região de Descalvado-SP</b>. 2004. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ROVERI, C.D.; MUZZI, Talita de Oliveira ; MOTTA, J.F.M. ; ZANARDO, Antenor. <b>CARACTERIZAÇÃO REOLÓGICA DE ARGILAS DA FORMAÇÃO CORUMBATAÍ (REGIÃO DE SANTA GERTRUDES), VISANDO AUMENTO DE QUALIDADE DOS PRODUTOS CERÂMICOS PARA EXPORTAÇÃO</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ROVERI, C.D.; PRADO, Ana Cândida de Almeida ; MUZZI, Talita de Oliveira ; MOTTA, J.F.M. ; ZANARDO, Antenor ; MORENO, M.M.T.. <b>DEFLOCULAÇÃO DE ARGILAS PROVENIENTES DE MINAS DO PÓLO CERÂMICO DE SANTA GERTRUDES</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASSANJES, F. C. <b>Seminário: Conversão Ascendente de Energia em Vidros</b>. 2003. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>M. G. Vivas; ALMEIDA, A. -C. G. ; DUARTE, M. A. ; RODRIGUES, A. M.. <b>Modelagem matemática de Burstings epileptiformes em Tecidos Neuronais</b>. 2003. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MARIANO, N. A.; MAY, José Eduardo ; KURI, Sebastião Elias. <b>Processamento de ligas amorfas FeBSiNbCu</b>. 2003. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ROVERI, C.D.; FERRARI, K.R. ; FIGUEIREDO FILHO, Paulo Miranda de ; ZANARDO, Antenor ; BORETTI, E. ; CARVALHO, Sebastião Gomes ; FRADE, Pedro ; ALMEIDA, Marisa. <b>Estudo da Emissão Laboratorial de Flúor em Massas Cerâmicas do Pólo de Santa Gertrudes para Proposição de Medidas Preventivas</b>. 2003. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ROVERI, C.D.; FERRARI, K.R. ; FIGUEIREDO FILHO, Paulo Miranda de ; ZANARDO, Antenor ; CARVALHO, Sebastião G de. <b>Estudo da Viabilidade técnica da utilização de resíduos químicos como aditivos da massa de fabricação de tijolos</b>. 2003. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ROVERI, C.D.; FERRARI, K.R. ; FIGUEIREDO FILHO, Paulo Miranda de ; ZANARDO, Antenor ; CARVALHO, Sebastião Gomes. <b>Reintegração de Resíduos Sólidos à Fabricação de revestimentos cerâmicos e telhas visando diminuição do impacto ambiental</b>. 2003. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ROVERI, C.D.; MOTTA, J.F.M. ; ZANARDO, Antenor. <b>Reintegração Dos Finos Retidos Nos Filtros De Manga A Produção De Revestimentos Via Seca (Aspersão De Barbotina X Adição Do Pó À Seco)</b>. 2003. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ROVERI, C.D.; MOTTA, J.F.M. ; ZANARDO, Antenor. <b>Estudo do Comportamento Reológico de Argilas provenientes da Formação Corumbataí (região de Rio Claro/SP) - Resultados Preliminares</b>. 2003. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GIRALDI, T. R.; BERNARDI, M. I. B. ; LONGO, E. ; LEITE, E. R. ; VARELA, J. A.. <b>Caracterização de filmes de SnO2-Sb obtidos pela técnica de spin-coating</b>. 2002. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GIRALDI, T. R.; WEBER, I. T. ; LISBOA FILHO, P. N. ; LEITE, E. R. ; VARELA, J. A. ; LONGO, E.. <b>Efeito anômalo na sinterização de SnO2:Nb</b>. 2002. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>RODRIGUES, A. M. ; SCALON, J. D. ; ALMEIDA, A. -C. G. ; TEIXEIRA, H. Z. ; DUARTE, M. A. ; M. G. Vivas. <b>A depressão Alastrante Sustentada por mecanismos não-sinápticos - Modelo Matemático</b>. 2002. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>RODRIGUES, G. <b>Determinação de Coeficientes de Expansão Térmica de Fases Via Difração de Raios X em Altas Temperaturas</b>. 2002. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ROVERI, C.D.; FERRARI, K.R. ; ZANARDO, Antenor ; FIGUEIREDO FILHO, Paulo Miranda de. <b>Utilização do Resíduo Sólido Raspa de Esmalte, da Indústria de Revestimentos Cerâmicos, como Aditivo na Massa para Fabricação de Telhas - Resultados Preliminares</b>. 2002. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ROVERI, C.D.; MOTTA, José Francisco Marciano ; ZANARDO, Antenor. <b>Reintegração dos Finos Retidos nos Filtros de Manga a Produção de Revestimentos Via Seca - Resultados Preliminares</b>. 2002. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ROVERI, C.D.; ZANARDO, Antenor. <b>Estudo da Viabilidade do Uso de Matérias Primas das Formações Corumbataí e Irati na Produção de Placas Cerâmicas Tipo Monoporosa</b>. 2002. Apresentação de Trabalho/Simpósio</td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GIRALDI, T. R.; DIBB, A. ; SPAGNOL, P. D. ; VARELA, J. A.. <b>Cinética de sinterização em estágio Inicial de SnO2-MnO2 via Pechini SnO2-MnO2 Via Pechini</b>. 2000. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GIRALDI, T. R.; TEBCHERANI, S. M. ; SPAGNOL, P. D. ; PERAZOLLI, L. A. ; VARELA, J. A. ; LONGO, E.. <b>Sintering studies in MnO2-doped SnO2 ceramics prepared by Pechini process</b>. 2000. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ROVERI, C.D.; MELCHIADES, F.G. ; BOSCHI, Anselmo Ortega. <b>Deformação Piroplástica de Revestimentos Cerâmicos Gresificados</b>. 2000. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASSANJES, F. C. <b>Palestra: Vidros: Antigos materiais com novas aplicações - lasers, fibras ópticas, vitrocerâmicas e filmes finos</b>. 1999. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASSANJES, F. C. <b>Palestra: Vidros: Antigos materiais com novas aplicações - lasers, fibras ópticas, vitrocerâmicas e filmes finos</b>. 1999. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GIRALDI, T. R.; VARELA, J. A. ; BISCARO, R. S. ; TEBCHERANI, S. M. ; LONGO, E. ; PERAZOLLI, L.. <b>Estudo da formação de precipitados nos contornos de grãos no sistema SnO2-ZnO</b>. 1999. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARIANO, N. A.; CALDAS, C. A. S. ; KURI, Sebastião Elias. <b>Relationship between structural changes and corrosion behavior of finemet alloys with diferent Nb contentes</b>. 1999. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ROVERI, C.D.; FONSECA, M. ; MELCHIADES, F.G. ; BOSCHI, Anselmo Ortega. <b>Caracterização Comparativa De Matérias Primas Fundentes</b>. 1999. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ROVERI, C.D.; MELCHIADES, F.G. ; BOSCHI, Anselmo Ortega. <b>Estudo da Deformação Piroplástica em Revestimentos Cerâmicos</b>. 1999. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASSANJES, F. C. <b>Palestra: Novos Materiais para vidros especiais, fibras ópticas e filmes</b>. 1998. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FALCÃO, B. A. A. ; SARAIVA, S. N. R. ; FALCÃO, J. L. A. A. ; SACHS, D ; CUNHA, F. Q. ; LIMA, A. A. M. ; RIBEIRO, R. A. ; BRITO, G. A. C.. <b>Efeito Analgésico da Toxina Pertussis e da Toxina Pertussis Mutante na Hiperalgésias em Patas de Ratos</b>. 1998. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GELFUSO, M. V. <b>letrodos cerâmicos a base de La 0.7 Sr 0.3 MnO3 confeccionados pela técnica de silk-creen</b>. 1998. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GIRALDI, T. R.; TEBCHERANI, S. M. ; PERAZOLLI, L. A.. <b>Influência da concentração do ZnO na sinterização do sistema SnO2-ZnO</b>. 1998. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>GIRALDI, T. R.; VARELA, J. A. ; LONGO, E. ; PERAZOLLI, L. A.. <b>Influência da concentração do ZnO na Sinterização do Sistema SnO2 -ZnO</b>. 1998. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MELO, M. L. N. M.; GALEMBECK, F.. <b>Redução da Permeabilidade da Poliamida-11 por Recristalização dependente da Sorção de Etanol In: XXI Reunião Anual da Sociedade Brasileira de Química (SBQ)</b>. 1998. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PERAZOLLI, L. A. ; BISCARO, R. S. ; GIRALDI, T. R. ; VARELA, J. A. ; LONGO, E.. <b>Obtenção de Cerâmicas densas a base de dióxido de estanho</b>. 1998. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>RAMOS, A. S. <b>Caracterização Microestrutural de Ligas Nb-Al obtidas via redução Aluminotérmica do Nb2O5</b>. 1998. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ROVERI, C.D.; RIBEIRO, A.P. ; OLIVEIRA, M.C.. <b>A influência da Temperatura na Viscosidade de Massas Cerâmicas Líquidas</b>. 1998. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MELO, M. L. N. M.; RIZZO, E. M. S. ; SANTOS, R. G.. <b>Análise dos Modelos Empregados na Determinação da Variação dos Espaçamentos Interdendríticos Primário e Secundário na Solidificação Unidirecional da Liga Al-4,5%Cu In: XII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 1996. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>RAMOS, A. S.; HASHIMOTO, Tomaz Manabu ; SANDIM, H. R. Z.. <b>Produção de um aço ultra-baixo carbono por meio da redução aluminotérmica do Fe2O3 e posterior refino em forno de feixe eletrônico</b>. 1996. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-1992"><h3 class="year">1992</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>RAMOS, A. S.; NUNES, C. A. ; SANDIM, H. R. Z.. <b>Caracterização de ligas V-Al produzidas por redução aluminotérmica</b>. 1992. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SANTOS, R. G. ; MELO, M. L. N. M.. <b>Simulação da Microestrutura de Ligas Metálicas Solidificadas em Diferentes Geometrias In: X Congresso Brasileiro Engenharia e Ciência dos Materiais (CBECIMat)</b>. 1992. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-1990"><h3 class="year">1990</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MELO, M. L. N. M.; SANTOS, R. G.. <b>Simulação da Solidificação de Metais e Ligas através da Aplicação de Métodos Numéricos In: IX Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat)</b>. 1990. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 14/02/2025 18:29:01<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

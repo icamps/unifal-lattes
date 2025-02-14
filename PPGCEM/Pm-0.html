@@ -1,0 +1,355 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de prêmios e títulos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1992,
+2],
+[1994,
+1],
+[1996,
+2],
+[1997,
+1],
+[1998,
+3],
+[1999,
+3],
+[2000,
+2],
+[2001,
+2],
+[2002,
+2],
+[2003,
+6],
+[2004,
+2],
+[2005,
+3],
+[2006,
+11],
+[2007,
+1],
+[2008,
+1],
+[2009,
+2],
+[2010,
+4],
+[2012,
+2],
+[2013,
+2],
+[2014,
+2],
+[2015,
+3],
+[2016,
+2],
+[2017,
+4],
+[2018,
+4],
+[2019,
+1],
+[2020,
+1],
+[2021,
+2],
+[2022,
+1],
+[2023,
+1],
+[2024,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Total de prêmios e títulos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 74<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Prêmio Jabuti Acadêmico, Câmara Brasileira do Livro (CBL).. 2024.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>melhor trabalho da área temática BIOTC - Biotecnologia e Bioprocessos., III - WEndeq.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Prêmio de Melhor Trabalho Apresentado, II Workshop de Quitina e Quitosana.. 2022.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BEST PRESENTATION - 5+1 International Meeting for Researchers in Materials and Plasma Technology (5+1 IMRMPT), Foriston Fundation.. 2021.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bolsista de produtividade em pesquisa, CNPq.. 2021.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Patronesse da turma 2017/1 - BCT, UNIFAL - MG.. 2020.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Paper listado por editores da JPC como importante contribuição na área, Journal of Physical Chemistry.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bolsista de produtividade em pesquisa, CNPq.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Patronesse da turma BCT 2015/2, UNIFAL - MG.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Prêmio Itajubense de Ciência e Tecnologia - "Ciência para reduação de desigualdades", Prefeitura de Itajubá / UNIFEI.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Vencedora do Prêmio Itajubense de Ciência e Tecnologia 2018, na categoria de Pesquisadora Destaque 2018., Universidade Federal de Itajubá e Prefeitura de Itajubá, MG.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>patronesse da Turma 2014/1 do BCT, UNIFAL - MG.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Patronesse da XIII Turma - BCT, UNIFAL - MG.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Prêmio de Melhor trabalho apresentado - Resistência à corrosão da liga Ti-22Si-11B em solução corpórea, 14° Congresso da Sociedade Latino Americana de Biomateriais, Orgãos Artificiais e Engenharia de Teci.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>THE FULBRIGHT VISITING PROFESSOR AWARD, J. William Fulbright Foreign Scholarship Board (FFSB).. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0573457812045902">Antonio Jose Faria Bombard</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Menção Honrosa de Pôster, 22 Congresso Brasilieiro de Engenharia e Ciência de Materiais.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Professora homenageada turma do BCT, UNIFAL - MG.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bolsista de produtividade em pesquisa, CNPq.. 2015.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Paper selected and indicated for Flash Talk (FT) presentation, XII Elafot program.. 2015.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Patronesse da turma 2012/2 do Bacharelado em ciência e Tecnologia, UNIFAL - MG.. 2015.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Menção Honrosa de Pôster, 21 Congresso Brasileiro de Engenharia e Ciência de Materiais.. 2014.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Patronesse da V turma do Bacharelado em ciência e Tecnologia, UNIFAL - MG.. 2014.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Artigo científico em destaque no site da SBPMAT: Estrutura molecular e eletrônica de cromóforos desvendada., SBPMAT.. 2013.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Patrona da IV turma de engenharia da UNIFAL, UNIFAL - MG.. 2013.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Menção Honrosa na VI Conferência Brasileira sobre Temas de Tratamento Térmico na área de Não-Ferrosos, Associação Brasileira de Metalurgia, Materiais e Mineração (ABM).. 2012.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Menção Honrosa no Prêmio CAPES de Teses 2012, CAPES.. 2012.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DOUTORA EM GEOLOGIA REGIONAL, UNIVERSIDADE ESTADUAL PAULISTA "JÚLIO DE MESQUITA FILHO".. 2010.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Outsdanding Paper Award - 1st Youth Conference on Fusion Energy, Daejeon, Coréia do Sul., IAEA.. 2010.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Poster of Merit in the 2010 International Conference on Powder Metallurgy & Particulate Materials - PowderMet 2010, Metal Powder Industries Federation.. 2010.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Who's Who in the World, Edition 2010, Marquis Who's Who.. 2010.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>1º Lugar na prova de subida de rampa na competição SAE/Petrobras de minibaja, SAE e Petrobrás.. 2009.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Aprovado em 1º lugar no Concurso Público para Professor de 3º grau, Adjunto I - DE na Universidade Federal de Alfenas, UNIFAL - Universidade Federal de Alfenas.. 2009.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Melhor trabalho Oral na área de Ciências Exatas, USF.. 2008.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Trabalho Destaque apresentado no IV Congresso Brasileiro de Carbono, Carbono Brasileiro de Carbono.. 2007.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Aprovada em Concurso Público de Títulos e Provas para Professor Assistente em RIDP, UNESP - Campus de Presidente Prudente, Faculdade de Ciências e Tecnologia.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Aprovada em Concurso Público para a carreira Docente do Magistério do Ensino Superior, Universidade Estadual de Maringá.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Aprovado em concurso publico para a função de Professor Adjunto na area de Quimica Inorgânica, Departamento de Fisica, Quimica e Biologia da UNESP-Presidente Prudente.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Aprovado em concurso publico para a função de Professor Adjunto na area de Quimica Inorgânica, Departamento de Quimica Geral e Inorgânica - Instituto de Quimica - UNESP - Araraquara.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Certificado de honra ao mérito por ter concluído o curso de engenharia química em 1º lugar na 46ª turma, Escola de Engenharia de Lorena - EEL - USP.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Certificado de honra ao mérito por ter se destacado em 1º lugar no curso de Engenharia Química, CREA-SP Conselho Regional de Engenharia, Arquitetura e Agronomia de São Paulo.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Diploma de melhor aluno no curso, Conselho Regional de Química - IV Região.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Melhor trabalho Oral na área de Ciências Exatas, apresentado no XII Encontro de Iniciação Científica, VI Encontro de Pós Graduação e I Encontro de Extensão Comunitária, USF.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MENÇÃO HONROSA MATERIAIS, Society of Automotive Engineers/ SAE Brasil.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Prêmio Incentivo à Aprendizagem de Engenharia Química no Brasil, Oxiteno S.A. Indústria e Comércio e ABEQ - Associação Brasileira de Engenharia Química.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Prêmio instituto de Engenharia, Instituto de Engenharia.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GEÓLOGA, UNIVERSIDADE ESTADUAL PAULISTA "JÚLIO DE MESQUITA FILHO".. 2005.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Menção Honrosa como orientadora de trabalho, UNIFOR.. 2005.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Prêmio de Excelência e Pesquisa para Controle da Dor., da Associação Internacional para Estudo da Dor (IASP).. 2005.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Aprovada em Concurso Público de Títulos e Provas para Professor Assistente, UNESP - Faculdade de Engenharia do Campus de Ilha Solteira.. 2004.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Aprovada em quinto lugar no concurso para professor doutor MS-3 DE, EESC - USP (Departamento de Eng. de Materiais, Aeronáutica e Automobilística).. 2004.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Aprovado em 1º lugar no Concurso Público para Pesquisador nível IV no IPT, IPT - SP.. 2003.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Aprovado em 1º lugar no Concurso Público para Professor de 3º grau (Adjunto A), 40 h DE, na UESC, Universidade Estadual de Santa Cruz.. 2003.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Melhor Painel do Setor de Farmacologia da Inflamação e da Dor no XXXV Congresso Brasileiro de Farmacologia e Terapêutica Experimental, Sociedade Brasileira de Farmacologia e Terapêutica Experimental (SBFTE).. 2003.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Menção Honrosa -orientadora de trabalho- 3o lugar- IX Encontro de Inic à Pesquisa, UNIFOR.. 2003.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Menção Honrosa como co-autor de trabalho- 1o lugar- IX Encontro de Inic à Pesquisa, UNIFOR.. 2003.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Trabalho recomendado para participação na 11ª Jornada Nacional de Iniciação Científica da Sociedade Brasileira para o Progresso da Ciência - SBPC, Universidade Federal de São João del-Rei.. 2003.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Melhor Painel do Setor de Farmacologia da Inflamação e da Dor no XXXIV Congresso Brasileiro de Farmacologia e Terapêutica Experimental, Sociedade Brasileira de Farmacologia e Terapêutica Experimental (SBFTE).. 2002.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>TRAVEL FELLOWSHIP, EUROPEAN SOCIETY FOR BIOMATERIALS.. 2002.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Menção Honrosa-2o Lugar no 1o Encontro de In. Científica e Tecnol.-CEFET-Ce, CEFET-Ce.. 2001.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Patrono da Turma de Engenharia Mecanica, FENVA / UEMG.. 2001.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Melhor Trabalho - VII Jornada de Iniciação Científica da EFEI, UNIFEI.. 2000.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Professor homenageado, FENVA-UNIS/UEMG.. 2000.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Menção honrosa para trabalho finalista - Concurso Cientistas do Amanhã, Sociedade Brasileira para o Progresso da Ciência.. 1999.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Professor homenageado, FENVA-UNIS/UEMG.. 1999.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Prêmio Jovem Pesquisador - VII CIC UFSCar, UFSCar.. 1999.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Prêmio de melhor painel pelo trabalho Eu3+ como agente nucleante em vidros teluritos, 21a Reunião Anual da Sociedade Brasileira de Química.. 1998.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Prêmio Lavoisier, Conselho Regional de Química de São Paulo e CENATEC SENAI MÁRIO AMATO.. 1998.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Técnica em Cerâmica, CENATEC SENAI MARIO AMATO.. 1998.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-1997"><h3 class="year">1997</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ceramografia- 1o Lugar, Associação Brasileira de Cerâmica.. 1997.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BRASIMET- Melhor trabalho na Área de Metalurgia Física, Associação Brasileira de Metalurgia, Materiais e Mineração (ABM).. 1996.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Premio Jovem Pesquisador, UFSCar.. 1996.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            </table></div><div id="dv-year-1994"><h3 class="year">1994</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Diploma de Honra ao Mérito, como melhor aluna da VIII Turma de Farmácia Bioquímica, Universida de Ribeirão Preto - UNAERP.. 1994.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            </table></div><div id="dv-year-1992"><h3 class="year">1992</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Melhor Aluno do Curso de Aprendizagem Industrial - Eletricista Manutenção, SENAI.. 1992.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Monitoramento de Crescimento de Trincas Utilizando a Técnica de Queda de Potencial AC, CONGRESSO DE PÓS-GRADUAÇÃO EM CIÊNCIA E ENGENHARIA DE MATERIAIS.. 1992.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 14/02/2025 18:29:01<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

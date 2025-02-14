@@ -1,0 +1,209 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Monografia de conclusão de curso de aperfeiçoamento/especialização'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2008,
+4],
+[2010,
+7],
+[2011,
+1],
+[2013,
+2],
+[2014,
+1],
+[2022,
+4],
+[2023,
+3],
+[2024,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Monografia de conclusão de curso de aperfeiçoamento/especialização</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 23<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MARIA CAIANE LINO DE SOUZA. <b>LIPOSSOMAS ASSOCIADOS AO FARNESOL: ESTUDO IN VITRO E INVESTIGAÇÃO DA ATIVIDADE ANTIMICROBIANA E ANTIBIOFILME</b>. (Aperfeiçoamento/Especialização em Ciências Biológicas) - Universidade Federal de Itajubá, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Luciana Santos Pereira. <b>Grade control em minerações de níquel</b>. (Aperfeiçoamento/Especialização em CEEM - Curso de Especialização em Engenharia de Minas) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Matheus da Silva Soares. <b>Caracterização Tecnológica de Calcário</b>. (Aperfeiçoamento/Especialização em CEEM - Curso de Especialização em Engenharia de Minas) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Vítor Luiz Pereira. <b>Estudo de Viabilidade de Uso de Basalto no Mercado de Rochas Ornamentais</b>. (Aperfeiçoamento/Especialização em CEEM - Curso de Especialização em Engenharia de Minas) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adriano Santos Delgado de Oliveira. <b>Caracterização do rejeito de Cassiterita em Rondônia</b>. (Aperfeiçoamento/Especialização em CEEM - Curso de Especialização em Engenharia de Minas) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>André Ferreira Silva. <b>CARACTERIZAÇÃO TECNOLÓGICA DO MINÉRIO DE LÍTIO DO PEGMATITO DA MINA DE VOLTA GRANDE, NAZARENO, MINAS GERAIS</b>. (Aperfeiçoamento/Especialização em CEEM - Curso de Especialização em Engenharia de Minas) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Gustavo Silva Paulo. <b>Caracterização Tecnológica de Argilas, Comparação entre Blendes Objetivando Otimização Logística</b>. (Aperfeiçoamento/Especialização em CEEM - Curso de Especialização em Engenharia de Minas) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Ricardo Ribeiro Rizério. <b>Panorama do mercado de Magnesita na Bahia</b>. (Aperfeiçoamento/Especialização em CEEM - Curso de Especialização em Engenharia de Minas) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Luiz Alexandre Trevisani Negrinho Gonçalves. <b>Aplicação de indicadores de desempenho no processo de atualização do plano de manutenção de aeronaves executivas (categoria transportes)</b>. (Aperfeiçoamento/Especialização em Curso de Especialização em Manutenção Aeronáutica) - Universidade Federal de Itajubá, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Fábio Mello de Campos. <b>Filosofia do MSG e a evolução dos manuais de manutenção com foco na diminuição da indisponibilidade das aeronaves e asas rotativas</b>. (Aperfeiçoamento/Especialização em Curso de Especialização em Manutenção Aeronáutica) - Universidade Federal de Itajubá, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Fábio Silva Nunes. <b>Vantagens da aplicação de materiais compósitos em motores aeronáuticos do tipo Turbofan</b>. (Aperfeiçoamento/Especialização em Curso de Especialização em Manutenção Aeronáutica) - Universidade Federal de Itajubá, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Maria Aparecida Prezoto. <b>Design Instrucional Aplicado Ao Curso Virtual: Projeto Político-Pedagógico Escolar</b>. (Aperfeiçoamento/Especialização em Design Instrucional para EaD Virtual: Tecnologias,) - Universidade Federal de Itajubá, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Karin Rumiko Kagi. <b>Design instrucional aplicado ao curso virtual ?Capacitação para comunicadores do Instituto Federal de São Paulo - IFSP</b>. (Aperfeiçoamento/Especialização em Design Instrucional para EaD Virtual: Tecnologias,) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Marcos Benedito Martins de Oliveira. <b>DESIGN INSTRUCIONAL DO CURSO VIRTUAL: ?A Informática e seus Recursos</b>. (Aperfeiçoamento/Especialização em Design Instrucional para EaD Virtual: Tecnologias,) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Nauraína Jurema dos Santos Lima. <b>DESIGN INSTRUCIONAL VIRTUAL DO CURSO ESCRAVIDÃO NO BRASIL</b>. (Aperfeiçoamento/Especialização em Design Instrucional para EaD Virtual: Tecnologias,) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Patrícia Rodrigues Carvalho dos Reis. <b>CURSO VIRTUAL NOÇÕES BÁSICAS DE EQUOTERAPIA</b>. (Aperfeiçoamento/Especialização em Design Instrucional para EaD Virtual: Tecnologias,) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Rosana Conceição Toricelli. <b>: DESIGN INSTRUCIONAL VIRTUAL DO CURSO Principais Ecossistemas Brasileiros</b>. (Aperfeiçoamento/Especialização em Design Instrucional para EaD Virtual: Tecnologias,) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Rosmeri Silva de Almeida. <b>DESIGN INSTRUCIONAL DO CURSO VIRTUAL: MEIO AMBIENTE E CIDADANIA</b>. (Aperfeiçoamento/Especialização em Design Instrucional para EaD Virtual: Tecnologias,) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Vanderci Aparecida Lustosa Janussi. <b>DESIGN INSTRUCIONAL DO CURSO DOCÊNCIA EM SALA DE ALFABETIZAÇÃO</b>. (Aperfeiçoamento/Especialização em Design Instrucional para EaD Virtual: Tecnologias,) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>José Benedito de Souza. <b>Proposição de um curso de especialização em odontologia social, modalidade EaD</b>. (Aperfeiçoamento/Especialização em Design Instrucional - EAD) - Universidade Federal de Itajubá, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Vanilda Aparecida Belizário Marques. <b>Aquecimento Global e problemas ambientais latentes</b>. (Aperfeiçoamento/Especialização em Design Instrucional - EAD) - Universidade Federal de Itajubá, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Wanuil Gonçalves de Souza. <b>Especialização em saúde coletiva</b>. (Aperfeiçoamento/Especialização em Design Instrucional - EAD) - Universidade Federal de Itajubá, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Wilson Roberto Martani. <b>Projeto de design instrucional do curso ?a questão ambiental do planeta terra ? problemas e soluções?, na modalidade educação a distância, via internet</b>. (Aperfeiçoamento/Especialização em Design Instrucional - EAD) - Universidade Federal de Itajubá, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 14/02/2025 18:29:01<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

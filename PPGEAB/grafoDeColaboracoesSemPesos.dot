@@ -19,7 +19,7 @@ strict graph grafo1 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Luiz Alberto Beijo [39]",
+		label="Luiz Alberto Beijo [40]",
 		pos="386,181.5",
 		width=1.7778];
 	0 -- 1	 [pos="348.65,227.78 356.88,217.59 369.18,202.35 377.39,192.17"];
@@ -27,7 +27,7 @@ strict graph grafo1 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Davi Butturi Gomes [4]",
+		label="Davi Butturi Gomes [5]",
 		pos="293,124.5",
 		width=1.8056];
 	0 -- 2	 [pos="332.8,227.8 326.86,218.61 318.54,204.86 313,192 304.68,172.7 298.51,148.86 295.36,135.3"];

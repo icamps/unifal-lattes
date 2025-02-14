@@ -1,0 +1,315 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de organização de eventos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2002,
+2],
+[2003,
+2],
+[2004,
+1],
+[2005,
+1],
+[2006,
+2],
+[2007,
+2],
+[2008,
+3],
+[2010,
+1],
+[2011,
+7],
+[2012,
+6],
+[2013,
+2],
+[2014,
+2],
+[2015,
+2],
+[2016,
+1],
+[2017,
+2],
+[2018,
+1],
+[2019,
+2],
+[2022,
+2]]}]});
+        });
+        </script>
+        
+                <h3>Total de organização de eventos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 66<br>
+                    
+                    
+                    <div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>de Andrade, F. V.; FREITAS NETO, E. S. ; SIQUEIRA, G. O. ; NAKAGOMI, F. ; FREITAS, M. R. ; MONTORO, L. A. ; LEITAO, A. A. ; VIANA, M. M. ; MAZZONI, M. S. C.. <b>I Workshop do Grupo de Pesquisa em Materiais e Nanociências - GPMN</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MAESTRELLI, S. C.; Roveri, C.D. ; Magalhães, A.O. B. ; RODRIGUEZ, R. P. ; Siqueira. T.G. <b>III GIAU - Gincana de Alunos da UNIFAL-MG (Presencial)</b>. 2022. Outro</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>NONI JR., A. ; Magrini, A. ; Vieira, C.M.F. ; Roveri, C.D. ; FREDERICCI, C. ; CENA, Cicero ; Lazar, D.R.R. ; Rigo, E.C.S. ; PEREIRA, F.R. ; Ortega, F.S. ; Melo, F.C.L. ; YOSHIMURA, H. N. ; Marchi, J. ; SILVA, Luciano Luis da ; AKERMAN, M. ; ROCHA, R. A. ; ROCHA, R. M. ; Oliveira, R.M.P. ; Ribeiro, S. ; Justo, V.F. ; et.al. <b>Comissão Técnica do 63 Congresso Brasileiro de Cerâmica</b>. 2019. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Roveri, C.D.; CARVALHO JR, O.A. ; GAMA, T. ; MOTA, M.. <b>Semana Nacional de Ciência e Tecnologia UNIFAL-MG: Campus Poços de Caldas</b>. 2019. Outro</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Marques, M.J. ; Roveri, C.D. ; Colombo, F.A.. <b>IV SIMPÓSIO INTEGRADO UNIFAL-MG</b>. 2018. Outro</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>RAMOS, ALFEU S.; E.C.T. Ramos ; Mariano, N. A. ; GUNNEWIEK, R. F. K. ; MALAFAIA, A. M. S. ; RODRIGUES, G. ; MAZZER, E.. <b>I Encontro Anual da Redmat</b>. 2017. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>PRADO, U.S. ; Passos, E.R. ; Roveri, C.D. ; Salomão, R.. <b>IX ERUR - Encontro de Refrataristas e Usuários de Refratários</b>. 2017. Congresso</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>SOUSA, A. P. G. ; ANDRADE, F. V.. <b>Semana Acadêmica e Mostra das Profissões 2016 da Faculdade Ciências da Vida</b>. 2016. Exposição</td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DEL ROVERI, CAROLINA; Magalhães, A.O.B.F. ; Rusilo, L.C. ; Bergerman, M.G. ; Magalhães, T. ; Rodriguez, R.P. ; NAVARRO, FABIANO C.. <b>I Workshop de Educação em Engenharia de Minas</b>. 2015. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Horta, D.G. ; Bergerman, M.G. ; DEL ROVERI, CAROLINA ; NAVARRO, FABIANO C. ; Magalhães, A.O.B.F. ; Magalhães, T. ; Rodriguez, R.P.. <b>XXVI Encontro Nacional de Tratamento de Minérios</b>. 2015. Congresso</td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>SACHS, D; PERES, M. L. ; MOURA FILHO, F.. <b>II Workshop de Materiais para Engenharia</b>. 2014. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SILVA, C. E. S. ; MELO, M. L. N. M. ; SILVA, G.. <b>XXI Congresso de Pesquisa: Pós-Graduação e Mercado de Trabalho ? Pró-Reitoria de Pesquisa e Pós-Graduação (PRPPG) da Universidade Federal de Itajubá (UNIFEI)</b>. 2014. Congresso</td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Roveri, C.D. ; MAESTRELLI, S. C. ; mendes, R.A. ; Quaglio. O. A. ; MENDES, P. N.. <b>II Jornada cienctífica do INSTITUTO DE CIÊNCIA E TECNOLOGIA</b>. 2013. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SILVA, C. E. S. ; SILVA, G. ; MELO, M. L. N. M. ; MACHADO, A. M. B. ; RIBEIRO, S. M. B.. <b>XX Congresso de Pesquisa: Propriedade Intelectual - Pró-Reitoria de Pesquisa e Pós-Graduação (PRPPG) da Universidade Federal de Itajubá (UNIFEI)</b>. 2013. Congresso</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DAMIÃO, A. J. ; AMORIM, A. ; GOBBI, A. L. ; GRANDINI, C. R. ; MORO, J. R. ; SILVA, L. R. ; MELO, M. L. N. M. ; BAGNATO, O. R. ; NASCENTE, P. A. P. ; SERAPHIM, R. M. ; STEMPNIAK, R. A. ; MOTA, R. P. ; ALMEIDA, V. R.. <b>XXXIII Congresso Brasileiro de Aplicação do Vácuo na Indústria e na Ciência (CBRAVIC), Instituto de Estudos Avançados em Aeronáutica e Associação Brasileira do Vácuo</b>. 2012. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MAESTRELLI, S. C.; Roveri, C.D. ; Mariano, N. A.. <b>Seminário de Iniciação Científica 2012 - campus Poços de Caldas</b>. 2012. Outro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MARIANO, N.A.; FERRACO, F. ; FRESCHI, G. P. G. ; BERGERMAN, M. G. ; Fernandes, R.S. ; MAESTRELL, S. C.. <b>Comissão de Organização - Campus de Poços de Caldas do SeminÀrio de Iniciação Científica da UNIFAL-MG</b>. 2012. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARTINS, K. C. R. ; RODRIGUES, J. R. P. ; SOUZA JÚNIOR, P. A. ; SOUZA, M. E. P. ; GONÇALVES, R. S. ; SÁ, S. M. O. ; MORAES, E. C. ; OLIVEIRA, F. L. ; MEDEIROS, M. A. ; MELO, M. L. N. M. ; ROLEMBERG, M. P. ; RODRIGUES, J. R. P. ; SILVA FILHO, J. C. ; PAIVA, A. E. M. ; SILVA, J. A. ; PEREIRA, V. S. ; CABEÇA, M. C. S. ; SERRA, G. L. O. ; TEIXEIRA, M. P. S. S. ; ABREU, I. S. ; et.al. <b>VII Congresso Nacional de Engenharia Mecânica (CONEM) - Universidade Estadual do Maranhão, Instituto Federal de Educação, Ciência e Tecnologia do Maranhão e a Universidade Federal do Maranhão e Associação Brasileira de Engenharia e Ciências Mecânicas</b>. 2012. Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Medina R ; Silva L.F. ; Filho N.F. ; Junior M.F.R ; Rubinger, R. M. ; Pavan A.S. ; Leo A.B.B. ; Alves M.E.S.. <b>Encontro Mineiro de Física</b>. 2012. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SOUZA, A. D. G. ; ROVERI, C.D. ; SANCINETTI, G. P.. <b>O Aterro Controlado de Poços de Caldas, MG - Projetos Multidisciplinares - Integração do Conhecimento</b>. 2012. Outro</td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GELFUSO, M. V.; MELO, M. L. N. M. ; THOMAZINI, D. ; RODRIGUES, G. ; CORREA, E. O.. <b>XXII Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência - CBRAVIC</b>. 2011. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GIMENES, R.; SILVA, M. R. A. ; Baldissera, M. R. ; CARVALHO, A. C. M. ; RUBINGER, R. M.. <b>Congresso Brsileiro de Aplicações de Vácuo na Industria e na Ciência</b>. 2011. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GIRALDI, T. R.; MENDES, R. A.. <b>4a Mostra Piepex e de Projetos Multidisciplinares</b>. 2011. Exposição</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MELO, M. L. N. M.; MORO, J. R. ; MAMMANA, A. P. ; CARVALHO, A. C. M. ; BALDISSERA, M. R. ; SILVA, M. R. A. ; CORRÊA, E. O. ; RODRIGUES, G. ; THOMAZINI, D. ; GELFUSO, M. V. ; AMORIM, A. ; RODRIGUES, J. R. P. ; SILVA, G. ; RUBINGER, R. M. ; CHAVES, R.R. ; SILVA, R. J. ; GIMENES, R. ; DAMIÃO, A. J. ; GOBBI, A. L. ; RODRIGUES JUNIOR, D. ; et.al. <b>XXXII Congresso Brasileiro de Aplicação do Vácuo na Indústria e na Ciência (CBRAVIC) e Latindisplay 2011 - Universidade Federal de Itajubá, Sociedade Brasileira do Vácuo e Associação Brasileira de Informática</b>. 2011. Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Melo, M.L.N.M ; CORREA, E. O. ; Thomazini, D. ; CHAVES, R. R. ; Kabayama, L.K. ; Rodrigues, G. ; Rubinger, R.M. ; GELFUSO, M. V.. <b>XXXII Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência</b>. 2011. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Moro JR ; Rubinger, R. M.. <b>XXXII CBRAVIC Latin Display</b>. 2011. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Raissa Fontelas Rosado Gambi ; Sylma Carvalho Maestrelli ; Osvail André Quaglio ; ROVERI, C.D. ; Maria Emília Torres. <b>GIAUzinha - Gincana dos Alunos da UNIFAL-MG: Atividades culturais e de Integração no Campus Avançado de Poços de Caldas</b>. 2011. Outro</td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>M. G. Vivas; P. H. D. Ferreira ; MARTINS, R. J. ; MENDONCA, C. R.. <b>III Escola Avançada de Óptica e fotônica</b>. 2010. Outro</td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>COSTA, Sandra M. F. ; CARVALHO, R. A. ; RAMOS, A. S.. <b>XII Encontro Latino Americano de Iniciação Científica e VIII Encontro Latino Americano de Pós Graduação e II Encontro Latino Americano Júnior</b>. 2008. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>M. G. Vivas; Mendonça, C. R.. <b>II Escola Avançada de Óptica e fotônica</b>. 2008. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MAESTRELLI, S. C.; CORTES, E. P.. <b>Ciclo de Estudos das Engenharias da POLICAMP</b>. 2008. Outro</td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PACHECO, Marcos Tadeu Tavares ; Zângaro, Renato A. ; NICOLAU, Renata A. ; RAMOS, A. S.. <b>XI Encontro Latino Americano de Iniciação Científica, VII Encontro Latino Americano de Pós-Graduação e I Encontro Latino Americano de Iniciação Cientíifica do Ensino Médio</b>. 2007. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ROVERI, C.D.; Alessandra Gomes ; Ana Beatriz de Paula ; Daniele Tokunaga Genaro ; PERINOTTO, José Alexandre de Jesus ; MORALES, Norberto. <b>I ENCONTRO DA PÓS-GRADUAÇÃO EM GEOCIÊNCIAS: O PAPEL DA PÓS-GRADUAÇÃO NO ANO INTERNACIONAL DO PLANETA TERRA</b>. 2007. Outro</td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BONOTTO, D. M. ; ROVERI, C.D.. <b>V JORNADA DE PESQUISA DA PÓS GRADUAÇÃO EM GEOLOGIA REGIONAL</b>. 2006. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Zângaro, Renato A. ; MAGINI, Marcio ; PACHECO, Marcos Tadeu Tavares ; RAMOS, A. S.. <b>X Encontro Latino Americano de Iniciação Científica e VI Encontro Latino Americano de Pós Graduação</b>. 2006. Congresso</td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Zângaro, Renato A. ; Barbosa, Francisco P. ; PACHECO, Marcos Tadeu Tavares ; RAMOS, A. S.. <b>IX Encontro Latino Americano de Iniciação Científica e V Encontro Latino Americano de Pós Graduação</b>. 2005. Congresso</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>THOMAZINI, D. ; GELFUSO, M. V. ; CAVALCANTI, M. D. S. ; CARVALHO, A. C. B. D. ; BARROSO, Ivson. <b>III Competição de Veículos Mecatrônicos</b>. 2004. Concurso</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MEDEIROS, D. ; NEVES, S. ; MELO, M. L. N. M.. <b>IX Encontro de Iniciação Científica e II Encontro de Pós-Graduação Stricto Sensu da Universidade São Francisco</b>. 2003. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>THOMAZINI, D. ; GELFUSO, M. V. ; CAVALCANTI, M. D. S. ; CARVALHO, A. C. B. D. ; BARROSO, Ivson. <b>II Competição de Veículos Mecatrônicos</b>. 2003. Concurso</td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GELFUSO, M. V.; THOMAZINI, D. ; CAVALCANTI, M. D. S. ; CARVALHO, A. C. B. D. ; BARROSO, Ivson. <b>I Competição de Veículos Mecatrônicos</b>. 2002. Concurso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MEDEIROS, D. ; MELO, M. L. N. M.. <b>VIII Encontro de Iniciação Científica e I Encontro de Pós-Graduação Stricto Sensu da Universidade São Francisco</b>. 2002. Outro</td></tr>
+            </table></div><div id="dv-year-*itens sem ano"><h3 class="year">*itens sem ano</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Cassanjes, F.C. Despertando a Ciência e a Aprendizagem Colorida. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CORREA, E. O.. Member of the Review Comitee of the 1ª International Conference of Materials Science - ICMS 2015. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CORREA, E. O.. Membership of the Scientific Committees and Editorial Review Boards of the World Academy of Science, Engineering and Technology - WASET. 2014. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CORREA, E. O.. Scientific Committee of the ICWNDT2014 - International Conference on Welding and Nondestructive Testing. 2013. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CORREA, E. O.; CORREA, E. O. ; 5th International conference on contemporary advances in mechanical engineering - ICCAME 2024. 2024. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CORREA, E. O.; CORREA, E. O. ; VI Simposio de Iniciação Científica da UNIFEI. 2023. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>GELFUSO, M. V.. 21 Congresso Brasileiro de Engenharia e Ciência dos Materiais ? CBECiMat. 2014. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>GELFUSO, M. V.. Comissão Técnica do 22 CBECIMaT. 2016. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>GELFUSO, M.V.. Comissão Técnico-Científica do 24 CBECIMaT. 2022. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MAESTRELLI, S. C.. SEmana Nacional de Ciência e Tecnologia. 2009. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MAESTRELLI, S. C.. XXVI Encontro Nacional de Tratamento de Minérios e Metalurgia Extrativa. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Maestrelli, S.. 59 Congresso Brasileiro de Cerãmica. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MARIANO, N. A.. II Encontro Nacional e Tecnologia e Inovação em Matérias, ENTIM. 2001. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MARIANO, N. A.. X Congresso de Iniciação Científica. 2004. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MARIANO, N. A.. XIV Encontro de Iniciação Científica, VII Encontro de Pós-Graduação e III Encontro de Extensão. 2008. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>MARIANO, N. A.. XV Encontro de Iniciação Científica, VIII Encontro de Pós-Graduação e IV Encontro de Extensão. 2009. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>RAMOS, A. S.. XXII Congresso de Iniciação Científica da UNESP. 2010. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>RODRIGUES, G.. II COLÓQUIO TÉCNICO-CIENTÍFICO DO UniFOA. 2008. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>RODRIGUES, G.. II Workshop do Centro de Hidrogênio Verde - CH2V UNIFEI. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>RODRIGUES, G.. III COLÓQUIO TÉCNICO CIENTÍFICO do UniFOA. 2009. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>RODRIGUES, G.. XXXII Congresso Brasileiro sobre aplicação do Vácuo na Indústria e na Ciência (XXXII CBRAVIC) e LatinDisplay 2011. 2011. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>RODRIGUES, GEOVANI. I Workshop do Centro de Hidrogênio Verde - CH2V UNIFEI. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Sylma Carvalho Maestrelli. GIAUzinha - Gincana dos alunos da UNIFAL - MG: atividades culturais e de integração no campus avançado de Poços de Caldas. 2011. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Sylma Carvalho Maestrelli. Seminário de Oportunidades Togni. 2012. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>VIVAS, M. G.. III Workshop do Programa de Pós-graduação em Física da UNIFAL/UFSJ. 2022. (Congresso).. <b></b>. 0. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 14/02/2025 18:29:01<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

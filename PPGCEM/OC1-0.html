@@ -1,0 +1,333 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Tese de doutorado'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2005,
+1],
+[2006,
+1],
+[2010,
+1],
+[2011,
+1],
+[2014,
+1],
+[2015,
+1],
+[2016,
+9],
+[2017,
+8],
+[2018,
+11],
+[2019,
+10],
+[2020,
+2],
+[2021,
+10],
+[2022,
+7],
+[2023,
+10],
+[2024,
+5]]}]});
+        });
+        </script>
+        
+                <h3>Tese de doutorado</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 78<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8138833739265123">EDUARDO SERAFIM SILVA</a>. <b>RELAÇÃO DO CONTROLE DA POROSIDADE COM A BIOCOMPATIBILIDADE DAS LIGAS TI-2SI-1B E TI-6SI-3B OBTIDAS POR MOAGEM DE ALTA ENERGIA</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>, <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5814994761410263">Gislene Batista</a>. <b>NIOBIUM AND TANTALUM-BASED PHOSPHATE GLASSES AND GLASS-CERAMICS FOR PHOTONIC APPLICATIONS</b>. Tese (Doutorado em Química) - Universidade Federal de Alfenas, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2550001088673319">Lucas Ramon Roque da Silva</a>. <b>EXPERIMENTAL ANALYSIS OF ECO-FRIENDLY MORTAR WITH INDUSTRIAL WASTE?</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9340661918321687">Lívia Cecília dos Passos Araújo</a>. <b>Tecnologia verde para estabilização termo-oxidativa de isoladores de silicone</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9783590645476319">Ágata Mayara Paula Pontes</a>. <b>Estudo da influência do Al em ligas refratárias de multicomponentes principais, à base de CrMoNbTiW e CrMoNbW, obtidas pelos processos de fusão a arco e mechanical alloying</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Gabriela Storion. <b>ESTUDO DE PARÂMETROS QUE ENVOLVEM A OBTENÇÃO DE PEÇAS DE ÓXIDO DE ZINCO A PARTIR DA TÉCNICA FLASH SINTERING</b>. Tese (Doutorado em Engenharia e Ciência de Materiais) - USP - FZEA, Fundação de Amparo à Pesquisa do Estado de São Paulo. 2023.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Anderson Wesley da Cruz. <b>FORMAÇÃO DE REVESTIMENTOS PROTETIVOS PARA ALTAS TEMPERATURAS NO AÇO INOXIDÁVEL MARTENSÍTICO X22 UTILIZANDO A TÉCNICA HAPC</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7341208763545711">Angelo de Souza</a>. <b>Estudo da Progressão de Danos em Materiais Compósitos (Fibra de Carbono/Epóxi) sob Fadiga em Compressão</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Caroline Moraes da Cruz. <b>Estudo da biomineralização aplicada a concretos de construção civil e sua viabilidade tecnológica</b>. Tese (Doutorado em Engenharia e Ciência de Materiais) - USP - FZEA, . 2023.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7336322947145042">Diego Morais Junqueira</a>. <b>Influência da inserção de fios de memória de forma em materiais compósitos na resposta ao impacto</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Edwin Gilberto Medina Bejarano. <b>Projeto e construção de um equipamento Jominy instrumentado visando a previsão das propriedades mecânicas em função da taxa de resfriamento e Modelamento numérico‐computacional das transformações de fase nos tratamentos térmicos de aços</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5181538882918032">Filipe Augusto Gaio de Oliveira</a>. <b>NFLUÊNCIA DA FASE β-Al5FeSi NO PROCESSO DE TORNEAMENTO CILÍNDRICO DE UMA LIGA A356-T6 RECICLADA</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2949963164775846">Flavio Amaury Freitas Matos</a>. <b>Avaliação da corrosão eletroquímica dos metais duros WC-Ni-Al , WC-Ni-Si e WC-Co produzidos por metalurgia do pó convencional</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3438535171014247">Glauber Zerbini Costal</a>. <b>Dispositivos de armazenamento de energia de alta performance a base de nanotubos de carbono de paredes múltiplas</b>. Tese (Doutorado em Programa de Pós-Graduação em Materiais para Engenharia) - Universidade Federal de Itajubá-Campus de Itabira, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9330470036613511">Francisco Moura Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9521858553317912">Larissa Mayra Silva Ribeiro</a>. <b>ELETROFIAÇÃO NFES ASSOCIADA À IMPRESSÃO 3D: SÍNTESE DE SCAFFOLDS DE P(VDF-TrFE)/BaTiO3</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1785298761573425">Daniel Brighenti Bortoluzzi</a>. <b>Development of tridimensional carbon fiber/epoxy composites reinforced through the thickness and the mechanical characterization of interlaminar fracture toughness and vibration properties</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0432790306636052">Jose Nilson da Conceição</a>. <b>Estudo dos efeitos dos tratamentos de solubilização e envelhecimento nas propriedades mecânicas e na resistência à corrosão de tubos de aço inoxidável superduplex UNS S39274</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4908045776059662">João Ider Silva Júnior</a>. <b>Preparation and characterization of thermoelectric materials</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1123598835707364">Rero Marques Rubinger</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0527140627655800">Juan Oswaldo Montoya Uribe</a>. <b>Influência da microestrutura e da atmosfera de sinterização nas propriedades dielétricas de cerâmicas a base de CaCu3Ti4O12 obtidas em forno convencional e de micro-ondas</b>. Tese (Doutorado em Doutorado em Materiais para Engenharia) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8622484781616780">Marcelo Luiz Siqueira</a>. <b>?Efeito da composição Química no desenvolvimento da estrutura Martensítica no ferro fundido nodular no estado bruto de fundição</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9595396625983771">Samanta de Oliveira Alves Torres</a>. <b>Propriedades termoelétricas de cerâmicas a base de CaMnO3 dopadas com elementos doadores de elétrons e produzidas por rota química.</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5691233602614707">Ângela de Jesus Vasconcelos</a>. <b>Estudo da evolução microestrutural e das propriedades mecânicas e influência do tempo de envelhecimento na resistência à tração de ligas de alumínio solidificadas undirecionalmente com alto teor de ferro</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2475764360924249">Alexandre Flauzino Junior</a>. <b>Nanocompósitos de Lactato de Quitosana e NPsAg com atividade antimicrobiana</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Davi Marcelo Fébba. <b>Nitride semiconductors as carrier-selective contacts for silicon heterojunction solar cells</b>. Tese (Doutorado em Doutorado Engenharia Elétrica) - Universidade Federal de Itajubá, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2021.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1123598835707364">Rero Marques Rubinger</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6080319414713542">Demarcus Werdine</a>. <b>Análise estatística das propriedades do concreto autoadensável misturado com resíduo de borracha de pneus</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>FILIPE BUENO VILELA. <b>DESENVOLVIMENTO DE MALHA POLIMÉRICA IMPRESSA COM DISPOSITIVO DE ELETROESTIMULAÇÃO NÃO INVASIVO ACOPLADO PARA TRATAMENTO DE FRATURAS ÓSSEAS</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Gilza Carla Ribeiro. <b>Desenvolvimento de membranas de compósitos PVDF/BaTiO3 e P(VDF-TrFE)/BaTiO3 associados a prata com propriedades piezoelétricas e antimicrobianas para aplicações biomédicas</b>. Tese (Doutorado em DOUTORADO MULTICÊNTRICO EM QUÍMICA DE MINAS GER) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>, <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5643235533402395">Luiz Henrique Ribeiro</a>. <b>Caracterização elétrica de GaAs Semi-isolante com tratamentos térmicos</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1123598835707364">Rero Marques Rubinger</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6432524309776253">Maria Auxiliadora de Barros Martins</a>. <b>Propriedades reológicas e durabilidade do concreto autoadensável de alta resistência com resíduo de corte mármore e granito e areia de exaustão de fundição</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3025245023121749">Nádia Alves Nery Balbino</a>. <b>Estudo Comparativo da Resistência à Corrosão de Metais Duros WC-NiMo, WC-NiCr e WC-Co</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3828630185578675">Raphael Felca Glória</a>. <b>Estudo do Processo de revestimento da superliga MAR M246 utilizando o processo de cementação em caixa com haleto ativado</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6578365982805080">Thiago Luiz Lara Oliveira</a>. <b>Analysis of milling in composite material by non-destructive methods</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4262224651091415">Amauri Ernesto Gomes</a>. <b>Estudo de Concreto Auto Adensável Aplicado à Bases de Máquinas Ferramenta</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6529294452115876">Lorena Cristina Miranda Barbosa</a>. <b>Mechanical Characterization of Composites Based on a Novel Vacuum-Infused Thermoplastic Matrix?,</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6056506156145134">Alexandre Costa Lanza</a>. <b>Cerâmicas termoelétricas a base de PZT.</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9804785785950382">Ana Cristina Tolentino Cabral</a>. <b>Filmes óxidos heteroestruturados</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9330470036613511">Francisco Moura Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5317863496971184">Daouda Kane</a>. <b>Efeito do escalonamento na resistência à tração de compósitos termoplásticos de fibra de carbono</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5608011131865483">Debora Ferreira Laurito Friend</a>. <b>Desenvolvimento de membranas antimicrobianas a partir da extração e purificação da celulose da casca da batata</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2082785753488838">Fernando Batista Pinto</a>. <b>Análise da influência da adição de resíduos metálicos nas propriedades do Concreto Auto Adensável ? CAA</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3076009937174550">Lia Marcondes</a>. <b>Vidros e vitroceramicas contendo óxido de nióbio para dispositivos luminescentes</b>. Tese (Doutorado em Química) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9050138203029301">Olivia de Andrade Raponi</a>. <b>Estudo dos efeitos do envelhecimento do prepreg em suas propriedades e ciclo de cura por meio de técnicas tradicionais e análise dielétrica</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9240901407225647">POLLYANNA MARCONDES</a>. <b>Desenvolvimento de curativo a base de nanopartículas de prata para tratamento de queimaduras</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5160030954939671">Ricardo Mello di Benedetto</a>. <b>Estudo da absorção de energia no impacto e na compressão após impacto do compósito commingled fibra de carbono/poliamida 6 por um modelo de regressão múltipla</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2019.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>, <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4078237633226142">Sara Raquel Gomes de Sousa</a>. <b>Magneto-reologia: Caracterização de Fluidos e Géis</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0573457812045902">Antonio Jose Faria Bombard</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8424858193515687">Alexandre Nogueira Ottoboni Dias</a>. <b>Produção e Caracterização da Liga Bronze-Alumínio obtida Via Metalurgia do Pó Utilizando Moagem de Alta Energia</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BRUNA HORTA BASTOS KUFFNER. <b>PRODUÇÃO E CARACTERIZAÇÃO DE UM BIOCOMPÓSITO DE AÇO INOX 316L COM β-TCP UTILIZANDO A TÉCNICA DE GRADAÇÃO FUNCIONAL (FGM)</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0538239335010745">Carla Júnia Santos</a>. <b>Estudo da atividade anti-angiogênica de tungstatos metálicos desordenados sintetizados pelo método hidrotermal assistido por micro-ondas</b>. Tese (Doutorado em Programa de Pós Graduação Multicêntrico em Química de Minas Gerais) - Universidade Federal de Itajubá-Campus de Itabira, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9330470036613511">Francisco Moura Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Claudiney de Sales Pereira Mendonça. <b>Produção do compósito aço inoxidável dúplex-carbetos por meio de moagem de alta energia</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0295751567102046">Cristiano Ramos da Cunha</a>. <b>Propriedades estruturais e luminescentes de vidros de germanatos de tântalo</b>. Tese (Doutorado em Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8409260098647072">Daniel Assis Amâncio</a>. <b>Produção e caracterização do metal duro ? carbeto de Tungstênio (WC) com adição do aço Inoxidável AISI 316L como Substituinte do Cobalto</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1425053323447047">Dario de Almeida Jané</a>. <b>Influência da Fadiga Mecânica na Velocidade de Propagação da Onda Longitudinal Criticamente Refratada em Compósito Laminado Carbono/Epóxi</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Felipe de Souza Eloy. <b>Estudo do comportamento dinâmico de vigas sanduíche com núcleo honeycomb preenchido com elastômero magneto reológico</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>, <a href="http://lattes.cnpq.br/0573457812045902">Antonio Jose Faria Bombard</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2052743780386588">Gisela Maria Rosas Helou</a>. <b>Biossíntese de nanopartículas de prata utilizando Cinnamomum Zeylanicum em matriz de hidrogel para aplicação biomédica</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1369895191082587">Leonardo Albergaria Oliveira</a>. <b>Estudo do reaproveitamento da liga de alumínio aeronáutica 7075 T6 pela rota da metalurgia do pó utilizando moagem de alta energia</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0313446610352145">Paulo Junho de Oliveira</a>. <b>Otimização de Tratamentos de Térmicos em ligas de alumínio: Efeitos na microestrutura e nas propriedades mecânicas</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5126368343478545">Aline da Silva</a>. <b>Efeito das Taxas de Resfriamento nas Propriedades Mecânicas e Elétricas da Liga AA2024</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4492313554425263">Alley Michael da Silva Procópio</a>. <b>Sistema catalítico suportado em TiO2 com aplicação em sistema redox de gases</b>. Tese (Doutorado em Programa de Pós Graduação Multicêntrico em Química de Minas Gerais) - Universidade Federal de Itajubá-Campus de Itabira, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9330470036613511">Francisco Moura Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANA ANGÉLICA MARTINS COSTA MOURONER. <b>ESTUDO IN VIVO DA BIOCOMPATIBILIDADE E DEGRADAÇÃO DE BLENDAS DE POLI (ε- CAPROLACTONA) ASSOCIADA OU NÃO A HIDROXIAPATITA E TETRACICLINA</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7791613533109498">André Silva Chaves</a>. <b>Síntese e Caracterização de Cerâmicas de SrTiO3 Dopadas com Terras Raras</b>. Tese (Doutorado em Doutorado em Materiais para Engenharia) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3089178568685507">Lidiane Gomes da Silva</a>. <b>Desenvolvimento de nova resina odontológica baseado no sistema Poliglicerol/metacrilato dendrídico/Al2O3-B2O3-SiO2</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3237327800839443">Lívio de Carvalho Valeriano</a>. <b>Caracterização microestrutural e avaliação da resistência ao desgaste de metais duros WC-Ni</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5596069780034749">Maria Fernanda Xavier Pinto Medeiros</a>. <b>Desenvolvimento e caracterização de hidrogéis eletroativos baseados em Poli(metacrilato de 2-hidroxietila) e polianilina</b>. Tese (Doutorado em MATERIAIS PARA ENGENHARIA) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8509474258844938">Nancy Del Ducca Barbedo</a>. <b>Estudo das interações das variáveis no processo GMAW duplo Arame para avaliação da qualidade da junta soldada</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6323202702376210">Camila Pereira</a>. <b>Novos vidros e vitrocerâmicas à base de TeO2 para óptica</b>. Tese (Doutorado em Química) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2016.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>, <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9660878222629304">Charlene Aparecida Ribeiro</a>. <b>Formulações injetáveis de hidrogéis termosensíveis para a regeneração óssea</b>. Tese (Doutorado em MATERIAIS PARA ENGENHARIA) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1221317678129840">Fabíola Ottoboni Yamane</a>. <b>Fadiga de compósitos de fibra de carbono/epóxi obtidos pelo processo de moldagem por transferência de resina assistida à vácuo</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2016.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>, <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1205959685061977">Francisco Felipe Gomes de Sousa</a>. <b>Análise dos espaços de parâmetros em circuitos caóticos.</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1123598835707364">Rero Marques Rubinger</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>GLAUBERT LUCAS DE CARVALHO CABRAL. <b>Estudo de membranas de colágeno associado a peptídeos de crescimento ósseo</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0317653706770363">Isabela Cristina Fernandes Vaz</a>. <b>Desenvolvimento de filmes finos nanoestruturados para aplicação como sensor de gás</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9330470036613511">Francisco Moura Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6705710234680465">Pedro Duarte Antunes</a>. <b>Influencia dos parametros de soldagem e do tratamento termico sobre a susceptibilidade a corrosão sob tensão de juntas soldadas do aço inoxidável austenítico AISI 317L usado na industria de petroleo e gas</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Petrobrás. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1218389024081405">Thiago Augusto de Souza</a>. <b>Estudo Teórico da estabilidade estrutural e propriedades eletrônicas de nanoestruturas BXCYNZ</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2584946516908564">Vanessa Bawden de Paula Macanhan de Arruda</a>. <b>Analise da variação das respostas dinamicas em placas retangulares delgadas soldadas</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1031795555698099">Adhimar Flávio Oliveira. Transporte eletrônico em amostras de InAs/GaAs e mecanismos de espalhamento</a>. <b>Uma nova abordagem de ajustes pelo método de otimização global.</b>. Tese (Doutorado em Ciência e Engenharia de Materiais) - Universidade Federal de Itajubá, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1123598835707364">Rero Marques Rubinger</a>.</font></td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6056506156145134">Alexandre Costa Lanza</a>. <b>Síntese, Processamento e Caracterização de Cerâmicas Termoelétricas de Titanato-Zirconato de Chumbo (PZT)</b>. Tese (Doutorado em Doutorado em Materiais para Engenharia) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Eduardo Miguel da Silva. <b>Estudo da correlação entre aporte térmico, as propriedades magnéticas e a corrosão sob tensão em juntas soldadas de aço inoxidável ferrítico AISI 409</b>. Tese (Doutorado em Engenharia Mecânica) - Universidade Federal de Itajubá, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2011.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bruno Bacci Fernandes. <b>Avaliação de propriedades físico-químicas de ligas Ti-Si-B produzidas por metalurgia do pó</b>. Tese (Doutorado em Engenharia Aeronâutica e Mecânica) - Instituto Tecnológico de Aeronáutica, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2010.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1912171391296662">Gilbert Silva</a>. <b>Estudo sobre a produção do composto Ti6Si2B e de ligas Ti+Ti6Si2B por moagem de alta energia</b>. Tese (Doutorado em Engenharia Biomédica) - Universidade do Vale do Paraíba, Universidade do Vale do Paraíba. 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Holokx Abreu Albuquerque. <b>FENÔMENOS DE TRANSPORTE ELÉTRICO NÃO-LINEAR EM GaAs SEMI-ISOLANTE INDUZIDOS POR PROCESSOS DE GERAÇÃO-RECOMBINAÇÃO</b>. Tese (Doutorado em Física) - Universidade Federal de Minas Gerais, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2005.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1123598835707364">Rero Marques Rubinger</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 14/02/2025 18:29:01<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

@@ -12,7 +12,7 @@ strict graph grafo1 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Adriano Aguiar Mendes [68]",
+		label="Adriano Aguiar Mendes [70]",
 		pos="524.52,238.5",
 		width=2.1389];
 	2	 [URL="membro-5292381247624407.html",
@@ -43,7 +43,7 @@ strict graph grafo1 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Joelise de A. Figueira Angelotti [5]",
+		label="Joelise de A. Figueira Angelotti [6]",
 		pos="424.52,124.5",
 		width=2.5278];
 	0 -- 6	 [pos="515.3,227.98 496.34,206.37 453.2,157.19 434.02,135.33"];
@@ -75,7 +75,7 @@ strict graph grafo1 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Ana K. Furtado de Carvalho [10]",
+		label="Ana K. Furtado de Carvalho [11]",
 		pos="267.52,10.5",
 		width=2.4583];
 	0 -- 14	 [pos="584.76,227.95 656.2,212.37 761.69,177.89 728.52,114 708.24,74.93 688.61,72.815 647.52,57 596.04,37.181 451.55,23.513 356.31,16.352"];

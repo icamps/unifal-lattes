@@ -1,6 +1,19 @@
 
 
 TY  - JOUR
+AU  - SANTOS, M. J. D. ; FERREIRA, J. C.
+TI  - Fundamental Theorem of Algebra for Calculus of Several Variables
+JO  - SIGMAE
+VL  - 13
+IS  - 
+SP  - 201
+EP  - 219
+PY  - 2025
+L2  - 
+L3  - 
+ER  - 
+
+TY  - JOUR
 AU  - AFINI, D. C. ; SILVA, GUILHERME HENRIQUE GOMES DA
 TI  - O desenvolvimento de cenários para investigação na formação continuada de professores dos anos iniciais do Ensino Fundamental. Boletim de Educação Matemática
 JO  - BOLEMA
@@ -4304,6 +4317,18 @@ L2  -
 ER  - 
 
 TY  - CONF
+AU  - OLIVEIRA, C. V. ; ACACIO JUNIOR, R. ; GOECKING, L. B. ; DE OLIVEIRA, ANDERSON JOSÉ ; ROCHA, F. B.
+T1  - Matemática e Cidadania: Promovendo a Formação Cidadã por meio da Análise de Dados Envolvendo a Pandemia de COVID-19
+TI  - XLIII CNMAC - Congresso Nacional de Matemática Aplicada e Computacional, 2025, Porto de Galinhas. Proceeding Series of the Brazilian Society of Computational and Applied Mathematics
+VL  - 11
+IS  - 
+SP  - 010513
+EP  - 1
+PY  - 2024
+L2  - 
+ER  - 
+
+TY  - CONF
 AU  - REIS, B. A. S. ; SANTOS, L. B. ; SOUZA JUNIOR, J. C. ; CARDOSO, A.
 T1  - Aprendizagem Matemática no Cursinho Popular Êxito
 TI  - X Simpósio Integrado UNIFALMG, 2024, ALFENAS. ANAIS DO SIMPÓSIO INTEGRADO UNIFAL-MG
@@ -4323,6 +4348,18 @@ VL  -
 IS  - 
 SP  - 
 EP  - 
+PY  - 2024
+L2  - 
+ER  - 
+
+TY  - CONF
+AU  - RIBEIRO, B. L. ; DE OLIVEIRA, ANDERSON JOSÉ
+T1  - Caracterização de Propriedades dos Aminoácidos por meio do Hipercubo Booleano
+TI  - XLIII CNMAC - Congresso Nacional de Matemática Aplicada e Computacional, 2025, Porto de Galinhas. Proceeding Series of the Brazilian Society of Computational and Applied Mathematics
+VL  - 11
+IS  - 
+SP  - 010064
+EP  - 1
 PY  - 2024
 L2  - 
 ER  - 
@@ -4361,6 +4398,78 @@ SP  - 53
 EP  - 54
 PY  - 2024
 L2  - http://dx.doi.org/10.48528/yshr-s860
+ER  - 
+
+TY  - CONF
+AU  - SILVA, GUILHERME HENRIQUE GOMES DA; PONTE, J. P.
+T1  - Primary teacher education and Mathematics Education: contributions to in-service teachers from their engagement in landscapes of investigation
+TI  - 4th edition of Porto International Conference on Research in Education, 2024, Porto, Portugal. Conference procedings of Porto ICRE2024
+VL  - 
+IS  - 
+SP  - 371
+EP  - 371
+PY  - 2024
+L2  - 
+ER  - 
+
+TY  - CONF
+AU  - SILVA, GUILHERME HENRIQUE GOMES DA; PONTE, J. P.
+T1  - Contributions to in-service primary teachers practice from their engagement in mathematics landscapes of investigation
+TI  - International Conference CME?24 Contemporary Mathematics Education, 2024, Lublin, Poland. The Conference Abstracts, Working Seminars, Workshops & Posters
+VL  - 
+IS  - 
+SP  - 53
+EP  - 53
+PY  - 2024
+L2  - 
+ER  - 
+
+TY  - CONF
+AU  - SILVA, GUILHERME HENRIQUE GOMES DA; PONTE, J. P.
+T1  - Contribuciones a la formación permanente de los profesores de primaria mediante su participación en escenarios de investigación matemática
+TI  - Simposio de la Sociedade Española de Investigación en Educación Matemática, 2024, Córdoba, Espanha. Investigación en Educación Matemática XXVII
+VL  - 
+IS  - 
+SP  - 663
+EP  - 663
+PY  - 2024
+L2  - 
+ER  - 
+
+TY  - CONF
+AU  - SILVA, GUILHERME HENRIQUE GOMES DA; PRADO, T. G.
+T1  - Cenários para investigação como um caminho para a problematização do sexismo nas aulas de matemática
+TI  - 4th edition of Porto International Conference on Research in Education, 2024, Porto, Portugal. Conference procedings of Porto ICRE2024
+VL  - 
+IS  - 
+SP  - 
+EP  - 
+PY  - 2024
+L2  - 
+ER  - 
+
+TY  - CONF
+AU  - SILVA, GUILHERME HENRIQUE GOMES DA; SANTIAGO, M. F. M.
+T1  - Formação inicial de professores de matemática em direção às preocupações da Educação Matemática Crítica
+TI  - 4th edition of Porto International Conference on Research in Education, 2024, Porto. Conference procedings of Porto ICRE2024
+VL  - 
+IS  - 
+SP  - 321
+EP  - 321
+PY  - 2024
+L2  - 
+ER  - 
+
+TY  - CONF
+AU  - SILVA, GUILHERME HENRIQUE GOMES DA; SANTIAGO, M. F. M.
+T1  - Una propuesta de cursos de formación del profesorado para una educación matemática crítica
+TI  - Simposio de la Sociedade Española de Investigación en Educación Matemática, 2024, Córdoba, Espanha. Investigación en Educación Matemática XXVII
+VL  - 
+IS  - 
+SP  - 634
+EP  - 634
+PY  - 2024
+L2  - 
 ER  - 
 
 TY  - CONF
@@ -4634,6 +4743,30 @@ TI  - XLI Congresso Nacional de Matemática Aplicada e Computacional, 2022, Camp
 VL  - 9
 IS  - 
 SP  - 
+EP  - 
+PY  - 2022
+L2  - 
+ER  - 
+
+TY  - CONF
+AU  - dos Santos, José Paulo C
+T1  - Existence of asymptotically almost automorphic solutions for neutral integro-differential equations
+TI  - XV CONGRESS GAFEVOL 2022 Evolution Equations and Functional Analysis Group, 2022, Manizales. XV CONGRESS GAFEVOL 2022 Evolution Equations and Functional Analysis Group
+VL  - 
+IS  - 
+SP  - 
+EP  - 
+PY  - 2022
+L2  - 
+ER  - 
+
+TY  - CONF
+AU  - dos Santos, José Paulo C
+T1  - Resolvent operators and applications in fractional integro-differential equations
+TI  - 50 years of functional differential equations at ICMC, 2022, São Carlos. https://drive.google.com/file/d/1BlodsUL1EFj9Vb6cQFVFMWPPx5rxQjwO/view
+VL  - 
+IS  - 
+SP  - 11
 EP  - 
 PY  - 2022
 L2  - 

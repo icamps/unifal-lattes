@@ -35,14 +35,14 @@ strict graph grafo1 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="André Luiz Mota [14]",
+		label="André Luiz Mota [15]",
 		pos="502,124.5",
 		width=1.6944];
 	7	 [URL="membro-1373657423991547.html",
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Heron C. de Godoy Caldas [12]",
+		label="Heron C. de Godoy Caldas [13]",
 		pos="462,67.5",
 		width=2.3333];
 	1 -- 7	 [pos="494.48,113.78 487.32,103.59 476.63,88.348 469.49,78.173"];
