@@ -1,5 +1,5 @@
 strict graph grafo1 {
-	graph [bb="0,0,149,21",
+	graph [bb="0,0,165,21",
 		id=grafo1,
 		overlap=False
 	];
@@ -8,11 +8,11 @@ strict graph grafo1 {
 		shape=rectangle,
 		style=filled
 	];
-	0	 [URL="membro-3732563704810366.html",
+	0	[URL="membro-3732563704810366.html",
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="[Nome-nao-identificado] [0]",
-		pos="74.5,10.5",
-		width=2.0694];
+		label="Ihosvany Camps Rodríguez [0]",
+		pos="82.5,10.5",
+		width=2.2917];
 }
