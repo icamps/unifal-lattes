@@ -1,6 +1,19 @@
 
 
 TY  - JOUR
+AU  - GUSMAO, M. G. ; DE OLIVEIRA, ANDERSON JOSÉ
+TI  - Singularidades como geradoras de constelações de sinais e triângulos hiperbólicos
+JO  - BRAZILIAN ELECTRONIC JOURNAL OF MATHEMATICS
+VL  - 6
+IS  - 
+SP  - 1
+EP  - 20
+PY  - 2025
+L2  - http://dx.doi.org/10.14393/BEJOM-v6-2025-73876
+L3  - 
+ER  - 
+
+TY  - JOUR
 AU  - SANTOS, M. J. D. ; FERREIRA, J. C.
 TI  - Fundamental Theorem of Algebra for Calculus of Several Variables
 JO  - SIGMAE
@@ -66,7 +79,7 @@ L3  -
 ER  - 
 
 TY  - JOUR
-AU  - LOPES, R. A. ; CARDOSO, A. ; SOUZA JÚNIOR, J. C.
+AU  - LOPES, R. A. ; CARDOSO, ANDRÉA ; SOUZA JUNIOR, J. C.
 TI  - CURSINHO ÊXITO: PERFIL DOS CURSISTAS E DESAFIOS NO ACESSO AO ENSINO SUPERIOR EM CONTEXTO DE PANDEMIA
 JO  - REVISTA CONEXÃO UEPG
 VL  - 20
@@ -132,7 +145,7 @@ ER  -
 
 TY  - JOUR
 AU  - OLIVEIRA, C. V. ; GOECKING, L. B. ; DE OLIVEIRA, ANDERSON JOSE ; ROCHA, F. B.
-TI  - Matemática e Cidadania: Um estudo comparativo entre a Matemática da ?feira? e a Matemática da ?sala de aula?
+TI  - Matemática e Cidadania: Um estudo comparativo entre a Matemática da 'feira' e a Matemática da 'sala de aula'
 JO  - SIGMAE
 VL  - 13
 IS  - 
@@ -4260,18 +4273,18 @@ TY  - CONF
 AU  - CARDOSO, R. F. ; DE OLIVEIRA, ANDERSON JOSÉ ; QUEIROZ, C. R. O. Q.
 T1  - Identificação de Grupos Fuchsianos Associados a uma Curva Algébrica de Quarto Grau e Possíveis Aplicações
 TI  - X SIMPÓSIO INTEGRADO UNIFAL-MG, 2024, Alfenas-MG. Anais do X Simpósio Integrado UNIFAL-MG
-VL  - 
+VL  - 1
 IS  - 
-SP  - 
-EP  - 
+SP  - 63
+EP  - 64
 PY  - 2024
 L2  - 
 ER  - 
 
 TY  - CONF
-AU  - CARDOSO, R. F. ; QUEIROZ, C. R. O. Q. ; DE OLIVEIRA, ANDERSON JOSE
+AU  - Cardoso, R.F. ; OLIVEIRA, A. J. ; QUEIROZ, C.R.O.Q. ; QUILLES, C. R. O.
 T1  - Grupos Fuchsianos Associados a uma Curva Algébrica de Quinto Grau e Possíveis Aplicações
-TI  - IX Workshop de Matemática e Matemática Aplicada, 2024, Ouro Preto - MG. Anais do Workshop em Matemática e Matemática Aplicada
+TI  - IX Workshop de Matemática e Matemática Aplicada (WMMA 2024), 2024, Ouro Preto. Resumos IX Workshop de Matemática e Matemática Aplicada
 VL  - 
 IS  - 
 SP  - 
@@ -4284,10 +4297,10 @@ TY  - CONF
 AU  - DE OLIVEIRA, ANDERSON JOSE
 T1  - Algumas Contribuições da Matemática no Estudo do Código Genético e em Sistemas de Comunicação
 TI  - IX Workshop de Matemática e Matemática Aplicada, 2024, Ouro Preto - MG. Anais do Workshop em Matemática e Matemática Aplicada
-VL  - 
+VL  - 1
 IS  - 
-SP  - 
-EP  - 
+SP  - 3
+EP  - 4
 PY  - 2024
 L2  - 
 ER  - 
@@ -4329,6 +4342,18 @@ L2  -
 ER  - 
 
 TY  - CONF
+AU  - QUILLES, C. R. O.; QUEIROZ, C.R.O.Q. ; OLIVEIRA, A. J. ; Lima, L.B. ; La Guardia, G.G. ; Palazzo Júnior, Reginaldo ; Vieira, V.L.
+T1  - Maximal Quaternion Orders derived from Tessellations {4λ ,4}
+TI  - IV Workshop em Corpos Finitos e Aplicações (FQ4), 2024, Belo Horizonte. IV Workshop em Corpos Finitos e Aplicações (FQ4) - Resumos
+VL  - 
+IS  - 
+SP  - 
+EP  - 
+PY  - 2024
+L2  - 
+ER  - 
+
+TY  - CONF
 AU  - REIS, B. A. S. ; SANTOS, L. B. ; SOUZA JUNIOR, J. C. ; CARDOSO, A.
 T1  - Aprendizagem Matemática no Cursinho Popular Êxito
 TI  - X Simpósio Integrado UNIFALMG, 2024, ALFENAS. ANAIS DO SIMPÓSIO INTEGRADO UNIFAL-MG
@@ -4344,10 +4369,10 @@ TY  - CONF
 AU  - RIBEIRO, B. L. ; DE OLIVEIRA, ANDERSON JOSE
 T1  - Teoria da Informação no Estudo de Sequências de DNA
 TI  - IX Workshop de Matemática e Matemática Aplicada, 2024, Ouro Preto - MG. Anais do Workshop em Matemática e Matemática Aplicada
-VL  - 
+VL  - 1
 IS  - 
-SP  - 
-EP  - 
+SP  - 34
+EP  - 35
 PY  - 2024
 L2  - 
 ER  - 
@@ -4476,10 +4501,10 @@ TY  - CONF
 AU  - SOUZA, D. B. ; DE OLIVEIRA, ANDERSON JOSE
 T1  - Decodificação de Códigos BCH através do Algoritmo de Peterson
 TI  - IX Workshop de Matemática e Matemática Aplicada, 2024, Ouro Preto - MG. Anais do Workshop em Matemática e Matemática Aplicada
-VL  - 
+VL  - 1
 IS  - 
-SP  - 
-EP  - 
+SP  - 38
+EP  - 39
 PY  - 2024
 L2  - 
 ER  - 
@@ -4548,7 +4573,7 @@ TY  - CONF
 AU  - LAGO, J. J. ; OLIVEIRA, ANDERSON JOSÉ DE
 T1  - Contribuições de Conceitos Estudados Durante a Graduação em Matemática ? Licenciatura na Análise de Problemas Biológicos
 TI  - VIII Workshop de Matemática e Matemática Aplicada, 2023, São João del-Rei. Anais do Workshop em Matemática e Matemática Aplicada
-VL  - 
+VL  - 1
 IS  - 
 SP  - 26
 EP  - 27
@@ -4733,6 +4758,18 @@ IS  -
 SP  - 
 EP  - 
 PY  - 2023
+L2  - 
+ER  - 
+
+TY  - CONF
+AU  - Cardoso, R.F. ; QUEIROZ, C.R.O.Q. ; QUILLES, C. R. O.
+T1  - Identificação de Grupos Fuchsianos Aritméticos em Ordens dos Quatérnios com Aplicações na Construção de Códigos Quânticos Topológicos
+TI  - IV Workshop-Escola de Computação e Informação Quântica (WECIQ 2022), 2022, Alfenas. IV Workshop-Escola de Computação e Informação Quântica (WECIQ 2022)
+VL  - 
+IS  - 
+SP  - 
+EP  - 
+PY  - 2022
 L2  - 
 ER  - 
 

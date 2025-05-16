@@ -1,5 +1,5 @@
 strict graph grafo2 {
-	graph [bb="0,0,164,21",
+	graph [bb="0,0,149,21",
 		id=grafo2,
 		overlap=False
 	];
@@ -12,7 +12,7 @@ strict graph grafo2 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Ihosvany Camps Rodríguez [0]",
-		pos="82,10.5",
-		width=2.2778];
+		label="[Nome-nao-identificado] [0]",
+		pos="74.5,10.5",
+		width=2.0694];
 }
