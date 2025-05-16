@@ -5,7 +5,7 @@ nodedef> name VARCHAR, idLattes VARCHAR, label VARCHAR, rotulo VARCHAR, lat DOUB
 3,0061488493893247,Cátia Regina de Oliveira Quilles Queiroz,[Sem rotulo],,,0.5617643,49,11,1,2,4,2,29,0,1,1,13,'10,110,164'
 4,3089568911577519,Evandro Monteiro,[Sem rotulo],,,0.643882,21,5,0,0,3,1,12,0,0,6,2,'10,110,164'
 5,0165435409542220,Franco Bassi Rocha,[Sem rotulo],,,0.15,3,3,0,0,0,0,0,0,0,0,0,'10,110,164'
-6,5817829882396943,Guilherme Henrique Gomes da Silva,[Sem rotulo],,,1.244451,120,38,3,12,41,4,22,0,0,8,12,'10,110,164'
+6,5817829882396943,Guilherme Henrique Gomes da Silva,[Sem rotulo],,,1.244451,121,39,3,12,41,4,22,0,0,8,12,'10,110,164'
 7,1690570104837528,José Carlos de Souza Junior,[Sem rotulo],,,1.6525104,28,16,1,8,1,0,2,0,0,0,9,'10,110,164'
 8,6808752952332925,José Claudinei Ferreira,[Sem rotulo],,,0.83481485,51,23,0,1,4,6,17,0,0,4,13,'10,110,164'
 9,9393213180145144,José Paulo Carvalho dos Santos,[Sem rotulo],,,0.8316918,44,34,0,0,2,2,6,0,0,3,9,'10,110,164'
