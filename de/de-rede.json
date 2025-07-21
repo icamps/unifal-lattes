@@ -1,0 +1,21 @@
+{
+"nodes":[
+{ "name":"Adriana Dias", "idlattes":"9808310940421979", "rotulo":"[Sem rotulo]", "collaborationrank":0.459827184677124 },
+{ "name":"Denismar Alves Nogueira", "idlattes":"3858924778362309", "rotulo":"[Sem rotulo]", "collaborationrank":1.6969060897827148 },
+{ "name":"Eric Batista Ferreira", "idlattes":"9965398009651936", "rotulo":"[Sem rotulo]", "collaborationrank":1.3970359563827515 },
+{ "name":"Fabrício Goecking Avelar", "idlattes":"6886514520601172", "rotulo":"[Sem rotulo]", "collaborationrank":1.130548357963562 },
+{ "name":"Flávio Bittencourt", "idlattes":"6581499944728910", "rotulo":"[Sem rotulo]", "collaborationrank":0.45564278960227966 },
+{ "name":"Glaucia de Paula Falco", "idlattes":"4404511957654050", "rotulo":"[Sem rotulo]", "collaborationrank":0.15000000596046448 },
+{ "name":"Luiz Alberto Beijo", "idlattes":"8194104388434526", "rotulo":"[Sem rotulo]", "collaborationrank":1.606780767440796 },
+{ "name":"Natalia da Silva Martins Fonseca", "idlattes":"3374954104030940", "rotulo":"[Sem rotulo]", "collaborationrank":0.25325918197631836 }
+],
+"links":[
+{ "source":0, "target":2, "value":1.0 },
+{ "source":0, "target":4, "value":2.0 },
+{ "source":1, "target":2, "value":20.0 },
+{ "source":1, "target":4, "value":1.0 },
+{ "source":1, "target":6, "value":11.0 },
+{ "source":2, "target":7, "value":2.0 },
+{ "source":3, "target":6, "value":28.0 }
+]
+}

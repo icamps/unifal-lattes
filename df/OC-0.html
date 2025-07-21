@@ -1,0 +1,793 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de orientações concluídas'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1996,
+1],
+[2000,
+1],
+[2002,
+4],
+[2003,
+2],
+[2004,
+1],
+[2005,
+3],
+[2006,
+2],
+[2007,
+4],
+[2008,
+7],
+[2009,
+13],
+[2010,
+27],
+[2011,
+19],
+[2012,
+21],
+[2013,
+31],
+[2014,
+20],
+[2015,
+15],
+[2016,
+17],
+[2017,
+24],
+[2018,
+22],
+[2019,
+18],
+[2020,
+10],
+[2021,
+9],
+[2022,
+9],
+[2023,
+13],
+[2024,
+5]]}]});
+        });
+        </script>
+        
+                <h3>Total de orientações concluídas</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 298<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Cassiano Faria Inacio. <b>Um diagrama 3D do cone de luz para visualizar linhas de universo</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Alfenas, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Douglas Brito Freitas. <b>Supervisão de Monitoria Voluntária (Graduação): Cálculo I</b>. (Ciência da Computação) - Universidade Federal de Alfenas, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Gabriel Micael Henrique. <b>Supervisão de Monitoria com Bolsa Institucional (Graduação): Cálculo II</b>. (Ciência da Computação) - Universidade Federal de Alfenas, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Maicon Almeida Mian. <b>Supervisão de Monitoria com Bolsa Institucional (Graduação): Geometria Analítica</b>. (Ciência da Computação) - Universidade Federal de Alfenas, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Tiago Luís Freire Aprígio. <b>A Apropriação de Conceitos da Mecânica Quântica no Filme ?Quem Somos Nós - Uma Nova Evolução</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Alfenas, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Emmanuel Freitas Ferreira. <b>Nanotoros de carbono interagindo com gases de efeito estufa</b>. (Graduando em Licenciatura em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Giovana Nogueira Oliveira. <b>Supervisão de Monitoria Voluntária (Graduação): Cálculo I</b>. (Ciência da Computação) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Jezebel Aparecida de Souza. <b>Levantamento de dados de estrelas hospedeiras de exoplanetas.</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>José Carlos Silva. <b>O estudo de exoplanetas com um Web Robot</b>. Dissertação (Mestrado em Mestrado em Ensino de Física) - Universidade Federal de Alfenas, Pró-Reitoria de Pesquisa e Pós graduação da Universidade Federal de Alfenas. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>João Lukas da Silva oliveira. <b>Desenvolvimento de foguetes para a Mostra Brasileira de Foguetes, MOBFOG 2023</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>João Victor Andrade Galdino de Farias. <b>Estudo teórico sobre o lançamento de foguetes para a participação na Mostra Brasileira de Foguetes, MOBFOG 2023.</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6146640930833397">Lenon Couto Ferreira</a>. <b>MobTracker: um aplicativo de captura de dados para o Ensino de Física.</b>. Dissertação (Mestrado em Mestrado em Ensino de Física) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Leonardo de Lima Santos. <b>Modelo Unificado de Núcleos Galácticos Ativos: Uma visão geral</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Maria Alessandra Corrêa. <b>Levantamento das magnitudes das estrelas das constelações zodiacais</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Matheus Antônio do Santos. <b>construção de foguetes de garrafa PET,</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Otávio Ferreira de Brito Silveira. <b>Supervisão de Monitoria com Bolsa Institucional (Graduação): Cálculo I</b>. (Ciência da Computação) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Péricles Antônio da Silva. <b>Estudo da Relatividade Especial com simulação computacional gráfica</b>. (Graduação em Física - Licenciatura) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1101341437463729">Tales Alexandre Aversi-Ferreira</a>. <b>Mitigação de pesticidas com o uso de nanotubos de carbono - um estudo de Mecânica Quântica</b>. Dissertação (Mestrado em Mestrado em Física - UFSJ - UNIFAL-MG) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bruno Fernandes Garcia. <b>Física Solar como convergência de áreas da Física no Ensino Médio</b>. Dissertação (Mestrado em Mestrado Nacional Profissional em Ensino de Física) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Christian Andrade Bruzigues. <b>Simulação da magnitude e trajetória de meteoroides de pequena massa</b>. (Graduação em Física - Licenciatura) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Fernanda Canova Faria. <b>Supervisão de Monitoria com Bolsa Institucional (Graduação): Cálculo II</b>. (Física) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5325787917743367">Letícia Carolaine Silva Faria</a>. <b>Estudo teórico da interação do glifosato com nanotubos de cabono decorados com hidroxilas</b>. Dissertação (Mestrado em Mestrado em Física - UFSJ - UNIFAL-MG) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Lucas Vinícius Marques. <b>A Teoria da Relatividade Geral no Ensino Médio nas publicações da Revista Brasileira de Ensino de Física e no Caderno Brasileiro de Ensino de Física</b>. (Graduação em Física - Licenciatura) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5437247883737950">Rafael Tomaz da Silva</a>. <b>Desenvolvimento de Materiais Óxidos Multifuncionais Preparados por Moagem Mecânica.</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5221863351791074">Raphael Cesar de Souza Pimenta</a>. <b>Compuação Quântica Aplicada à Materiais</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Regiley Pimenta Ramos de Oliveira. <b>Análise da contribuição do som para a energia dissipativa em uma colisão inelástica</b>. (Graduação em Física - Licenciatura) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7615714763847868">Tiago Vitor Lopes</a>. <b>Supervised Neural Network Approach to modeling DUNE?S LArTPC Photon Detector Device</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9806548647159907">Hiago Maurílio Lopes Carvalho</a>. <b>Teoria do Funcional Densidade (DFT) aplicada a diferentes estruturas de liga de ouro (Au) e prata (Ag) para análise de propriedades dielétricas</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5689902631903063">Isabella Silva de Souza</a>. <b>Síntese e caracterização do sistema ZnO:Zr:Mn: Funcionalização via dopagem</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Istênio Nunes de Morais. <b>Construção e aplicação do Gerador de Van de Graaff de baixo custo nas aulas de Física no Ensino Médio com participação dos estudantes</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>João Paulo Pereira Leal. <b>Supervisão de Monitoria com Bolsa Institucional (Graduação): Cálculo II</b>. (Ciência da Computação) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8846345125183284">Paulo da Silva Ferreira Neto</a>. <b>Simulação computacional de aplicação de nanoestruturas no aprimoramento de biossensores: Detecção e diagnóstico eficiente de doenças cardíacas</b>. Dissertação (Mestrado em Mestrado em Física - UFSJ - UNIFAL-MG) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Regiley Pimenta Ramos de Oliveira. <b>Supervisão de Monitoria com Bolsa Institucional (Graduação): Cálculo I</b>. (Física) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Victor Hugo Tozzo Filho. <b>Supervisão de Monitoria com Bolsa Institucional (Graduação): Geometria Analítica</b>. (Ciência da Computação) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1180191347732982">Vinícius Justino Pimenta</a>. <b>Otimização do processo de incorporação de dopantes à matriz Cu2O: Engenharia de defeitos</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4695094803653501">Viviane Maciel de Almeida Lage</a>. <b>Desenvolvimento de Óxidos Magnéticos Diluídos a partir da matriz de ZnO dopados com Co e Mn: Estudo das Propriedades Estruturais e Magnéticas.</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bruna da Costa Gomes. <b>Introdução aos mantos de invisibilidade usando plasmônica e metamateriais ópticos</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Caio Marinello Moura Leite. <b>Supervisão de Monitoria com Bolsa Institucional (Graduação): Vetores e Geometria Analítica</b>. (Ciência da Computação) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9418311799417480">Denis Paiva Ramos</a>. <b>INTERDISCIPLINARIDADE E CONTEXTUALIZAÇÃO: EDUCAÇÃO CTS NAS QUESTÕES DE MATEMÁTICA NO ENEM ENTRE OS ANOS DE 2018-2020</b>. Dissertação (Mestrado em Educação) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6438374644753396">Gabriel da Silva Macedo</a>. <b>REDES NEURAIS ARTIFICIAIS APLICADAS NA OTIMIZAÇÃO DE PROPRIEDADES DE SISTEMAS SEMICONDUTORES CONTENDO POÇOS QUÂNTICOS</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Luan Bueno Bastos. <b>Supervisão de Monitoria com Bolsa Institucional (Graduação): Funções Reais de Várias Variáveis</b>. (Física) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2604391010090933">Tiago José Arruda</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1249592966115552">Maurício Pereira Ferreira</a>. <b>PREPARAÇÃO E CARACTERIZAÇÃO ESTRUTURAL DE NANOPARTÍCULAS DE TiO2 DOPADO COM LANTANÍDEOS (Ti1-xGdxO2 e Ti1-xLaxO2) PARA APLICAÇÕES FOTOCATALÍTICAS</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Renan Pereira Araújo. <b>Teoria do Funcional de Densidade (DFT) aplicada na obtenção de propriedades optoeletrônicas de peroviskitas híbridas</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Robeto Madeira. <b>Interação de Nanotubos de Nitreto de Boro com Metais Pesados: Estudo de Primeiros Princípios</b>. Dissertação (Mestrado em Mestrado em Física - UFSJ - UNIFAL-MG) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Tiago Vitor Lopes. <b>Teoria do Funcional de Densidade (DFT) aplicada na obtenção de propriedades optoeletrônicas de ligas de ouro e alumínio para aplicações plasmônicas</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Tiago Vitor Lopes. <b>Teoria do Funcional de Densidade (DFT) aplicada na obtenção de propriedades optoeletrônicas de ligas de ouro e alumínio para aplicações plasmônicas</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Aline Fernandes Pereira. <b>CineFut: uma proposta para o ensino de Cinemática</b>. Dissertação (Mestrado em Mestrado em Ensino de Física) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Amanda Aparecida Borges da Silva. <b>Sentidos do Ensino de Física: construção de conexões entre saberes do mundo do trabalho, conhecimentos de Física escolar e desenvolvimento regional</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Ana Luiza Fonseca Arêas. <b>Uso de docking de fragmentos na obtenção de novos inibidores de acetilcolinesterase</b>. (Graduação em Biotecnologia) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Anderson dos Santos. <b>Introdução de conceitos do Modelo Padrão de Partículas Elementares através de sequências didáticas</b>. Dissertação (Mestrado em Mestrado Nacional Profissional em Ensino de Física) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0403363004900374">Andrilene Celina Alves</a>. <b>Estudos teóricos da modelagem computacional usando métodos semi-empíricos na interação dos aminoácidos com os nanotubos de carbono funcionalizados</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>André Carvalhaes. <b>O dia que a Física tornou o Homem Aranha um vilão nos quadrinhos</b>. (Graduação em Física - Licenciatura) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Cássio Henrique de Souza Marculino. <b>Estudo das propriedades óticas e de transporte em diodos de tunelamento ressonante, por meio da solução da equação de Schrödinger-Poisson.</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Denner Azevedo Rocha. <b>MobTracker: um aplicativo de captura de dados para o Ensino de Física.</b>. (Graduando em Ciência da Computação) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>EDSON JOAQUIM CHAVES. <b>DESENVOLVIMENTO E APLICAÇÃO DE UMA UNIDADE DE ENSINO SOBRE FÍSICA SOLAR.</b>. Dissertação (Mestrado em Mestrado em Ensino de Física) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Fabiana Almeida. <b>Obtenção de curvas de luz de estrelas variáveis eclipsantes no observatório astronômico da universidade federal de alfenas.</b>. (Graduando em Física) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9906430445327093">Gabriel Marinho Machado</a>. <b>Estudo da não parabolicidade de banda em perovskitas hibridas.</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>João Carlos Pereira Alves. <b>OBTENÇÃO DE CURVAS DE LUZ DE ESTRELAS HOSPEDEIRAS DE EXOPLANETAS NO OBSERVATÓRIO ASTRONÔMICO DA UNIVERSIDADE FEDERAL DE ALFENAS.</b>. (Graduando em Física) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>João Paulo de Araújo Cruz. <b>Uma proposta para o uso do Tracker para a análise espectroscópica de baixo custo</b>. (Graduação em Física - Licenciatura) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Nelma Aparecida Fernandes Lopes. <b>Avaliação da Utilização de Ferramentas de Simulação Computacionais no Ensino de Eletricidade e Eletromagnetismo em uma Escola Pública Estadual de Minas Gerais</b>. em Ensino de Física) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Raphel Cesar de Sousa Pimenta. <b>Qiskit aplicado ao ensino de conceitos b ́asicos de informa ̧c ̃ao e computa ̧c ̃ao qu?antica</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>TARLEI JOSE DE MESQUITA. <b>UMA PROPOSTA DE SEQUÊNCIA DIDÁTICA SOBRE A HISTÓRIA E A NATUREZA DA CIÊNCIA NO ENSINO DE FÍSICA: COSMOLOGIA, DOS MITOS ÀS CONCEPÇÕES CIENTÍFICAS.</b>. Dissertação (Mestrado em Mestrado em Ensino de Física) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Vinicius Justino Pimenta. <b>Simulação do Fenômeno de Tunelamento Quântico: Aspectos Didáticos, Teóricos e Experimentais</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Wilmar Puma Zamora. <b>Actividad antibacteriana del partenólido frente a cepas de Staphylococcus aureus ATCC®29213 y aproximación al mecanismo de interacción mediante métodos quimioinformáticos</b>. (Graduação em Química Farmaceutica) - Universidad Nacional de San Antonio Abad del Cusco, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9280378827093930">Alessandra Espindola Cardoso</a>. <b>A EDUCAÇÃO FINANCEIRA NA EDUCAÇÃO BÁSICA PÚBLICA DE GOIÁS</b>. Dissertação (Mestrado em Educação/Regional Jataí) - Universidade Federal de Goiás, Fundação de Amparo a Pesquisa do Estado de Goiás. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Andrilene Celina Alves. <b>Desenho de nano(bio)sensores</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>André Luiz Carvalhaes. <b>Monitoria na disciplina Física I</b>. (Biotecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Cassio Henrique de Souza Marculino. <b>Dinâmica de processos óticos e de transporte em células solares semicondutoras</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Eduardo Soares Garcia. <b>Monitoria na disciplina Física I</b>. (Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Felipe dos Santos Viera. <b>Estudo da Incorporação do Co e do Mn à Matriz de ZnO</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Francielli de Fatima dos Santos David. <b>Sentidos do Ensino de Física: construção de conexões entre saberes do mundo do trabalho, conhecimentos de Física escolar e desenvolvimento regional</b>. (Graduando em Física) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9196386299886990">Gilson José Rodrigues</a>. <b>Incorporação do Mn no óxido semicondutor magnético diluído ZnO via síntese química - Método Pechini Modificado</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>, <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Giovana Collistochi Ferraz de Oliveira. <b>Modelagem computacional das mutações da tirosina quinase associada com a leucemia mieloide crônica</b>. (Graduando em Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Hellen Pereira de Jesus. <b>Síntese e Caracterização de Materiais Óxidos Termoelétricos: SrTiO3:Gd</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Hugo Metz. <b>Desenvolvimento de um protoboard com elementos resistivos orgânicos</b>. em Ensino de Física) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Jordana Torrico Ferreira. <b></b>. Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>José Carlos Silva. <b>Detecção do Exoplaneta WASP-76 b no Miniobservatório Astronômico da Unifal-MG</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>João Victor de Almeida. <b>Efeito da aproximação de banda não parabólica nas propriedades óticas e de transporte de células solares de banda intermediária.</b>. (Graduando em Física) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Lucas Marques Fagundes Silva. <b>Modelagem farmacocinéticada biodistribuição de nanopartículas magnéticas via equa- çõesdiferenciais ordinárias</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Mateus Jesus de Oliveira Rodrigues. <b>Monitoria na disciplina Física I</b>. (Física) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8580985583116539">Paulo Henrique Xavier</a>. <b>Preparação de Cerâmicas Nanoestruturadas de Ca3Co4O9 para Aplicação em Dispositivos Termoelétricos</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Rafael Passos Domingues. <b>Simulação de órbitas estelares na Galáxia: Uma aplicação de modelos semi-empíricos à Gravitação Universal</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Rafael Passos Domingues. <b>Monitoria na Disciplina Conceitos Matemáticos Aplicados à Física</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Rayane Cristina Vieira Costa. <b>CONSTRUÇÃO DE UM BIOSSENSOR EM PAPEL COM LEITURA POTENCIOMÉTRICA</b>. (Graduação em Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Salomão Megda Marinho. <b>Construção de um instrumento paralevantamento das motivações para a aprendizagem de física no ensino médio a partir das aplicações do conhecimento</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Sebastiao Vitor de Brito. <b>Monitoria na Disciplina Conceitos Matemáticos Aplicados à Física</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Silveira de Souza. <b>Monitoria na disciplina Física I</b>. (Química) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Andre Gomes da Silva Junior. <b>Monitoria na Disciplina Computação Aplicada à Física</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Andre Gomes da Silva Junior. <b>Monitoria na Disciplina Métodos Quantitativos em Geografia</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Denis Henrique dos Santos Borges. <b>Cálculo das propriedades de transporte em nanotubos carboxilados</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Eric Eduardo Alves Ferreira. <b>Monitoria na disciplina Física I</b>. (Física) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Gabriel da Silva Macedo. <b>Simulação Gráfica de um Sistema Estelar Binário Compacto em Dispositivos Móveis</b>. (Graduando em Física) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Isabella Silva de Souza. <b>Preparação e Caracterização Estrutural de Cerâmicas de ZnO:Sn e ZnO:Sb</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Isabella Silva de Souza. <b>Estudo das propriedades estruturais e magnéticas do sistema ZnO:Mn:Sn</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>João Victor Almeida. <b>Fourier Grid Hamiltonian aplicado ao estudo das propriedades ópticas e de transporte de células solares de banda intermediária simuladas computacionalmente usando a linguagem Julia</b>. (Graduação em Física) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>João Victor de Almeida. <b>Fourier Grid Hamiltonian aplicado ao estudo das propriedades ópticas e de transporte de células solares de banda intermediária simuladas computacionalmente usando a linguagem Julia.</b>. (Graduando em Física) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Juliana Reiff. <b>Desenho racional de inibidores para o tratamento da hanseníase.</b>. (Graduando em Bacharelado em Química) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Jurandir Alves Cunha. <b>Ensino da força magnética por meio de jogos digitais que utilizam o Kinect.</b>. Dissertação (Mestrado em Mestrado em Ensino de Física) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2017.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Larissa Melo Pereira. <b>Monitoria na Disciplina Computação Aplicada ao Ensino de Física</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Lídia Rodrigues Dionísio Oliveira. <b>INVESTIGAÇÃO DAS MOTIVAÇÕES INTRÍNSECAS NA APRENDIZAGEM DE FÍSICA NO ENSINO MÉDIO</b>. Dissertação (Mestrado em Ensino de Física - MNPEF) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9735880571976278">MARCOS FABRÍCIO CAMPOS TAVARES</a>. <b>CRIAÇÃO E APLICAÇÃO DE UMA SEQUÊNCIA DIDÁTICA UTILIZANDO ROBÓTICA EDUCACIONAL E GAMIFICAÇÃO EMPREGANDO O KIT EV3 LEGO</b>. Dissertação (Mestrado em Mestrado Nacional Profissional em Ensino de Física) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>MONIQUE MARQUES DE BRITO. <b>CARACTERIZAÇÃO DE ESTRELAS VARIÁVEIS VISÍVEIS NO OBSERVATÓRIO ASTRONÔMICO DA UNIVERSIDADE FEDERAL DE ALFENAS</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7079384041018545">Paulo César Oliveira da Silva</a>. <b>(Des)encontros de conhecimentos entre o ensino de biologia na escola e o mundo do trabalho</b>. Dissertação (Mestrado em Educação) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Rafael Passos Domingues. <b>Monitoria na disciplina Física I</b>. (Biotecnologia) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Silvio Lima Dias. <b>Experimentos projetados para construção de modelos mentais para o ensino de eletromagnetismo</b>. Dissertação (Mestrado em Ensino de Física - MNPEF) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Thiago Henrique dos Reis. <b>DESENVOLVIMENTO DO ASTRO3D EM REALIDADE AUMENTADA PARA ÓCULOS VR Projeto</b>. (Graduando em Ciência da Computação) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7179720346302573">Wanderson Geraldo Knupp</a>. <b>Estudo teórico-experimental da interação de nanotubos de carbono com carboapatita</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Yago Guilherme dos Reis. <b>Monitoria na Disciplina Métodos Quantitativos em Geografia</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Ygor Lacerda Batista da Silva. <b>Dinâmica dos processos de transições inter e intersubbandas de células solares de baixa dimensionalidade via método Split Operator</b>. (Graduação em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Ygor Lacerda Batista da Silva. <b>Dinâmica dos processos de transições inter e intersubbandas de células solares de baixa dimensionalidade via método Split Operator</b>. (Graduando em Física) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Luiza Fonseca Arêas. <b>Monitoria na disciplina Física I</b>. (Biotecnologia) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANGÉLICA CAROLINA SAVELIS RODRIGUES. <b>ESTUDO DA DESNATURAÇÃO/RENATURAÇÃO DA APOPROTEINA PRODUZIDA COM RACNT-BSA</b>. (Graduação em Farmácia) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Barbara Alves Verde. <b>Obtenção de novos inibidores de acetilcolinesterase usando docking de fragmentos</b>. (Graduando em Biotecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Dayanne Cristina Carvalho. <b>O ensino de química aos alunos do Ensino Fundamental: A água</b>. (Graduação em Química) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Diego Tercetti. <b>Simulação da formação de caudas de cometas</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Diego Tercetti Miranda Nogueira. <b>Monitoria na Disciplina Computação Aplicada ao Ensino de Física</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Elio Thizay Magnavita Oliveira. <b></b>. Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2016.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9243256514162680">Fabiana Aparecida Santos Uyeda</a>. <b>Construção e uso de uma coleção de jogos didáticos para Ensino de Física com uma organização bimestral para todo o Ensino Médio</b>. Dissertação (Mestrado em Ensino de Física - MNPEF) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Hugo Luiz Camargo Pinto. <b>Simulação Gráfica de um Sistema Estelar Binário Compacto em Dispositivos Móveis.</b>. (Graduando em Ciência da Computação) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Jean Louis Landim Vilela. <b>LABORATÓRIOS DE ÓPTICA PARA ALUNOS DO ENSINO MÉDIO DAS ESCOLAS PÚBLICAS: MONTAGEM E AVALIAÇÃO DE APRENDIZAGEM</b>. Dissertação (Mestrado em Mestrado Nacional Profissional em Ensino de Física) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>João Paulo de Araújo. <b>Monitoria na disciplina Computação Aplicados à Física</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4070424978875304">Luis Renato Valério</a>. <b>Síntese e Caracterização de Filmes Finos de ZnO dopados com Co preparados por Dip-Coating</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Mariana da Silva Ribeiro. <b>Propriedades eletronicas dos nanotubos de carbono funcionalizados desordenados</b>. (Graduação em Química) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2337716454002457">Paulo Henrique Gomes</a>. <b>Preparação e Caracterização de Tio2:Co:Sb Nanoestruturado</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>RAPHAEL ANTÔNIO BORGES GOMES. <b>AVALIAÇÃO DE NANOTUBOS DE CARBONO DE ACESSO RESTRITO (RACNTs) NA OBTENÇÃO E DETERMINAÇÃO DE APOPROTEÍNAS</b>. Dissertação (Mestrado em Química) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Sebastiao Vitor de Brito. <b>Monitoria na Disciplina Métodos Quantitativos em Geografia</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Ygor Lacerda Batista da Silva. <b>Obtenção de propriedades óticas de células solares usando a linguagem Julia</b>. (Graduando em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8478305453281130">Anibal Thiago Bezerra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRESSA CRISTINA VASQUES DE OLIVEIRA. <b>CONSTRUÇÃO DE UM BIOSSENSOR POTENCIOMÉTRICO IMPRESSO PARA DETERMINAÇÃO DE ADRENALINA</b>. Dissertação (Mestrado em Química) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2015.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5859772357477134">Bruno de Oliveira Campos</a>. <b>Utilização de simulações computacionais no ensino de Física, na área da Mecânica</b>. em Ensino de Física) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Danilo Ravasio de Freitas Branco. <b>Uma Proposta para a Inserção de Física Solar no Ensino Médio</b>. (Graduação em Física Licenciatura) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Elio Thizay Magnavita Oliveira. <b></b>. Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2015.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Felipe dos Santos Vieira. <b>Estudo da Incorporação do Co na Matriz de ZnO</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Gabriel Marinho Machado. <b>Caracterização estrutural de óxidos multiferróicos do sistema PbTiO3</b>. (Graduando em Física Licenciatura) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>GUSTAVO SÉRGIO DOS SANTOS; LUDMILA GUEDES ALMEIDA. <b>ESTUDO DA ADSORÇÃO DE IODO EM NANOTUBOS DE CARBONO DE ACESSO RESTRITO REVESTIDOS COM ALBUMINA BOVINA SÉRICA</b>. (Graduação em Química) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Jefferson Vigato SIlva. <b>Monitoria na disciplina Métodos Quantitativos Aplicados à Geografia</b>. (Geografia - Licenciatura) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Laura Ronchini Mendonça. <b>Monitoria na disciplina Métodos Quantitativos em Geografia</b>. (Geografia - Licenciatura) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Lucas Emanuel de Oliveira Moreira. <b>Resolução Numérica do Problema Restrito de Três Corpos</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Paulo Henrique Xavier. <b>Preparação de Cerâmicas Nanoestruturadas de Ca3Co4O9 para Aplicação em Dispositivos Termoelétricos</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Paulo Henrique Xavier. <b>Monitoria na disciplina Computação Aplicada à Física</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5437247883737950">Rafael Tomas da Silva</a>. <b>Estudo de Propriedades Estruturais e Magnéticas do Sistema de ZnO:Co Preparado pelo Método Hidrotermal Assistido por Microondas</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>RÔMULO RODOLFO RODRIGUES DE MELO. <b>ALTERAÇÕES NA ESTRUTURA DA COMUNIDADE ZOOPLANCTÔNICA E NA MORFOLOGIA DE CLADÓCEROS RELACIONADAS AO AUMENTO NO GRAU DE TROFIA DO RESERVATÓRIO DA UHE DE FURNAS ? MG.</b>. Dissertação (Mestrado em Ciências Ambientais) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2015.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7000508951288786">Washington de Almeida Pereira</a>. <b>Docking de fragmentos aplicados no desenvolvimento de inibidores da Tirosina Quinasse da LMC</b>. Dissertação (Mestrado em Química) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2669979608734253">Alessandro Costa da Silva</a>. <b>Um estudo das justificativas para o ensino de Física no Ensino Médio a partir das categorias significado e sentido na docência.</b>. Dissertação (Mestrado em Educação/Regional Jataí) - Universidade Federal de Goiás, Fundação de Amparo a Pesquisa do Estado de Goiás. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Lívia de Almeida Silva. <b>Monitoria na disciplina Métodos Quantitativos Aplicados à Geografia</b>. (Geografia - Bacharelado) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Anderson dos Santos. <b>Monitoria na disciplina Laboratório de Física II</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Cristiene Moreira Melo. <b>Síntese e Caracterização de Materiais Óxidos Termoelétricos: Ca3Co4O9</b>. (Graduando em Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Cristiene Moreira Melo e Graziella dos Reis Rosa Franco. <b>Síntese e Caracterização de Materiais Termoelétricos a base de Ca3Co4O9</b>. (Graduação em Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Daiane Jenny Tavares Jacon. <b>Desenvolvimento de Óxidos Magnéticos Diluídos</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Danilo Ravasio de Freitas Branco. <b>Monitoria na disciplina Laboratório de Física II</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Dener Pereira Santos. <b>OS três momentos pedagógicos no ensino do efeito fotoelétrico no Ensino Médio</b>. (Graduação em Física) - Universidade Federal de Goiás, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Eder Dourado dos Santos. <b>Estudo sobre as justificativas de professores e futuros professores para o Ensino de Física na Educação Básica e a relação com o interesse/desinteresse dos alunos pela aprendizagem</b>. (Física) - Universidade Federal de Goiás, Sisu-MEC. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Graziella dos Reis Rosa Franco. <b>Preparação e Caracterização de Cerâmicas Magnéticas a partir da Matriz Cu2O</b>. (Graduando em Química) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3097987679294992">Josenilde Paniago</a>. <b>Estudo de caso das práticas de ensino de professoras nos anos iniciais do Ensino Fundamental em Língua Portuguesa e Ciências da Natureza</b>. Dissertação (Mestrado em Educação/Regional Jataí) - Universidade Federal de Goiás, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2212085203810721">Julbert Ferre de Moraes</a>. <b>UM OLHAR NO ENSINO DE FÍSICA DOS ANOS INICIAIS DO ENSINO FUNDAMENTAL</b>. Dissertação (Mestrado em Mestrado Nacional Profissional em Ensino de Física) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Kleyton D'Martin Costa. <b>A Física da flauta doce</b>. (Graduação em Física - Licenciatura) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Leandro Donizete Morais. <b>O USO DO SOFTWARE ASTRO 3D PARA O ENSINO DE ASTRONOMIA NA EDUCAÇÃO BÁSICA</b>. Dissertação (Mestrado em Mestrado em Ensino de Física) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Luiz de Melo Campos Junior. <b>Síntese de Óxidos Magnéticos Diluídos Nanoestruturados através de Moagem Mecânica</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Luís Renato Valerio. <b>Dinâmica Não-Linear e Caos: o circuito de Chua</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Luís Renato Valério. <b>Sistemas Caóticos: O circuito de Chua ? Uma abordagem teórica e empírica</b>. (Graduando em Física) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4707599213895458">Naiara Arantes LIma</a>. <b>SÍNTESE, ESTUDO ESTRUTURAL E MAGNÉTICO DO ZnO PURO E O SISTEMA ZnO:Mn</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Phelipe de Almeida Piva. <b>Comportamento das ciclóides e uso de vídeo análise</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>RAFAEL BUENO BOTELHO. <b>OBSERVACÃO E CARACTERIZACÃO DE EXOPLANETAS UTILIZANDO O OBSERVATÓRIO DA UNIFAL-MG</b>. (Graduação em Física) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Aline Mayumi Kakazu e Aniele Julye Motzko. <b>Busca por novos inibidores para a doença de Chagas</b>. (Graduação em Química) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Laura Pascoini. <b>Docking molecular de candidatos a fármacos anticolinesterásicos</b>. (Graduação em Biotecnologia) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Ana Lívia de Almeida Silva. <b>Monitoria na disiciplina Métodos Quantitativos Aplicados à Geografia</b>. (Geografia - Bacharelado) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Anderson dos Santos. <b>Monitoria na disciplina de Computação Aplicada à Física</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Carolina Dittmann Figueira. <b>Fragment Docking aplicado no desenvolvimento de inibidores da RNA Helicase do vírus da Dengue</b>. (Graduando em Química) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Daiane Jenny Tavares Jacon. <b>Desenvolvimento de Óxidos Magnéticos Diluídos</b>. (Graduando em Licenciatura em Física) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Daniel dos Reis Germinaro. <b>DESENVOLVIMENTO DO MÉTODO DE MONTAGEM DE UMA LUNETA DE BAIXO CUSTO</b>. (Graduação em Física) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Daniela Furtado Campos. <b>Exame Nacional do Ensino Médio como política pública de avaliação, certificação e seleção: contribuições pedagógicas da contextualização de questões de Física na prova de 2013</b>. (Aperfeiçoamento/Especialização em POLÍTICAS, GESTÃO E FINANCIAMENTO DA EDUCAÇÃO) - Universidade Federal de Goiás. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Eliza Maria. <b>Desenvolvimento do software Astro3D para o ensino de astornomia</b>. (Graduando em Física Licenciatura) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Fernando de Andrade Fernandes. <b>O uso de Super-heróis no Ensino de Física</b>. (Graduação em Física - Licenciatura) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Fábio Yamashita Barletta. <b>Fragment Docking aplicado no desenvolvimento de inibidores da RNA Helicase do vírus da Dengue</b>. (Graduando em Biotecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Giuller Fernando de Assis. <b>O enfoque CTS na geração de temas controversos: Produção de energia elétrica a partir de uma Usina Nuclear</b>. (Graduação em Física) - Universidade Federal de Goiás, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Graziella dos Reis Rosa Franco. <b>Caracterização da Estrutura Local de Materiais Cerâmicos Multiferroicos</b>. (Graduando em Química) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Guilherme Kalil. <b>Programação de jogos com o Kinect para o ensino de Física</b>. (Graduando em Ciencia da Computação) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Jesus Vinicius da Silva. <b>Uma proposta sobre dualidade onda-partícula para inserção de Física Moderna e Contemporânea no Ensino Médio</b>. (Graduação em Física) - Universidade Federal de Goiás, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Juliana de Fátima Silva. <b>Medindo o planeta Terra: um experimento com abordagem interdisciplinar</b>. (Graduação em Geografia - Licenciatura) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Juliana Mara de Oliveira. <b>Monitoria na disiciplina Métodos Quantitativos Aplicados à Geografia</b>. (Geografia - Bacharelado) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Jéssica Emi Takarada. <b>Investigação proteica por eletroforese em gel de poliacrilamida (SDS-PAGE) em tecidos de fígado de ratos sob diferentes condições de alimentação com Coffea arabica L.</b>. (Graduação em Biotecnologia) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Karina Pereira dos Santos. <b>Monitoria na disiciplina Métodos Quantitativos Aplicados à Geografia</b>. (Geografia - Licenciatura) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Kleyton D'Martin Costa. <b>Monitoria na disiciplinaomputação Aplicada ao Ensino de Física</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Mariana da Silva Ribeiro. <b>Propriedades eletrônicas do sistema CNT-(OH)x</b>. (Graduando em Química) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2202100561413773">Mirele Bastos</a>. <b>Modelagem computacional de nanofiltros orgânicos e sintéticos: um estudo de primeiros princípios</b>. Dissertação (Mestrado em Química) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Márcia Pereira da Silva. <b>Monitoria na disciplina Métodos Quantitativos Aplicados à Geografia</b>. (Geografia - Bacharelado) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Natália Caroline Catani. <b>Estudo da resposta analítica de um biossensor potenciométrico com enzima Polifenol oxidase extraída de Musa sp, para determinação de adrenalina em um fluxo sanguíneo artificial.</b>. (Graduando em Química) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Nelson Gustavo Alves Pereira, Lívia Cecília dos Passos Araúj. <b>Diferenciação protéica utilizando SDS-PAGE nos tecidos de cólon de camundongos sob indução cancerígena e diferentes dietas com Coffea arabica L.</b>. (Graduação em Química) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Rafael Botelho. <b>Caracterização e Observação de Exoplanetas</b>. (Graduando em Física Licenciatura) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Rafael Tomaz Silva. <b>Caracterização Óptica de Óxidos Magnéticos Diluídos</b>. (Graduando em Física) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Valdiglei Borges Prado. <b>Análise de uma atividade para o ensino de história da Física no ensino médio utilizando o Fakebook (Perfís Falsos) como ferramenta para atividades em grupo</b>. (Graduação em Física) - Universidade Federal de Goiás, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Vanderson Afonso Silva. <b>DESENVOLVIMENTO DE UM MÉTODO DE MONTAGEM DE TELESCÓPIO NEWTONIANO.</b>. (Graduação em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Viviane Maciel de Almeida. <b>Estudo da ordem local e de longo alcance em óxidos magnéticos diluídos: Zn1-xMnxO</b>. Dissertação (Mestrado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2013.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Wanderson Geraldo Knupp. <b>Estudo teórico das propriedades eletrônicas, ópticas e de transporte via dopagem em sistemas TiCoO</b>. (Graduando em Física) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Anderson dos Santos. <b>Monitoria na Disciplina Computação Aplicada à Física</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5619667787620752">Anderson Stojan Costa</a>. <b>Obtenção e Caracterização estrutural de filmes finos do óxido magnético diluído ZnO:Co/Mn via spin coating</b>. Dissertação (Mestrado em Física - UFLA - UFSJ - UNIFAL) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Antônio Marçal Costa Miguel. <b>Utilização de moagem mecâno-química para síntese do ZnO dopado com Co a partir de pós preparado via método Pechini</b>. (Graduando em Física Licenciatura) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5859772357477134">Bruno de Oliveira Campos</a>. <b>Estudo das propriedades eletrônicas, ópticas e de transporte de nanofitas de SnO2</b>. Dissertação (Mestrado em Física) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Débora Cristina Mengali Alves. <b>Propagação de sólitons em meios dispersivos e não lineares</b>. (Graduando em Física) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Fabiana da Penha Rhodes. <b>Fabricação e Caracterização de Cerâmicas de Zn1-xCoxO para Aplicação em Spintrônica</b>. Dissertação (Mestrado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2012.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Felipe Lopes de Andrade. Investigação da influência hepatoprotetora de Coffea arabica L. <b>orgânico e convencional na expressão e atividade da catalase em tecidos de fígado de ratos sob ação da droga DMH</b>. (Graduando em Farmácia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Fábio Yamashita Barletta. <b>Docking de fragmentos aplicado no desenvolvimento de inibidores da Metiltransferase do vírus da Dengue</b>. (Graduando em Bacharelado em Biotecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Jamila Rodrigues. <b>ANÁLISE DOS DADOS FOTOMÉTRICOS DE V1082 SAGITTARII</b>. (Graduação em Física) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Jhonatan Thallisson Cabral Nery. <b>Parque da Ciência</b>. (Ciências da Computação) - Universidade Federal de Goiás, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Juliana de Fátima Silva. <b>Métodos Quantitativos Aplicados à Geografia (disciplina)</b>. (Geografia - Bacharelado) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Keila Sandra Prado Silva. <b>TIRINHAS COMO METODOLOGIA DE AVALIAÇÃO EM FÍSICA PARA ALUNOS DO ENSINO MÉDIO NA MODALIDADE EJA.</b>. (Graduação em Física) - Universidade Federal de Goiás, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1481276383743867">Leonardo Bruno Federico</a>. <b>Estudo computacional de novos inibidores de acetilcolinesterase, planejados como candidatos a fármacos para o tratamento da doença de Alzheimer</b>. Dissertação (Mestrado em Química) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Luiz Guilherme Pascoaloto. <b>A física das máquinas artesanais da zona rural</b>. (Graduando em Física - Licenciatura) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Marcia Pereira da Silva. <b>Monitoria na discplina Métodos Quantitativos em Geografia</b>. (Geografia - Bacharelado) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Mariana da Silva Ribeiro. <b>Docking de fragmentos aplicados na inibição da Leishmania</b>. (Graduando em Bacharelado em Química) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Naiara Arantes Lima. <b>Síntese e Estudo Estrutural do Semicondutor Magnético Diluído ZnO:Co/Mn ? Pós e Filmes Finos</b>. (Graduando em Física Licenciatura) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Rafael Thomas Silva. <b>Caracterização de Semicondutores Diluídos Magnéticos Nanoestruturados a base de ZnO</b>. (Graduando em Licenciatura em Física) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Rafael Tomaz da Silva. <b>A Indução Unipolar</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Thiago Henrique Reis. <b>Sensores de movimento no ensino de Física</b>. (Graduando em Física Licenciatura) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Thiago Oliveira Lima. <b>O perfil do aluno de EJA e as conexões com a Matriz de Referência do ENEM e as competências estabelecidas pelo PCN+, um estudo de caso</b>. (Graduação em Física) - Universidade Federal de Goiás, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Laura Pascoini. <b>Docking de fragmentos aplicado no desenvolvimento de inibidores da Metiltransferase do vírus da Dengue</b>. (Graduando em Biotecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Luíza Assin Squillace. Complexos inibidor enzima. Caso de estudo:Fukugetina- Tripsina. <b>Uma comparação entre Docking Rígido e Docking Flexível</b>. (Graduação em Bacharelado em Biotecnologia) - Universidade Federal de Alfenas, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Daiane Jenny Tavares Jacon. <b>Estudo de Defeitos Estruturais em Óxidos Magnéticos Semicondutores</b>. (Graduando em Licenciatura em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Daniel dos Reis Germinaro. <b>A CONSTRUÇÃO DE UMA LUNETA DE BAIXO CUSTO E SUA UTILIZAÇÃO NO ENSINO DE FÍSICA E ASTRONOMIA NO ENSINO MÉDIO.</b>. (Graduando em Física Licenciatura) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Deborá Cristina Mengali Alves. <b>Estudo por EXAFS dos óxidos semicontudores magnéticos diluídos TiO2-Co/Mn e ZnO-Co/Mn - borda K dos elementos Ti, Zn, Mn e Co.</b>. (Graduando em Física Licenciatura) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Douglas Martelli e Silva. <b>OBTENÇÃO E CARACTERIZAÇÃO DE PSEUDO-POLIMORFOS DE DOXICICLINA</b>. Dissertação (Mestrado em Ciências Farmacêuticas) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2011.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Débora Cristina Mengali Alves. <b>Estudo do Efeito Dispersivo e Não-Llinear em Sólitons</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Alfenas, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Helena Lima Lopes. <b>Docking baseado em fragmentos: caçando eficientemente fármacos</b>. (Graduando em Bacharelado em Química) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Jéssica Emi Takarada. <b>Investigação (metalo)proteica por eletroforese em gel de poliacrilamida (SDS-PAGE) em tecidos de fígado de ratos sob diferentes condições de alimentação com Coffea arabica L.</b>. (Graduando em Biotecnologia) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Luiz de Melo Campos Junior. <b>Estudo das propriedades Estruturais de Óxidos Magnéticos Diluídos Nanoestruturados</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Alfenas, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Maria Helena Passos. <b>Análise das Curvas de Luz da Variável Cataclísmica FO Aqr</b>. (Graduando em Física) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Mirele Bastos. <b>Estágio Curricular Obrigatório Laboratório de Modelagem Molecular</b>. (Bacharelado em Química) - Universidade Federal de Alfenas, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Nelson Gustavo Alves Pereira. <b>Diferenciação protéica utilizando SDS-PAGE nos tecidos de cólon de ratos sob indução ou inibição cancerígenas e diferentes dietas com Coffea arabica L.</b>. (Graduando em Química) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Patricia Covre e Poliana J. Abreu. <b>Obtenção e Caracterização Estrutural de Perovskitas do tipo ABTiO3</b>. (Graduação em Química) - Universidade Federal de Alfenas, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Patrícia Covre. <b>SÍNTESE E CARACTERIZAÇÃO ESTRUTURAL DE NANOPARTÍCULAS E FILMES FINOS DO ÓXIDO SEMICONTUDOR MAGNÉTICO DILUÍDO (Ti1-xCoxO2)</b>. (Graduando em Química) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Rafael Tomaz Silva. <b>A Indução Eletromagnética: Análise Conceitual e Fenomenológica</b>. (Graduando em Licenciatura em Física) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Talita Evelyn de Souza. <b>Desenvolvimento e caracterização estrutural de óxidos magnéticos diluídos a partir da matriz TiO2</b>. Dissertação (Mestrado em Programa de Pós-Graduação em Química) - Universidade Federal de Alfenas, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2011.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Talitha Accioly Simões Coelho. <b>Monitoria na disciplina Métodos Quantitativos</b>. (Geografia - Licenciatura) - Universidade Federal de Alfenas, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Uessiley Ribeiro Barbosa. <b>Elementos do método de aprendizagem baseada em problemas como estratégia de ensino de Física: Energia Nuclear</b>. (Graduação em Física) - Universidade Federal de Goiás, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adriano Luis da Silva. <b>SIMULAÇÃO TRIDIMENSIONAL DE SISTEMA ESTELAR BINÁRIO COMPACTO EM UNIDADES DE PROCESSAMENTO GRÁFICO</b>. (Graduando em Ciencia da Computação) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Alex de Oliveira Freitas. <b>A influência de vídeos e simulações computacionais na construção de modelos mentais de indução eletromagnética no Ensino de Física</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Goiás, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Ana Laura Pascoini. <b>Docking molecular aplicado ao estudo da formação de complexos inibidor-enzima em fármacos potenciais relacionados com a doença de Alzheimer</b>. (Graduando em Biotecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Ana Luíza Assin Squillace. Complexo inibidor enzima. Caso de estudo:Fukugetina- Tripsina. <b>Uma comparação entre Docking Rígido e Docking Flexível</b>. Iniciação Científica - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bruno de Oliveira Campos. <b>Análise térmica em laser VCSEL</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Carla Esper Barbosa. <b>Teoria do funcional da densidade DFT versus algoritmos genéticos no estudo da formação de complexos inibidor-enzima</b>. (Graduando em Licenciatura em Química) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Carla Maria Espíndola Martins. <b>ANÁLISE DAS CARACTERÍSTICAS DA APRENDIZAGEM EM ASTRONOMIA DOS ALUNOS INGRESSANTES NO CURSO DE FÍSICA-LICENCIATURA DA UNIFAL.</b>. (Graduação em Física Licenciatura) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Caroline de Oliveira Reno. <b>Modelagem da interação de nanotubos de carbono com íons metálicos</b>. (Graduando em Bacharelado em Biotecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Débora Cristina Mengali Alves. <b>Estudo da Ordem Local de Óxidos Magnéticos Semicondutores por meio da Técnica de Absorção de Raios X (XANES e EXAFS).</b>. (Graduando em Física Licenciatura) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Eder Aparecido de Almeida. <b>O software modellus no ensino de conceitos de eletricidade no Ensino Médio</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Goiás, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Fernando de Andrade Fernandes. <b>Crenças populares a respeito dos fenômenos naturais no sul mineiro</b>. (Graduando em Licenciatura em Física) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Flávio Pereira Picheli. <b>Estágio de interesse curricular do curso de biotecnologia</b>. Orientação de outra natureza - Instituto de Química São Carlos - USP, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Flávio Pereira Picheli. Screening metaloproteico de Coffea arabica L. <b>in natura de manejo orgânico e convencional por SDS-PAGE e ET AAS</b>. (Graduação em Biotecnologia) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Glaubert Lucas de Caravlho Cabral e Lincoln Fonseca de Souza. <b>PREPARAÇÃO E CARACTERIZAÇÃO DE ÓXIDOS SEMICONDUTORES MAGNÉTICOS (Cu2O-Co)</b>. (Graduação em Química) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Juliana de Fatima Silva. <b>Mapeamento das crenças populares no sul mineiro</b>. (Graduando em Licenciatura e Bacharelado em Geografia) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Julianne Lauretti Ferreira. <b>Obtenção e caracterização de co-cristais de captopril/hidroclorotiazida</b>. (Graduação em Fármacia) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Mirele Bastos. <b>Modelagem computacional do complexo Catepsina G -Fukugetina</b>. (Graduação em Bacharelado em Química) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Mirele Bastos. <b>Utilização da técnica ?divide e vencerás? no estudo de complexos inibidor-enzima</b>. (Graduando em Bacharelado em Química) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Nilton Caetano Vilela Filho. <b>Uma proposta de seqüência didática com experimento para introdução do conceito de quantização da energia no ensino médio.</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Goiás, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Núbia Profira Vieira. <b>Uma adaptação do ?International Young Phisicists' Tournament? (IYPT) como proposta de avaliação no ensino de física no Ensino Médio.</b>. (Graduação em Licenciatura em Física) - Universidade Federal de Goiás, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Patricia Crove. <b>PREPARAÇÃO E CARACTERIZAÇÃO DE ÓXIDOS MAGNÉTICOS SEMICONDUTORES E NANOPARTÍCULAS DE CERÂMICAS FERROELÉTRICAS</b>. (Graduando em Química) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Paula Caroline (BIC-Jr). <b>Modelagem computacional e estudo de candidatos a fármacos inibidores da Acetilcolinesterase utilizados no tratamento da DA</b>. Iniciação Científica - Escola Estadual Judith Vianna, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Reidner Ramos. <b>Elementos culturais locais no Ensino de Física</b>. (Licenciatura em Física) - Universidade Federal de Goiás, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5154949759339458">Frederico Augusto Toti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Rogério Souza Bernardes. <b>Crenças populares a respeito dos fenômenos climáticos naturais: ciência e conhecimento local na vida cotidiana</b>. (Geografia - Bacharelado) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Solange Carvalho da Silva. <b>Aplicação de biossensores potenciométricos, construídos a partir de extrato enzimático de Musa sp., para determinação de adrenalina em amostras biológicas, in vivo e de interesse farmacêutico</b>. (Graduando em Farmácia) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Vinícius Archanjo Ferraz. <b>Monitoria na disciplina Métodos Quantitativos em Geografia</b>. (Geografia - Bacharelado) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Yuri Farias Tejo de Araújo. <b>Relatório de Estágio- Laboratório Q 204 - Instituto de Ciências Exatas</b>. (Química) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alencar Santos Paixão. <b>Monitoria da disciplina Climatologia Geral</b>. (Licenciatura e Bacharelado em Geografia) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Laura Pascoini. <b>Teoria do Funcional da Densidade (DFT) versus algoritmos genéticos no estudo da formação de complexos inibidor-enzima</b>. (Graduando em Biotecnologia) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bruna Maria Fernandes Martins. <b>Análise dos índices de criminalidade em Alfenas/MG comparada com as escalas estadual e nacional</b>. (Geografia - Bacharelado) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Dayene do Carmo Carvalho. <b>Avaliação de metais e efeitos toxicológicos in vivo de Coffea arabica obtido dos cultivos Orgânico e Convenciona</b>. Dissertação (Mestrado em Química) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Gisele Aparecida Rodrigues. <b>Mitos a respeito dos fenômenos climáticos naturais: ciência e conhecimento local na vida cotidiana</b>. (Bacharelado em Geografia) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2009.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>, <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Hilquias Tamiris dos Santos. <b>A logística dos transportes em função das indústrias na cidade de Alfenas/MG</b>. (Bacharelado em Geografia) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Jorge Fernandes Nasser Batista. <b>Laboratório Q 204 - Departamento de ciências exatas</b>. (Química) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Ludmila Vianna Batista. <b>Análise dos índices de criminalidade em Alfenas/MG comparada com as escalas estadual e nacional</b>. (Bacharelado em Geografia) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Mirele Bastos. Complexos inibidor-enzima. <b>Caso de estudo: fukugetina-catepsina G</b>. (Graduando em Bacharelado em Química) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Patrícia Santos Vaz de Lima. <b>Recristalização e obtenção de novos arranjos cristalinos de fármacos usados no controle de doenças croônico-degenerativas</b>. (Graduação em Fármacia) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2380268778692743">Person Pereira Neves</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Solange Carvalho da Silva. Estudo de procedimentos de extração de enzimas a partir de extrato bruto de Musa spp. <b>para construção de biossensor sensível à adrenalina</b>. (Graduando em Farmácia) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Vanderson Afonso Silva. <b>Atividades de Ensino de Física e Astronomia Mediados pelo Computador e pelo Telescópio.</b>. (Graduando em Licenciatura em Física) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Wanderson da Silva. <b>Mitos a respeito dos fenômenos climáticos naturais: ciência e conhecimento local na vida cotidiana</b>. (Geografia - Bacharelado) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Altamir Fernandes de Oliveira. <b>Diferentes percepções entre alunos da educação básica quanto à proposta para a Educação Ambiental de Peti</b>. (Graduação em Curso de Licenciatura em Ciências Biológicas) - Universidade Federal de Alfenas, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Luíza Assin Squillace. Complexos inibidor-enzima. <b>Casos de estudo: fukugetina-termolisina e fukugetina-tripsina</b>. (Graduando em Bacharelado em Biotecnologia) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Carla Esper. <b>Complexos inibidor-enzima.Caso de estudo: fukugetina-quimotripsina</b>. (Graduando em Licenciatura em Química) - Universidade Federal de Alfenas, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Carla Maria Espindola Martins. <b>Desenvolvimento de Material Didático para o Ensino de Astronomia na Escola Básica</b>. (Graduando em Física Licenciatura) - Universidade Federal de Alfenas, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Caroline de Oliveira Renó. <b>Modelagem computacional da interação entre o grupo prostético heme e o oxigênio</b>. (Graduando em Bacharelado em Biotecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Giulia Almeida Veiga Milan. Complexos inibidor-enzima. <b>Casos de estudo: fukugetina-quimotripsina e fukugetina-papaína</b>. (Graduando em Bacharelado em Biotecnologia) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Mirele Bastos. <b>Complexos inibidor-enzima.Caso de estudo: fukugetina-catepsina G</b>. (Graduando em Bacharelado em Química) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Anderson Mauro de Souza. <b>Estudo Teórico do Polimorfismo em Sólidos Farmacêuticos</b>. (Graduando em Licenciatura em Física) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bruno de Oliveira Campos. <b>Estudo teórico das propriedades ópticas e de transporte em heteroestruturas de tunelamento ressonante</b>. (Graduando em Licenciatura em Física) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Flávia Fernandes dos Reis. <b>Monitoria da disciplina Didática Geral para as Licenciaturas</b>. (Pedagogia) - Universidade Federal de Uberlândia, . 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318353199461089">Samuel Bueno Soltau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Gilcele Casari Rampasso. <b>Determinação potenciométrica de analitos de interesse farmacêutico usando eletrodos de óxido de tungstênio em FIA</b>. (Graduando em Bacharelado Em Química) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4055079165002493">Célio Wisniewski</a>.</font></td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Natalie Sousa Modesto. <b>Estudo de Transporte Elétrico em Diodos de Tunelamento Ressonante</b>. (Graduando em Engenharia Elétrica) - Instituto Nacional de Telecomunicações, Fundação do Instituto Nacional de Telecomunicações. 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1642083834158700">Hugo Bonette de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Sidnei Benvenuto. <b>Atividades de Ensino e Divulgação de Astronomia no Observatório Municipal Áries</b>. (Graduando em Engenharia Elétrica- Automação e Telecomunicação) - Pontifícia Universidade Católica de Minas Gerais, Pontifícia Universidade Católica de Minas Gerais. 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Karen Macedo. <b>Atividades de Ensino e Divulgação de Astronomia no Observatório Municipal Áries</b>. (Graduando em Engenharia Elétrica com ênfase em Telecominicação) - Pontifícia Universidade Católica de Minas Gerais, Pontifícia Universidade Católica de Minas Gerais. 2005.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Rafael Barbosa. <b>Estudo de Caos em Circuitos Elétricos</b>. (Aperfeiçoamento/Especialização em Engenharia Elétrica) - Pontifícia Universidade Católica de Minas Gerais, . 2005.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Tania Regina Pitarello de Melo. <b>Motorização de Telescópio Newtoniano com Material de Baixo Custo</b>. (Graduando em Engenharia Elétrica : Telecomunicação e Automação) - Pontifícia Universidade Católica de Minas Gerais - Campus Poços de Caldas, POntifícia Universidade Católica de Minas Gerais. 2005.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>David Coutinho. <b>Construção e Automação de telescópios a baixo custo para fins didáticos</b>. (Graduando em engenharia Elétrica com Ênfase em Telecomunicação) - Pontifícia Universidade Católica de Minas Gerais - Campus Poços de Caldas, POntifícia Universidade Católica de Minas Gerais. 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Lúcia de Oliveira Olivério. <b>Reflexão e refração da luz: conceitos e fundamentos.</b>. (Graduação em Matemática) - Faculdades Integradas de Bebedouro, . 2003.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4055079165002493">Célio Wisniewski</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Renan Rezende de Campos. <b>Astronomia no Ensino Fundamental</b>. (Graduando em Pedagogia) - Pontifícia Universidade Católica de Minas Gerais, . 2003.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6122155083160820">Artur Justiniano Roberto Junior</a>.</font></td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Eduardo Santos Louzada. <b>Deterinação de norarenalina usando biossensor potenciométrico de pasta de carbono com extrato bruto enzimático</b>. (Graduando em Farmácia) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2002.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Fabrício Santos Gonçalves de Oliveira. <b>Estudo ambiental da Contaminação de Fenóis no córrego da Pedra Branca na cidade de Alfenas</b>. Orientação de outra natureza - Universidade Federal de Alfenas, . 2002.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Gustavo de Souza Pessôa. <b>Estudo Ambiental da Contaminação de Fenóis no Córrego Chafariz na cidade de Alfenas</b>. Orientação de outra natureza - Universidade Federal de Alfenas, . 2002.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Lueli Paula dos Santos. <b>Estudo da Otimização dos Parâmetros Analíticos para Determinação de Fenóis Empregando Biossensor Potenciométrico de Pasta de Carbono com Extrato Bruto Enzimático</b>. (Graduando em Farmácia) - Universidade Federal de Alfenas, . 2002.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Eduardo Santos Louzada. <b>Construção e Caracterização de um Biossensor para a Determinação de Analitos de Uso Farmacêutico</b>. (Graduando em Farmácia) - Universidade Federal de Alfenas, Universidade Federal de Alfenas. 2000.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1140012060761818">Cristiana Schmidt de Magalhães</a>.</font></td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Amaury Suárez Gómez. <b>Dependencia térmica de la eficiencia de converción en láseres de AlxGa1-xAs</b>. (Graduação em Física) - Facultad de Física Universidad de La Habana, . 1996.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3732563704810366">Ihosvany Camps Rodríguez</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 21/07/2025 16:13:13<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

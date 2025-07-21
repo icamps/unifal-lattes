@@ -1,0 +1,259 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Resumos expandidos publicados em anais de congressos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1998,
+1],
+[1999,
+1],
+[2001,
+3],
+[2003,
+1],
+[2004,
+1],
+[2005,
+2],
+[2006,
+1],
+[2007,
+3],
+[2008,
+4],
+[2009,
+5],
+[2012,
+3],
+[2015,
+1],
+[2016,
+1],
+[2017,
+6],
+[2018,
+6],
+[2024,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Resumos expandidos publicados em anais de congressos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 40<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>RODIGUES, D. S. ; SOARES, GUILHERME AUGUSTO ; GONZALEZ-LOPEZ, V. A. ; BEZERRA, ANIBAL T ; JIRSTRAND, M. ; MIRANDA, J. R. A.. <b>ACCESSING THE PHARMACOKINETICS OF MAGNETIC NANOPARTICLES IN CIRRHOSIS-ASSOCIATED HEPATOCARCINOGENESIS BY ORDINARY DIFFERENTIAL EQUATION MODELING AND AC BIOSUSCEPTOMETRY</b>. Em: 1º Congresso CancerThera, 2024, Campinas. Hematology, Transfusion and Cell Therapy, v. 46, p. S27, 2024. </td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHAES, ANDRÉ ; SOLTAU, SAMUEL. <b>A Física investiga: Será o Homem-Aranha um assassino por falta de conhecimento físico?</b>. Em: MOL2NET 2018, International Conference on Multidisciplinary Sciences, 4th edition, 2018, Sciforum.net. Proceedings of MOL2NET 2018, International Conference on Multidisciplinary Sciences, 4th edition. Basel: MDPI, p. 5775, 2018. <a href="http://dx.doi.org/10.3390/mol2net-04-05775" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CINTRA, RENAN ; SOLTAU, SAMUEL. <b><span>REALIDADE AUMENTADA E </span>SMARTPHONE <span>COMO FERRAMENTAS NO ENSINO DE FÍSICA</span></b>. Em: MOL2NET 2018, International Conference on Multidisciplinary Sciences, 4th edition, 2018, Sciforum.net. Proceedings of MOL2NET 2018, International Conference on Multidisciplinary Sciences, p. 5854, 2018. <a href="http://dx.doi.org/10.3390/mol2net-04-05854" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CRUZ, JOÃO PAULO ; SOLTAU, SAMUEL. <b><span>Uma proposta de uso do Tracker para a análise espectroscópica</span></b>. Em: MOL2NET 2018, International Conference on Multidisciplinary Sciences, 4th edition, 2018, Sciforum.net. Proceedings of MOL2NET 2018, International Conference on Multidisciplinary Sciences, p. 5867, 2018. <a href="http://dx.doi.org/10.3390/mol2net-04-05867" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MACEDO, G. ; Artur Justiniano. <b>Application of the restricted problem of the three bodies in teaching physics and astronomy</b>. Em: Reunião da Sociedade Astronômica Brasileira, 2018, São Paulo. Boletim da Sociedade Astronômica Brasileira, v. 30, p. 26-27, 2018. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARCULINO, CASSIO HENRIQUE ; DAVID, FRANCIELLI DE FATIMA ; SILVA, YGOR ; ALMEIDA, JOÃO ; PIMENTA, VINICIUS ; BALDASSO, GABRIEL ; SILVA, AMANDA ; PIMENTA, RAPHAEL CÉSAR ; FAGUNDES, LUCAS ; SOLTAU, SAMUEL. <b><span>Uma proposta do uso de vídeo-análise para o Ensino de Física</span></b>. Em: MOL2NET 2018, International Conference on Multidisciplinary Sciences, 4th edition, 2018, Sciforum.net. Proceedings of MOL2NET 2018, International Conference on Multidisciplinary Sciences, p. 5647, 2018. <a href="http://dx.doi.org/10.3390/mol2net-04-05647" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SANTOS, ANDERSON ; SOLTAU, SAMUEL. <b>Introdução ao Ensino de Física de Partículas através de um jogo de cartas</b>. Em: MOL2NET 2018, International Conference on Multidisciplinary Sciences, 4th edition, 2018, Sciforum.net. Proceedings of MOL2NET 2018, International Conference on Multidisciplinary Sciences, p. 5853, 2018. <a href="http://dx.doi.org/10.3390/mol2net-04-05853" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BRITO, M. M. ; Artur Justiniano. <b>Description of variable stars visible in small observatories for teaching purposes</b>. Em: Reunião Anual da Sociedade Astronômica Brasileira, 2018, São Paulo. Boletim da Sociedade Astronômica Brasileira, v. 30, 2017. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>DOMINGUES, R. P. ; Artur Justiniano. <b>A proposal for an Astronomy basic course for secondary school students</b>. Em: Reunião Anual da Sociedade Astronômica Brasileira, 2018, São Paulo. Boletim da Sociedade Astronômica Brasileira, v. 30, 2017. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FERREIRA, M. P. ; Artur Justiniano ; SILVA, J. C.. <b>Look to the sky, see the universe: A university extension project in a nonformal teaching space</b>. Em: Reunião Anual da Sociedade Astronômica Brasileira, 2018, São Paulo. Boletim da Sociedade Astronômica Brasileira, v. 30, p. 182-183, 2017. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MACEDO, G. ; Artur Justiniano ; Bressan. <b>Binary Stars 3D: An app for teaching astronomy</b>. Em: Reunião da Sociedade Astronômica Brasileira, 2018, São Paulo. Boletim da Sociedade Astronômica Brasileira, v. 30, p. 28-29, 2017. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SILVA, J. C. ; Artur Justiniano. <b>Observation of planetary transit in miniobservatories: a proposal for inserting the study of the exoplanets in physics teaching</b>. Em: Reunião Anual da Sociedade Astronômica Brasileira, 2018, São Paulo. Boletim da Sociedade Astronômica Brasileira, v. 30, 2017. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>VILELA, J. L. L. ; MAGALHÃES, C. S.. <b>LABORATÓRIOS DE ÓPTICA PARA ALUNOS DO ENSINO MÉDIO DAS ESCOLAS PÚBLICAS: MONTAGEM E AVALIAÇÃO DA APRENDIZAGEM</b>. Em: XXII Simpósio Nacional de Ensino de Física ? SNEF 2017, 2017, São Carlos. Livro de Resumos, 2017. <a href="http://dx.doi.org/10.1039/9781782622215-00144" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MORAES, J. F. ; VILELA, J. L. L. ; MAGALHÃES, C. S.. <b>UM NOVO OLHAR SOBRE O ENSINO DE FÍSICA NOS ANOS INICIAIS DO ENSINO FUNDAMENTAL</b>. Em: XVI Encontro de Pesquisa em Ensino de Física, 2016, Natal. Livro de Resumos, 2016. </td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PEREIRA, W. ; Camps, I. <b>In silico design of new drugs for myeloid leukemia treatment</b>. Em: MOL2NET, International Conference on Multidisciplinary Sciences, 2015, Sciforum.net. Proceedings of MOL2NET, International Conference on Multidisciplinary Sciences. Basel: MDPI, v. 1, p. b005, 2015. </td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FERREIRA, N. M. ; G JUNIOR, M. M. ; JUNIOR, S. S ; TOTI, F. A.. <b>1UMA DISCUSSÃO CTS PARA O ENSINO DE FÍSICA NO ENSINO MÉDIO: PETRÓLEO, NECESSÁRIO, MAS PERIGOSO</b>. Em: Conpeex 2012, 2012, Goiânia. Economia verde, Sustentabilidade e Desenvolvimento social. Goiânia-GO: UFG, p. 9045-9049, 2012. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FREITAS, F. A. ; LIMA, G. T. ; TOTI, F. A. ; JUNIOR, S. S. <b>UMA PROPOSTA PARA ABORDAGEM DOS CONCEITOS DE FÍSICA RELACIONADOS COM O MOTOR ELÉTRICO, NO ENSINO MÉDIO</b>. Em: Conpeex 2012, 2012, Goiânia. Economia verde, Sustentabilidade e Desenvolvimento social. Goiânia-GO: UFG, p. 1939-1944, 2012. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LIMA, G. T. ; NUNES, I. F. ; TOTI, F. A. ; JUNIOR, S. S. <b>UMA PERSPECTIVA CTS PARA INTRODUÇÃO DO TEMA NANOTECNOLOGIA NO ENSINO DE FÍSICA</b>. Em: Conpeex 2012, 2012, Goiânia. Conpeex 2012 - Economia Verde, sustentabilidade e desenvolvimento social. Goiânia-GO: UFG, p. 1929-1933, 2012. </td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ROBERTO J., A. J. <b>Education in Astronomy:Discussing Science Technology and Society</b>. Em: IAU XXVII GENERAL ASSEMBLY, 2009, Rio de Janeiro. IAU Abstract Book, v. 1, p. 409-409, 2009. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ROBERTO J., A. J.; CAMPOS, R. R.. <b>Astrophysics in higth school: what teachers think about it</b>. Em: IAU XXVII GENERAL ASSEMBLY, 2009, Rio de Janeiro. IAU Abstract Book, v. 1, p. 435-435, 2009. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>WISNIEWSKI, C.; GREGORIO, R ; SILVA, A. B.. <b>Efeito da orientação na polarização ferroelétrica de filmes de PVDF-beta obtidos por solução e prensagem</b>. Em: X Congresso Brasileiro de Polímeros, 2009, Foz do Iguaçu-PR. Anais do X CBPol, 2009. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>WISNIEWSKI, C.; GREGORIO, R ; SILVA, A. B.. <b>Método de Rampas de Tensão: Uma eficiente técnica para a determinação simultânea do perfil de polarização e da permissividade elétrica de polímeros ferroelétricos</b>. Em: X Congresso Brasileiro de Polímeros, 2009, Foz do Iguaçu-PR. Anais do X CBPol, 2009. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>WISNIEWSKI, C.; GREGORIO, R ; SILVA, A. B. ; Esteves, J. V.. <b>Influence on the amorphous-crystalline interface on the dielectric and ferroelectric polarization of alpha-PVDF</b>. Em: 11th International Conference on Advanced Materials - ICAM 2009, 2009, Rio de Janeiro. Proceedings of ICAM2009, 2009, v. 1, 2009. </td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ellen Silva de Sousa ; Camps, I. ; Marcelo H. dos Santos ; Nelilma Correa Romeiro ; Márcia P. Veloso. <b>Molecular modeling of prenilated benzophenones extracted from seeds of Rheedia Brasiliensis</b>. Em: 4º Simpósio Brasileiro em Química Medicinal. BrazMedChem 2008, 2008, Porto de Galinhas. PE. 4º Simpósio Brasileiro em Química Medicinal. BrazMedChem 2008. CD-ROM, 2008. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Mauro, A. ; Camps, I. ; Felipe T. Martins. <b>Influence of conformational polymorphism in the receptor-ligand complex formation</b>. Em: 4º Simpósio Brasileiro em Química Medicinal. BrazMedChem 2008, 2008, Porto de Galinhas. PE. 4º Simpósio Brasileiro em Química Medicinal. BrazMedChem 2008. CD-ROM, 2008. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Neves, P. P. ; A. C. Doriguetto ; Simone Vieira Pereira ; Mir, M. ; Camps, I. ; Magali Benjamim de Araujo ; Javier A. Ellena. <b>Powder diffraction analyses of crystalline forms of fluconazole, nimesulidum and mebendazole</b>. Em: 4º Simpósio Brasileiro em Química Medicinal. BrazMedChem 2008, 2008, Porto de Galinhas. PE. 4º Simpósio Brasileiro em Química Medicinal. BrazMedChem 2008. CD-ROM, 2008. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>WISNIEWSKI, C.; GREGORIO, R ; SILVA, A. B.. <b>Study of the influence of the crystalline phase and orientation in ferroelectric polarization of poly(vinylidene fluoride) films in the beta phase</b>. Em: VII Encontro SBPMat/7th Brazilian MRS Meeting, 2008, Guarujá,SP. Proceedings of VII SBPMat/Brzilian MRS Meeting, 2008. </td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ARRUDA, T. J. <b>Espalhamento de ondas eletromagnéticas por um cilindro reto circular infinito magnético</b>. Em: XV Simpósio Internacional de Iniciação Científica da USP - SIICUSP, 2007, São Carlos. Anais do XV Simpósio Internacional de Iniciação Científica da USP - SIICUSP, 2007. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>TOTI, F. A.; PIERSON, A. H. C.. <b>Educação Científica e Cidadania: as diferentes concepções de significado e funções do conceito de cidadania nas pesquisas em ensino de ciências</b>. Em: 7 Jornada Científica da UFSCar - IV Congresso de Pós-Graduação, 2007, São Carlos. Anais de Eventos da UFSCar. São Carlos: UFSCar, v. 3, p. 1604-1605, 2007. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>TOTI, F. A.; PIERSON, A. H. C.. <b>Física no Ensino Médio e Estudantes trabalhadores: buscando relações entre significado e sentido para a aprendizagem</b>. Em: 7 Jornada Científica da UFSCar - IV Congresso de Pós-Graduação, 2007, São Carlos. Anais de Eventos da UFSCar. São Carlos: UFSCar, v. 3, p. 1606-1607, 2007. </td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ARRUDA, T. J. <b>Estabilidade Segundo Liapunov: Aplicações a uma Generalização da Equação do Pêndulo Não-Amortecido e à Equação de Liénard</b>. Em: XIV Simpósio Internacional de Iniciação Científica da USP - SIICUSP, 2006, São Paulo. Anais do XIV Simpósio Internacional de Iniciação Científica da USP - SIICUSP, 2006. </td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DORIGUETO, Antonio Carlos ; NEVES, P. P. ; MASCARENHAS, Yvone P ; MASTELARO, Valmor R ; EIRAS, José Antomio. <b>Structure of the Pb(1-x)La(x) TiO3 (x=0.30) ceramics below and above of the ferroelectric phase transition temperature</b>. Em: XXVIII Reunião Anual da Sociedade Brasileira de Química, 2005, 2005. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>WISNIEWSKI, C.; LUCCAS, P. O. ; MAGALHÃES, M. N. ; PESSOA, G. S.. <b>Contagem de Células de Saccharomyces Cerevisiae Através de Sistema em Fluxo Contínuo (FIA) com Detecção Turbidimétrica</b>. Em: 13o. ENQA - Encontro Nacional de Química Analítica, 2005, Niteroi, 2005. </td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MAGALHÃES, C. S.; PEREZ, C. A. ; ARRUDA, M. A. Z.. <b>Avaliação Qualitativa da presença de Metais em Proteínas de Fitoterápicos por Fluorescência de Raios-X</b>. Em: XIV Reunião anual de Usuários do LNLS, 2004, Campinas. Livro de Resumos, 2004. </td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>OLIVEIRA, F. S. G. ; PESSÔA, G. S. ; LUCCAS, P. O. ; MAGALHÃES, C. S.. <b>Estudo ambiental da contaminação de fenóis nos córregos pedra branca e chafariz na cidade de Alfenas</b>. Em: Nona Jornada de Iniciação Científica de Alfenas, 2003, Alfenas. Livro de Resumos, 2003. </td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>NEVES, P. P.; MASTELARO, Valmor R ; VICENTE, F. S. ; LI, Maximo Siu ; ZANETTI, Sonia M ; LEITE, Edson R ; LONGO, E.. <b>Synthesis and Characterization of Barium Borate Thin Films</b>. Em: XXII Congresso Brasileiro de Aplicações de Vácuo na Industria e na Ciência-XXII CBRAVIC, 2001, Guaratinguetá, SP. Livro de palestras convidadas e resumos estendidos do XXII Congresso Brasileiro de Aplicações de Vácuo na Industria e na Ciência-XXII CBRAVIC, p. 130, 2001. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>TRAVAIN, S. A. ; Balogh, D. T. ; BIANCHI, R. F. ; WISNIEWSKI, C. ; GIACOMETTI, J. A.. <b>Optimization of in situ deposition of polyaniline</b>. Em: International Conference on Frontiers of Polymers and Advanced Materials, 2001, Jaboatao dos Guararapes, p. TuPC3, 2001. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>WISNIEWSKI, C.; GIACOMETTI, J. A. ; MOREIRA, R L ; FARIA, L. O. ; Marini, G.. <b>Ferroelectric behavior of P(VDF-TrFE)-PMMA low-crystallinity blends</b>. Em: 10TH INTERNATIONAL MEETING ON FERROELECTRICITY, 2001, Madrid. Abstracts of the 10th International Meeting on Ferroelectricity, p. 47, 2001. </td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>WISNIEWSKI, C.; GIACOMETTI, J. A.. <b>Determinação da polarização ferroelétrica do PVDF usando o método de rampa de tensão</b>. Em: Congresso Brasileiro de Polímeros, 1999, Águas de Lindóia - SP, p. 472-476, 1999. </td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>WISNIEWSKI, C.; MOURA, W. A.. <b>Determinação da polarização ferroelétrica do PVDF estirado biaxialmente utilizando a técnica de corrente constante</b>. Em: I Simpósio Interunidades de Ciência e Engenharia de Materiais, 1998, São Carlos. São Carlos: IFSC, p. 77-78, 1998. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 21/07/2025 16:13:13<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

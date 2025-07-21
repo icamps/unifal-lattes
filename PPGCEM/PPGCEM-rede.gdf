@@ -1,27 +1,27 @@
 nodedef> name VARCHAR, idLattes VARCHAR, label VARCHAR, rotulo VARCHAR, lat DOUBLE, lon DOUBLE, collaborationRank DOUBLE, producaoBibliografica DOUBLE, artigoEmPeriodico DOUBLE, livro DOUBLE, capituloDeLivro DOUBLE, trabalhoEmCongresso DOUBLE, resumoExpandido DOUBLE, resumo DOUBLE, posDoutorado DOUBLE, dutorado DOUBLE, mestrado DOUBLE, ic DOUBLE, color VARCHAR
-0,4959152343828058,Alfeu Saraiva Ramos,[Sem rotulo],,,1.1599928,235,93,0,3,66,2,71,0,3,43,23,'10,110,164'
-1,1216552811518794,Antonio Carlos Ancelotti Junior,[Sem rotulo],,,0.8404214,151,69,0,3,67,9,3,3,11,20,13,'10,110,164'
-2,0573457812045902,Antonio Jose Faria Bombard,[Sem rotulo],,,0.34482497,49,31,0,2,13,0,3,1,2,8,11,'10,110,164'
-3,2156303155471766,Carolina Del Roveri,[Sem rotulo],,,0.91694033,157,47,1,5,34,46,24,0,0,21,39,'10,110,164'
-4,8688452245478539,Daniela Sachs,[Sem rotulo],,,1.0734047,104,64,0,4,2,0,34,0,5,13,15,'10,110,164'
-5,4218586914073507,Edmilson Otoni Corrêa,[Sem rotulo],,,0.6783486,125,44,2,2,69,7,1,0,11,22,22,'10,110,164'
-6,1332735257013789,Fabia Castro Cassanjes,[Sem rotulo],,,1.1413708,177,56,0,0,5,6,110,0,1,11,12,'10,110,164'
+0,4959152343828058,Alfeu Saraiva Ramos,[Sem rotulo],,,1.1698817,235,93,0,3,66,2,71,0,3,43,23,'10,110,164'
+1,1216552811518794,Antonio Carlos Ancelotti Junior,[Sem rotulo],,,0.8396218,157,69,0,3,69,9,7,3,11,20,13,'10,110,164'
+2,0573457812045902,Antonio Jose Faria Bombard,[Sem rotulo],,,0.3446396,49,31,0,2,13,0,3,1,2,9,11,'10,110,164'
+3,2156303155471766,Carolina Del Roveri,[Sem rotulo],,,0.92643845,157,47,1,5,34,46,24,0,0,22,39,'10,110,164'
+4,8688452245478539,Daniela Sachs,[Sem rotulo],,,1.1214969,110,70,0,4,2,0,34,0,5,13,15,'10,110,164'
+5,4218586914073507,Edmilson Otoni Corrêa,[Sem rotulo],,,0.67940277,125,44,2,2,69,7,1,0,12,22,22,'10,110,164'
+6,1332735257013789,Fabia Castro Cassanjes,[Sem rotulo],,,1.1442906,177,56,0,0,5,6,110,0,1,11,12,'10,110,164'
 7,4966915248252263,Fabrício Vieira de Andrade,[Sem rotulo],,,0.15,22,22,0,0,0,0,0,0,0,1,28,'10,110,164'
-8,9330470036613511,Francisco Moura Filho,[Sem rotulo],,,0.84108514,90,79,0,1,0,0,10,0,5,11,20,'10,110,164'
-9,2457188837334937,Gaël Yves Poirier,[Sem rotulo],,,1.1931305,225,81,0,2,8,4,130,6,4,19,18,'10,110,164'
-10,9578900283345548,Geovani Rodrigues,[Sem rotulo],,,1.3634753,105,33,0,2,36,16,18,0,3,11,33,'10,110,164'
-11,1312049227898761,Marcelo Gonçalves Vivas,[Sem rotulo],,,0.15,136,52,0,2,1,22,59,3,0,11,14,'10,110,164'
-12,6983307192001614,María Elena Leyva González,[Sem rotulo],,,0.40974313,146,39,0,0,37,22,48,0,7,14,26,'10,110,164'
-13,1931804914096511,Maria Virginia Gelfuso,[Sem rotulo],,,0.15,236,56,0,0,70,13,97,1,5,10,71,'10,110,164'
-14,7222063849735570,Mirian de Lourdes Noronha Motta Melo,[Sem rotulo],,,2.3867545,311,88,0,13,98,0,112,3,15,26,33,'10,110,164'
-15,4693265094635299,Nabil Chaia,[Sem rotulo],,,0.3724325,44,43,0,1,0,0,0,0,0,4,0,'10,110,164'
-16,0809795245116090,Neide Aparecida Mariano,[Sem rotulo],,,1.7910203,312,76,1,3,84,14,134,10,0,31,51,'10,110,164'
-17,3030346954671333,Rafaela Cristina Sanfelice,[Sem rotulo],,,0.15,46,40,1,5,0,0,0,0,0,6,9,'10,110,164'
-18,6646020534442402,Reny Angela Renzetti,[Sem rotulo],,,0.5074612,35,26,0,0,8,0,1,0,0,8,20,'10,110,164'
-19,1123598835707364,Rero Marques Rubinger,[Sem rotulo],,,0.9167404,144,71,1,0,12,0,60,3,6,13,10,'10,110,164'
-20,7645844936272652,Rossano Gimenes,[Sem rotulo],,,0.32107386,122,40,0,2,9,11,60,2,4,12,21,'10,110,164'
-21,0216431851054031,Sylma Carvalho Maestrelli,[Sem rotulo],,,2.031826,276,68,2,20,127,12,47,0,2,30,45,'10,110,164'
-22,0847092755379350,Tania Regina Giraldi,[Sem rotulo],,,0.70995444,58,50,0,4,3,0,1,0,0,12,27,'10,110,164'
+8,9330470036613511,Francisco Moura Filho,[Sem rotulo],,,0.8419886,91,80,0,1,0,0,10,0,5,11,20,'10,110,164'
+9,2457188837334937,Gaël Yves Poirier,[Sem rotulo],,,1.1966445,226,82,0,2,8,4,130,6,4,19,18,'10,110,164'
+10,9578900283345548,Geovani Rodrigues,[Sem rotulo],,,1.3163271,105,33,0,2,36,16,18,0,4,11,33,'10,110,164'
+11,1312049227898761,Marcelo Gonçalves Vivas,[Sem rotulo],,,0.15,138,54,0,2,1,22,59,4,0,11,14,'10,110,164'
+12,6983307192001614,María Elena Leyva González,[Sem rotulo],,,0.41032022,147,40,0,0,37,22,48,0,7,16,26,'10,110,164'
+13,1931804914096511,Maria Virginia Gelfuso,[Sem rotulo],,,0.15,237,57,0,0,70,13,97,1,5,10,72,'10,110,164'
+14,7222063849735570,Mirian de Lourdes Noronha Motta Melo,[Sem rotulo],,,2.3823633,318,90,1,14,97,0,116,4,16,27,36,'10,110,164'
+15,4693265094635299,Nabil Chaia,[Sem rotulo],,,0.37625566,45,44,0,1,0,0,0,0,0,4,0,'10,110,164'
+16,0809795245116090,Neide Aparecida Mariano,[Sem rotulo],,,1.8023521,312,76,1,3,84,14,134,10,0,31,51,'10,110,164'
+17,3030346954671333,Rafaela Cristina Sanfelice,[Sem rotulo],,,0.15,48,42,1,5,0,0,0,0,0,7,9,'10,110,164'
+18,6646020534442402,Reny Angela Renzetti,[Sem rotulo],,,0.50784516,36,27,0,0,8,0,1,0,0,8,20,'10,110,164'
+19,1123598835707364,Rero Marques Rubinger,[Sem rotulo],,,0.9187772,144,71,1,0,12,0,60,3,7,13,10,'10,110,164'
+20,7645844936272652,Rossano Gimenes,[Sem rotulo],,,0.31822455,123,41,0,2,9,11,60,2,4,12,21,'10,110,164'
+21,0216431851054031,Sylma Carvalho Maestrelli,[Sem rotulo],,,2.0187001,279,69,2,20,127,12,49,0,2,28,45,'10,110,164'
+22,0847092755379350,Tania Regina Giraldi,[Sem rotulo],,,0.684431,58,50,0,4,3,0,1,0,0,12,27,'10,110,164'
 edgedef> node1 VARCHAR, node2 VARCHAR, weight DOUBLE
 0,4,1.0
 0,9,1.0
@@ -37,7 +37,7 @@ edgedef> node1 VARCHAR, node2 VARCHAR, weight DOUBLE
 3,21,22.0
 3,22,3.0
 4,10,2.0
-4,14,11.0
+4,14,12.0
 4,20,3.0
 5,10,1.0
 5,14,8.0
@@ -46,10 +46,10 @@ edgedef> node1 VARCHAR, node2 VARCHAR, weight DOUBLE
 8,18,1.0
 8,19,1.0
 9,22,1.0
-10,14,9.0
+10,14,8.0
 10,15,3.0
 10,19,1.0
 12,19,1.0
 14,16,8.0
 16,21,21.0
-21,22,15.0
+21,22,14.0
