@@ -1,0 +1,483 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Artigos completos publicados em periódicos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1989,
+1],
+[1995,
+1],
+[1996,
+10],
+[1997,
+9],
+[1998,
+5],
+[1999,
+10],
+[2000,
+12],
+[2001,
+14],
+[2002,
+17],
+[2003,
+22],
+[2004,
+31],
+[2005,
+33],
+[2006,
+37],
+[2007,
+39],
+[2008,
+37],
+[2009,
+40],
+[2010,
+41],
+[2011,
+37],
+[2012,
+51],
+[2013,
+29],
+[2014,
+65],
+[2015,
+36],
+[2016,
+52],
+[2017,
+51],
+[2018,
+62],
+[2019,
+66],
+[2020,
+77],
+[2021,
+73],
+[2022,
+62],
+[2023,
+59],
+[2024,
+51],
+[2025,
+6]]}]});
+        });
+        </script>
+        
+                <h3>Artigos completos publicados em periódicos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 1136<br>
+                    (<b>A1</b>: 240, <b>A2</b>: 135, <b>A3</b>: 95, <b>A4</b>: 38, <b>B1</b>: 46, <b>B2</b>: 16, <b>B3</b>: 93, <b>B4</b>: 3, <b>B5</b>: 0, <b>C</b>: 35, <b>NP</b>: 0, <b>Qualis n&atilde;o identificado</b>: 435)<br><p><b>Legenda Qualis:</b><ul><li> Publica&ccedil;&atilde;o para a qual o nome exato do Qualis foi identificado: <font color="#254117"><b>Qualis &lt;estrato&gt;</b></font><li> Publica&ccedil;&atilde;o para a qual um nome similar (n&atilde;o exato) do Qualis foi identificado: <font color="#F88017"><b>Qualis &lt;estrato&gt;</b></font> (nome similar)<li> Publica&ccedil;&atilde;o para a qual nenhum nome do Qualis foi identificado: <font color="#FDD7E4"><b>Qualis n&atilde;o identificado</b></font> (nome usado na busca)</ul>
+                    <center>Página: <a href="PB0-0.html">1</a> &nbsp;<b>2</b> &nbsp;</center>
+                    <div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>30. &nbsp;</td> <td>Simões, A.Z. ; BOUQUET, V. ; MOURA, F. ; RIES, A. ; Zaghete, M.A. ; VARELA, José Arana. <b>Influence of Mg on the Structural and Optical Properties of LiNbO3 Thin Films Grown by Polymeric Precursor Method</b>. <font color=#330066>Materials Science Forum (Online)</font>. v. 498-499, p. 342-349, 2005. <a href="http://dx.doi.org/10.4028/www.scientific.net/MSF.498-499.342" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: B3</b></font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>TOMMASELLI, Maria Aparecida Garcia ; MARIANO, N. A. ; KURI, Sebastião Elias. <b>Oxidation of Niobium Particles Embedded in a Sintered Ceramic Matrix - A Proposed Model</b>. <font color=#330066>Materials and Corrosion, Alemanha</font>. v. 56, n. 8, p. 28-32, 2005. <a href="http://dx.doi.org/10.1002/maco.200403807" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (MATERIALS AND CORROSION, ALEMANHA)</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>TOMMASELLI, Maria Aparecida Garcia ; MARIANO, N. A. ; KURI, Sebastião Elias. <b>Admixtures effect in concrete on the steel surface microstrucutre</b>. <font color=#330066>Revista Brasileira de Ciências Morfológicas</font>. v. 1, p. 344-345, 2005.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (REVISTA BRASILEIRA DE CIÊNCIAS MORFOLÓGICAS)</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>VILLARREAL, C ; SACHS, D ; DEQUEIROZCUNHA, F ; PARADA, C ; FERREIRA, S. <b>The role of Na1.8 sodium channel in the maintenance of chronic inflammatory hypernociception</b>. <font color=#330066>Neuroscience Letters, Ireland</font>. v. 386, p. 72-77, 2005. <a href="http://dx.doi.org/10.1016/j.neulet.2005.04.060" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (NEUROSCIENCE LETTERS, IRELAND)</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Albuquerque, H. A. ; de Oliveira, A.G. ; Ribeiro, G.M. ; SILVA, Rodrigo Lacerda da ; RODRIGUES, W.N. ; RUBINGER, Rero Marques. <b>Reduction of variable range hopping conduction in low-temperature molecular-beam epitaxy GaAs</b>. <font color=#330066>Journal of Applied Physics, Estados Unidos</font>. v. 95, n. 7, p. 3553-3556, 2004. <a href="http://dx.doi.org/10.1063/1.1650530" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED PHYSICS, ESTADOS UNIDOS)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BERTOLINI, M. J. ; ZAGHETE, Maria Aparecida ; GIMENES, R. ; SOUZA, RP ; VAZ, LG.. <b>Preparation of new glass systems by the polymeric precursor method for dental applications</b>. <font color=#330066>Journal of Non-Crystalline Solids</font>. v. 344, p. 170-175, 2004. <a href="http://dx.doi.org/10.1016/j.jnoncrysol.2004.08.063" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BRANKOVIÄ, Z. ; FILHO, F. MOURA ; Varela, J. A. ; BRANKOVIÄ, G.. <b>Dielectric and piezoelectric properties of the mechanochemically prepared PZT ceramics</b>. <font color=#330066>Journal of Materials Science</font>. v. 39, p. 5291-5294, 2004. <a href="http://dx.doi.org/10.1023/b:jmsc.0000039231.74493.86" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>FALCAO, E. ; POIRIER, G. ; ARAUJO, Cid de ; MESSADDEQ, Younes ; RIBEIRO, Sidney José Lima ; POULAIN, M.. <b>Non linear optical properties of tungstate fluorophosphate glasses</b>. <font color=#330066>Journal of Applied Physics, Melville, NY</font>. v. 96, n. 5, p. 2525-2529, 2004. <a href="http://dx.doi.org/10.1063/1.1758309" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED PHYSICS, MELVILLE, NY)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FERRARI, Kátia Regina ; ROVERI, C.D. ; ALMEIDA, Marisa ; FIGUEIREDO FILHO, Paulo Miranda de ; ZANARDO, Antenor ; ALMEIDA, Erasto Boretti de ; FRADE, P. ; COROADO, José F ; CARVALHO, S.G. ; BOSCHI, Anselmo Ortega. <b>Estudo da Variação dos Teores de Flúor no Minério (argila) da Formação Corumbataí do Pólo Cerâmico de Santa Gertrudes</b>. <font color=#330066>Kéramica (Coimbra), Portugal</font>. v. 34, p. 200-204, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (KÉRAMICA , PORTUGAL)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERRARI, Kátia Regina ; ROVERI, C.D. ; FIGUEIREDO FILHO, Paulo Miranda de ; ALMEIDA, Erasto Boretti ; CARVALHO, Sebastião Gomes ; BOSCHI, Anselmo Ortega ; ALMEIDA, Marisa ; FRADE, Pedro ; ZANARDO, Antenor. <b>Determinação das emissões de fluoreto durante a queima de amostras de massas cerâmicas</b>. <font color=#330066>Cerâmica Industrial, São Carlos</font>. v. 8, n. 5/6, p. 7-11, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CERÂMICA INDUSTRIAL, SÃO CARLOS)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Filho, F. <b>Influence of Ta2O5 on the electrical properties of ZnO- and CoO-doped SnO2 varistors</b>. <font color=#330066>Ceramics International</font>. v. 30, p. 2277-2281, 2004. <a href="http://dx.doi.org/10.1016/j.ceramint.2004.01.007" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>GIRALDI, T. R.; ESCOTE, M. T. ; BERNARDI, M. I. B. ; BOUQUET, V. ; LEITE, E. R. ; LONGO, E. ; VARELA, J. A.. <b>Effect of Thickness on the Electrical and Optical Properties of Sb Doped SnO2 (ATO) Thin Films</b>. <font color=#330066>Journal of Electroceramics</font>. v. 13, p. 159-165, 2004.<font color="#254117"><b>Qualis: A2</b></font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Lee EJH ; Ribeiro C ; GIRALDI, T. R. ; LONGO, E. ; LEITE, E. R. ; VARELA, J. A.. <b>Photoluminescence in quantum-confined SnO2 nanocrystals: Evidence of free exciton decay</b>. <font color=#330066>Applied Physics Letters</font>. v. 84, p. 1745-1747, 2004.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>LEITE, E. R. ; Lee EJH ; GIRALDI, T. R. ; PONTES, F.M. ; LONGO, E.. <b>A simple and novel method to synthesize doped and undoped SnO2 nanocrystals at room temperature</b>. <font color=#330066>Journal of Nanoscience and Nanotechnology</font>. v. 4, p. 774-778, 2004.<font color="#254117"><b>Qualis: B2</b></font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MARIANO, N. A.; MAY, José Eduardo ; KURI, Sebastião Elias. <b>Ligas Finemet nanocristalizadas a partir de precursores amorfos. REM</b>. <font color=#330066>Revista Escola de Minas (Impresso)</font>. v. 57, n. 2, p. 1-8, 2004. <a href="http://dx.doi.org/10.1590/S0370-44672004000200010" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (REVISTA ESCOLA DE MINAS)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MARIANO, N. A.; SPINELLI, Dirceu. <b>Stress Corrosion Cracking of Stainless Steel Used in Drill Collars</b>. <font color=#330066>Materials Science & Engineering. A, Structural Materials: properties, microstructure and processing, USA</font>. v. 385, p. 212-219, 2004. <a href="http://dx.doi.org/10.1016/j.msea.2004.06.041" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#F88017"><b>Qualis: A1</b></font> (MATERIALS SCIENCE & ENGINEERING. A, STRUCTURAL MATERIALS: PROPERTIES, MICROSTRUCTURE AND PROCESSING)</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MELO, M.L.N.M.; RIZZO, E.M.S. ; SANTOS, R.G.. <b>Numerical model to predict the position, amount and size of microporosity formation in Al-Cu alloys by dissolved gas and solidification shrinkage. Materials Science & Engineering</b>. <font color=#330066>A, Structural Materials: Properties, Microstructure and Processing</font>. v. 374, p. 351-361, 2004. <a href="http://dx.doi.org/10.1016/j.msea.2004.03.009" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#F88017"><b>Qualis: A1</b></font> (MATERIALS SCIENCE & ENGINEERING. A, STRUCTURAL MATERIALS: PROPERTIES, MICROSTRUCTURE AND PROCESSING)</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>RAMOS, A. S.; NUNES, Carlos Angelo ; RODRIGUES, Geovani ; SUZUKI, Paulo A ; COELHO, G. C ; GRYTSIV, Andriy ; ROGL, Peter. <b>Ti6Si2B, a new ternary phase in the Ti-Si-B system</b>. <font color=#330066>Intermetallics (Barking), www.elsevier.nl/</font>. v. 12, p. 487-491, 2004. <a href="http://dx.doi.org/10.1016/j.intermet.2004.01.001" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INTERMETALLICS , WWW.ELSEVIER.NL/)</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>RAMOS, Erika Coaglia Trindade ; NUNES, Carlos Angelo ; COELHO, Gilberto Carvalho ; RAMOS, A. S.. <b>Syntheses of Ta3Si, Ta2Si, Ta5Si3, and TaSi2 by mechanical alloying</b>. <font color=#330066>Journal of Metastable and Nanocrystalline Materials, Uetikon-Zuerich, Switzerland</font>. v. 20-21, p. 201-206, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF METASTABLE AND NANOCRYSTALLINE MATERIALS, UETIKON-ZUERICH, SWITZERLAND)</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Ribeiro C ; Lee EJH ; GIRALDI, T. R. ; LONGO, E. ; VARELA, J. A. ; LEITE, E. R.. <b>Study of Synthesis Variables in the Nanocrystal Growth Behavior of Tin Oxide Processed by Controlled Hydrolysis. Journal of Physical Chemistry</b>. <font color=#330066>B</font>. v. 108, p. 15612-15617, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (B)</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>RODRIGUES, G.; NUNES, C.A. ; SUZUKI, P.A. ; COELHO, G.C.. <b>Lattice parameters and thermal expansion of the T2-phase of the Nb-Si-B system investigated by high-temperature X-ray diffraction</b>. <font color=#330066>INTERMETALLICS</font>. v. 12, p. 181-188, 2004. <a href="http://dx.doi.org/10.1016/j.intermet.2003.09.015" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A3</b></font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>RUBINGER, Rero Marques; Ribeiro, G.M. ; de Oliveira, A.G. ; Albuquerque, H. A. ; SILVA, Rodrigo Lacerda da ; RODRIGUES, W.N. ; MOREIRA, M.V.B.. <b>Hall effect in InAs/GaAs superlattices with quantum dots: identifying the presence of deep level defects</b>. <font color=#330066>Brazilian Journal of Physics, São Paulo</font>. v. 34, n. 2, p. 626-628, 2004. <a href="http://dx.doi.org/10.1590/S0103-97332004000400024" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BRAZILIAN JOURNAL OF PHYSICS, SÃO PAULO)</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>SACHS, D.; CUNHA, F. Q. ; FERREIRA, S. H.. <b>Peripheral analgesic blockade of hypernociception: Activation of arginine/NO/cGMP/protein kinase G/ATP-sensitive K+ channel pathway. PNAS</b>. <font color=#330066>Proceedings of the National Academy of Sciences of the United States of America, United States of America</font>. v. 101, p. 3680-3685, 2004. <a href="http://dx.doi.org/10.1073/pnas.0308382101" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#F88017"><b>Qualis: A1</b></font> (PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF AMERICA)</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SILVA, Rodrigo Lacerda da ; Albuquerque, H. A. ; RUBINGER, Rero Marques ; de Oliveira, A.G. ; Ribeiro, G.M. ; RODRIGUES, W.N.. <b>Bifurcation diagram, noise reduction and period-four cycle on low frequency current oscillations in a semi-insulating GaAs sample</b>. <font color=#330066>Physica D, Holanda</font>. v. 194, n. 3-4, p. 166-174, 2004. <a href="http://dx.doi.org/10.1016/j.physd.2004.03.001" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (PHYSICA D, HOLANDA)</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SILVÉRIO, Douglas Mariano ; RAMOS, Erika Coaglia Trindade ; SILVA, Gilbert ; RAMOS, A. S. ; CARDOSO, Katia Regina ; NUNES, Carlos Angelo. <b>Phase Transformation during the preparation of Ti6Si2B by high-energy ball milling</b>. <font color=#330066>Journal of Metastable and Nanocrystalline Materials, Uetikon-Zuerich, Switzerland</font>. v. 20-21, p. 145-150, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF METASTABLE AND NANOCRYSTALLINE MATERIALS, UETIKON-ZUERICH, SWITZERLAND)</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SILVÉRIO, Douglas Mariano ; RAMOS, Erika Coaglia Trindade ; SILVA, Gilbert ; RAMOS, A. S. ; CARDOSO, Kátia Regina ; NUNES, Carlos Angelo. <b>Syntheses of TiB and TiB2 by high-energy ball milling</b>. <font color=#330066>Journal of Metastable and Nanocrystalline Materials, Uetikon-Zuerich, Switzerland</font>. v. 20-21, p. 139-144, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF METASTABLE AND NANOCRYSTALLINE MATERIALS, UETIKON-ZUERICH, SWITZERLAND)</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SIM[OTILDE]ES, A. Z. ; STOJANOVIC, B. D. ; Varela, J. A. ; Longo, E. ; RIES, A. ; RICCARDI, C. S. ; ZAGHETE, M. A. ; MOURA, F.. <b>Electrical Characterization of Lanthanum-Modified Bismuth Titanate Thin Films Obtained by the Polymeric Precursor Method</b>. <font color=#330066>Integrated Ferroelectrics (Print)</font>. v. 60, p. 21-31, 2004. <a href="http://dx.doi.org/10.1080/10584580490440837" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INTEGRATED FERROELECTRICS)</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>SIMES, A. Z. ; GONZALEZ, A. H. M. ; RICCARDI, C. S. ; SOUZA, E. C. ; MOURA, F. ; ZAGHETE, M. A. ; Longo, E. ; VERELA, J. A.. <b>Ferroelectric and Dielectric Properties of Lanthanum-Modified Bismuth Titanate Thin Films Obtained by the Polymeric Precursor Method</b>. <font color=#330066>Journal of Electroceramics</font>. v. 13, p. 65-70, 2004. <a href="http://dx.doi.org/10.1007/s10832-004-5077-z" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A2</b></font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>SIMOÌES, A. Z. ; FILHO, F. M. ; Longo, E. ; RICCARDI, C. S. ; RIES, A. ; Varela, J. A.. <b>Fatigue-free behavior of Bi[sub 3.25]La[sub 0.75]Ti[sub 3]O[sub 12] thin films grown on several bottom eletrodes by the polymeric precursor method</b>. <font color=#330066>Applied Physics Letters</font>. v. 85, p. 5962, 2004. <a href="http://dx.doi.org/10.1063/1.1834999" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>SIMÕES, A.Z ; RICCARDI, C.S ; MOURA, F ; RIES, A ; JUNIOR, N.L.A ; ZAGHETE, M.A ; STOJANOVIC, B ; LONGO, E ; VARELA, J.A. <b>Characterization of lanthanum-doped bismuth titanate thin films prepared by polymeric precursor method</b>. <font color=#330066>Materials Letters (General ed.)</font>. v. 58, p. 2842-2847, 2004. <a href="http://dx.doi.org/10.1016/j.matlet.2004.04.025" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>SOARES, Bluma Guenther ; Maria Elena Leyva ; MOREIRA, Viviane Xavier ; BARCIA, Fabio Ladeira ; KHASTGIR, Dipak ; SIMÃO, Renata A. <b>Morphology and dielectric properties of an epoxy network modified by end-functionalized liquid polybutadiene. Journal of Polymer Science</b>. <font color=#330066>Part B, Polymer Physics</font>. v. 42, p. 4053-4062, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (PART B, POLYMER PHYSICS)</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>SOARES, D. A. W. ; SOUZA, P H O ; RUBINGER, Rero Marques ; de QUEIROZ, A A A ; HIGA, O Z ; de Souza, L.R.. <b>AC Electrical Conductivity of Cr-Doped Polyaniline/Poly(Vinyl alcohol) Blends</b>. <font color=#330066>Brazilian Journal of Physics, São Paulo</font>. v. 34, n. 2, p. 711-713, 2004. <a href="http://dx.doi.org/10.1590/S0103-97332004000400053" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BRAZILIAN JOURNAL OF PHYSICS, SÃO PAULO)</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>THOMAZINI, D. ; GELFUSO, M. V. ; NASCIMENTO, T. Á. C. do ; FONTELES, E. F.. <b>A Utilização da Simulação Computacional na Confecção de Órteses Alternativas para Membros Superiores</b>. <font color=#330066>Revista Tecnologia (UNIFOR), Fortaleza</font>. v. 25, n. 1, p. 74-79, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (REVISTA TECNOLOGIA , FORTALEZA)</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>TOMMASELLI, Maria Aparecida Garcia ; MARIANO, N. A. ; PALLONE, E. M. J. A. ; KURI, Sebastião Elias. <b>Oxidation of niobium particles embedded in a sintered ceramic matrix</b>. <font color=#330066>Materials and Corrosion, alemanha</font>. v. 55, n. 7, p. 531-535, 2004. <a href="http://dx.doi.org/10.1002/maco.200303767" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (MATERIALS AND CORROSION, ALEMANHA)</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Vale, Mariana L ; Benevides, Verônica M ; Sachs, Daniela ; Brito, Gerly A C ; Rocha, Francisco A C ; Poole, Stephen ; Ferreira, Sérgio H ; Cunha, Fernando Q ; Ribeiro, Ronaldo A. <b>Antihyperalgesic effect of pentoxifylline on experimental inflammatory pain</b>. <font color=#330066>British Journal of Pharmacology, Inglaterra</font>. v. 143, p. 833-844, 2004. <a href="http://dx.doi.org/10.1038/sj.bjp.0705999" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BRITISH JOURNAL OF PHARMACOLOGY, INGLATERRA)</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Albuquerque, H. A. ; de Oliveira, A.G. ; Ribeiro, G.M. ; SILVA, Rodrigo Lacerda da ; RODRIGUES, W.N. ; MOREIRA, M.V.B. ; RUBINGER, Rero Marques. <b>Impact ionization and field-enhanced trapping: fitting current density curves for semi-insulating GaAs</b>. <font color=#330066>Journal of Applied Physics, Estados Unidos</font>. v. 93, n. 3, p. 1647-1650, 2003. <a href="http://dx.doi.org/10.1063/1.1534892" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED PHYSICS, ESTADOS UNIDOS)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AMORIM, H. T. ; VERMELHO, M. V. D. ; GOUVEIA-NETO, A. S. ; CASSANJES, F. C. ; RIBEIRO, S. J. L. ; MESSADDEQ, Y.. <b>Red-green-blue upconversion emission and energy-transfer between Tm3+ and Er3+ ions in tellurite glasses excited at 1.064 µm</b>. <font color=#330066>Journal of Solid State Chemistry (Print)</font>. v. 171, p. 278-281, 2003.<font color="#254117"><b>Qualis: A2</b></font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BOMBARD, A. J. F.; KNOBEL, Marcelo ; ALCÂNTARA, Maria Regina ; JOEKES, Inés. <b>Magnetic Susceptibility and Saturation Magnetization of some Carbonyl Iron Powders used in Magnetorheological Fluids</b>. <font color=#330066>Materials Science Forum (Online), Suiça</font>. v. 416-418, n. 4, p. 753, 2003. <a href="http://dx.doi.org/10.4028/www.scientific.net/msf.416-418.753" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (MATERIALS SCIENCE FORUM , SUIÇA)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BUENO, P. R. ; LEITE, E. R. ; GIRALDI, T. R. ; BULHOES, L. O. S. ; LONGO, E.. <b>Nanostructured insertion electrodes Pat II. Tin Dioxide nanocrystalline layers and discussion on. Journal of Physical Chemistry</b>. <font color=#330066>B</font>. v. 107, p. 8878-8883, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (B)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>COURROL, L. C. ; KASSAB, L.R.P. ; MORAES, A.S. ; MENDES, C. M. S ; GOMES, L. ; WETTER, N.U. ; VIEIRA, N. D. ; CASSANJES, F. C. ; RIBEIRO, S. J. L. ; MESSADDEQ, Y.. <b>Study of the most suitable new glass laser to incorporate ytterbium: alkali niobium tellurite, lead fluorborate or heavy metal oxide</b>. <font color=#330066>JOURNAL OF LUMINESCENCE</font>. v. 102-103, p. 106-111, 2003. <a href="http://dx.doi.org/10.1016/s0022-2313(02)00475-1" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A2</b></font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Cunha, Joice Maria ; Sachs, Daniela ; Canetti, Claudio Azevedo ; Poole, Stephen ; Ferreira, Sérgio Henrique ; Cunha, Fernando Queiroz. <b>The critical role of leukotriene B 4 in antigen-induced mechanical hyperalgesia in immunised rats</b>. <font color=#330066>British Journal of Pharmacology</font>. v. 139, p. 1135-1145, 2003. <a href="http://dx.doi.org/10.1038/sj.bjp.0705346" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BRITISH JOURNAL OF PHARMACOLOGY)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FERRARI, K. R. ; FIGUEIREDO FILHO, P. M. de ; ALMEIDA, E. B. ; ROVERI, C.D. ; CARVALHO, S. G. de ; BOSCHI, A. O. ; ALMEIDA, M. ; FRADE, P. ; CORREIA, A. M. S. ; ZANARDO. <b>DETERMINAÇÃO DAS EMISSÕES DE FLUORETO DURANTE A QUEIMA DE AMOSTRAS DE MASSAS CERÂMICAS</b>. <font color=#330066>Cerâmica Industrial, São Paulo - SP.</font>. v. 8, n. 5/6, p. 7-11, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CERÂMICA INDUSTRIAL, SÃO PAULO - SP.)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>GELFUSO, M. V.; PEREIRA JÚNIOR, F. S. ; THOMAZINI, D.. <b>Influência do Defloculante na deposição de alumina por Eletroforese</b>. <font color=#330066>Cerâmica</font>. v. 49, n. 312, p. 228-231, 2003.<font color="#254117"><b>Qualis: B1</b></font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>LEITE, E. R. ; GIRALDI, T. R. ; PONTES, F.M. ; LONGO, E. ; BELTRAN, A. ; ANDRÉS, J.. <b>Crystal growth in colloidal tin oxide nanocrystals induced by coalescence at room temperature</b>. <font color=#330066>Applied Physics Letters</font>. v. 83, p. 1566-1568, 2003.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MAESTRELLI, S. C.; PIERRI, Juliano de ; PALLONE, Eliria Maria de Jesus Agnolon ; TOMASI, Roberto. <b>Microstructural characterization of alumina-zirconia composite obtained byto high energy milling</b>. <font color=#330066>Acta Microscópica, Brasil,</font>. p. 1-2, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA, BRASIL,)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Maria Elena Leyva; BARRA, Guilherme M O ; MOREIRA, Ana C F ; SOARES, Bluma Guenher ; KHASTGIR, Dipak. <b>Electric, dielectric and dynamical-mechanical behavior of carbon black-styrene-butadiene-styrene composites. Journal of Polymer Science</b>. <font color=#330066>Part B, Polymer Physics</font>. v. 41, n. 23, p. 2983-2997, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (PART B, POLYMER PHYSICS)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MARIANO, N. A.; BAGNATO, O. R. ; SERAPHIM, R. M.. <b>Structural analysis of a cast martensitic stainless steel</b>. <font color=#330066>Acta Microscópica</font>. v. 12, p. 237-238, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA)</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MARIANO, N. A.; CALDAS, C. A. S. ; MAY, José Eduardo ; KURI, Sebastião Elias. <b>Influence of Nb content on the corrosion resistance and saturation magnetic density of FeCuNbSiB alloys. Materials Science & Engineering</b>. <font color=#330066>A, Structural Materials: properties, microstructure and processing</font>. v. 354, p. 1-5, 2003.<font color="#F88017"><b>Qualis: A1</b></font> (MATERIALS SCIENCE & ENGINEERING. A, STRUCTURAL MATERIALS: PROPERTIES, MICROSTRUCTURE AND PROCESSING)</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MARIANO, N. A.; KURI, Sebastião Elias. <b>Microstructural characterization of amorphous and nanocrystalline FeSiNbBCu alloys</b>. <font color=#330066>Acta Microscópica</font>. v. 12, p. 311-312, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA)</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MARIANO, N. A.; KURI, Sebastião Elias ; LAUREANO, P. S.. <b>Efecto de la Cantidad y del Tipo de Inclusión en la Oxidación y en la Distribución de Partículas Metálicas en Compuestos Cerámica-Metal</b>. <font color=#330066>Información Tecnológica, Chile</font>. v. 14, n. 2, p. 71-74, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INFORMACIÓN TECNOLÓGICA, CHILE)</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>POIRIER, G. ; CASSANJES, F. C. ; ARAUJO, Cid de ; JEREZ, V. A. ; RIBEIRO, Sidney José Lima ; MESSADDEQ, Younes ; POULAIN, M.. <b>Optical properties and frequency upconversion fluorescence in a Tm3+-doped alkali niobium tellurite glass</b>. <font color=#330066>Journal of Applied Physics, Melville</font>. v. 93, n. 6, p. 3259-3263, 2003. <a href="http://dx.doi.org/10.1063/1.1555674" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED PHYSICS, MELVILLE)</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>POIRIER, G.; JEREZ, V. A. ; ARAUJO, Cid de ; MESSADDEQ, Younes ; RIBEIRO, Sidney José Lima ; POULAIN, M.. <b>Optical spectroscopy and frequency upconversion properties of Tm3+ doped tungstate fluorophosphate glasses</b>. <font color=#330066>Journal of Applied Physics, Melville</font>. v. 93, n. 3, p. 1493-1497, 2003. <a href="http://dx.doi.org/10.1063/1.1536017" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED PHYSICS, MELVILLE)</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>RAMOS, Erika Coaglia Trindade ; SILVA, Gilbert ; RAMOS, A. S. ; NUNES, Carlos Angelo ; BAPTISTA, C. A. P. R.. <b>Microstructure and oxidation behavior of Ti-Si-B alloys</b>. <font color=#330066>Materials Science & Engineering. A, Structural Materials: Properties, Microstructure and Processing</font>. v. 363, p. 297-306, 2003. <a href="http://dx.doi.org/10.1016/s0921-5093(03)00650-6" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>RUBINGER, Rero Marques; SILVA, Rodrigo Lacerda da ; de Oliveira, A.G. ; Ribeiro, G.M. ; RODRIGUES, W.N. ; MOREIRA, M.V.B.. <b>Low Frequency Oscillations in Semi-insulating GaAs: a nonlinear analysis</b>. <font color=#330066>Chaos (Woodbury), Estados Unidos</font>. v. 13, n. 2, p. 457-466, 2003. <a href="http://dx.doi.org/10.1063/1.1558080" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CHAOS , ESTADOS UNIDOS)</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SANDIM, Hugo Ricardo Zschommler ; NUNES, Carlos Angelo ; RAMOS, A. S.. <b>Sintering of P/M Nb-TiB2 alloys</b>. <font color=#330066>Materials Science Forum, www.scientific.net</font>. v. 416, p. 251-256, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (MATERIALS SCIENCE FORUM, WWW.SCIENTIFIC.NET)</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>VERMELHO, M. V. D. ; GOUVEIA-NETO, A. S. ; CASSANJES, F. C. ; RIBEIRO, S. J. L. ; MESSADDEQ, Y.. <b>Temperature investigation of infrared-to-visible frequency upconversion in erbium-doped tellurite glasses excited at 1540 nm</b>. <font color=#330066>Journal of Luminescence</font>. v. 102, p. 755-761, 2003.<font color="#254117"><b>Qualis: A2</b></font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>VERMELHO, M. V. D. ; SANTOS, P. V. ; GOUVEIA-NETO, A. S. ; CASSANJES, F. C. ; RIBEIRO, S. J. L. ; MESSADDEQ, Y.. <b>Thermally enhanced cooperative energy-transfer frequency upconversion in terbium and ytterbium doped tellurite glass</b>. <font color=#330066>Journal of Luminescence</font>. v. 102, p. 762-767, 2003.<font color="#254117"><b>Qualis: A2</b></font></td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AMORIM, H. T. ; VERMELHO, M. V. D. ; GOUVEIA-NETO, A. S. ; CASSANJES, F. C.. <b>Infrared to visible frequency upconversion in neodymium-doped tellurite glass</b>. <font color=#330066>XIIIth International symposium on Non-oxide Glasses and New Optical Glasses</font>. v. 1, p. 577-580, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIIITH INTERNATIONAL SYMPOSIUM ON NON-OXIDE GLASSES AND NEW OPTICAL GLASSES)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AMORIM, H. T. ; VERMELHO, M. V. D. ; GOUVEIA-NETO, A. S. ; CASSANJES, F. C.. <b>Temperature study of visible energy upconversion emission in erbium-doped tellurite glasses excited at 1.54um</b>. <font color=#330066>XIIIth International Symposium on non-oxide Glasses and New Optical Glasses</font>. v. 1, p. 589, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIIITH INTERNATIONAL SYMPOSIUM ON NON-OXIDE GLASSES AND NEW OPTICAL GLASSES)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>AMORIM, H. T. ; VERMELHO, M. V. D. ; GOUVEIA-NETO, A. S. ; CASSANJES, F. C. ; RIBEIRO, S. J. L. ; MESSADDEQ, Y.. <b>Energy upconversion luminescence in neodymium-doped tellurite glass</b>. <font color=#330066>Journal of Alloys and Compounds</font>. v. 346, p. 282-284, 2002.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BOMBARD, A. J. F.; KNOBEL, Marcelo ; ALCÂNTARA, Maria Regina ; JOEKES, Inés. <b>Evaluation of magnetorheological suspensions based on carbonyl iron powders</b>. <font color=#330066>Journal of Intelligent Material Systems and Structures (Print), Grã-Bretanha</font>. v. 13, n. 7-8, p. 471-478, 2002. <a href="http://dx.doi.org/10.1106/104538902030706" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF INTELLIGENT MATERIAL SYSTEMS AND STRUCTURES , GRÃ-BRETANHA)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>GOUVEIA-NETO, A. S. ; VERMELHO, M. V. D. ; AMORIM, H. T. ; Cassanjes, Fábia Castro. <b>Red, green and blue light generation in Tm3+/Er3+ codoped tellurite glasses excited around 1um</b>. <font color=#330066>XIIIth International symposium on Non-oxide Glasses and New Optical Glasses</font>. v. 1, p. 507-510, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIIITH INTERNATIONAL SYMPOSIUM ON NON-OXIDE GLASSES AND NEW OPTICAL GLASSES)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Maria Elena Leyva; BARRA, G. O. ; SOARES, Bluma G. <b>Mistura PAni.DBSA/SBS Obtida por Polimerização In Situ: Propriedades Elétrica, Dielétrica e Dinâmico-Mecânica</b>. <font color=#330066>Polímeros</font>. v. 12, p. 197-205, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (POLÍMEROS)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Maria Elena Leyva; BARRA, Guilherme M O ; SOARES, Bluma Guenther. <b>Obtenção in situ de misturas condutoras de eletricidade a base de polianilina</b>. <font color=#330066>Matéria (UFRJ)</font>. v. 6, n. 2, 2002.<font color="#254117"><b>Qualis: B1</b></font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Maria Elena Leyva; BARRA, Guilherme M O ; SOARES, Bluma Guenther ; SENS, M.. <b>Solution-cast blends of polyaniline-DBSA with EVA copolymers</b>. <font color=#330066>Synthetic Metals</font>. v. 130, p. 239-245, 2002.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Maria Elena Leyva; SOARES, Bluma G ; KHASTGIR, Dipak. <b>Dynamic-mechanical and dielectric relaxations of SBS block copolymer: polyaniline blends prepared by mechanical mixing</b>. <font color=#330066>Polymer (Guildford)</font>. v. 43, p. 7505-7513, 2002.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MARIANO, N. A.; KURI, Sebastião Elias. <b>Consideraciones sobre la oxidación metálica en cerámica-metal nanoestructurados</b>. <font color=#330066>Información Tecnológica, Chile</font>. v. 13, n. 3, p. 137-144, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INFORMACIÓN TECNOLÓGICA, CHILE)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>POIRIER, G.; ARAUJO, Cid de ; ARAUJO, R.E. ; MESSADDEQ, Younes ; POULAIN, M.. <b>Nonlinear optical absorption of antimony and lead oxyhalide glasses</b>. <font color=#330066>Applied Physics Letters, Melville</font>. v. 81, n. 25, p. 4694-4696, 2002. <a href="http://dx.doi.org/10.1063/1.1529310" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (APPLIED PHYSICS LETTERS, MELVILLE)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>POIRIER, G.; ARAUJO, Cid de ; MESSADDEQ, Younes ; RIBEIRO, Sidney José Lima ; POULAIN, M.. <b>Tungstate fluorophosphate glasses as optical limiters</b>. <font color=#330066>Journal of Applied Physics, Melville</font>. v. 91, n. 12, p. 10221-10223, 2002. <a href="http://dx.doi.org/10.1063/1.1481770" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED PHYSICS, MELVILLE)</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Rakov N ; Maciel GS ; Sundheimer ML ; Menezes SLD ; Gomes ASL ; MESSADDEQ, Younes ; CASSANJES, F. C. ; POIRIER, G. ; RIBEIRO, Sidney José Lima. <b>Blue upconversion enhancement by a factor of 200 in Tm3+-doped tellurite glass by codoping with Nd3+ ions</b>. <font color=#330066>Journal of Applied Physics, Melville</font>. v. 92, n. 10, p. 6337-6339, 2002. <a href="http://dx.doi.org/10.1063/1.1515376" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED PHYSICS, MELVILLE)</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>SACHS, D; CUNHA, F. Q. ; POOLE, S. ; FERREIRA, S. H.. <b>Tumour necrosis factor-?, interleukin-1? and interleukin-8 induce persistent mechanical nociceptor hypersensitivity</b>. <font color=#330066>Pain (Amsterdam), Estados Unidos</font>. v. 96, p. 89-97, 2002. <a href="http://dx.doi.org/10.1016/S0304-3959(01)00433-X" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (PAIN , ESTADOS UNIDOS)</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>SANTOS, P. V. ; VERMELHO, M. V. D. ; GOUVEIA, E. A. ; ARAÚJO, M. T. ; GOUVEIA-NETO, A. S. ; CASSANJES, F. C. ; RIBEIRO, S. J. L. ; MESSADDEQ, Y.. <b>Infrared-to-visible frequency upconversion in Pr3+/Yb3+- and Er3+/Yb3+-codoped tellurite glasses</b>. <font color=#330066>Journal of Alloys and Compounds</font>. v. 344, p. 304-307, 2002.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SANTOS, P. V. ; VERMELHO, M. V. D. ; GOUVEIA-NETO, A. S. ; ARAUJO, M. T. ; CASSANJES, F. C. ; RIBEIRO, S. J. L. ; MESSADDEQ, Y.. <b>Blue cooperative luminescence in Yb3+-doped tellurite glasses excited at 1.064 mu m</b>. <font color=#330066>The Journal of Chemical Physics</font>. v. 116, n. 15, p. 6772-6776, 2002.<font color="#254117"><b>Qualis: A2</b></font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>SILVA, Rodrigo Lacerda da ; RUBINGER, Rero Marques ; de Oliveira, A.G. ; Ribeiro, G.M.. <b>Nonlinear Dynamics Time Series Analysis of Chaotic Current Oscilations in a Semi-Insulating GaAs Sample</b>. <font color=#330066>Brazilian Journal of Physics, São Paulo</font>. v. 32, n. 2, p. 412-414, 2002. <a href="http://dx.doi.org/10.1590/S0103-97332002000200047" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BRAZILIAN JOURNAL OF PHYSICS, SÃO PAULO)</td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>COURROL, L. C. ; TARELHO, L. V. G. ; GOMES, L. ; CASSANJES, F. C. ; MESSADDEQ, Y. ; RIBEIRO, S. J. L.. <b>Time dependence and energy-transfer mechanisms in Tm3+Ho3+ and Tm3+-Ho3+ co-doped alkali niobium tellurite glasses sensitized by Yb3+</b>. <font color=#330066>Journal of Non-Crystalline Solids</font>. v. 284, n. 1-3, p. 217-222, 2001.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MAESTRELLI, S. C.; MORELLI, M. R. ; PAULIN FILHO, P. I.. <b>Densification and electrical properties of BIMEVOX family compounds</b>. <font color=#330066>Key Engineering Materials</font>. v. 1, n. 189, p. 144-148, 2001.<font color="#254117"><b>Qualis: B2</b></font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Maria Elena Leyva; BARRA, G. M. ; GORELOVA, M. M. ; SOARES, Bluma G ; SENS, M.. <b>Conducting SBS Block Copolymer-Polyaniline Blends Prepared by Mechanical Mixing</b>. <font color=#330066>Journal of Applied Polymer Science, John Wiley & Sons, Inc.</font>. v. 80, p. 626-633, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED POLYMER SCIENCE, JOHN WILEY & SONS, INC.)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Maria Elena Leyva; BARRA, G. O. ; SOARES, Bluma G. <b>Conductive polyaniline-SBS blends prepared in solution. Synthetic Metals, Elsevier Science B</b>. <font color=#330066>V.</font>. v. 123, p. 443-449, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (V.)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Maria Elena Leyva; BARRA, Guilherme M O ; GORELOVA, M. M. ; SOARES, Bluma G ; SENS, M.. <b>X-Ray Photoelectron Spectroscopy and Electrical Conductivity of Polyaniline Doped With Dodecylbenzenesulfonic Acid as a Function of the Synthetic Method</b>. <font color=#330066>Journal of Applied Polymer Science, John Wiley & Sons, Inc.</font>. v. 80, p. 556-565, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED POLYMER SCIENCE, JOHN WILEY & SONS, INC.)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Maria Elena Leyva; BARRA, Guilherme M O ; SOARES, Bluma G ; MATTOSO, L. H. ; SENS, M.. <b>Electrically Conductive, Melt-Processed Polyaniline/EVA Blends</b>. <font color=#330066>Journal of Applied Polymer Science, John Wiley & Sons, Inc.</font>. v. 82, p. 114-123, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED POLYMER SCIENCE, JOHN WILEY & SONS, INC.)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MELCHIADES, F.G. ; ROVERI, C.D. ; SILVA, Luciano Luis da ; SOTÉRIO, J. ; BOSCHI, Anselmo Ortega. <b>Controle Dimensional de Revestimentos Cerâmicos. Parte II: Formato.</b>. <font color=#330066>Cerâmica Industrial (Impresso), São Carlos</font>. v. 6, n. 6, p. 11-17, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CERÂMICA INDUSTRIAL , SÃO CARLOS)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MELCHIADES, Fábio Gomes ; ROVERI, C.D. ; SOTÉRIO, Jairo ; SILVA, Luciano Luis da ; BOSCHI, Anselmo Ortega. <b>Estabilidade das dimensões e do formato de revestimentos cerâmicos. Parte II: Formato</b>. <font color=#330066>Cerâmica Industrial</font>. v. 6, n. 6, p. 11-17, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CERÂMICA INDUSTRIAL)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>NUNES, Carlos Angelo ; COELHO, Gilberto Carvalho ; RAMOS, A. S.. <b>On the invariant reactions in the Mo-rich portion of the Mo-Si system. Journal of Phase Equilibria (Cessou em 2003. Cont</b>. <font color=#330066>ISSN 1547-7037 Journal of Phase Equilibria and Diffusion), New York</font>. v. 22, n. 5, p. 556-559, 2001. <a href="http://dx.doi.org/10.1007/s11669-001-0074-2" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ISSN 1547-7037 JOURNAL OF PHASE EQUILIBRIA AND DIFFUSION), NEW YORK)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>POIRIER, G.; POULAIN, M. ; POULAIN, M.. <b>Copper and lead halogeno-antimoniate glasses</b>. <font color=#330066>Journal of Non-Crystalline Solids, Amsterdam</font>. v. 284, n. 1-3, p. 117-122, 2001. <a href="http://dx.doi.org/10.1016/S0022-3093(01)00389-1" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF NON-CRYSTALLINE SOLIDS, AMSTERDAM)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ROVERI, C.D.; MELCHIADES, Fábio Gomes ; LANGE, C.N. ; BOSCHI, Anselmo Ortega. <b>Redução das Perdas causadas pelos Pingos de Fornos na Fabricação de Revestimentos Cerâmicos</b>. <font color=#330066>Cerâmica Industrial, São Carlos - SP</font>. v. 6, n. 4, p. 18-21, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CERÂMICA INDUSTRIAL, SÃO CARLOS - SP)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ROVERI, C.D.; SILVA, Luciano Luis da ; MELCHIADES, F.G. ; SOTERIO, J. ; BOSCHI, Anselmo Ortega. <b>Controle Dimensional de Revestimentos Cerâmicos. Parte I: Dimensões</b>. <font color=#330066>Cerâmica Industrial, São Carlos - SP</font>. v. 6, n. 5, p. 27-34, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CERÂMICA INDUSTRIAL, SÃO CARLOS - SP)</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>SANTOS, P. V. ; VERMELHO, M. V. D. ; GOUVEIA-NETO, A. S. ; CASSANJES, F. C. ; RIBEIRO, S. J. L. ; MESSADDEQ, Y.. <b>Efficient energy upconversion emission in Tm3+/Yb3+-codoped TeO2-based optical glasses excited at 1.064 mu m</b>. <font color=#330066>Journal of Applied Physics</font>. v. 90, p. 6550-6552, 2001.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>SIMÕES, A. Z. ; VARELA, J. A. ; GONZÁLEZ, A. H. M. ; GIMENES, R. ; CAVALHEIRO, A. A. ; CILENSE, M. ; ZAGHETE, M. A. ; STOJANOVIC, B.. <b>Influencia del tratamiento térmico en la cristalización y rugosidad de películas delgadas de LiNbO3 depositadas por el método Spin Coating</b>. <font color=#330066>Boletín de la Sociedad Española de Cerámica y Vidrio</font>. v. 40, p. 275-278, 2001.<font color="#254117"><b>Qualis: A3</b></font></td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BAPTISTA, C. A. R. P. ; RODRIGUES JR, D. ; RAMOS, A. S. ; REIS, F. P. ; TADDEI, E. B.. <b>Microscopic features Related to Fatigue Crack Growth in Titanium</b>. <font color=#330066>Acta Microscópica - Interamerican Committee of Societies for Electron Microscopy</font>. v. 09, p. 201-202, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA - INTERAMERICAN COMMITTEE OF SOCIETIES FOR ELECTRON MICROSCOPY)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CORREA, E. O.; COSTA, S. C. ; SANTOS, J. N.. <b>Soldadura de Aleaciones Sinterizadas Ferrosas de Aplicacion Estructural Usando el Proceso TIG Pulsado</b>. <font color=#330066>Información Tecnológica, Chile</font>. v. 11, p. 109-115, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INFORMACIÓN TECNOLÓGICA, CHILE)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>DOS SANTOS, B. B. ; RAMOS, A. S. ; NUNES, Carlos Angelo ; CONTE, R. A.. <b>Ni-65wt%Nb alloy by aluminothermic reduction process</b>. <font color=#330066>International Journal of Refractory & Hard Metals (Cessou em 1988. Cont. 0958-0611 International Journal of Refractory Metals & Hard Materials), Holanda</font>. v. 18, n. 6, p. 267-271, 2000. <a href="http://dx.doi.org/10.1016/S0263-4368(00)00021-4" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#F88017"><b>Qualis: A2</b></font> (INTERNATIONAL JOURNAL OF REFRACTORY & HARD METALS)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MAESTRELLI, S. C.; PAULIN FILHO, P. I. ; MORELLI, M. R.. <b>BIMEVOX type ionic conductors produced by melting process</b>. <font color=#330066>Materials Research Innovations, USA</font>. v. 3, n. 5, p. 292-296, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (MATERIALS RESEARCH INNOVATIONS, USA)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MAESTRELLI, S. C.; PAULIN FILHO, P. I. ; MORELLI, M. R.. <b>Microstructure of BIMEVOX doped with Ni, Fe, Cu and Al</b>. <font color=#330066>Acta Microscópica, Brasil</font>. v. 9A, p. 119-120, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA, BRASIL)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARIANO, N. A.; SOUZA, C. A. C. ; OLIVEIRA, Marcelo Falcão de ; KURI, Sebastião Elias. <b>Enhanced corrosion resistance of amorphous and nanocrystalline FeNbB alloys</b>. <font color=#330066>Materials Science Forum</font>. v. 343, p. 861-866, 2000.<font color="#254117"><b>Qualis: B3</b></font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>NUNES, C.A. ; COELHO, G.C. ; Júnior, D., M., P., ; GANDOLFO, K. C. C. ; BORGES JÚNIOR, L. A. ; RODRIGUES, G.. <b>Phase Stability in Nb-rich Region of the Nb-B-Si System.</b>. <font color=#330066>Intermetallics (Barking)</font>. v. 10, p. 317-323, 2000.<font color="#254117"><b>Qualis: A3</b></font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>RAMOS, A. S.; NUNES, Carlos Angelo. <b>The effect of excess Al and fabrication environment on the composition and microstructure of V-Al alloys. International Journal of Refractory & Hard Metals (Cessou em 1988. Cont</b>. <font color=#330066>0958-0611 International Journal of Refractory Metals & Hard Materials), New York</font>. v. 18, n. 5, p. 55-60, 2000. <a href="http://dx.doi.org/10.1016/S0263-4368(00)00020-2" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (0958-0611 INTERNATIONAL JOURNAL OF REFRACTORY METALS & HARD MATERIALS), NEW YORK)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>RAMOS, A. S.; SANDIM, H. R. Z. ; HASHIMOTO, Tomaz Manabu. <b>FeNbP in ultra-low carbon Nb-added steel containing high P</b>. <font color=#330066>Materials Characterization, New York</font>. v. 45, p. 171-174, 2000. <a href="http://dx.doi.org/10.1016/s1044-5803(00)00070-x" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (MATERIALS CHARACTERIZATION, NEW YORK)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>RUBINGER, Rero Marques; de Oliveira, A.G. ; BEZERRA, J. C. ; Ribeiro, G.M. ; RODRIGUES, W.N. ; MOREIRA, M.V.B.. <b>Experimental Study of negative differential conductivity in GaAs:Cr. Physical Review</b>. <font color=#330066>B, Condensed Matter and Materials Physics, Estados Unidos</font>. v. 62, n. 3, p. 1859-1865, 2000. <a href="http://dx.doi.org/10.1103/physrevb.62.1859" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (B, CONDENSED MATTER AND MATERIALS PHYSICS, ESTADOS UNIDOS)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>RUBINGER, Rero Marques; de Oliveira, A.G. ; Ribeiro, G.M. ; BEZERRA, J. C. ; MOREIRA, M.V.B. ; CHACHAM, H.. <b>Field-Enhanced Trapping in Deep Levels by Multiple Phonon Emission in Semi-Insulating GaAs</b>. <font color=#330066>Journal of Applied Physics, Estados Unidos</font>. v. 88, p. 6541-6544, 2000. <a href="http://dx.doi.org/10.1063/1.1314899" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED PHYSICS, ESTADOS UNIDOS)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>SOUZA, C. A. C. ; OLIVEIRA, Marcelo Falcão de ; MAY, José Eduardo ; MARIANO, N. A. ; KURI, Sebastião Elias. <b>Corrosion resistence of amorphous and nanocrystalline Fe-M-B (M=Zr, Nb) alloys</b>. <font color=#330066>Journal of Non-Crystalline Solids</font>. v. 273, p. 282-288, 2000.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BOMBARD, A. J. F.; JOEKES, Inés. <b>Characterization of an electrorheological suspension of poly(vinyl alcohol) in corn oil</b>. <font color=#330066>International Journal of Modern Physics B, Cingapura</font>. v. 13, n. 14,15 & 16, p. 1925-1930, 1999. <a href="http://dx.doi.org/10.1142/S0217979299001971" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INTERNATIONAL JOURNAL OF MODERN PHYSICS B, CINGAPURA)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASSANJES, F. C.; MESSADDEQ, Y. ; OLIVEIRA, L. F. C. ; COURROL, L. C. ; RIBEIRO, S. J. L.. <b>Raman scattering, differential scanning calorimetry and Nd3+ spectroscopy in alkali niobium tellurite glasses</b>. <font color=#330066>Journal of Non-Crystalline Solids</font>. v. 247, p. 58-63, 1999.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CHAGAS, J. F. ; RAMOS, A. S. ; HASHIMOTO, Tomaz Manabu. <b>Propriedades mecânicas de tração de um aço IF ao titânio</b>. <font color=#330066>Máquinas e Metais, São Paulo</font>. v. 399, p. 256-259, 1999.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (MÁQUINAS E METAIS, SÃO PAULO)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GELFUSO, M. V.; THOMAZINI, D. ; EIRAS, J. A.. <b>Synthesis and Structural, Ferroelectric, and Piezoelectric Properties of SrBi4Ti4O15 Ceramics</b>. <font color=#330066>Journal of the American Ceramic Society</font>. v. 82, n. 9, p. 2368-2372, 1999. <a href="http://dx.doi.org/10.1111/j.1151-2916.1999.tb02092.x" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARIANO, N. A.; KURI, S. E.. <b>Oxidation process of nanocrystalline Ni in Ni-Al2O3-ZrO2 mixture.</b>. <font color=#330066>Materials Science Forum</font>. v. 312, p. 449-454, 1999.<font color="#254117"><b>Qualis: B3</b></font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARIANO, N. A.; KURI, S. E.. <b>Mapping of metallic inclusions distribution in ceramic matrix</b>. <font color=#330066>Materials Science Forum</font>. v. 299, p. 29-34, 1999.<font color="#254117"><b>Qualis: B3</b></font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MARIANO, N. A.; MAY, J. E. ; SOUZA, C. A. C. ; OLIVEIRA, Marcelo Falcão de ; KURI, Sebastião Elias. <b>Influence of nanocrystallization on oxidation of Fe84Nb7B9 amorphous alloy</b>. <font color=#330066>Acta Microscópica</font>. v. 8, p. 115-116, 1999.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>RUBINGER, Rero Marques; de Oliveira, A.G. ; Ribeiro, G.M. ; BEZERRA, J. C. ; MOREIRA, M.V.B. ; CHACHAM, H.. <b>electro-optic recovery of the photoquenching effect</b>. <font color=#330066>Applied Physics Letters, Estados Unidos</font>. v. 75, n. 9, p. 1252-1254, 1999. <a href="http://dx.doi.org/10.1063/1.124658" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (APPLIED PHYSICS LETTERS, ESTADOS UNIDOS)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>RUBINGER, Rero Marques; de Oliveira, A.G. ; Ribeiro, G.M. ; BEZERRA, J. C. ; SILVA, C. M. ; RODRIGUES, W.N. ; MOREIRA, M.V.B.. <b>Impurity Breakdown in GaAs samples grown by molecular beam epitaxy</b>. <font color=#330066>Brazilian Journal of Physics, Brasil</font>. v. 29, n. 4, p. 793-796, 1999. <a href="http://dx.doi.org/10.1590/S0103-97331999000400038" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BRAZILIAN JOURNAL OF PHYSICS, BRASIL)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>RUBINGER, Rero Marques; de Oliveira, A.G. ; Ribeiro, G.M. ; SOARES, D. A. W. ; MOREIRA, M.V.B.. <b>Observation of low frequency oscillations in GaAs samples grown by molecular beam epitaxy at low temperatures</b>. <font color=#330066>Brazilian Journal of Physics, Brasil</font>. v. 29, n. 4, p. 797-800, 1999. <a href="http://dx.doi.org/10.1590/S0103-97331999000400039" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BRAZILIAN JOURNAL OF PHYSICS, BRASIL)</td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FRANCO, A. F. ; MARIANO, N. A. ; KURI, S. E.. <b>Morphology of the oxide scale obtained under different temperature in low chromium stell using thermogravimetric tests</b>. <font color=#330066>Acta Microscópica</font>. v. 7, p. 169-170, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GELFUSO, M. V.; THOMAZINI, D. ; EIRAS, J. A.. <b>Synthesis, dielectric and Piezoelectric Characterization of Strontium-Bismuth Titanate Ceramics</b>. <font color=#330066>JOURNAL OF THE KOREAN PHYSICAL SOCIETY</font>. v. 32, p. S1178-S1179, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF THE KOREAN PHYSICAL SOCIETY)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MAESTRELLI, S. C.; PAULIN FILHO, P. I. ; MORELLI, M. R. ; SOFRI, F. L.. <b>Síntese e processamento de cerâmicas do tipo BIMEVOX. Cerâmica (São Paulo</b>. <font color=#330066>Impresso)</font>. v. 44, p. 37, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IMPRESSO))</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARZO, J. ; HERNANDEZ, M. M. ; SAGRADO, S. ; BONET, S. ; GIMENES, R.. <b>Multivariate quality control studies applied to Ca(II) and Mg(II) determination by a portable method</b>. <font color=#330066>Journal of Chemometrics</font>. v. 15, n. 5, p. 323-336, 1998. <a href="http://dx.doi.org/10.1002/(SICI)1099-128X(199809/10)12:5<323::AID-CEM516>3.0.CO;2-H" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF CHEMOMETRICS)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>RUBINGER, Rero Marques; BEZERRA, J. C. ; CHAGAS, E. F. ; GONZALEZ, J.C. ; RODRIGUES, W.N. ; Ribeiro, G.M. ; MOREIRA, M.V.B. ; de Oliveira, A.G.. <b>Thermally stimulated current spectroscopy on silicon Planar-doped GaAs Samples</b>. <font color=#330066>Journal of Applied Physics</font>. v. 84, n. 7, p. 3764-3769, 1998. <a href="http://dx.doi.org/10.1063/1.368588" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            </table></div><div id="dv-year-1997"><h3 class="year">1997</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BOMBARD, A. J. F. <b>Controle da mobilidade de suspensões automotivas através de fluidos eletro-reológicos ou magneto-reológicos</b>. <font color=#330066>SAE Technical Papers, São Paulo</font>. 1997.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (SAE TECHNICAL PAPERS, SÃO PAULO)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GELFUSO, M. V.; EIRAS, J. A.. <b>Densification of PZT ceramics in the presence of a liquid phase with PbO compounds</b>. <font color=#330066>Acta Microscópica</font>. v. 6, p. 100-101, 1997.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GELFUSO, M. V.; THOMAZINI, D. ; EIRAS, J. A.. <b>Anisotropy of Strontium Bismuth Titanate Ceramics Obtained By Hot-Forging Method</b>. <font color=#330066>Acta Microscópica - Interamerican Committee of Societies for Electron Microscopy</font>. v. 6, p. 90-91, 1997.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA - INTERAMERICAN COMMITTEE OF SOCIETIES FOR ELECTRON MICROSCOPY)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MAESTRELLI, S. C.; BALDO, J. B. ; FERREIRA, L. L. H. C. ; OCTAVIANO, E.. <b>A model analysis of refractory castables self flow for testing optimization</b>. <font color=#330066>Proceedings UNITECR´97, New Orleans</font>. v. 2, p. 605-612, 1997.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (PROCEEDINGS UNITECR´97, NEW ORLEANS)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARIANO, N. A.; LAUREANO, P. S. ; KURI, Sebastião Elias ; PALLONE, E. M. J. A.. <b>Image analysis system applied to metallic inclusion mapping in Al2O3-ZrO2-Nb composites</b>. <font color=#330066>Acta Microscópica</font>. v. 6, p. 298-299, 1997.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARIANO, N. A.; SPINELLI, Dirceu. <b>Study of the behavior of austenitic Cr-Mn-N system steel submitted to stress corrosion cracking in a 45wt% MgCl2 solution at boiling.</b>. <font color=#330066>Acta Microscópica - Interamerican Committee of Societies for Electron Microscopy</font>. v. 6, p. 246-247, 1997.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA - INTERAMERICAN COMMITTEE OF SOCIETIES FOR ELECTRON MICROSCOPY)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MELO, M.L.N.M.; RIZZO, E.M.S. ; SANTOS, R.G.. <b>Numerical Method for Analysis of Microporosity Formation in Aluminium Alloy Castings</b>. <font color=#330066>MATERIALS SCIENCE FORUM (ONLINE)</font>. v. 242, p. 83-90, 1997. <a href="http://dx.doi.org/10.4028/www.scientific.net/msf.242.83" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: B3</b></font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PALLONE, E. M. J. A. ; MARIANO, N. A. ; KURI, Sebastião Elias ; BOTTA FILHO, W. J.. <b>High energy ball milling to obtain nanometric composite powders</b>. <font color=#330066>Acta Microscópica</font>. v. 6, p. 300-301, 1997.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SILVA, M. I. N. ; de Oliveira, A.G. ; Ribeiro, G.M. ; RUBINGER, Rero Marques ; CORRÊA FILHO, J.A. ; MOREIRA, M.V.B.. <b>The EL2 like metastable defect and the n- to p-type transition in silicon planar-doped GaAs</b>. <font color=#330066>Journal of Applied Physics, Estados Unidos</font>. v. 82, n. 7, p. 3346-3350, 1997. <a href="http://dx.doi.org/10.1063/1.365645" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (JOURNAL OF APPLIED PHYSICS, ESTADOS UNIDOS)</td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BALDO, Joao Baptista ; ALVES, W. A. ; MAESTRELLI, S. C.. <b>Estudo das Propriedades Termomecânicas de um \Concreto Refratário Auto-Escoante sem Cimento. Cerâmica (São Paulo</b>. <font color=#330066>Impresso)</font>. v. 42, p. 380, 1996.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IMPRESSO))</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GELFUSO, M. V.; EIRAS, J. A.. <b>Sinterização à baixas temperaturas de cerâmicas de PZT</b>. <font color=#330066>Cerâmica</font>. v. 42, p. 600-602, 1996.<font color="#254117"><b>Qualis: B1</b></font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GELFUSO, M. V.; EIRAS, J. A.. <b>Low temperature sintering of lead zirconate-titanate with V2O5</b>. <font color=#330066>Acta Microscópica</font>. v. 5, p. 92-93, 1996.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GELFUSO, M. V.; SANTOS, C. V. ; EIRAS, J. A.. <b>Obtenção de filmes espessos a base de PZT pelo método tape casting</b>. <font color=#330066>Cerâmica</font>. v. 42, p. 577-580, 1996.<font color="#254117"><b>Qualis: B1</b></font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>GELFUSO, M. V.; THOMAZINI, D. ; EIRAS, J. A.. <b>Obtenção de cerâmicas com estruturas de camadas de bismuto por hot-forging</b>. <font color=#330066>Cerâmica</font>. v. 42, p. 573-576, 1996.<font color="#254117"><b>Qualis: B1</b></font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MAESTRELLI, S. C.; BALDO, J. B.. <b>Influência do tipo de alumina nas propriedades reológicas de um concreto refratário auto escoante de ultra baixo teor de cimento</b>. <font color=#330066>Cerâmica</font>. v. 42, n. 276, p. 399-702, 1996.<font color="#254117"><b>Qualis: B1</b></font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MAESTRELLI, S. C.; BALDO, J. B. ; ALVES, W. A.. <b>propriedades termomecânicas de um concreto refratário auto escoante sem cimento</b>. <font color=#330066>Cerâmica</font>. v. 42, n. 276, p. 380-382, 1996.<font color="#254117"><b>Qualis: B1</b></font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MAESTRELLI, S. C.; BALDO, J. B. ; BOESEL, L. F.. <b>Propriedades mecânicas de cimentos ácido-base obtidos por processos de fabricação distintos</b>. <font color=#330066>Cerâmica</font>. v. 42, n. 278, p. 751-754, 1996.<font color="#254117"><b>Qualis: B1</b></font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SIMÕES, A. Z. ; ALKIMIN, R. ; ZAGHETE, Maria Aparecida ; Perazolli, L.A. ; VARELA, J. A. ; GIMENES, R.. <b>Efeito da Atmosfera na Sinterização do PZTt Puro ou Dopado com Íons Bário e Estrôncio</b>. <font color=#330066>Cerâmica, São Paulo</font>. v. 42, n. 275, p. 130-133, 1996.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CERÂMICA, SÃO PAULO)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>THOMAZINI, D. ; GELFUSO, M. V. ; EIRAS, J. A.. <b>Dielectric properties of bismuth compounds with layered structures</b>. <font color=#330066>Acta Microscópica</font>. v. 5, p. 136-137, 1996.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA MICROSCÓPICA)</td></tr>
+            </table></div><div id="dv-year-1995"><h3 class="year">1995</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MAESTRELLI, S. C.; FERREIRA, L. L. H. C. ; BALDO, J. B.. <b>The effect of Cement substitution for rô-alumina partial additions on the thermo-mechanical properties of a low cement refractory concrete</b>. <font color=#330066>Proceedings of the UNITECR´95, Kyoto</font>. v. 1, p. 245-252, 1995.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (PROCEEDINGS OF THE UNITECR´95, KYOTO)</td></tr>
+            </table></div><div id="dv-year-1989"><h3 class="year">1989</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GELFUSO, M. V.; HAIK, C. C. ; GARCIA, D. ; EIRAS, J. A. ; MENEGAZZO, B. A.. <b>Propriedades Dielétricas e Piezoelétricas de PZT Sinterizado a Baixas Temperaturas.. Cerâmica (São Paulo</b>. <font color=#330066>Impresso)</font>. v. 35, p. 18-20, 1989.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IMPRESSO))</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 14/02/2025 18:29:01<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

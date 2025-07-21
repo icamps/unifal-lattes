@@ -1,0 +1,953 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Trabalho de conclusão de curso de graduação'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1999,
+1],
+[2003,
+1],
+[2004,
+3],
+[2005,
+6],
+[2006,
+6],
+[2007,
+12],
+[2008,
+7],
+[2009,
+4],
+[2010,
+6],
+[2011,
+6],
+[2012,
+2],
+[2013,
+17],
+[2014,
+33],
+[2015,
+20],
+[2016,
+32],
+[2017,
+23],
+[2018,
+36],
+[2019,
+34],
+[2020,
+14],
+[2021,
+31],
+[2022,
+39],
+[2023,
+33],
+[2024,
+14]]}]});
+        });
+        </script>
+        
+                <h3>Trabalho de conclusão de curso de graduação</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 380<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Júlia do Espirito Santo. <b>Estudo da resistência mecânica e microestrutura nas ligas AA 3104 E AA5083 unidas por processo TIG com metais de adição ER-4043 E ER-5356</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BEATRIZ GONÇALEZ ZAMAI e LARISSA AMARAL. <b>APLICAÇÃO DE FERRAMENTAS DE GESTÃO DE QUALIDADE NA INDÚSTRIA AUTOMOTIVA</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Brenda Xavier Gonçalves. <b>?LIPOSSOMAS ASSOCIADOS AO EUGENOL: ESTUDO IN VITRO E INVESTIGAÇÃO DA ATIVIDADE ANTIMICROBIANA E ANTIBIOFILME</b>. (Graduação em Química) - Universidade Federal de Itajubá, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Flavia Pereira Ribeiro. <b>CARACTERIZAÇÃO MINERALÓGICA DAS ARGILAS PRESENTES NO PERFIL REGOLÍTICO DOS DEPÓSITOS SUPERGÊNICOS DE ETR SOBERBO E CAPÃO DO MEL (SISTEMA CALDEIRA)?</b>. (Graduação em Geologia) - Universidade Estadual Paulista Júlio de Mesquita Filho, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Jennifer Alves da Silva Moreira. <b>Obtenção de peças de bauxita para adsorção de corantes</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Jessica Barbosa Fanis. <b>PRODUÇÃO DE SUPORTES POROSOS DE ALUMINA (Al2O3) PARA APLICAÇÃO NA IMOBILIZAÇÃO DE CÉLULAS DE Aspergillus oryzae IPT-301 VISANDO A PRODUÇÃO DE FRUTOOLIGOSSACARÍDEOS</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Jéssyca Lopes Capistrano. <b>REVISÃO BIBLIOGRÁFICA DAS DUAS ÚLTIMAS DÉCADAS (2004-2024) DO ISOLAMENTO DO GRAFENO</b>. (Graduação em Química Bacharelado) - Universidade Federal de Itajubá, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Larissa Paulino Leandro. <b>Revisão integrativa da literatura no uso de antimicrobianos em materiais poliméricos para diferentes aplicações</b>. (Graduação em Química Bacharelado) - Universidade Federal de Itajubá, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Letícia Januário Dias. <b>ES TUDO DA APLICAÇÃO DA TÉCNICA DE LASER SCRIBING EM AÇOS ELÉTRICOS DE GRÃO ORIENTADO PARA REFINO PERMANENTE DE DOMÍNIOS MAGNÉTICOS</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Nayara Viana Santos. <b>Estudo do comportamento térmico da borda de panelas de aciaria utilizadas na indústria siderúrgica</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>PIetra Lopes da Silva e Luis Fernando Baldo Estorari. <b>REVIEW: TÉCNICAS DE OBTENÇÃO DE MATERIAIS CERÂMICOS POROSOS</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Roberta C. de Sousa Ribeiro. <b>CARACTERIZAÇÃO DE REJEITOS DE MINERAÇÃO E SEU POTENCIAL PARA ADSORÇÃO DE AZUL DE METILENO</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Victor Monteiro Corrêa. <b>EFEITO DO TRATAMENTO TÉRMICO NA SENSITIZAÇÃO DE AÇOS INOXIDÁVEIS AISI 304 COM DIFERENTES TEORES DE CARBONO</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Vitor Hugo Pedrote dos Santos Almeida. <b>Aprimoramento das propriedades termoelétricas de cerâmicas de Ca3Co4O9 dopadas com bismuto sinterizadas convencionalmente em atmosfera de O2 ou em microondas ao ar</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Beatriz de Oliveira. <b>SÍNTESE E CARACTERIZAÇÃO DE NANOPARTICULAS DE FERRITA PARA APLICAÇÃO ANTIMICROBIANA</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4966915248252263">Fabrício Vieira de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Rita Paim. <b>ESG em indústrias de Mineração</b>. (Graduação em Engenharia Ambiental e Urbana) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Augusto César Araújo Oliveira. <b>Influência da temperatura no ensaio de tração do açoinoxidável duplex UNS S31803/AISI 2205</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Brenda Cristina Tavares Piza e Nayara Cristina Brabo. <b>CARACTERIZAÇÃO DE POTENCIAIS GEOSSÍTIOS DA CALDEIRA VULCÂNICA DE POÇOS DE CALDAS</b>. (Graduação em Engenharia Ambiental e Urbana) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bruna de Sousa Cerny. <b>"APLICAÇÃO DA CURVA DE ATENUAÇÃO PARA AVALIAÇÃO DO IMPACTO EM CAMPO DISTANTE DE EMULSÃO COM DENSIDADE VARIÁVEL EM UMA MINA SUBTERRÂNEA"</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Carem Aparecida Mesquita. <b>ESG em indústrias de Mineração</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CARLA SERGIO BARBOZA. <b>ANÁLISE MICROESTRURAL EM FITAS METÁLICAS DE Sn-9Zn COM RECOBRIMENTO DE HIDROXIAPATITA E ÓLEO ESSENCIAL DE Melaleuca alternifolia INCORPORADO EM SOLUÇÃO DE POLICAPROLACTONA</b>. (Graduação em engenharia química) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CAROLINA M. GONÇALVES e FRANCISCO EDUARDO F. RIBEIRO. <b>HISTÓRIA DA MINERAÇÃO NO PLANALTO DE POÇOS DE CALDAS ? MG</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Daiana Aparecida Vilas Boas. <b>ESTUDO DA OBTENÇÃO DE ÓXIDO DE GRAFENO REDUZIDO POR ESFOLIAÇÃO ELETROQUÍMICA DE GRAFITE E REDUÇÃO FITOQUÍMICA</b>. (Graduação em Química Bacharelado) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Diego Henrique Loro. <b>Termoplásticos Biodegradáveis de Base Biológica: um Review</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>EMILY FREIRE VICENTE E ISABELA BEGNAMI CHIGNOLLI. <b>O TÉDIO ACADÊMICO RELACIONADO AO ENSINO REMOTO NA UNIVERSIDADE FEDERAL DE ALFENAS- MG.</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Gabriela Pereira da Silva. <b>Estudos de Aplicação de uma argila Turfosa da região de Poços de Caldas</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Gianlluca Rodrigues de Almeida. <b>DEPOSIÇÃO DE CAMADAS DE REVESTIMENTO, COM ALTA RESISTÊNCIA À OXIDAÇÃO, NA LIGA Mo-Si-B UTILIZANDO O MÉTODO DE CEMENTAÇÃO EM CAIXA ATIVADO POR HALETOS (HAPC)</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>GRAZIELLE APARECIDA DOS SANTOS. <b>ESTUDO IN VITRO PARA AVALIAÇÃO DA ATIVIDADE ANTIMICROBIANA E ANTIBIOFILME DE NANOPARTÍCULAS DE SÍLICA MESOPOROSA SINALIZADAS E CARREGADAS COM CIPROFLOXACINA</b>. (Graduação em Ciências Biológicas) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Guilherme Oliveira de Araujo. <b>Panorama da Mineração de Ouro no Brasil</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Gustavo T.G.deOliveira/Ian F.deOliveira/Roberto F.deSouzaJr. <b>MANUAL SOBRE RISCOS ASSOCIADOS AO DESCONHECIMENTO E FALTA DE PADRONIZAÇÃO NO USO DO CONCRETO USINADO EM OBRAS DE POÇOS DE CALDAS: UMA FERRAMENTA ÚTIL AO USUÁRIO</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>JEFERSON SCOTT DE OLIVEIRA e JÚLIA ABELINI RODRIGUES. <b>REVIEW: NANOTECNOLOGIA APLICADA À PRODUÇÃO DE EMBALAGENS</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Lara Maria Amâncio Coimbra. <b>Manganitas de Cálcio Calcinadas e Sinterizadas em Forno de Micro-Ondas</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>LEONARDO FURLAN BUENO e VINÍCIUS BOCAMINO TREVIZAN. <b>REVESTIMENTO DE MIRTILO COM FILME DE QUITOSANA PARA PROLONGAR SUA PERÍODO DE PRATELEIRA</b>. (Graduação em Bacharelado Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>LETICIA BARCELOS SOARES (2018003688). <b>ANÁLISE DAS PROPRIEDADES DE ARGAMASSAS DE ASSENTAMENTO FORMULADAS COM REJEITO DE MINÉRIO DE FERRO E RESÍDUO DE VIDRO</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4966915248252263">Fabrício Vieira de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Marcus Vinicius Favero Alves e Maria Eduarda Simôes Machado. <b>Caracterização de material cerâmico oriundo do município de São José do Rio Pardo</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>MARIA LUISA COUY VIANA (2019008929). <b>ANÁLISE DE FALHA DE REVESTIMENTO DE BRITADOR CÔNICO FRATURADO EM COMINUIÇÃO DE MINÉRIO DE FERRO</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4966915248252263">Fabrício Vieira de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MARIANA VENTURA DE CARVALHO e PRISCILA YASMIM SILVA. <b>PANORAMA ECONÔMICO MINERAL DAS TERRAS RARAS</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Matheus Araújo Pereira. <b>OBTENÇÃO DE NIOBATOS VIA PECHINI PARA APLICAÇÃO NA OBTENÇÃO DE HIDROGÊNIO A PARTIR DO ARMAZENADOR BOROHIDRETO DE SÓDIO</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4966915248252263">Fabrício Vieira de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Matheus Henrique Alves. <b>Relação da energia de superfície por ângulo de contato e energia de adesão de adesivo acrílico nos substratos: ABS, aço inox 304, placa metálica pintada, polipropileno e vidro</b>. (Graduação em Química) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0573457812045902">Antonio Jose Faria Bombard</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Mirela de Lira Sousa e Marcos Leandro dos Santos Boldrin. <b>PERCEPÇÃO SOBRE A EMPREGABILIDADE DE EGRESSOS DO BCT</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>PAULO CÉSAR CÓPPOLA. <b>ESTUDO DE CONFIABILIDADE DO SOFTWARE IMAGEJ PARA ANÁLISES GRANULOMÉTRICAS</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Rafael Gonçalves Silva e Shesnon Portugal Luz. <b>Plano de Negócios aplicado ao comércio eletrônico brasileiro de minerais e rochas para fins colecionáveis, esotéricos e decorativos</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Renata Aparecida Santos Moreira. <b>Estudo comparativo da resistência à corrosão de dormentes brasileiros e romenos fabricados em aço SAE 1522</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Sarah Muniz Pereira e Gabriela Beneteli Vieira. <b>ESTUDO DA VIABILIDADE DO USO DE RESÍDUO DE BAUXITA EM COMPOSIÇÕES DE CIMENTO</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Tainara Aparecida Nunes Ribeiro. <b>NANOPARTÍCULAS ASSOCIADAS AO EUGENOL COMO PROMISSORES AGENTES ANTIBACTERIANOS E ANTIFÚNGICOS: UMA REVISÃO DA LITERATURA</b>. (Graduação em Química) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>Walbert Castro Lage. <b>ANÁLISE TRIBOLÓGICA DE BORDAS DE MOTONIVELADORAS APLICADAS EM MINERAÇÃO DE MINÉRIO DE FERRO</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4966915248252263">Fabrício Vieira de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>Wellington Rocha Silva. <b>Análise da influência da temperatura de ensaio na vida em fadiga do aço SAE 1020</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Julia Pereira. <b>Otimização das propriedades ópticas em vidros de fosfato de nióbio</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Rafaela dos Santos. <b>UTILIZAÇÃO DO PROCESSO ?HALIDE ACTIVATED PACK CEMENTATION? (HAPC), PARA RECOBRIMENTO DE LIGAS DE Mo-Si-B VISANDO O AUMENTO DA RESISTÊNCIA À OXIDAÇÃO</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Beatriz L.F.Mendes, Lavínia Monteiro e Vitória A.F. Souza. <b>Potencial geoturístico da região de Poços de Caldas, MG</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianca Aparecida Zanin da Silva. <b>A influência de espessantes acrílicos associativos na reologia e estabilidade de tintas aquosas com Rutilo: avaliação de alguns parâmetros físico- químicos.</b>. (Graduação em Química) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0573457812045902">Antonio Jose Faria Bombard</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Caio Campos Rodrigues. <b>REVESTIMENTO DO Nb COM CAMADAS À BASE DE SILICETOS, UTILIZANDO O PROCESSO ?HALIDE ACTIVATED PACK CEMENTATION? (HAPC</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Caio Marcello Duarte. <b>Revestimento de ligas metálicas para aplicações em altas temperaturas</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Camila Ribeiro Alves. <b>ESTUDO DE MATERIAIS ADSORVENTES E FOTOCATALISADORES COMPOSTOS POR Nb2O5:ZnO PROCESSADOS POR COLAGEM DE BARBOTINA</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Cibele Cristina Leite. <b>Estudo da influência de parâmetros do processamento de extrusão nas propriedadesde compostos de polipropileno reforçados com fibra de vidro</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Daniele Melo Costa. <b>Utilização de solventes orgânicos na recuperação das fibras de carbono de resíduospré-impregnados</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Diego de Souza Valadares. <b>Utilização de ferramenta de cálculo para estimar as emissões de gases do efeito estufa em dois diferentes tempos de recozimento final de folhas de alumínio para embalagens</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Felipe Augusto de Lira Silva. <b>Uso de micélio fungal com material biodegradável</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Gabriel Andrade Sant'Ana. <b>Desenvolvimento de técnicas de calcinação e microscopia para a caracterização demateriais compósitos quando há presença de cargas minerais</b>. (Graduação em Engenharia Mecânica Aeronáutica) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Gabriela Garcia Bueno Silva e Lucca Monteiro Silva Semensato. <b>Review: utilização de ZnO para aplicações fotocatalíticas</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Giovanna Raizeer da Silva e Lucas Filipe Jorge Mioli. <b>Aproveitamento de pó de madeira na construção civil.</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>HUGO MARTINS DO CARMO E LUARA MARETTI ROSSI. <b>PANORAMA ECONÔMICO MINERAL: NIÓBIO</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Igor Luiz dos Santos. <b>Síntese e caracterização de nanocompósito baseado em oxido de grafeno e nanopartículas de prata</b>. (Graduação em Química Bacharelado) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>ISABELA DA SILVA BERTHO. <b>ESTUDO DA LIBERAÇÃO CONTROLADA DO ÓLEO DE ROSA MOSQUETA USANDO O FILME DE QUITOSANA</b>. (Graduação em Bacharelado Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>ISABELA FERNANDA PINHEIRO. <b>ESTUDO DA LIBERAÇÃO CONTROLADA DO ÓLEO DE ROSA MOSQUETA USANDO O FILME DE QUITOSANA</b>. (Graduação em Bacharelado Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Jessica Barbosa Fanis. <b>Suportes porosos para imobilização da enzima FTASE: review</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Jose Henrique Vitalino Ribeiro. <b>Solda por fricção em ligas de alumínio</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>José Manoel Thomaz Fernandes da Silva. <b>Semicondutores de ZnO para tratamento de águas: processamento por colagem por amido e sinterização em micro-ondas</b>. (Graduação em Engenharia Ambiental e Urbana) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>JÚLIA CRISTINA OLIVEIRA DE SOUZA. <b>ESTUDO DA LIBERAÇÃO CONTROLADA DO ÓLEO DE ROSA MOSQUETA USANDO O FILME DE QUITOSANA</b>. (Graduação em Bacharelado Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Larissa Vitoria Ribeiro. <b>Caracterização de chapas de aço BH tratado termicamente sob fluxo de N2</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Leticia B. Pereira, Nicolas S. Nascimento, Ana B. P. Paula. <b>ANÁLISE DE POLÍMEROS SUSTENTÁVEIS: ESTUDO QUALITATIVO A PARTIR DE REVISÃO BIBLIOGRÁFICA DO POLI(ÁCIDO LÁTICO)</b>. (Graduação em Bacharelado Interdisciplinar em Ciência e Tecnolog) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>LUCAS MACEDO MONTAGNANA. <b>MÉTODOS DE REVESTIMENTO COM ALTA RESISTÊNCIA À OXIDAÇÃO EM SUPERLIGAS À BASE DE NÍQUEL</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Luiz Gustavo da Silva. <b>UM PANORAMA GERAL ACERCA DOS DOS AÇOS FERRAMENTAS"</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Marcos Vinicius Vieira Caglieri. <b>Caracterização de resíduos de garrafas do tipo long neck para utilização em concretos de pós reativos</b>. (Graduação em Engenharia Ambiental e Urbana) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Matheus Batista Figueiredo. <b>Estudo do comportamento mecânico de um painel sanduíche de rohacell hero 71 quando submetido a esforços estáticos e cíclicos</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>MATHEUS CURTI VELOSO CARBONARI. <b>LEVANTAMENTO DE INFORMAÇÕES GEOLÓGICAS, AMBIENTAIS E TURÍSTICAS PARA ELABORAÇÃO DE MAPEAMENTO DO GEOPARQUE DIGITAL DE POÇOS DE CALDAS - MG</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Matheus Marcuz Buffo. <b>Caulim: Aplicações e propriedades</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Monique Roberta Fracarolli de Camargo. <b>Estudo da atividade antimicrobiana de membranas de Quitosona e complexo dendrímero de poliglicerol: curmumina</b>. (Graduação em Química Bacharelado) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>NAIANE DE FÁTIMA SOARES. <b>IMPACTOS DA PANDEMIA DE COVID-19 NO SETOR MINERAL BRASILEIRO</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>Pedro Felipe do Espírito Santo Garcia. <b>Exoesqueleto passivo para auxílio aos membros inferiores durante o movimento de caminhada</b>. (Graduação em Engenharia Mecânica Aeronáutica) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>Pedro Vieira Marcos. <b>Síntese, caracterização microestrutural de TaC por moagem de alta energia e subsequente spark plasma sintering</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>Rubens Augusto Carvalho Rafanhim. <b>Estudo da viabilidade de reforços de fibra de carbono/epóxi em tubos de aço</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>Samuel Monteiro Pandolpho. <b>Reciclagem de resíduos de pré-impregnados não curados a partir da utilização desolvente a base de acetona</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>Spyridion Haritos Borges. <b>EFEITO DO ENVELHECIMENTO EM ALTA TEMPERATURA POR CURTOS PERÍODOS DE TEMPOS NO AÇO INOXIDÁVEL DUPLEX UNS S31803 (SAF2205)-TCC</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>Tatyana de Souza Santos. <b>Uso de micélio fungal com material biodegradável</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>Wilson Vieira de Souza Neto. <b>Reciclagem, tratamento e impactos gerados pela produção do alumínio</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adam Luiz Evangelista Soares. <b>Nanocompósitos semicondutor:grafeno para aplicação em fotocatálise: uma revisão bibliográfica</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ADRIELLI SCARPEL COLPANI. <b>IMPACTOS AMBIENTAIS E SOCIAIS CAUSADOS PELA INDUSTRIALIZAÇÃO E PELO AUMENTO DESENFREADO NO CONSUMO DE MATERIAIS PLÁSTICOS</b>. (Graduação em Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Amanda dos Santos Serino. <b>CARACTERIZAÇÃO MICROESTRUTURAL E AVALIAÇÃO DAS PROPRIEDADES MECÂNICAS E MICRODUREZA DE VICKERS DE CHAPAS DE AÇO BAKE HARDENING LAMINADAS A FRIO</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Ana Carolina Valentim Medeiros e Gustavo Marques Piologo. <b>PROJETO INICIAL PARA ESTUDO DA EVASÃO UNIVERSITÁRIA NO BACHARELADO INTERDISCIPLINAR EM CIÊNCIA E TECNOLOGIA (BCT)</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Aylla Joani Mendonça de Oliveira. <b>Reaproveitamento das cinzas de aparas de couro na síntese de pigmentos com estrutura coríndon, uvarovita e espinélio</b>. (Graduação em Química) - Universidade Federal de Itajubá, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Beatriz G. Zamai, Larissa Amaral e Jéferson Scott Oliveira. <b>Beatriz Gonçalez Zamai, Larissa Amaral e Jéferson Scott de Oliveira</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BITUEL CARNEIRO LOPES. Caracterização micro-estrutural e microbiológica de membranas de PVA/PGLD-NPsAg. <b>Estudo de liberação ?in vitro? de NPsAg</b>. (Graduação em Química Bacharelado) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Flaviane de Lima Carvalho. <b>Obtenção de camadas à base de silicetos com alta resistência à oxidação, em ligas Nb-Si, utilizando o processo "Halide Activated Pack Cementation" HAPC</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Flávia Daniele Carvalho Vilas Boas. <b>MEMBRANAS ANTIMICROBIANAS DE PVA-NPsAg PREPARADAS A PARTIR DA SÍNTESE VERDE USANDO PÉTALAS DA FLOR DE Dianthus barbatus lilac</b>. (Graduação em Bacharelado em Química) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Frederic Matussek. <b>Controlled release of tea tree oil from a chitosan matrix containing gold nanoparticles</b>. (Graduação em Chemistry) - Technische Universität Clausthal, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Gabrielle Strazza. SINTESE VERDE DE NANOPARTÍCULAS DE DIÓXIDO DE TITÂNIO. <b>CARACTERIZAÇÃO E ESTUDO COMO ADITIVO PRÓ-DEGRADANTE EM POLIOLEFINAS</b>. (Graduação em Bacharelado em Química) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GUILHERME R. P. DA SILVA E VINÍCIUS ANTONIO DA S. FOCA. <b>Panorama do Mercado de Rochas Ornamentais com ?Enfase no Estado do Esp´ırito Santo</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Igor Jesus Quental de Araújo. <b>Analise dos parâmetros de entrada que geram a condição ótima de soldagem quanto a geometria do cordão no AID UNS S32205 utilizando o processo de soldagem GMAW-STT</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Igor Vilela de Lima. <b>Analise dos parâmetros de entrada que geram a condição ótima de soldagem quanto a geometria do cordão no AID UNS S32205 utilizando o processo de soldagem GMAW-STT</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>ISABELLA MARIA DE CARVALHO. <b>IMPACTOS AMBIENTAIS E SOCIAIS CAUSADOS PELA INDUSTRIALIZAÇÃO E PELO AUMENTO DESENFREADO NO CONSUMO DE MATERIAIS PLÁSTICOS</b>. (Graduação em Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>José Eduardo Feltrin Goes. <b>Deposição de camadas com alta resistência a oxidação em ligas Nb-Si-B, utilizando o processo ?Halide Activated Pack Cementation? (HAPC)</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Júlio Gabriel de Falco Manuel. <b>Efeito da polidispersidade em fluido magnetoreológico concentrado</b>. (Graduação em Química) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0573457812045902">Antonio Jose Faria Bombard</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Laís Bomfim Borba. SÍNTESE VERDE DE NANOPARTÍCULAS DE TiO2. <b>ESTUDO DE SUAS PROPRIEDADES COMO ADITIVO ANTI-UV EM MATRIZ DE COPOLÍMERO DE POLI(PROPILENO-CO-ETILENO)</b>. (Graduação em Química Bacharelado) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Letícia B. Pereira, Nicolas L.N.S. Nascimento,Ana B.P. Paula. <b>Pequitina</b>. (Graduação em Bacharelado Interdisciplinar em Ciência e Tecnolog) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Luana Aparecida Silvestre Braga. <b>ESTUDO CINÉTICO DA SÍNTESE VERDE DE NANOPARTÍCULAS DE ZnO E SUA CARACTERIZAÇÃO FÍSICO-QUÍMICA</b>. (Graduação em Bacharelado em Química) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>LUANA PAULA GOMES FERREIRA. <b>ADSORVENTE A BASE DE MnFe2O4, PARA REMOÇÃO DE CONTAMINANTES EM ÁGUA</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4966915248252263">Fabrício Vieira de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>MARCELA CORRÊA DE FIGUEIREDO. <b>Serragem de eucalipto e suas aplicações: uma revisão bibliográfica</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Maria Natália Teófilo Moreira. <b>Utilização de peças de ZnO:Nb2O5 para estudo de adsorção e fotocatálise do azul de metileno</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Mariana da Silva Novakoski. <b>AVALIAÇÃO DA FORMAÇÃO DE BIOFILME BACTERIANO SOBRE A LIGA TI10MO8NB</b>. (Graduação em Química) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Matheus Balieiro Figueiredo. <b>Poluição por Microplásticos</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Nathála Mariano Barros. <b>SÍNTESE E CARACTERIZAÇÃO DE NIOBATOS DE Cu e Ag PARA APLICAÇÕES ANTIFÚNGICAS</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4966915248252263">Fabrício Vieira de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Paloma de Souza Leite. <b>Desenvolvimento de ensaios de análise térmica e reológica para prepeg aeronáutico</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>RICHARDSON WILLIAM BELMIRO. <b>REVISÃO BIBLIOGRÁFICA SISTEMÁTICA SOBRE LIGAS DE TITÂNIO APLICADAS EM ALTAS TEMPERATURAS, COM ENFOQUE NO SETOR AERONÁUTICO</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Tainá Canella Sanches. <b>Síntese e estudo do potencial antimicrobiano de complexo de zinco com ligantes ditiocarbimato e tiossemicarbazona</b>. (Graduação em Química) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Thamara Machado de Oliveira Ruellas. <b>Aplicação de Hidroxiapatita na Adsorção de Íons Zn2+</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Thaís Gabrielle Pereira. Membranas antimicrobianas de PVA-NPsZnO, preparadas a partir da síntese verde utilizando folhas de Eruca vesicaria ssp. <b>Sativa.</b>. (Graduação em Química Bacharelado) - Universidade Federal de Itajubá, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Brenda Martins Fernandes. <b>ANÁLISE DE FADIGA EM LIGAS FERROSAS PELO MÉTODO DOS ELEMENTOS FINITOS</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bárbara Carolini Oliveira Ferreira. <b>Avaliação microestrutural de ligas série 6XXX produzidas por fundição direta</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Darielly Alvarenga Duarte. <b>Processos alternativos de envelhecimento e secagem na síntese de hidroxiapatita cristalina pelo método solgel</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Douglas Ferreira Alves. <b>A influência do tratamento térmico de envelhecimento na formação de precipitados na liga VAT36</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Emanuel Mendes Cesarino. <b>OBTENÇÃO DE CAMADAS COM ALTA RESISTÊNCIA À OXIDAÇÃO EM AÇO DUPLEX UNS S31803, UTILIZANDO O PROCESSO ?HALIDE ACTIVATED PACK CEMENTATION</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Gabriel Roberto Vieira Duque. <b>Estudo e caracterização de compósitos à base de resina termoplástica líquida (Elium 150) reforçados com fibra de sisal</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Leonardo Amorim. <b>Síntese e propriedades do titanato de cobre cálcio-CCTO para desenvolvimento de um possível capacitor comercial</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Lia Betsa Costa. <b>Confecção e utilização de Metamateriais de alumínio para reforço estrutural em vigas de argamassa.</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MARINA APARECIDA DE SOUZA. <b>ESTUDO DA ADSORÇÃO DE COBRE (II) USANDO BAGAÇO DE CANA-DE-AÇÚCAR PARA TRATAMENTO DE EFLUENTES LÍQUIDOS</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Maysa Candido Marques. <b>DESENVOLVIMENTO DE UM MÉTODO ÓPTICO PARA CONTROLE DE QUALIDADE DO PAPEL DE ISOLAÇÃO DE TRANSFORMADORES DE DISTRIBUIÇÃO</b>. (Graduação em Bacharelado em Química) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Paula Jordhanna Alves Simplício e Pedro Bastos Deolindo. <b>Projeto Multidisciplinar: Formulações de Porcelanato contendo Rocha Potássica</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Rafael Augusto Marques Machado. <b>Propriedades termoelétricas da cobaltita de cálcio dopada com bário obtida por rota química simplificada</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Rafaela de Oliveira Nogueira. <b>Produção e avaliação da resistência à oxidação de um revestimento à base de Fe-Cr-Si, obtido pelo processo "Halide Activated Pack Cementation" HAPC, sobre uma liga Nb-Si</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Vitor de Almeida Assuena. <b>Sinterização de liga Al-Cu-Mg-Si (Alumix 123) via radiação de micro-ondas</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALYSSON DOMINGOS CARVALHO MACHADO e RAFAEL MORAES VERGEL. <b>CARACTERIZAÇÃO TECNOLÓGICA DO REJEITO DE QUARTZITO DA REGIÃO DE SERRA NEGRA ? SP</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Amanda Cristina Rustici Balsamo. <b>Estudo comparativo entre materiais a base de vidro e policarbonato em projetos de superfícies transparentes</b>. (Graduação em Engenharia Química) - Universidade Federal do Triângulo Mineiro, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Ana Júlia Vasconcelos Moreira. <b>Caracterização Térmica e Mecânica de Compósitos de Matriz Polimérica Reforçada com Fibra de Vidro</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Arildo Júnior Maciel. <b>Determinação do perfil espacial de laseres</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Brenna Vieira Jacon. <b>Estudo da utilização de serragem de eucalipto como adsorvente do alaranjado de metila</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Eric Mc Fadden. <b>Avaliação da influencia do tratamento térmico intercrítico na tenacidade à fratura do aço LNE 380.</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Fernanda de Lima Afonso. <b>Embalagens Inteligentes: Aplicação do extrato de Cúrcuma incorporado ao filme de quitosana como indicador colorimétrico</b>. (Graduação em Engenharia Química) - Universidade Federal do Triângulo Mineiro, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Fernanda Y. Nakano, Gabriel S. Pinelli e Mayra Alegro C. Cer. <b>Influência dos dopantes na arte dos vidros</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>FERNANDO PEREIRA GRAÇA NETO. <b>CARACTERIZAÇÃO TECNOLÓGICA DE MATERIAL DE AGREGADO DA REGIÃO DE VALENÇA - RJ</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Gabriel Urbano. <b>Analise da resistencia ao desgaste em revestimento de cromo e alumina</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Giovanni Gomes Guerreiro. <b>Síntese de nanomateriais de carbono a partir de um rejeito de minério de ferro itabirítico para potenciais aplicações como adsorvente de contaminantes catiônicos em meio aquoso.</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4966915248252263">Fabrício Vieira de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Gustavo Henrique dos Santos Domingos. <b>ESTUDO DA SINTERIZAÇÃO DE TIALITA PARA APLICAÇÃO EM REFRATÁRIOS</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>José Sérgio Breda Junior. <b>Estudo de variáveis de síntese e do potencial fotocatalítico de nanopartículas de ZnO obtido pelo método hidrotermal-microondas</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Julia Bernardes Santana Silva. <b>Obtenção de camadas com alta resistência à oxidação sobre a liga MAR M246 utilizando o processo ?Halide activated Pack Cementation? .</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Letícia Laura de Oliveira. <b>Estudo da absorção de água por filmes de isolamento via análise dielétrica</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Lucas Barea Peron. <b>Procedimentos Técnicos e Administrativos para Criação de uma Empresa de Manutenção Aeronáutica</b>. (Graduação em Engenharia Mecânica Aeronáutica) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Lucas coli Cortes. <b>Caracterização microestrutural da liga VAT36 submetida a diferentes tratamentos térmicos</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Lucas Cruz Rodrigues. <b>Estudo do envelhecimento e propriedades mecânicas da liga Alumínio 7075</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Lucas Maurício do Couto. <b>Reciclagem de ligas de alumínio com diferentes teores de ferro</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Marcelle Agudo de Freitas. <b>Obtenção de TiO2 por diferentes métodos para adsorção de manganês Mn2+</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Mateus Monteiro Pellegrino. <b>Um estudo da aplicação de RPA (Robotic Process Automation) e seu papel junto a Indústria 4.0</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Monique Pereira dos Santos. <b>Efeito do condicionamento higrotérmico nas propriedades de cisalhamento no plano de compósitos à base de resina Elium 150/fibras de carbono</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Patrícia Maciel Alves. <b>DESENVOLVIMENTO DE MATRIZES DE PVDF/BaTiO3 E NITRATO DE PRATA PARA APLICAÇÕES BIOMÉDICAS</b>. (Graduação em Química) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8688452245478539">Daniela Sachs</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>RAIRA CHEFER APOLINARIO. <b>EFEITO DO PROCESSAMENTO NA MICROESTRUTURA E RESISTÊNCIA A CORROSÃO POR PITE EM AÇO INOXIDÁVEL</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Renato Leão de Lello. <b>Projeto de um Sistema de Alinhamento para Próteses para Membros Inferiores usando Critério de Vida Segura</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Rodrigo Junqueira Duarte. <b>Características de um rebolo de corte para usinagem de anéis de pistão</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Sarah Pandolpho Santicholi; Paloma França Machado. <b>AVALIAÇÃO MICROESTRUTURAL E DO ÍNDICE DE ABSORÇÃO DE ÁGUA DE TIJOLOS MACIÇOS ELABORADOS A PARTIR DO RESÍDUO DE CINZAS PROVENIENTES DO COMPLEXO TERMELÉTRICO JORGE LACERDA</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Vanessa Siqueira Venâncio. <b>Correlação entre tratamentos térmicos, propriedades mecânicas e condutividade elétrica de ligas de alumínio</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Victor Cardoso Thiers Vieira. <b>Aplicação de Metodologias Ativas no Ensino de Resistência dos Materiais</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>VICTOR OLÍVIO OLIVEIRA DO CARMO. <b>CARACTERIZAÇÃO TECNOLÓGICA DE CAULIM QUARTZOSO DA REGIÃO DE SÃO JOÃO DO ORIENTE-MG</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Vinicius Sanches da Silva. <b>CERÂMICAS POROSAS DE ZnO OBTIDAS PELO MÉTODO DE SACRIFÍCIO PARA APLICAÇÃO EM FOTOCATÁLISE</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - UNIFAL - MG, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>Vitor Guilherme de Oliveira. <b>EFEITO DA OBTENÇÃO DE TIALITA POR MOAGEM DE ALTA ENERGIA E SINTERIZAÇÃO CONVENCIONAL: PROPRIEDADES FÍSICAS E MECÂNICAS</b>. (Graduação em Engenharia de Minas) - UNIFAL - MG, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>Wagner M. de Lima Macedo e Vinícius A. da Silva Foca. <b>Processos de Degradação das Rochas Ornamentais Utilizadas em Jazigos e a Tendência de Uso ao Longo dos Anos</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>Ágatha Wedranna Freire Silveira. <b>Embalagens Inteligentes: Aplicação do extrato de Cúrcuma incorporado ao filme de quitosana como indicador colorimétrico</b>. (Graduação em Engenharia Química) - Universidade Federal do Triângulo Mineiro, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ademir José Siman Filho. <b>Estudo de polímeros ambientalmente sustentáveis</b>. (Graduação em Engenharia Química) - Universidade Federal do Triângulo Mineiro, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Andressa Mariana Alves Neves. <b>Produção de membranas de polipropileno e carvão para adsorção de azul de metileno</b>. (Graduação em Engenharia Química) - Universidade Federal do Triângulo Mineiro, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>André Luiz Guarda. <b>Caracterização Cerâmica de Argila proveniente de Biomineração</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Anne Lyse Ávila Luiz e Lucas G. Carvalho. <b>INFLUÊNCIA DA FORMULAÇÃO CERÂMICA NA OBTENÇÃO DE REFRATÁRIOS COM BAIXO TEOR DE BOLHAS</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Antonio Lopes Rosado Filho. <b>Projeto e Análise de Fadiga da Caverna de Pressão Traseira em Alumínio 2024-t# com abordagem Safe-Life para uma Aeronave de Transporte Civil</b>. (Graduação em Engenharia Mecânica Aeronáutica) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ARIANY SIMPLÍCIO E LETÍCIA C. VIEIRA. <b>CARACTERIZAÇÃO DE ARGAMASSA COM CASCA DE ARROZ</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Breno Cantadori. <b>ESTUDO DA CAPACIDADE DE ADSORÇÃO DE ÍONS Mn 2+ EM CABELO</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Bárbara de Oliveira Fiorin. <b>EFEITO DA SINTERIZAÇÃO NA MICROESTRUTURA E NA RESISTÊNCIA À CORROSÃO DA LIGA Ti-22Si-11B EM SALIVA ARTIFICIAL</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CARMEN BORGES VRANCEANU. <b>TITÂNIO RECOBERTO COM HIDROXIAPATITA, NITRATO DE PRATA E POLICAPROLACTONA PARA POTENCIAL APLICAÇÃO EM IMPLANTES</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CAROLINA CRUZ FERREIRA. <b>TITÂNIO RECOBERTO COM HIDROXIAPATITA, NITRATO DE PRATA E POLICAPROLACTONA PARA POTENCIAL APLICAÇÃO EM IMPLANTES</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Carolina Oliveira Silva. <b>Estudo das alterações estruturais da bauxita empregada na regeneração de óleo mineral isolante após reativação por incineração.</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>DAIANE FÁVERO ALVES e BRENDA CAROLINE RIBEIRO FRAGA. <b>CARACTERIZAÇÃO TECNOLÓGICA DE SEDIMENTOS DO RIO JAGUARI-MIRIM, NA MINERAÇÃO SANTA LUZIA / SP</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Filipe De Pieri Quaglio. <b>Caracterização Tecnológica de Rochas de Pedreiras das Regiões de Campinas e Baixa Mogiana (SP)</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Guilherme Rodrigues de Paula da Silva. <b>Comparação de Métodos de Análise Granulométrica em Minério de Cobre</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Gustavo de Souza Machado. <b>Parte 1 - Determinação da influência da formação da fase sigma em um aço duplex e análise do impacto ao módulo de elasticidade</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Isabela Dainezi. <b>Caracterização microestrutural de aços inoxidáveis</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Laisa C. Silva,Larissa S. Veronezi e Lucas M. de Paula. <b>Aproveitamento de Rejeitos de Sienito na Indústria Cerâmica</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Leandro Postilhone Rosa Magalhães. <b>Estudo da Viabilidade Econ^mica para um projeto de mineração de Bauxita em João Costa - PI</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Letícia Andrade Simão. <b>SÍNTESE FOTOQUÍMICA DE NPsAg E SUA APLICAÇÃO EM CÉLULAS FOTOVOLTAICAS DE TiO 2 SENSIBILIZADAS COM ANTOCIANINA EXTRAÍDA DA POLPA DE AÇAÍ</b>. (Graduação em Química Bacharelado) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Letícia Ferreira Roberto. <b>Desenvolvimento de membranas termossensíveis a base de celulose para tratamento de feridas</b>. (Graduação em Engenharia de Materias) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Lucas Alves Moreira e Sara Silva Rabelo. <b>Modelamento Geológico de um corpo argiloso situado na região de Arcos/MG</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Lucas Eduardo de Andrade Miranda Alves. <b>Avaliação do expoente de encruamento do aço LNE 500 em diferentes condições termomecânicas</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Lucca M. Semensato, Maisa H. Mancini e Luis F. B. Estorari. <b>Semicondutores de ZnO: obtenção e caracterização de peças porosas pela técnica de adição de fase de sacrifício</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Luis Fellipe Simões. <b>Avaliação da influencia dos processos ?Swage? e ?Roller Die? na microestrutura e na dureza do aço AISI 1006.</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Luiz Guilherme Ferreira Silva Bernardes. <b>Caracterização Tecnológica de Sienito visando Aplicação como matéria-prima cerâmica</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Matheus Curti Veloso Carbonari. <b>LEVANTAMENTO DE INFORMAÇÕES GEOLÓGICAS, AMBIENTAIS E TURÍSTICAS PARA A ELABORAÇÃO DE MAPEAMENTO DO GEOPARQUE DE POÇOS DE CALDAS</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Nicholas Pereira Storino. <b>Desenvolvimento e caracterização do revestimento com alta resistência a oxidação, à base de Fe-Cr-Si em liga Nb-Si-B, utilizando o processo HAPC</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Pablo Gonçalves Batista. <b>PRODUÇÃO DE MÓDULO TERMOELÉTRICO USANDO CERÂMICAS DE Ca3Co4O9</b>. (Graduação em Engenharia de Controle e Automação) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Rafaela Nadiele Silva. <b>Produção de membranas de polipropileno e carvão para adsorção de azul de metileno</b>. (Graduação em Engenharia Química) - Universidade Federal do Triângulo Mineiro, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3030346954671333">Rafaela Cristina Sanfelice</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Rodrigo Henrique da Silva Rocha. <b>Parte 2 - Determinação da influência da formação da fase sigma em um aço duplex e análise do impacto ao módulo de elasticidade</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Rodrigo Henrique Lot. <b>Reutilização de Resíduos oriundos de Barragem</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>TAINARA FURLAN PALMIRO. <b>Caracterização microestrutural de aços inoxidáveis</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>Tamara Aparecida Carvalho Ribeiro. <b>Avaliação da Resistência a Flexão em Vigas de Madeira Reforçadas com Fibra de Vidro/Epóxi ou Carbono/Epóxi</b>. (Graduação em Engenharia Civil) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>Tatiana Paiva de Oliveira. <b>UTILIZAÇÃO DO SISTEMA TiO 2 -Fe 2 O 3 PARA DEGRADAÇÃO DA RODAMINA B POR FOTOCATÁLISE</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>Verena Gargitter. <b>Relação entre condutividade elétrica e dureza para as ligas AA2014 e AA7075</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>Victor de Carvalho Rodrigues. <b>Estudo da Influência de um Solvente Orgânico na Cinética de Cura da Resina Epóxi Araldite LY5052</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Laura Polississo Rueda. <b>TCC - Estudo do Tratamento Térmico por dilatometria em aço inoxidável</b>. (Graduação em Bacharelado em Ciência e tecnologia) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Luiza Ferreira Freire. <b>Pigmentos cerâmicos de TiO2 dopados com manganês</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Ana Paula Aparecida carvalho e Camila Poletini de Oliveira. <b>UTILIZAÇÃO DE PASTILHAS DE ZnO PARA DEGRADAÇÃO DE RhB POR FOTOCATÁLISE</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bruno Henrique Vargas Campanaro. <b>Análise de viabilidade econômica, análise das propriedades físicas do pó e do sinterizado obtido por moagem de cavaco da liga de alumínio 7075 T6 com adição de carbeto de vanádio</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bárbara Righetti de Souza. <b>Obtenção e caracterização de compósitos de Juta/PP via tecnologia commingled</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bárbara Righetti de Souza. <b>Medida das Propriedades Dielétricas durante a Polimerização de Matrizes durante o processamento de compósitos termorrígidos e termoplásticos</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Carly Mirela Baggio. <b>Obtenção de Filmes Finos de ZnO e sua Aplicação e Reutilização em Fotocatálise</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Daniel Aló Martins. <b>Produção de um aço dual-phase a partir de um aço manganês</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Diego da Silva Mégda. <b>Spark plasma sintering de pós-moídos de Si-C e Si-C-B</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Edric João Gomes Putini. <b>Avaliação da porosidade em amostras de aço AISI 52100 sinterizadas a partir de pós de diferentes granulometrias obtidos por moagem de alta energia</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Gustavo Arantes Ribeiro. <b>Estudo de influência das variáveis de sinterização da Liga de Alumínio 7075T6 pela Rota da Metalurgia do Pó com auxílio da ferramenta DOE</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>HUGO RODRIGUES FREITAS LOPES. <b>ESTUDO DO AÇO CA6NM PARA USO EM COROAS DIAMANTADAS EM SONDAGENS NA PESQUISA MINERAL</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>José Renato Dornelas de Souza. <b>Influência de diferentes tratamentos térmicos na dureza e módulo elástico do aço AISI 52100 produzido via metalurgia do pó</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Lariane Cristina Ribeiro de Souza. <b>Sinterização e caracterização do pó obtido por moagem de cavaco da liga aluminio 7075 T6 com adiçõ de carbeto de vanádio</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Lucas Eduardo de Andrade Miranda Alves. <b>Avaliação do expoente de encruamento do aço LNE 500 em diferentes condições termomecânicas</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Luciano Garcia Fraga Guimarães. <b>Estudo comparativo entre as microestruturas de uma aço ao Si e Mn temperados a partir da zona inercrítica com e sem a etapa de austenitização completa</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Luis Henrique de Souza, Lukas Romano Primo Santos. <b>UTILIZAÇÃO DA ESPECTOFOTOMETRIA NO ESTUDO DO POLÍMERO MEH-PPV COMO DETECTOR DE RADIAÇÃO UV</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Marcela do Amaral Bregalda. <b>CARACTERIZAÇÃO DE HIDROXIAPATITA E ALUMINA QUANTO AO POTENCIAL ZETA RELACIONADO A BIOMATERIAIS</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0573457812045902">Antonio Jose Faria Bombard</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Nicholas Modesto de Fraga Candido. <b>Análise da influência da orientação das camadas de um compósito no tempo de captação de ruídos provenientes de impactos usando emissão acústica</b>. (Graduação em Engenharia Mecânica Aeronáutica) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Pedro Henrique Rabelo Tobias. <b>Relação entre Condutividade Elétrica e a Dureza no Tratamento Térmico de Envelhecimento e Superenvelhecimento da Liga AA2024</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Sara Silva Rabelo e Bruno Araújo. <b>Uso de Resíduos Provenientes de Biodigestores na forma de biofertilizantes</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>TCC em grupo (nomes dos discentes em Outras Informações). <b>ESTUDO DO PROCESSO DE MOAGEM DO MINÉRIO DE COBRE</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Thamara Machado de Oliveira Ruellas. <b>Estudo da Fotodegradação de Rodamina B catalisada por peças de ZnO</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana C. de Oliveira, Augusto F. Siqueira e Carlos E. Lupianez. <b>Estudo da adição de termofixos em concretos de construção civil</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Paula Aparecida Carvalho e Camila Polettini de Oliveira. <b>PÓS DE ZnO OBTIDOS EM MOINHO TIPO SPEX</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Angelo Junior Tavares Santos. <b>Estudo de técnicas e métodos que vibializem o aumento da dureza superficial e da resistência ao desgaste da haste sulcadora do sistema de plantio direto</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bruno Felisberto da Silva. <b>Ensaios Tecnológicos Utilizando Matéria-prima Beneficiada por Compostagem</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bruno Oliveira Thomazini; Jorge Henrique da Silva Araújo. <b>Obtenção de vitrocerâmicas através da cristalização controlada de vidros niobofosfatos codopados com Er 3+/Yb 3+ para aplicação óptica</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Caio Flaret Argentino Oliveira. <b>A</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CAROLINE NAZARÉ GONÇALVES. <b>ESTUDO DA CORROSÃO NOS AÇOS INOXIDÁVEIS FERRÍTICOS AISI 430A E AISI 430E SUBMETIDOS AO PROCESSO DE SOLDAGEM</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Daniel Secolim Coser. <b>A influência de diferentes microestruturas nadureza do aço AISI 52100</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Deborah Gouvêa Prado. <b>TCC - Avaliação da corrosão em saliva sintética da hidroxiapatita dopada com Ag.</b>. (Graduação em PPG-CEM) - UNIFAL-MG, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Dener Israel França e Alie Dias Bloch. <b>Caracterização microestrutural do aço AISI52100 puro e com adição de partículas de alumina</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Diego Bueno Santana. <b>Solidificação do alumínio 1350AA utilizado na produção de vergalhão EC pelo processo continuus Properzi</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Duanny Souza; Guilherme Balbino. <b>Influência da Adição do Grafite nas Propriedades Físicas e Mecânicas da Alumina Extrudada</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Flavio Yuji Assahi. <b>Fluidos magnetoreológicos baseados em pós de níquel ou cobalto</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0573457812045902">Antonio Jose Faria Bombard</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Gabriel Barbosa Silveira. <b>APLICAÇÃO DO CAULIM PARA MELHORIAS DAS CARACTERÍSTICAS GEOPOLIMÉRICAS</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Gabriel Bissaro Barban. <b>Fabricação e ensaio de próteses transtibiais em material compósito de fibra de carbono/epóxi</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Gabriel dos Santos Pereira. <b>Influência do agente peptizante e da temperatura de calcinação nas propriedades físicas e mecânicas da alumina</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Giancarlo Corcetti. <b>Massas de porcelanatos formuladas com rochas potássicas da região de Poços de Caldas, MG.</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Guilherme Vilela Ferreira. <b>TCC - Hidroxiapatita dopado com Nanopartículas de Prata em de titânio para implante</b>. (Graduação em Bacharelado em Ciência e tecnologia) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Henrique Frulani de Paula Barbosa. <b>Síntese de vidros alumínio-boro-silicato e alumínio-silicato pelo método sol-gel para aplicações odontológicas</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Luís Felipe de Castro Luz Souza Silva. <b>A</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Marco Túlio de Vasconcelos Dias/Nicolle Gorla Fonseca. <b>Caracterização da microestrutura e análises de dureza da liga alumínio A356 submetida a tratamentos térmicos e laminação a quente</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>PEDRO HENRIQUE ZACCHI MARTUCCI. <b>Pesquisa Mineral de Quartzo na Região de Itapira, SP</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Rafael Azevedo da Cunha. <b>Caracterização de argilas da região de Bailén-Jaén (Espanha) com adição de resíduos de indústria de azeite de oliva visando aproveitamento na construção civil.</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Raphael Bianchi de Vicente. <b>A</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Ricardo Bonafé Costa. <b>ESTUDOS DE BENEFICIAMENTO DE TURFA POR COMPOSTAGEM E EXTRAÇÃO ALCALINA VISANDO APLICAÇÕES CERÂMICAS</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Sérgio Miranda Gonzalez. <b>Avaliação da influência do tratamento térmico de alívio de tensão do pó do Aço AISI52100 na etapa de prensagem e caracterização das amostras sinterizadas</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Thaís Marcial Luiz. <b>Estudo da transformação de fase induzida por deformação no aço AISI304</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>VANESSA VILELA LEMOS e AGNELO CAETANO LEAL Jr. <b>CONCRETOS DE CONSTRUÇÃO CIVIL COM ADIÇÃO DE TERMOFIXOS</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Victor Fan Arcara. <b>Confecção de substratos de alumina para utilização em módulos cerâmicos termoelétricos</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Virgílio Antonio Greco Baptistella. <b>Silanização e caracterização cargas vítreas do sistema Alumínio-Boro-Silicato para o emprego em resinas dentárias</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7645844936272652">Rossano Gimenes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>VITOR GUILHERME DE OLIVEIRA. <b>EFEITO DE TERMOFIXOS NA COMPOSIÇÃO DE CONCRETOS DE CONSTRUÇÃO CIVIL</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>Wilson Avila Silva Neto e Felipe de Paula faria. <b>ESTUDO DA EFICIÊNCIA DE DIFERENTES ISOLANTES TÉRMICOS APLICADOS EM REATORES</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Gabriela Storion. <b>Corpos cerâmicos porosos obtido via gelatinização: estudo e caracterização</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANDERSON GAMA F. DE FREITAS. <b>ESTUDO DA SÍNTESE ELETROQUÍMICA DE NANOPARTÍCULAS DE PRATA ESTABILIZADAS COM POLI(N-VINIL-2-PIRROLIDONA)</b>. (Graduação em Bacharelado em Física) - Universidade Federal de Itajubá, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CAROLINE MORAES DA CRUZ e DÉBORAH CAROLINE DE OLIVEIRA. <b>CARACTERIZAÇÃO REOLÓGICA DE PORCELANATOS COMO FONTES ALTERNATIVAS DE ÁLCALIS</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Everson Junio da Cruz Ferreira. <b>Síntese de CCTO modificado com Isovantes pelo método dos precursores poliméricos para aplicação em dispositivos fotoluminescentesI</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá-Campus de Itabira, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9330470036613511">Francisco Moura Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Felipe Miranda de Souza Voss. <b>Influencia da solubilização no aço inoxidável superduplex UNS32520</b>. (Graduação em Física) - Universidade Federal de Itajubá, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERNANDA VILELA DE AQUINO. <b>RECOBRIMENTO DE HIDROXIAPATITA EM SUBSTRATO DE TITÂNIO</b>. (Graduação em bacharelado em ciência e tecnologia) - UNIFAL-MG, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Gabriel Gonçalves Dias. <b>Projeto e desenvolvimento de um sistema de alinhamento para próteses de membros inferiores</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Jordânio Samuel Siqueira. <b>INFLUÊNCIA DO TRATAMENTO TÉRMICO DE SOLUBILIZAÇÃO NA SUSCEPTIBILIDADE À CORROSÃO INTERGRANULAR EM UM AÇO INOXIDÁVEL MARTENSÍTICO ASTM A276-98B 440C</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>José Tadeu Gouvêa Júnior. <b>AVALIAÇÃO DE ROCHAS POTÁSSICAS DA REGIÃO DE POÇOS DE CALDAS ? MG NA FABRICAÇÃO DE FRITAS E ESMALTES.</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>JULIO CEZAR ANDRADE DIAS GALDINO. <b>AÇOS INOXIDÁVEIS UTILIZADOS NA INDÚSTRIA PETROQUÍMICA ? MICROESTRUTURA VERSUS CORROSÃO POR PITE</b>. (Graduação em bacharelado em ciência e tecnologia) - UNIFAL-MG, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Maria Cecília Oliveira. <b>DESENVOLVIMENTO DE UM BIOSSENSOR ENZIMÁTICO ELETROQUÍMICO PARA DETERMINAÇÃO DE ACETILCOLINA</b>. (Graduação em Bacharelado em Química) - Universidade Federal de Itajubá, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Murilo Masiero Kussonori. <b>Desenvolvimento de Embalagem de EPS visando melhoria de tampos de máquinas de lavar roupas</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>NATHALY CRISTINY COELHO DOS SANTOS. <b>ANÁLISE ECONÔMICA DO USO DE ROCHAS POTÁSSICAS DA REGIÃO DE POÇOS DE CALDAS ? MG COMO SUBSTITUTOS AO FELDSPATO POTÁSSICO MINERADO NO NORDESTE DO PAÍS</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Natã Pereira de Almeida. <b>Caracterização elétrica dos compostos nanolaminados pertencentes a família MAX</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá-Campus de Itabira, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9330470036613511">Francisco Moura Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Pedro Marcello Godinho. <b>FORMULAÇÕES DE CONCRETO COM SIENITO</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>TCC em grupo (nomes discentes em outras informações). <b>Muro de Contenção a partir de Pneus Inservíveis: uma iniciativa de Sustentabilidade</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>TCC em grupo (nomes discentes em outras informações). <b>Asfalto Ecológico</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>THAMARA MARIA LAZANHA DA CAL. <b>ESTUDO COMPARATIVO DA REOLOGIA DE MASSAS CERÂMICAS CONTENDO DIFERENTES FUNDENTES COMO SUBSÍDIO AOS CONTROLES DE MOAGEM E HOMOGENEIZAÇÃO EM MOINHO DE BOLAS</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Tiago Jose Oliveira da Silva. <b>Obtenção de vitrocerâmica a partir do tratamento térmico do vidro</b>. (Graduação em Bacharelado Interdisciplinar em Ciência e Tecnolog) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Élisson Nogueira Lopes. <b>Estudo de estabilidade do corante índigo carmim em condições de degradação forçada</b>. (Graduação em Biotecnologia) - Faculdades Ciências da Vida, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4966915248252263">Fabrício Vieira de Andrade</a>.</font></td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alan F. M. Oliveira; Daiana R. Vilela; Maquely A. Vicente. <b>Obtenção de vitrocerâmica a partir do tratamento térmico do vidro</b>. (Graduação em Bacharelado Interdisciplinar em Ciência e Tecnolog) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Amanda Carvalhes Souto Valim. <b>Interdisciplinaridade entre cerâmica e química: elaboração de um curso de extensão</b>. (Graduação em Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Ana Claudia Antunes Silva. <b>PLANEJAMENTO DA LAVRA A PARTIR DO MODELAMENTO DO CORPO DE MINÉRIO ? ESTUDO DE CASO DE DEPÓSITO DE FERRO EM MINNESOTA - EUA</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Andrezza Campos Zanardo. <b>Estudo de moagem de alta energia e de sinterização de misturas de pós de Ni-Sn e N-Mg</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bruna Hage Baldone Lara. <b>Caracterização estrutural de misturas de pós de Si3N4+B e Si3N4+C produzidos por moagem de alta energia e subsequente sinterização</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>, <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bruna Pereira da Silva. <b>Estudos de moagem de alta energia de misturas de pós elementares de Ni-25Ta, Ni-33Ta e Ni-50Ta (%-at)</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Caroline Moraes da Cruz. <b>Caracterização reológica de porcelanatos como fonte alternativa de álcalis</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>David Márcio Macêdo Dias. <b>intituladoCaracterização de Ligas Inoxidáveis com Efeito Memória de Forma na Condição Bruta de Fusão</b>. (Graduação em bacharelado em ciência e tecnologia) - UNIFAL-MG, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Gabriel do Lago Lopes. <b>Obtenção de tialita por MAE</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Gabriela Consolini. <b>Síntese, funcionalização e atividade microbiana de nanopartículas metálicas</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Gabriela Maira Sanches Volpi. <b>Obtenção de Pós de CaCu3Ti4O12 através do Método Coprecipitado</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Gustavo de Almeida Shimazu. <b>Síntese e caracterização da cerâmica Y0,5Ta0,5BaO3 com dopagem do íon Cu2+.</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá-Campus de Itabira, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9330470036613511">Francisco Moura Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Hanna Stefanni Nunes Benites. <b>Avaliação da resistência à oxidação de ligas Ni-25Ta, Ni-33Ta e Ni-50Ta (%-at) produzidas por moagem de alta energia</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Hérika Teruko Fukumoto. <b>Tijolo Sustentável</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Jefferson Almeida Dias. <b>Avaliação do processo de lixiviação ácida para argila refratária da região de Poços de Caldas-MG</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Josiel Martins Costa. <b>Formulação e caracterização de tinta a base de água para aplicação em vidros</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Jéssica Ariane de Oliveira. <b>Obtenção de partículas de WO3:TiO2 aplicadas a processos oxidativos avançados para despoluição de águas</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Jéssica Rafaela de Paula Barbosa. <b>Tijolo Sustentável</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Karolina Lima Vilela. <b>Tijolo Sustentável</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Leonardo de Mello Barbosa. <b>Introdução ao protocolo CALPHAD para cálculo de diagramas de fase</b>. (Graduação em Física) - Universidade Federal de Itajubá, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>LIVIA MARQUES FAUSTINO. <b>BENEFICIAMENTO DE ROCHA POTÁSSICA DA REGIÃO DE POÇOS DE CALDAS COMO FONTE SUBSTITUTA DE ÁLCALIS EM FORMULAÇÃO DE PORCELANATO</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Lucas Caovila e Juliana Cristina de Freitas. <b>Obtenção e caracterização de peças porosas de alumina obtidas por gelatinização</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Lucas Moreira Ferreira. <b>Estudo de corrosão de ligas Ti-Ta-Si-B e Ti-Cr-Si-B</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Lucas Rafael Leandro Silva. <b>Compósitos de fibras naturais produzidos por infusão de matriz epóxi: Viabilização na aplicação em produtos</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Luiz Otávio Vicentin Maruya. <b>Estudo de corrosão de ligas Ti-Ta-Si-B e Ti-Cr-Si-B</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Marcela Vasconcellos Silva e rafaela Junqueira de Faria. <b>Efeito da adição de argila nas propriedades do beta-Al2TiO5</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Marina Martins Pinto. <b>Obtenção e caracterização mecânica de laminados fibra metal por meio de infusão de resina assistida à vácuo</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Patrícia Gonçalves. <b>CARACTERIZAÇÃO QUÍMICO-MINERALÓGICA DE MATÉRIAS-PRIMAS POTÁSSICAS DO MACIÇO ALCALINO DE POÇOS DE CALDAS (MG)</b>. (Graduação em Engenharia de Minas) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Pâmela Natalie Cabral. <b>ESTUDO SOBRE DOSÍMETROS DETECTORES DE RADIAÇÕES IONIZANTES</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Ricardo Boueri Magalhães. <b>Caracterização Estrutural de Ligas Ni-Mg e Ni-Sn Produzidas Por Moagem de Alta Energia e Subsequente Sinterização</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Stephania Capellari de Rezende. <b>Caracterização microestrutural e avaliação da resistência à oxidação de ligas Ni-Nb e Ni-Nb-Ta produzidas por moagem de alta energia e subsequente sinterização</b>. (Graduação em Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>Thássia Roncalli Freitas. <b>Tijolo Sustentável</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>Tiago Souza Torres Brandão. <b>ESTUDO DO EFEITO DO TEOR DE COBRE NO ENDURECIMENTO POR PRECIPITAÇÃO EM LIGAS DE Al-Cu-Mg</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Cristina Tolentino Cabral. <b>Síntese de nanopartículas de óxido de cério dopado com praseodímio</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá-Campus de Itabira, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9330470036613511">Francisco Moura Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>bruna O.cesário; Carolina F. Domiciano; Jeruza Carvalho;. <b>Engenharia de superfície integrada na produção mais limpa com aplicação na industria extrativa</b>. (Graduação em Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Carolina Figueiredo Dominiciano. <b>Engenharia de superfície integrada na produção mais limpa com aplicação na industria extrativa</b>. (Graduação em Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Cesar dos Santos Guimarães. <b>Implantação do sistema Kanban no departamento de manutenção da empresa Helibra</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Diogo H. Marinho;Fernanda V.Aquino;Marcelo Terek; Juliana Aq. <b>estudo do aço inoxidável CA6Nm para a utilização na exploração da amada pré-sal</b>. (Graduação em Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Edypo Silva da Rosa. <b>Caracterização da não Linearidade do CaCu3Ti4O12 obtido pelo método de mistura de óxido.</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá-Campus de Itabira, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9330470036613511">Francisco Moura Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Fernando Iugo Yuami. <b>Caracterização mecânica e microestrutural de juntas soldadas dissimilares de aço inoxidável austenítico 316 e aço inoxidável duplex</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Flavia dos Reis Gonçalves. <b>Aplicabilidade da Teoria DLVO para Fluidos Magneto-reológicos com pó de Ferro carbonilo e Líquidos Iônicos</b>. (Graduação em Física) - Universidade Federal de Itajubá, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0573457812045902">Antonio Jose Faria Bombard</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Grupo de discentes do BCT. <b>Estudo da viabilidade do uso de resíduos poliméricos oriundos de condutores elétricos</b>. (Graduação em Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Guilherme George Ferreira Walbon. <b>Implantação do sistema Kanban no departamento de manutenção da empresa Helibras</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Isabela Cristina Fernandes Vaz. <b>Caracterização estrutural e microestrutural do CaCu3Ti4O12</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá-Campus de Itabira, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9330470036613511">Francisco Moura Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Josiel Martins. <b>Métodos de Extração de metais de lixo eletrônico</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0847092755379350">Tania Regina Giraldi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Kumar Thibaud Lefeuvre. <b>Obtenção de peletes de termoplásticos contendo fibras de coco picadas</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Maria Eurenice R. Cronemberger. <b>Corrosão de reservatório de biodiesel</b>. (Graduação em Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Renan Delgado Camurça Lima. <b>Projeto de uma lavadora de areia</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Robson Manoel da Silva. <b>Vidros de fosfato de tungstênio contendo nanopartículas metálicas</b>. (Graduação em Química) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Tatiane Gabi de Oliveira. <b>ESTUDO COMPARATIVO DAS PROPRIEDADES MECÂNICAS, NÍVEL DE ESTRIAMENTO E ESTAMPABILIDADE DOS AÇOS INOXIDÁVEIS FERRÍTICOS AISI 430A, CONVENCIONAL, E AISI 430E, ESTABILIZADO AO Nióbio</b>. (Graduação em Engenharia de Materiais) - Universidade Federal de Itajubá, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6646020534442402">Reny Angela Renzetti</a>.</font></td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Dimitri César de Campos. <b>Desenvolvimento de tubeiras a partir de revestimentos cerâmicos produzidos via laser</b>. (Graduação em Engenharia Mecânica) - Universidade Estadual Paulista Júlio de Mesquita Filho, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Grupo de discentes do BCT. <b>CARACTERIZAÇÃO DE MASSAS ASFALTICAS A PARTIR DE EQUAÇÃO DE EMPACOTAMENTO E APLICAÇÃO DE ARGILAS NA COMPOSIÇÃO.</b>. (Graduação em Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Claudiney de Sales Pereira Mendonça. <b>Efeito do tratamento térmico na microestrutura e nas propriedades magnéticas de um aço ferrítico AISI 444</b>. (Graduação em Engenharia Mecânica e de Produção) - Universidade Federal de Itajubá, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Dóris Akemi Akagi. <b>Influência do tamanho e forma dos grãos na resistência a fadiga da liga de alumínio Al-4,5% Cu (Parte1)</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Flávio Amaury de Freitas Matos. <b>Influência do tamanho e forma dos grãos na resistência a fadiga da liga de alumínio Al-4,5% Cu (Parte 2)</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Robin Lucienne. <b>Efeitos da Fadiga sobre as Propriedades Dinâmicas de Compósitos de Fibra de Carbono/Epóxi</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Stephane Racowski. <b>Efeito da Fadiga Sônica sobre Propriedades Dinâmicas de um Compósito Aeronáutico de Fibra de carbono/Epóxi</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Thiago Camargo Moreira. <b>Influência da Formação da Fase Sigma na Tenacidade ao Impacto de um Aço Duplex</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Diego de Aguirre Soares. <b>Influência da Corrente e do Tempo de Exposição do Processo de Cromação na Espessura e Rugosidade da Camada Cromada em Anéis de Pistão</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Leonardo Henrique da silva. <b>Estudo de Cristalização no Sistema Vítreo TeO2-WO3</b>. (Graduação em Bacharelado em Quimica) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Luiz Felipe Viégas Rosa Rezende. <b>Estudo metalográfico de anéis de pistões automotivos recobertos com CrN através do processo de PVD</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Marcos Vinícius S. Carvalho. <b>estudo metalográfico de anéis de pistões automotivos recobertos com material cerâmico, nitreto de cromo (CrN), através do processo de PVD (Physical Vapour Deposition).</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Mateus Coli. <b>Síntese e Caracterização de Nanopartículas de Prata</b>. (Graduação em Física Bacharelado) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Raphael Ferraz Santos. <b>Influência da Corrente e do Tempo de Exposição do Processo de Cromação na Espessura e Rugosidade da Camada Cromada em Anéis de Pistão</b>. (Graduação em Engenharia Mecânica) - Universidade Federal de Itajubá, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9578900283345548">Geovani Rodrigues</a>.</font></td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Grupo de discentes do ICT. <b>Estudo da aplicação de argilas não plásticas da região de Poços de Caldas</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Grupo de discentes do ICT. <b>Utilização de rejeitos minerais na produção de asfalto</b>. (Graduação em Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Lucio Flávio dos Santos Rosa. <b>Preparação e Caracterização de Compósitos de Resina Epoxídica e PAni-Ag</b>. (Graduação em Física Bacharelado) - Universidade Federal de Itajubá, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6983307192001614">María Elena Leyva González</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Rafael Marcos Cortez. <b>Caracterização mecânica e microestrutural de uma junta soldada de aço ferrítico 444 utilizando metal de adição de aço inoxidável austenítico</b>. (Graduação em Engenharia Mecânica e de Produção) - Universidade Federal de Itajubá, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alexandre da Silva Castanheira e André Luiz Colombo Cosentin. <b>Especificação do Processo de Fabricação e projeto de ferramental para a obtenção de uma peça por forjamento.</b>. (Graduação em Engenharia Mecânica e de Produção) - Universidade Federal de Itajubá, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Antonio Moliterno de Oliveira Neto. <b>Preparação da liga Ti-35Nb-5Ta-7Zr por moagem de alta energia e prensagem a quente</b>. (Graduação em Engenharia Biomédica) - Universidade do Vale do Paraíba, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Fernando Henrique de Lima. <b>Implementação de uma nova metodologia para análise dimensional</b>. (Graduação em Engenharia Mecânica - Automação e Sistemas) - Universidade São Francisco, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Guilherme Ferreira do P. Gabriel e Vinicius Toledo F. Nader. <b>Desenvolvimento de um programa computacional para cálculo de um trocador de calor compacto para turbina a gas regenerativa</b>. (Graduação em Engenharia Mecânica e de Produção) - Universidade Federal de Itajubá, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Newton Ricardo de Castro. <b>Software para cálculo das ligaçoes em estruturas metálicas, baseado na linguagem VBA do Excel</b>. (Graduação em Engenharia Industrial - Modalidade Mecânica) - Universidade São Francisco, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Rafael Guimarães Cardoso. <b>Projeto mecânico e roteiro de fabricação de duas peças de um conjunto mecânico para um atuador de fenda - LNA</b>. (Graduação em Engenharia Mecânica e de Produção) - Universidade Federal de Itajubá, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Vinicius Spagnuolo Vinci e Alexandre Salioni. <b>Desenvolvimento de uma ferramenta para estampar um conector elétrico.</b>. (Graduação em Engenharia Mecânica e de Produção) - Universidade Federal de Itajubá, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Daniel Benedito da Rosa. <b>Abordagem Holistica para Otimização de Processo de Fresagem considerando Aspectos Produtivos e vida útil da Ferramenta de corte</b>. (Graduação em Engenharia Mecânica - Automação e Sistemas) - Universidade São Francisco, . 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Erika de Castro Ferreira. <b>Efeito da Incidência de Raio nas Propriedades de Compósitos de Fibra de Carbono/Resina Epóxi</b>. (Graduação em Engenharia de Materiais) - Universidade do Vale do Paraíba, . 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Fabiola Silva Ottoboni. <b>ESTUDO DOS PROCESSOS DE OXIRREDUÇÃO E FORMAÇÃO DE CENTROS DE COR EM VIDROS FOSFATO CONTENDO MOLIBDÊNIO E TUNGSTÊNIO</b>. (Graduação em Bacharelado em Quimica) - Universidade Federal de Alfenas, . 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Jesiel Vieira Lino. <b>Preparação de vidros nanoestruturados para aplicação em nanofotônica</b>. (Graduação em Bacharelado em Quimica) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>José Paulo Murolo. <b>ANÁLISE DO DESEMPENHO DE INIBIDOR DE CORROSÃO NA ARMADURA DE ESTRUTURAS DE CONCRETO</b>. (Graduação em Engenharia civil) - Uiveridade São Francsico, . 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>José Ricardo de Souza Gomes. <b>Apoio Técnico às atividades de extração de matéria-prima executadas pela indústria oleira de Rio Claro, SP</b>. (Graduação em Geologia) - Universidade Estadual Paulista Júlio de Mesquita Filho, . 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Júlia Marinzeck de Alcântara Abdala. <b>Preparação de ligas Ni-Ti-Zr por moagem de alta energia e subseqüente prensagem a quente</b>. (Graduação em Engenharia Biomédica) - Universidade do Vale do Paraíba, . 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Luiza Esteves. <b>Preparação de nanopartículas óxidos contendo lantanídeos usando o método do precursor polimérico</b>. (Graduação em Bacharelado em Quimica) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Plínio Giacomazzi Junior. <b>Corrosão e desgaste em peneiras estáticas utilizadas em tratamentos de efluentes</b>. Automação e Sistema) - Universidade São Francisco, . 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Ramon Fernandes. <b>Desenvolvimento de uma membrana alternativa, não reabsorvível, para uso em regeneração tecidual guiada</b>. (Graduação em Odontologia) - UNIFOR, . 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Regina Ribeiro. <b>Avaliação de parâmetros de compactação de reforço no processo VARTM e suas influências no volume de fibra e permeabilidade</b>. (Graduação em Engenharia de Materiais) - Universidade do Vale do Paraíba, . 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Roger Gomes Fernandes. <b>PREPARAÇÃO E CARACTERIZAÇÃO DE VIDROS E VITROCERÂMICAS TRANSPARENTES CONTENDO METAIS PESADOS E DOPADOS COM LANTANÍDEOS PARA APLICAÇÃO EM FOTÔNICA</b>. (Graduação em Licenciatura em Fisica) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Daniel dos Campos Teixeira / Ricardo Henrique Látaro. <b>Efeito da moagem de alta energia na estrutura do aço inoxidável 304</b>. (Graduação em Engenharia de Materiais) - Universidade do Vale do Paraíba, . 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Eduardo Rodrigo Marcelino-Michel Michels-Robson A. de Souza. <b>Moagem de alta energia de pós Ti-Ni-Si-C</b>. (Graduação em Engenharia de Materiais) - Universidade do Vale do Paraíba, . 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Eliane Dorado de Farias. <b>Transformação de Fases em pós Al2O3-5%Y2O3 por Moagem de Alta Energia</b>. (Graduação em Engenharia de Materiais) - Universidade do Vale do Paraíba, . 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Felipe Scherrer Escarabelin. <b>Estudo comportamento Microestrutural do aço DIN 20NiCrMo8 MOD</b>. (Graduação em Engenharia Mecânica - Automação e Sistemas) - Universidade São Francisco, . 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Mônika Brígido Aguiar Caldas. <b>Barreira Infravermelha Para Porta de um Elevador</b>. (Graduação em Engenharia de Controle e Automação) - Universidade de Fortaleza, . 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Pablo Xavier do Prado Martin-Cocher. <b>Introdução à Correlação de Meteoritos e Asteróides através de Espectrometria</b>. (Graduação em Geologia) - Universidade Estadual Paulista Júlio de Mesquita Filho, . 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adamo Remonte. <b>Preparação e caracterização de vidros contendo MoO3</b>. (Graduação em Química) - Universidade Estadual Paulista Júlio de Mesquita Filho, . 2005.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2457188837334937">Gaël Yves Poirier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bruno Gonçalves de Oliveira. <b>Análise por difração de raios X de pós Cr-50%-at.Si e Cr-66%at.Si preparados por moagem de alta energia</b>. (Graduação em Engenharia Biomédica) - Universidade do Vale do Paraíba, . 2005.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Deusoni Nunes. <b>Desenvolvimento Sistema de Soldagem Metal Gás Inerte (MIG)</b>. (Graduação em Engenharia Mecânica - Automação e Sistemas) - Universidade São Francisco, . 2005.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Giovanni de Andrade Baldi. <b>Comportamento de Compósitos de Carbono Epóxi em Altas Temperaturas</b>. (Graduação em Engenharia de Materiais) - Universidade do Vale do Paraíba, . 2005.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1216552811518794">Antonio Carlos Ancelotti Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Luiz Gustavo Zinetti. <b>Aplicação da Metodologia Seis Sigma na Redução de Porosidades Sub-Superficiais em Discos de Freio</b>. (Graduação em Engenharia Mecânica - Automação e Sistemas) - Universidade São Francisco, . 2005.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Thales Brazuna de Albuquerque. <b>Análise por difração de raios X de pós Cr-25%-at.Si e Cr-37,5%at.Si preparados por moagem de alta energia</b>. (Graduação em Engenharia Biomédica) - Universidade do Vale do Paraíba, . 2005.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Danieli Cristina Pedroso. <b>Influência da Alteração do Processo: Fundição Shell Molding para Areia Verde em uma Peça de Ferro Fundido Nodular</b>. (Graduação em Engenharia Mecânica - Automação e Sistemas) - Universidade São Francisco, . 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Paulo Roberto Scaranello. <b>Otimização de Células de Montagem utilizando os conceitos de Célula em U com rotatividade de operadores dentro da célula</b>. (Graduação em Engenharia Mecânica - Automação e Sistemas) - Universidade São Francisco - Itatiba, . 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Paulo Sérgio Pereira. <b>Avaliação da resistência mecânica de concreto utilizando aditivos economicamente viáveis</b>. (Graduação em Engenharia Civil) - Universidade de Fortaleza, . 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Daniel Bittecourt Leal. <b>Determinação Numérico/Experimental do Coeficiente de Transferência de Calor durante a Solidificação da Liga Al-4,5%Cu</b>. (Graduação em Engenharia Mecânica - Automação e Sistemas) - Universidade São Francisco, . 2003.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7222063849735570">Mirian de Lourdes Noronha Motta Melo</a>.</font></td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Juliano Barbosa Cunha. <b>Aplicacao de Analise e Projeto de Experimento no Processo de Estampagem Profunda de Chapas de Aluminio</b>. Trabalho de Conclusão de Curso - Universidade Federal de Itajubá, . 1999.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 14/02/2025 18:29:01<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

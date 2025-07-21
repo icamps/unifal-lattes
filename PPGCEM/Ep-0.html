@@ -1,0 +1,1223 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de participação em eventos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1986,
+1],
+[1988,
+1],
+[1990,
+2],
+[1991,
+4],
+[1992,
+5],
+[1993,
+1],
+[1994,
+5],
+[1995,
+9],
+[1996,
+13],
+[1997,
+9],
+[1998,
+17],
+[1999,
+14],
+[2000,
+22],
+[2001,
+23],
+[2002,
+14],
+[2003,
+20],
+[2004,
+35],
+[2005,
+20],
+[2006,
+21],
+[2007,
+22],
+[2008,
+17],
+[2009,
+21],
+[2010,
+23],
+[2011,
+19],
+[2012,
+26],
+[2013,
+21],
+[2014,
+15],
+[2015,
+6],
+[2016,
+18],
+[2017,
+7],
+[2018,
+11],
+[2019,
+14],
+[2020,
+3],
+[2021,
+5],
+[2022,
+11],
+[2023,
+11],
+[2024,
+13],
+[2025,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Total de participação em eventos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 500<br>
+                    
+                    
+                    <div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>25 Congresso Brasileiro de Engenharia e Ciência dos materiais. Efeito da adição de óxido de grafeno em concretos de pós reativos: avaliação física, mecânica e microestrutural.. 2025. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>24º Congresso Internacional de Engenharia Mecânica e Industrial - CONEMI. Avaliação comparativa da resistência ao desgaste microabrasivo dos metais duros WC-10 (Ni-Al) e WC-10 Co produzidos por metalurgia do pós convencional. 2024. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>25 Congresso Brasileiro de Ciência e Engenharia de Materiais. Microstructure influences on thermal conductivity of CaMn0.96V0.04O3 thermoelectric ceramics. 2024. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>25º CBECIMAT Cong. Brasileiro de Eng. e Ciência dos Materiais. THE EFFECT OF GRAPHITE, MOLYBDENUM DISULFIDE, AND PTFE ON TRIBOLOGY OF MAGNETORHEOLOGICAL FLUID. 2024. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>5ª Conferencia Nacional de Ciencia, Tecnologia e Inovação - 5ª CNCTI. Para um Brasil justo, sustentável e desenvolvido. 2024. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CeramicAM 2024 - 1st Brazilian Meeting on Ceramic Additive Manufacturing. 2024. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Encontro de Pró-Reitores de Pesquisa e Pós-Graduação - regional sudeste.Encontro de Pró-Reitores de Pesquisa e Pós-graduação da região sudeste. 2024. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Hardtech Innovation. 2024. (Feira).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>I Workshop do grupo de pesquisa em tecnologia enzimática e bi.DEVELOPMENT OF 3D MODELS INTENDED FOR THE PRODUCTION OF PORUS SUPPORTS USING FDM TECHNOLOGY FOR ENZYMATIC IMMOBILIZATION. 2024. (Outra).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ITAJUBA HARDTECH INNOVATION. 2024. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>IV Semana de pós-graduação de Física - UFLA - Lavras.Optical properties in niobium and tantalum oxide based glasses and glass-ceramics. 2024. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>PACC-FMA 2024. Microscaled control of optical properties in niobium and tantalum oxide and oxyfluoride glasses and glass-ceramics. 2024. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>XVI Congresso Iberoamericano de Engenharia Mecânica - CIBIM. Estudo comparativo da resistência ao desgaste micro-abrasivo dos metais duros WC-Ni-Mo2C e WC-Co. 2024. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>XXII B-MRS Meeting. 2024. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>10th ECCOMAS Thematic Conference on Smart Structures Materialsas. MS12.2 - Magnetorheological materials and applications. 2023. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>67 Congresso Brasileiro de Cerâmica. Estudo Exploratório da condutividade térmica de areias de fundição utilizando o método do fio quente paralelo. 2023. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>9th Annual World Congress of Advanced Materials- WCAM. Microstructure and mechancial properties of WC-316L SS cemented carbides. 2023. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Encontro de Outono da SBF.Surface Plasmon Resonance Spectrometer in the Double Prism Configuration: Fast Characterization of the Dielectric Constant Dispersion of Thin Films. 2023. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>I INOVATEC UNIFEI. 2023. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>II Workshop do Centro de Hidrogênio Verde - UNIFEI. 2023. (Outra).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>III. International Architectural Sciences & Applications Symposium.Study of the Feasibility of Production of Titanium Oxide as a Porous Support for Whole Cells Immobilization with Enzymatic Activity. 2023. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Primeiro Workshop de Materiais Fotônicos do IQAr.Fundamentos, multifuncionalidade e aplicações futuras ? parte 1. 2023. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Reunião Regional do Instituto Nacional de Ciência e Tecnologia de Fotônica.Linear and non linear optical properties induced by thermal poling in niobium and tantalum-based glasses and glass-ceramics. 2023. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Seminário ELI SUMMIT 2023. 2023. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>XXI Brazil MRS Meeting. Probing the Iodine to Bromide phase Photoconversion in Colloidal Thin Film of CsPbBrxI(3-x) nanocrystals. 2023. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>24 Congresso Brasileiro de Ciência e Engenharia de Materiais. Estudos de Espetroscopia de Impedância em cerâmicas não estequiométricas de CCTO Sinterizadas por meio da técnica de duas etapas controlada. 2022. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>24° Congresso Brasileiro de Engenharia e Ciência dos Materiais (24 CBECIMAT). EFEITO DA TEMPERATURA DE SOLUBILIZAÇÃO NO SAF 2205 PRODUZIDO POR SOLIDIFICAÇÃO RÁPIDA. 2022. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>24° Congresso Brasileiro de Engenharia e Ciência dos Materiais (24 CBECIMAT). ESTUDO DAS BANDAS DE CISALHAMENTO ADIABÁTICO EM CHAPA PARA BLINDAGEM. 2022. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>24º Congresso Brasileiro de Engenharia e Ciência dos Materiais. Processamento e caracterização de compósito de fibra de carbono e resina acrílica para soldagem por infravermelho. 2022. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>65-66 Congresso Brasileiro de Cerâmica. Semicondutores de ZnO para tratamento de águas: processamento por colagem por amido e sinterização em micro-ondas. 2022. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Congresso Ibero-americano de Engenharia Mecânica. Influência do metal de adição e do tratamento térmico de envelhecimento na susceptibilidade à corrosão sob tensão de juntas soldadas do aço AISI 317L. 2022. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>I Workshop do Centro de hidrogênio Verde da UNIFEI.Logística do hiddrogênio. 2022. (Outra).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>INTERNATIONAL CAPITAL CONFERENCE ON MULTIDISCIPLINARY SCIENTIFIC RESEARCH.OBTAINING AND CHARACTERIZING CONCRETE WITH SODIUM ALGINATE CAPSULES ADDITIONS. 2022. (Outra).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>XI Congresso Nacional de Engenharia Mecânica. Influencia da microestrutura na resistencia ao desgaste dos metais duros WC-10Co e WC-8Ni-2Cr2C3 produzidos por metalurgia do pó convencional. 2022. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>XX MRS Meeting/SBPMat 2022. Luminescent, Linear and Second-Order Non Linear Optical properties of Sodium Tantalum Germanate Glasses. 2022. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>XXIV Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBCIMat). Análise estatística da influência dos parâmetros de moagem no reaproveitamento de cavacos do alumínio AA7075-T6. 2022. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>4TH INTERNATIONAL EUROPEAN CONFERENCE ON INTERDISCIPLINARY SCIENTIFIC RESEARCHES.SUGGESTION FOR AN OCCUPATIONAL HEALTH AND SAFETY SYSTEM FOR MICRO AND SMALL ENTERPRISES. 2021. (Outra).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>6th International Conference on Contemporary Scientific Research. Use of microorganisms in the repair of cracks in cementitious matrices: a review.. 2021. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>II SerCet - Semana do Ensino remoto para ciências Exatas e tecnológicas. 2021. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Propostas de política universitária, 2021 - Apresentação dos trabalhos de conclusão do II Curso Métricas.A problemática reputacional dos Rankings e o acompanhamento de egressos: experiências e possibilidades de análise em Universidades Federais. 2021. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>XXXVII Encontro Nacional de Pró-Reitores de Pesquisa e Pós-graduação - ENPROP.Comunicação entre Universidades e Sociedade. 2021. (Encontro).</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>17º Congresso Nacional de Meio Ambiente. Utilização de biopolímero (resíduo da indústria pesqueira) na forma de cápsulas como portadores de bactérias em bioconcretos. 2020. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>43ª RASBQ. Understanding the photobleaching mechanisms of MEH-PPV. 2020. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Encuentro Interncional Virtural de Invetigacion en Ingeniria Mecanica.Influência dos parâmetros dentro do processo de fabricação nas propriedades mecânicas da liga Al 7075. 2020. (Encontro).</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>16 Congresso Brasileiro de Meio Ambiente. Geoturismo e Geopatrimônio. 2019. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>16 Congresso Nacional do Meio Ambiente. PEÇAS POROSAS DE ZNO OBTIDAS A PARTIR DE FASE DE SACRIFÍCIO APLICADAS A PROCESSOS OXIDATIVOS AVANÇADOS PARA DESPOLUIÇÃO. 2019. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>17th International Conference on Electrorheological Fluids and Magnetorheological Suspensions (ERMR2019). On the Hamaker Constant of the Metallic Iron, the Effect of Retardation and Their Relevance in DLVO Theory Applied to Oil-based Magnetorheological Fluid with 1-octylamine. 2019. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>61 Congresso Brasileiro do Concreto (CBC 019) ? Fortaleza / CE. .. 2019. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>63 CONGRESSO BRASILEIRO DE CERÂMICA. MODELAMENTO GEOLÓGICO DE UM CORPO ARGILOSO SITUADO NA REGIÃO DE ARCOS/MG. 2019. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>8º Congresso Brasileiro de Carbono. Influência da Inserção de Ligas com Memória de Forma em Compósito de Fibra de Carbono/Resina Epóxi Via Análise Dinâmico-Mecânica. 2019. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>I Simpósio Primavera das Mulheres ? Itajubá/MG 23 e 24 de setembro de 2019, integrando a mesa redonda ?Mulheres UNIFEI: Trajetórias?.Mesa redonda ?Mulheres UNIFEI: Trajetórias?. 2019. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Workshop: Redação de Patentes, Além das guias + Oficinas Práticas minstrado por Henry Suzuki da Axonal em Itajubá / MG.... 2019. (Outra).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>XII BrazGlass. Second order non linear optical properties in thermally poled tantalum germanate glasses and glass-ceramics. 2019. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>XIV Congreso Iberoamericano de Ingenieria Mecánica. Influência da energia de soldagem e do envelhecimento na microestrutura e propriedades mecânicas de juntas soldadas do aço inoxidável AISI 317L. 2019. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>XIV Seminário de Meio Ambiente e Energias Renováveis (SEMEAR) ? Itajubá / MG... 2019. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>XXXIII Encontro Regional da Sociedade Brasileira de Química.Membranas antimicrobianos de PVA-NPsAg preparadas a partir da síntese verde usando pétalas da flor de Dianthus barbatus lilac. 2019. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>XXXIII Encontro Regional da Sociedade Brasileira de Química.Membranas antimicrobianos de PVA-NPsAg preparadas a partir da síntese verde usando pétalas da flor de Dianthus barbatus lilac. 2019. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>XXXIII Encontro Regional da Sociedade Brasileira de Química.Membranas antimicrobianos de PVA-NPsAg preparadas a partir da síntese verde usando pétalas da flor de Dianthus barbatus lilac. 2019. (Encontro).</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>16th International Conf. on Electrorheological Fluids and Magnetorheological Suspensions. The Redispersibility of Magnetorheological Suspensions. 2018. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>16th International Conference on Electrorheological Fluids and Magnetorheological Suspensions (ERMR2018). Bimodal Suspensions in the Magnetic Single-Multidomain Limit. 2018. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>16th International Conference on Electrorheological Fluids and Magnetorheological Suspensions (ERMR2018). On the Importance of Material Composition in Bimodal Suspensions in the Single-Multidomain Limit. 2018. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>21th International Symposium on Non Oxide and New Optical Glasses.Oxyfluoride silver tellurite glasses micro-structured by femtosecond. 2018. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>21th International Symposium on Non Oxide and New Optical Glasssses.Optical properties induced by thermal poling in tantalum germanate glasses. 2018. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>23 Congresso Brasileiro de Engenharia e Ciência dos Materiais ? CBECiMat. INFLUÊNCIA DA MORFOLOGIA MARTENSÍTICA NO DESEMPENHO BALÍSTICO DE UMA CHAPA DE AÇO-LIGA. 2018. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>7th International Congress on Ceramics & 62 Congresso Brasileiro de Cerâmica. Photodegradation of Rhodamine B catalized by ZnO pellets. 2018. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>7th International Congress on Ceramics & 62º Congresso Brasileiro de Cerâmica. PROPERTIES OF CONCRETE FORMULATION WITH ADDITION OF CERAMIC SCRAP LIKE AGGREGATE. 2018. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>8th International Congress on Optical, Optoelectronic and Photonic Materials and Applications. Second order non linear optical properties induced by thermal poling in microstructured tantalum germanate glasses and glass-ceramics. 2018. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>th International Conference on Optical, Optoelectronic and Photonic Materials and Applications. Interpreting the two-photon absorption spectrum of Copper Indium Disulfide Quantum dots. 2018. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>XXIII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECiMat) - Foz do Iguaçu /PR. 2018. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>13º Congresso Iberoamericano de Engenharia Mecanica - CIBEM. Otimização do processo P-GMAW para soldagem de chapas finas em aço inoxidável 304. 2017. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>61 Congresso Brasileiro de Cerâmica. Atividade pozolânica de turfa em cimento Portland. 2017. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>AOPA World Congress - AMERICAN ORTHOTIC & PROSTHETIC ASSOCIATION. High Efficiency Pylon using CFRP Grid Stiffened Structure. 2017. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>I Workshop da Pós-graduação em Engenharia Mecânica e Engenharia de Produção da UNESP/Guaratinguetá/SP... 2017. (Outra).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>IIFórum de Ensino e Aprendizagem em Engenharias -EAEng. 2017. (Outra).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>IX ERUR.Argilas para a Produção de Refratários. 2017. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Seminário ?Orientações para a Elaboração de Proposta de Curso Novo (APCN)? promovido pela Divisão de Avaliação (DAV) da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES/MEC). Brasília / DF.. 2017. (Seminário).</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>15th International Conference on Electrorheological Fluids and Magnetorheological Suspensions. Electrorheology of SrZrO3 Dispersion in Silicone Oil under AC Electric Field. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>15th International Conference on Electrorheological Fluids and Magnetorheological Suspensions. Magnetorheology of Carbonyl Iron Dispersions in 1-alkyl-3-methyl-imidazolium Ionic Liquids. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>15th International Conference on Electrorheological Fluids and Magnetorheological Suspensions. Off-state Characterization of Dispersions of Carbonyl Iron in PAO Oil / 1- Octanol. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>16th International Conference Metal Forming. Microstructure and Mechanical Properties of WC-Ni-Mo2C Cemented carbide developed by powder metallurgy. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>22 Congresso Brasileiro de Engenharia e Ciência dos materiais. CARACTERIZAÇÃO DE PORCELANATOS UTILIZANDO NEFELINA COMO FONTE ALTERNATIVA DE ÁLCALIS. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>22º Congresso Brasileiro de Engenharia e Ciência dos Materiais (22º Cbecimat). Avaliação das propriedades bactericidas do recobrimento biomimético de HA dopado com AgNO3. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>60 Congresso Brasileiro de Cerâmica. COMPORTAMENTO DE UMA ARGILA RICA EM MATÉRIA ORGÂNICA FRENTE AO AUMENTO DE TEMPERATURA: ACOMPANHAMENTO POR MEV E MICROSCOPIA DE AQUECIMENTO. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>60 Congresso Brasileiro de Cerâmica. FORMULAÇÕES DE CONCRETO COM SIENITO. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Congresso Nacional de Engenharia Mecanica - CONEM 2016. Reaproveitamento de cavacos da liga de aluminio aeronáutico atraves de processo de moagem de alta energia, utilizando diferentes tipos de controladores. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Congresso Nacional de Engenharia Mecânica - CONEM 2016. Influencia do metal de adição na susceptibilidade a corrosão sob tensão de juntas soldadas dissimilares de aço inoxidável AISI 310 e Duplex 2304. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Encontro de Física 2016. Excited State Intramolecular Proton Transfer of a pi-conjugated Salicylidene Chromophore: An Experimental and Theoretical Study. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>International Symposium on Non-Oxide and New Optical Glasses.Optical Properties of Tantalum Germanate Glasses, Glassceramics and Planar Waveguides. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Seminário "Encontro com o Presidente do CNPq e Reunião do FORIPES-MG" no Auditório do Campus do Centro de Inovação e Tecnologia SENAI FIEMG em Belo Horizonte/MG. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>XIII Seminário Nacional de APL´s de Base Mineral. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>XV Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat) ? Campinas / SP. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>XVIII BMIC - Brazilian Meeting on Inorganic Chemistry and 7 th Brazilian Meeting on Rare Earths. Crystallization behavior of niobium phosphate glasses. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>XVIII Brazilian Meeting on Inorganic Chemistry and 7th Brazilian Meeting on Rare Earth. Study of structural and optical properties of new TeO2-GeO2-PbF2 glasses. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>XXII Congresso Brasileiro de Engenharia e Ciencia dos Materias (CBECIMat) ? Natal. 2016. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>59 Congresso Brasileiro de Ceràmica. Mineração e Matérias-primas. 2015. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>59 Congresso Brasileiro de Cerâmica. ESTUDO DA INFLUÊNCIA DE ADITIVOS REDUTORES DE ÁGUA EM CONCRETOS DA CONSTRUÇÃO CIVIL. 2015. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>VI Congresso de Iniciação científica da Fundação de Ensino e Pesquisa de de Itajuba. A importancia de uma formação acadêmica de qualidade. 2015. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>XI Forum BRAFITEC/CAPES.Acordo Duplo Diploma entre a UNIFEI e a Université de Technologie de Compiègne- UTC. 2015. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>XIV Brazil MRS Meeting. Investigation of the Nonlinear Absorption Spectrum of All-Trans Retinoic Acid by Using the Steady and Transient Two-Photon Absorption Spectroscopy. 2015. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>XXVI Encontro nacional de Tratamento de minérios e metalurgia extrativa.Estudo da nitretação a plasma visando a redução da corrosão em pinos anódicos de cubas eletrolíticas. 2015. (Encontro).</td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>13th International Ceramics Congress. Study Of Processing Techniques For Nepheline Syenitic Raw Material Exploitation. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>14th International Conference on Electrorheological Fluids and Magnetorheological Suspensions. Dimorphic magnetorheological fluids using nanofibers. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>14th International Conference on Electrorheological Fluids and Magnetorheological Suspensions. Tribological behavior of MR fluids based on Ionic Liquids. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>21º Congresso Brasileiro de Engenharia e Ciência dos Materiais, na qualidade de:. EFEITO DA CORROSÃO EM CLORETO DE LÍTIO DE AÇO INOXIDÁVEL SOLDADO. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>25 Congresso Brasileiro de Engenharia e Ciência dos materiais. https://www.cbecimat.com.br/. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Brazilian Symposium on Glass and Related Materials. LUMINESCENT PROPERTIES OF TANTALUM GERMANATE GLASSES AND GLASS-CERAMICS. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Congresso Nacional de Engenharia Mecânica - CONEM. Estudo da influencia do metal de adição na resistência a corrosão sob tensão de juntas soldadas dissimilares de aço inoxidável austenitico e aço inoxidável duplex. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Encontro Regional da Sociedade Brasileira de Química. Propriedades luminescentes de vidros de germanato de tântalo dopados com lantanídeos. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>I Congresso de Iniciação Científica e Tecnológica da Universidade Federal de Itajubá (UNIFEI) ? Campus Itabira. Oficina de Plataforma Lattes. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>International Symposium on Non Oxide and New Optical Glasses.Thermal, structural and luminescence properties of new tantalum germanate glass and glass- ceramic compositions. 2014. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MRS Fall. Investigating the Linear and Nonlinear Optical Properties of water-soluble CdTe QDs Synthesized by the One-Pot Method. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Programa de Pós-Graduação em Desenvolvimento Tecnologias e Sociedade (PPG DTecS) - Instituto de Engenharia de Produção (IEPG) da Universidade Federal de Itajubá (UNIFEI).Oficina de Plataforma Lattes. 2014. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>VI Conferência Acadêmica de Saúde e IV Congresso Regional de Saúde. Degradação de Contaminantes Emergentes em Meio Aquoso por Fotocatálise Heterogênea. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>XLII CONGRESSO BRASILEIRO DE EDUCAÇÃO EM ENGENHARIARIA. Mining for all: divulgation of enginerring, mining activities in the region of Poços de Caldas, MG. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>XXX Encontro Nacional de Pró-Reitores de Pesquisa e Pós-Graduação (ENPROP) ? Águas de Lindóia / SP. 2014. (Encontro).</td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>37 Reunião Anual da Sociedade Brasileira de Química. Preparação e caracterização de vidros no sistema TeO2-Sb2O3-GeO2. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>First Latin American Conference on Semiconductor Photocatalysis, Solar Energy Conversion and Advanced Oxidation Technologies (SP-SEC-AOPs-1s-1). Solar degradation of methylene blue under photo-Fenton process using ferrite from spent bateries as catalyst. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Forum BRAFITEC - Acordo Internacional Brasil-França. 2013. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>I Congresso Iberoamericano de Processos Oxidativos Avançados. Utilização de Hidroxiapatita Obtida a partir de Rejeito de Matadouros Como Suporte para TiO2: aplicação na degradação de poluentes emergentes em meio aquoso. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>I Congresso Iberoamericano de Processos Oxidativos Avançados. Utilização de N2O5 como suporte para TiO2: aplicação na remediação ambiental. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>I Encontro de Estudos sobre Desenvolvimento Tecnologias e Sociedade (EEDTS) - Universidade Federal de Itajubá (UNIFEI), Programa de Pós-Graduação em Desenvolvimento Tecnologias e Sociedade (PPG DTecS),.A Pós-Graduação e a Produção de Conhecimento: perspectiva dos docentes e discentes. 2013. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>II SEFIMAT Segunda semana de física de Materiais. Condução por hopping em materiais e a energia de ativação diferencial. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Ninth International Latin American Conference on Powder Technology. Dry aggregate particle size distribution optimization for Soderberg anode paste production applied to aluminum industry. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Ninth International Latin-American Conference on Powder Technology. Phase Transformation in mechanically alloyed and hot-pressed Ti-2Nb-22Si-11 and Ti-6Ta-22Si-11B powder mixtures. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Ninth International Latin-American Conference on Powder Technology. Structural evaluation of Ti-Cr-Si-B powders produced by high-energy ball milling and sintering. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>VI Encontro da Rede Mineira de Química.Dispositivos nanoestruturados obtidos por rota química. 2013. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>VIII Encontro Nacional de Mestrados Profissionais ? Ribeirão Preto/SP. 2013. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>X Encontro de Iniciação Cientifica VII Mostra de Pós-Graduação - Faculdades Integradas Teresa D?Ávila (FATEA) - Lorena/SP.A importância da Publicação Acadêmica. 2013. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>XII Encontro da SBPMat, 2013. Tempering effect in martensitic stainless steels with low carbon concentration. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>XII Encontro da SBPMAT. A Comprehensive Study of Structure-Property Relationships for Two-photon Absorbing Triarylamine Molecules Containing Trifluoromethyl. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>XII Encontro da SBPMat. Evaluation of corrosion resistance of SAF 2205 duplex stainless steel after solution annealing treatment. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>XII Encontro da SBPMat. Hydroxyapatite coating by simulated body fluid solution on titanium and stainless steel used in implants. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>XII Encontro da SBPMat. Study of steel drills as a motivational tool in the materials science teaching. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>XX Congresso de Pesquisa: Propriedade Intelectual - Pró-Reitoria de Pesquisa e Pós-Graduação (PRPPG) da Universidade Federal de Itajubá (UNIFEI). 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>XXV ENTMME.CARACTERIZAÇÃO QUÍMICO-MINERALÓGICA DE MATÉRIAS PRIMAS DA FORMAÇÃO CORUMBATAÍ (POLO CERÂMICO DE SANTA GERTRUDES, SP, BRASIL) VISANDO ORIENTAÇÃO PARA O BENEFICIAMENTO MINERAL. 2013. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>XXVII Premio Jovem Cientista.Fotocatalisador Flutuante: uma alternativa viável para o tratamento de ETE's e ETA's. 2013. (Outra).</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>13th International Conference on Electrorheological Fluids and Magnetorheological Suspensionsons. Magnetorheology of carbonyl iron powder in 1-butyl-3-methyl-imidazolium ionic liquids. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>18th International Symposium on Non Oxide and New Optical Glasses.New oxide and oxyfluoride glasses and glass-ceramics based on TeO2. 2012. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>20 Congresso Brasileiro de Engenharia e Ciência dos Materiais. CARACTERIZAÇÃO FÍSICO-MECÂNICA DE ARGILAS NÃO PLÁSTICAS DA REGIÃO DE POÇOS DE CALDAS. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>56 Congresso Brasileiro de Cerâmica. INFLUÊNCIA DO GRAU DE EMPACOTAMENTO NAS PROPRIEDADES DE MASSAS ASFÁLTICAS. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>7th Internacional Conference on Intelligent Processing and Manufacturing of Materials. Effect of Solubilization Temperature on the Sigma Phase Precipitation of a Superduplex Stainless Steel. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>7th International Conference on Intelligent Processing and Manufacturingring of Ma Materials. Experimental Methodology for Limit Strain Determination in a Carbon/epoxy Composite under Tensile Fatigue Loading. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>8vo Congreso Internacional de Educación Superior. Otimização do processo ensino-aprendizagem em cursos de engenharia através da construção e avaliação de pontes de macarrão. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>cbecimat. Caracterização Elétrica de Superredes de InAs/GaAs com Pontos Quânticos. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Congresso Nacional de Engenharia Mecânica - CONEM. Comportamento Eletroquímico do aço inoxidável superduplex UNS S32520 Solubilizado e envelhecido. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Encontro Nacional de Física da Matéria Condensada.Measuring the electrical resistivity of a maraging 140 steel. 2012. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Fórum Valores e Métricas da Produção Científico - Tecnológica e Técnica (CAPES - FAPESB/IFBA - FNMP/EA/UFBA) - Salvador/BA. 2012. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>II CONFERÊNCIA USP EM NANOTECNOLOGIA. Optical anisotropy in Poly (3-hexylthiophene) Langmuir-Schaefer (LS) films with gold nanoparticles. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>III Simpósio Internacional de Tecnologia e Sociedade: Interdisciplinaridade e Produção de Conhecimento (SINTECS) - Universidade Federal de Itajubá (UNIFEI), Programa de Pós-graduação em Desenvolvimento Tecnologias e Sociedade (PPG DTecS).Tecnologias: materiais, organizações e sociedade e Habitação de Interesse Social. 2012. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Latin American Optical and Photonics Conference. Influence of Conformational Change Induced by Solvent on the Two-photon Absorption Spectrum of Poly(3,6 phenanthrene). 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>O Aterro Controlado de Poços de Caldas, MG - Projetos Multidisciplinares - Integração do Conhecimento.Geofísica Aplicada a estudos de chorume em aterros sanitários e aterros controlados. 2012. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Seminário Helibrás/UNIFEI de Inovação na Base HB Itajubá.Estudo da viabilidade de novas ligas metálicas. 2012. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>The 5th Latin American Conference on Metastable and Nanostructured Materials. Preparation of Nb-4Si-8B and Nb-8Si-16B alloys by mechanical alloying and hot pressing. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>VI Conferência Brasileira sobre Temas de Tratamento Térmico (TTT) ? Atibaia/SP. 2012. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>VII Congresso Nacional de Engenharia Mecânica (CONEM) - São Luís do Maranhão/MA. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>XI Brazilian MRS Meeting. Polarization Effect on the Two-photon Absorption of a Chiral Compound. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>XI Encontro da SBPMat. Optical anisotropy in Poly (3-hexylthiophene) Langmuir-Schaefer (LS) films. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>XIV Simpósio de Ciência e Engenharia de Materiais.Filmes de Langmuir e Langmuir-Schaefer de politiofeno contendo nanopartículas de ouro. 2012. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>XX Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat) ? Joinville/SC. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>XXXIII Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC) - São José dos Campos/SP ? IEAv. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>XXXV Encontro Nacional de Física da matéria Condensada. Combined Experimental and Theoretical Study on the One- and two-photon Absorption Properties of a novel Class of Phenylacetylene and Azoaromatic Compounds. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>XXXVI Encontro Nacional de Física da matéria Condensada. Two-photon absorption of ZnS quantum dots: interpreting the nonlinear spectrum. 2012. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>11º CBPol. PROPRIEDADES MECÂNICAS E ABSORÇÃO DE ÁGUA EM COMPÓSITOS DE MATRIZ TERMOFIXA CONTENDO FIBRAS DE COCO ORIENTADAS. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>11º Congresso Brasileiro de Polímeros - CBPol. Avaliação do Limite de Deformação em Fadiga de Compósitos de Fibra de Carbono/epóxi sob Tração. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>12th Conference of the European Ceramic Society. Simplified Hidrotermal synthesis of TiO2 nanotubes assisted by microwave irradiation. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>12th Conference of the European Ceramic Society. Study of BaTiO3/Mn0,8Zn0,2Fe2O4/P(VDF-TrFE) 10/3/87% composites for drug delivery devices. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>14th International Conference on Rapidly Quenched and Metastable Materials. 2. Metastable structures in mechanically alloyed (85-x)Ti-xZr-10Si-5B and (70-x)Ti-xZr-20Si-10B powders. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>34e Reunião Anual da Sociedade Brasileira de Química. Preparação de vidros e vitrocerâmicas transparentes no sistema ternário Pb(PO3)2-WO3-PbF2. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>66th ABM Congress. Informações sobre o estado da arte de materiais metálicos e cerâmicos. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CBRAVIC LATIN DISPLAY. ELECTRICAL CARACTERIZATION OF CARBON BLACK/STYRENE?BUTADIENE?STYRENE COMPOSITES. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Como a educação pode aproveitar o imenso potencial oferecido pelas tecnologias da comunicação e informação. 2011. (Outra).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Congresso Iberoamericano de Engenharia Mecânica. Efeito da temperatura do meio corrosivo no comportamento à corrosão sob tensão dos aços AISI 316 e 310. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Eighth International Latin-American Conference on Powder Technology. On the Phase Transformation in Mechanically Alloyed Ni-Nb and Ni-Ta and Ni-Nb-Ta Powders. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Encontro de Física 2011: Integração da Física na América Latina. Linear and nonlinear optical properties of chiral compounds: a theoretical-experimental study. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>I Jornada Científica do Bacharelado Interdisciplinar em Ciência e Tecnologia. 2011. (Outra).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Projeto Local do programa de desenvolvimento profissional e formação pedagógica docente. 2011. (Outra).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Semana Nacional de Ciência e Tecnologia.Monitoria de Atividades na Semana Nacional de Ciência e Tecnologia. 2011. (Outra).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Seminário de Integração docente: reconhecendo o BICT na construção dos projetos político-pedagógicos das engenharias. 2011. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>VII Encontro Nacional de Mestrados Profissionais - Florianópolis/SC. 2011. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>X Encontro da SBPMAT. Linear and nonlinear optical properties of the thiophene-phenylene-based oligomer and polymer. 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>XXXII Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC) e Latindisplay 2011, Universidade Federal de Itajubá (UNIFEI), Programas de Pós-graduação em Engenharia de Materiais, Mecânica e Materiais Para Engenharia. Coordenação Geral e Solenidade de Abertura do XXXII CBRAVIC e Latindisplay 2011. 2011. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>12th International Conference on Electrorheological (ER) Fluids and Magnetorheological (MR) Suspensions. Electrorheology of BaXSr(1-X)TiO3 nanoparticles dispersed in silicone oil under AC and DC electric field. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>18 IFHTSE - International Federation for Heat Treatment and Surface Engineering. Mechanical and microstructural characterization of welded joints of ferritic stainless steel AISI 444. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>19 Congresso Brasileiro de Engenharia e Ciência dos Materiais. Construção de uma mini fábrica cerâmica como ferramenta auxiliar no processo de ensino-aprendizagem. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>19th INTERNATIONAL LASER PHYSICS WORKSHOP. Two-photon absorption cross-section spectra of carotenoids compounds. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>1a Semana da Escrita Científica do IFSC. 2010. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>1st Youth Conference on Fusion Energy. ANNEALING EFFECTS ON THE MICROSTRUCTURE OF FERRITIC-MARTENSITIC ODS-EUROFER STEEL. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>2010 International Conference of Powder Metallurgy & Particulate Materials. Development of a WC-Ni-Si-Al based Cemented Carbide for Engineering Applications. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>32e Reunião Anual da Sociedade Brasileira de Química. Caracterização Estrutural de Materiais Desordenados. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Congresso Internacional - PBL 2010 - Aprendizagem Baseada em Problemas e Metodologias Ativas de Aprendizagem. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Dynamics Days South America. Mutual information and synchronism on a network of four chaotic circuits. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Fronties in optics. Polarization-dependent two-photon absorption of π-conjugated molecules. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>I Workshop de Materiais para Engenharia e suas Aplicações: Uma visão empreendedora ? Instituto de Ciências Exatas (ICE), Universidade Federal de Itajubá (UNIFEI). 2010. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>III Escola Avançada de Óptica e fotônica. Polarization-dependent two-photon absorption of bio-molecules. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Instituto Nacional de Eletônica Orgãnica.Toward super-hydrophobic surfaces in Langmuir-Blodgett films of fluorinated azopolymers. 2010. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>International Congress on Glass 2010. Preparation and Characterization of Lead Tungsten Fluorophosphate Glass-Ceramics. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>IX Encontro da SBPMat.Synthesis and characterization of nanopowders BaFe12O19 obtained by hybrid hydrothermal method. 2010. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Latin American Optics Photonics conference (LAOP). Temperature dependence of the two-photon absorption of carotenoids. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>XIV workshop da pós-graduação do IFSC. Caracterização espectral do processo de absorção de dois fótons de compostos quirais. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>XIX Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat) - Campos do Jordão/SP. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>XXIV Encontro Regional da Sociedade Brasileira de Química ? MG. Preparação, Caracterização e Aplicação de um Material Catalisador para os Processos Fenton Heterogêneo e Fotocatálise Heterogênea. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>XXXI Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC) - Campos do Jordão/SP. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>XXXIII Encontro Nacional de física da materia condensada. Two-photon absorption cross-section in Y-shaped molecules. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>XXXIII Encontro Nacional de Física da Matéria Condensada.Parameter-Space of an Experimental Chaotic Circuit. 2010. (Encontro).</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>10th International Conference on Frontiers of Polymers and Advanced Materials. Sinthesis of Hydrophobic Azopolymers and the Study of their Langmuir and Langmuir-Blodgett (LB) films. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>11th International Conference on Advanced Materials. Langmuir and Langmuir-Blodgett (LB) films of hydrophobic azopolymers. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>15o International Conference on Composite Structures. WATER ACTION AND MECHANICAL PROPERTIES OF COCONUT. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>64º congresso Anual da Associação Brasileira de Metalurgia e Materiais. Caracterização mecânica e microestrutural de um metal duro desenvolvido com ligante a base de níquel endurecido com silício. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>9 Congreso Iberoamericano de Inginiería Mecanica. Microestrutura e Propriedades mecânicas de um metal duro com ligante de níquel endurecido com alumínio. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>I Semana Científica e Cultural da UNIFESP Diadema.Materiais Vítreos: Natureza, Estrutura e Aplicações. 2009. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>International Conference on Advanced Materials. Investigation of the Degenerate Two-Photon Absorption Cross-Section in all-trans Retinal: Nonlinear Spectrum and Molecular Structure. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>IV International Symposium on Advanced Materials and Nanostructures.Synthesis and Characterization of Hydrophobic Azopolymers. 2009. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Latin American Workshop on Nonlinear Phenomena.Experimental period-adding bifurcation in a modified Chua's circuit. 2009. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Panomara da Óptica. 2009. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Plasmonic Day. 2009. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>RECENT ADVANCES IN CHARACTERIZATION, PROCESSING, DESIGN AND MODELLING OF STRUCTURAL AND FUNCTIONAL MATERIALS.Optical Properties of Phosphate Glasses. 2009. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Semana Pedagógica - 18 à 22 janeiro de 2010. 2009. (Outra).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Workshop e Escola Avançada em Nanoplasmônica. 2009. (Outra).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>XII Congresso Brasileiro de Geoquímica e VII International Symposium on Environmental Geochemistry. Geoquímica de Rochas da Formação Corumbataí (Permiano da Bacia do Paraná), na Região de Rio Claro, SP. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>XII International Conference on the Physics of Non-Crystalline Solids and 9th International Symposium on Crystallization in Glasses and Liquids. Efficient red and green upconversion emissions of Er3+ doped tungsten-lead phosphate glasses. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>XIII workshop da pos-graduação em física do IFSC. Absorção de dois fótons degenerada de compostos carotenóides: Espectro não linear e cálculos teóricos. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>XXX Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC) - Campos do Jordão/SP. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>XXXII Encontro Nacional de Física da Materia Condensada. Multiphoton absorption spectra of ZnO. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>XXXII Encontro Nacional de Física da Materia Condensada. Two-photon absorption spectra of all-trans retinal. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>XXXII ENCONTRO NACIONAL DE FÍSICA DA MATÉRIA CONDENSADA.Synchronism of four chaotic circuits. 2009. (Encontro).</td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>11th International Conference on electrorheological fluids and Magnetorheological suspensions. Off-state viscosity and yield stress optimization of magneto-rheological fluids: a mixture design of experiments approach. 2008. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>18 Congresso Brasileiro de Engenharia e Ciências dos Materiais- CBECIMat. Efeitos da têmpera na resistência à corrosão e transformação de fase da liga 13Cr-1,0Ni. 2008. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>2nd Workshop on Low-Dimensional Structures: Properties and Applications.Magnetic and structural properties of MnP nanowhiskers grown by MBE. 2008. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>31ª Reunião Anual da Sociedade Brasileira de Química. Estudo de cristalização de vidros de fosfato de molibdênio por análise térmica. 2008. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>63 Congresso Anual da ABM. Determinação da tenacidade a fratura de um metal duro sem cobalto utilizando indentação Vickers. 2008. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>I Simpósio Paulista de Nanotecnologia. 2008. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>II Escola Avançada de Óptica e Fotônica. Estudo de processos ópticos não lineares em filmes finos de compostos orgânicos utilizando Varredura-Z reflexiva. 2008. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Reunião Anual da Sociedade Brasileira de Quimica. Comportamento de oxirredução do molibdênio e tungstênio em vidros fosfatos. 2008. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>V Congresso Nacional de Engenharia Mecânica- CONEM. Influência do Aporte Térmico e do Metal de Adição na Susceptibilidade à Corrosão sob Tensão de Juntas Soldadas do Aço AISI 304. 2008. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>VII Encontro da Sociedade Brasileira de Pesquisa em Materiais.Optical Storage in Langmuir-Blodgett (LB) films of a DR13-containing triblock. 2008. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>VIII Encontro Latino Americano de Iniciação Científica, VIII Encontro Latino Americano de Pós Graduação e II Encontro Latino Americano de Iniciação Científica Junior.Avaliador de Trabalhos. 2008. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>XII Reunión Argentina de Sedimentología.Diagénesis de la Formación Corumbataí (pérmico de la cuenca del Paraná) en la región de Río Claro, São Paulo, Brasil. 2008. (Outra).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>XII Workshop da Física.Estudo do processo de absorção de dois fótons no retinal. 2008. (Outra).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>XIV Brazilian Meeting on Inorganic Chemistry. Redox Behavior of Molybdenum and Tungsten in Phosphate Glasses. 2008. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>XIV Encontro de Iniciação Científica, VII Encontro de Pós-Graduação e III Encontro de Extensão.Efeito dos parâmetros de soldagem nos aços inoxidáveis supermartensíticos. 2008. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>XXXI Encontro Nacional de Física da Materia Condensada. Estudo de processos ópticos não lineares em filmes finos de compostos orgânicos utilizando Varredura-Z reflexiva. 2008. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>XXXI ENCONTRO NACIONAL DE FÍSICA DA MATÉRIA CONDENSADA.Negative Magnetoresistance in illuminated Semi-insulating GaAs. 2008. (Encontro).</td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>10o Sicem.Estudo das propriedades Hemocompatíveis do Poliglicerol dendrítico por Ressonãncia de Plásmon de Superície. 2007. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>62 Congresso Anual da ABM. Utilização de simulações termodinâmicas como ferramenta auxiliar no desenvolvimento de ligas ferrosas para solda de revestimento duro. 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>6th Brazilian MRS Meeting (VI Encontro SBPMat).Pitting corrosion behavior and microestrutural characterization of 13Cr4Ni stainless steel used in the oil industry. 2007. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>7º Congresso de Metalurgia y Materiales. Evlução da textura em ferro puro durante a prensagem em canal angular (PCA). 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>7º Congresso de Metalurgia y Materiales. Influência dos teores de manganês e ferro na condutividade elétrica de duas ligas do sistema Al-Fe-Mn-Si obtidas por lingotamento contínuo (Twin Roll Caster). 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>COINT - SEMESP 2007. Perfil do engenheiro ambiental e o mercado de trabalho. 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Congreso Iberoamericano de Ingenieria Mecanica. Desenvolvimento de uma liga no sistema Fe-Cr-C-Nb para solda de revestimento duro pelo processo Arco Aberto (Open Arc). 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>EMRS SPRING MEETING 2007.Ferromagnetic resonance of a MnP single crystal. 2007. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>I Congresso Multidisciplinar Ciência, Cidadania e Diversidade - Universidade São Francisco - São Paulo/SP. 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>I Workshop de Interação Universidade Empresa ? Programa de Pós-Graduação em Engenharia de Materiais da Universidade São Francisco ? Itatiba/SP. 2007. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>II CONGRESSO DA INDÚSTRIA CERÂMICA DE REVESTIMENTO. É POSSÍVEL A VIA ÚMIDA UTILIZANDO ARGILAS DA REGIÃO?. 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>instituto multidiciplinar de materiais poliméricos. AZOBENZENE-CONTAINING TRIBLOCK COPOLYMERS BY ATOM TRANSFER RADICAL POLYMERIZATION (ATRP). 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>International School on Structural Characterization of Nanostructures. Electron magnetic resonance of Cu-chain compound Na2Cu5Si4O14. 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>International Symposium on Metastable and Nanomaterials.Effect of Milling Parameters on the Critical Ball Milling Behavior of Ti-Si-B Powders. 2007. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Reunião Anual da Sociedade Brasileira de Quimica. Structural study of NaPO3-MoO3 glasses by thermal analysis, infrared and Raman spectroscopy and solid state MAS-NMR. 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Semana de Engenharia da Universidade São Francisco - Campinas/SP.Palestra: Reciclagem de Metais: Mitos e Realidades. 2007. (Outra).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>SIXTH INTERNATIONAL LATIN-AMERICAN CONFERENCE ON POWDER TECHNOLOGY. Effect of Milling Parameters on the TiB and TiB2 Formation in Ti-50at%B and Ti-66at%B Powders. 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Sociedade Brasileira de Química -SBQ. Síntese via ATRP de copolímeros tribloco do tipo ABA contendo Azobenzenos. 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>X SIMPÓSIO DE GEOLOGIA DO SUDESTE.Panorama Mínero-Econômico do Pólo Cerâmico de Santa Getrudes - SP. 2007. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>XI Encontro Latino Americano de Iniciação Científica, VII Encontro Latino Americano de Pós Graduação e I Encontro Latino Americano de Iniciação Científica do Ensino Médio.Membro da Comissão Avaliadora dos Trabalhos Científicos. 2007. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>XI Workshop da Física. Investigação de processos não lineares em filmes finos de compostos orgânicos. 2007. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>XIII ENCONTRO DE INICIAÇÃO CIENTÍFICA; VI ENCONTRO DE PÓS-GRADUAÇÃO; II ENCONTRO DE EXTENSÃO UNIVERSITÁRIA. Utilização da técnica de dilatometria para a obtenção das condições ótimas de têmpera e revenido. 2007. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>10th International Conference on Electrorheological Fluids and Magnetorheological Suspensions. Fuzzy logic control for magnetorheological damper. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>10th International Conference on Electrorheological Fluids and Magnetorheological Suspensions. Phosphate coating on the surface of carbonyl iron powder and its effect in magnetorheological suspensions. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>17 congresso Brasileiro de Engenharia e Ciência dos Materiais. PROPRIEDADES MECÂNICAS E AÇÃO DA ÁGUA EM COMPÓSITOS DE MATRIZ POLIMÉRICA REFORÇADA COM FIBRA DE COCO SEGUNDO NORMAS TÉCNICAS. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>I Congresso da Indústria Cerâmica de Revestimento. "Argilas de Santa Gertrudes: de onde vieram e a razão de sua qualidade". 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>II MUNDO UNIFOR.XI Encontro de Iniciação a Pesquisa. 2006. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>instituto multidiciplinar de materiais poliméricos. Layer-by-layer (LbL) films with metal nanoparticles. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>IV congresso Nacional de Engenharia Mecânica - CONEM 2006. Avaliação da resistência ao desgaste de uma liga Fe-Cr-C-Nb-V desenvolvida para solda de revestimento duro para uso sob condições altamente abrasivas. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>IV Congresso Nacional de Engenharia Mecânica - CONEM. Desenvolvimento de uma liga de revestimento duro ferrosa reforçada com carbonetos complexos. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MUNDO UNIFOR.Sensoriamento on-line da densidade de líquidos. 2006. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Reunião anual da Sociedade Brasileira de Quimica. Reunião anual da Sociedade Brasileira de Quimica. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Self-assembly of complex nanostructures - FAHL Academia 2006.Apenas participante. 2006. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>VI SEQUISE - SEMANA DA QUÍMICA DO COLÉGIO SELETIVO.A utilização da Química na Cerâmica. 2006. (Outra).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>VIII Seminário Brasileiro do Aço Inoxidável. Efeito do tratamento térmico na caracterização microestrutural e das propriedades mecânicas de um aço inoxidável martensíticos do tipo 13Cr5Ni0,02%C. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>World Polymer Congress - Macro 2006. Study of the blood compatibility of polyglycerol dendrimer by using surface plasmon resonance sensor. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>XLIII Congresso Brasileiro de Geologia. XLIII Congresso Brasileiro de Geologia. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>XVII Congresso Brasileiro de Engenharia e Ciência dos Materiais, CBECIMAT.Efeito da taxa de resfriamento na resistência à corrosão em aços inoxidáveis martensíticos fundidos. 2006. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>XXIX Encontro Nacional de Física da Matéria Condensada.Characterization of Variable range hopping from temperature dependent activation energy in semi-insulating GaAs. 2006. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>XXVII Congresso Brasileiro de Aplicações de Vácuo na Indústria e na Ciência, CBRAVIC. Efeito do recobrimento de hidroxiapatita em titânio comercialmente puro na resitência à corrosão.. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>XXVII Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC) - Itatiba/SP. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>XXVII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat) - Foz do Iguaçu/PR. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>XXXIV Congresso Brasileiro de Ensino de Engenharia COBENGE 2006 -Ensino de Engenharia:Empreender e Preservar. Aprendendo na prática como executar um projeto. 2006. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>11th International Meeting on Ferroelectricity. 11th International Meeting on Ferroelectricity. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>12th Brazilian Workshop on Semiconductor Physics. BWSP-12. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>2nd Mercosul Congress on Chemical Engineering and 4th Mercosur Congress on Process Systems Engineering. 2nd Mercosul Congress on Chemical Engineering and 4th Mercosur Congress on Process Systems Engineering. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>49º CONGRESSO BRASILEIRO DE CERÂMICA. 49º CONGRESSO BRASILEIRO DE CERÂMICA. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>4º Congresso Temático de Dinâmica, Controle e Aplicações. Dincon 2005. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Ciclo de Palestras sobre Normas de Estruturação de Trabalhos Científicos; Pesquisa em Bases de Dados On Line; Normas de Referências Bibliográficas e Citações Bibliográficas.Ciclo de Palestras sobre Normas de Estruturação de Trabalhos Científicos; Pesquisa em Bases de Dados On Line; Normas de Referências Bibliográficas e Citações Bibliográficas. 2005. (Outra).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Gordon Laboratory Seminars.Polishing, Wear and Indentation of Alumina / SiC Nanocomposites. 2005. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>III CONGRESSO BRASILEIRO DE ENGENHARIA DE FABRICAÇÃO, COBEF. III CONGRESSO BRASILEIRO DE ENGENHARIA DE FABRICAÇÃO, COBEF. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>III International Symposium on Non Crystalline Solids. III International Symposium on Non Crystalline Solids. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ISMANAM.On the T2-phase formation in mechanically alloyed Nb-Si and Nb-Si-B powders. 2005. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ISMANAM.Preparation of Nb-25Si, Nb-37.5Si, Nb-66.6Si powdersby high-energy ball milling and subsequent heat treatment. 2005. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>IV Encontro da Sociedade brasileira de pesquisa em materiais. IV Encontro da Sociedade brasileira de pesquisa em materiais. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>SAMPE 2005. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>V encontro Regional da Sociedade Brasileira de Física - MG.V encontro Regional da Sociedade Brasileira de Física - MG. 2005. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>XII Seminário de Iniciação Científica da Universidade Federal de São João del-Rei.Efeito dos mecanismos de conexões não-sinápticas sobre a sincronização neuronal. 2005. (Outra).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>XX CONGRESSO DA SOCIEDADE BRASILEIRA DE MICROSCOPIA E MICROANÁLISE, CSBMM. XX CONGRESSO DA SOCIEDADE BRASILEIRA DE MICROSCOPIA E MICROANÁLISE, CSBMM. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>XXVI Congresso Brasileiro de Aplicações do Vácuo na Indústria e na Ciência (CBRAVIC) - Londrina/PR. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>XXVIII Encontro Nacional de Física da Matéria Condensada. XXVIII Encontro Nacional de Física da Matéria Condensada. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>XXVIII Encontro Nacional de Física da Matéria Condensada.determination of the spheroidization kinetics in a CuNb composite through magnetic measurements. 2005. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>XXXV SEMANA DE ESTUDOS GEOLÓGICOS DO ESTADO DE SP - SEGESP.XXXV SEMANA DE ESTUDOS GEOLÓGICOS DO ESTADO DE SP - SEGESP. 2005. (Outra).</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>1o Workshop de Engenharia e Tecnologia.Corrosão em Materiais - Princípios e Avaliação. 2004. (Outra).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>24 o Conbrascorr - Congresso Brasileiro de Corrosão. 24o Congresso Brasileiro de Corrosão, CONBRASCORR. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>48 Congresso Brasileiro de Cerâmica. 48 Congresso Brasileiro de Cerâmica. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>56o Reunião Anual da SBPC. Modelagem Matemática de Burstings Epileptiformes em tecidos neuronais. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>9th International Conference on Electro-rheological Fluids and Magnetorheological Suspensions [ERMR 2004]. Experimental study of MR suspensions of carbonyl iron powder with different particle sizes. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>9th International Conference on Electro-rheological Fluids and Magnetorheological Suspensions [ERMR 2004]. Study of the effect of magnetic field on MR suspensions based on jet images. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CONGRESSO DE INICIAÇÃO CIENTÍFICA DA UNESP - XVI. CONGRESSO DE INICIAÇÃO CIENTÍFICA DA UNESP - XVI. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Gordon Laboatory Seminars.New Strutuctures and Materials for the Airbus A380 and Future Airbus Aircraft. 2004. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Gordon Laboratory Seminars.Deformation Mechanisms In Shape Memory Alloys: In-Situ Experimental Studies During Thermo-Mechanical Loads. 2004. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Gordon Laboratory Seminars.Development and Characterization of Shape Memory Thin Films (Ti-Ni, Ti-Ni-X(X=Cu, Pd, Zr)). 2004. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Gordon Laboratory Seminars.Development of Ni-Free Fe-Based Alloys As New Biomaterials For Surgical Implants. 2004. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Gordon laboratory Seminars.Indentation of Shape Memory Materials. 2004. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Gordon laboratory Seminars.The Acoustic Behaviour Of Open-celled Materials. 2004. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Gordon Laboratory Seminars.The Mechanism of Metal-Ceramic Joining in Pt-Al2O3 Composite. 2004. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Gordon Laboratory Seminars.TiNi Based Shape Memory Alloy Thin Films for MEMS and Bio-MEMS Applications. 2004. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Gordon Laboratoy Seminars.Powder Metallurgy Techniques For Developing Metal Matrix Composites. 2004. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>I Semana da Engenharia de Descalvado - Engenharia para Todos.Potencial Econômico de Argilas da Região de Descalvado-SP. 2004. (Outra).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>I Workshop Interação Universidade/Empresa na adaptação de Materiais Metálicos Avançados à Cadeia Produtiva (POLI/USP e IPT) ? São Paulo/SP. 2004. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>III Brazilian MRS Meeting 2004. III Brazilian MRS Meeting 2004. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>III Encontro da SBPMat. III Encontro da SBPMat. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>ISMANAM. Synthesis of Ti6Si2B+Ti5Si3 powders by high-energy ball milling and subsequent heat treatment. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>ISMANAM.Preparation of Ti+Ti6Si2B+Ti5Si3 and Ti+Ti6Si2B+TiB powders by high-energy ball milling and subsequent heat treatment. 2004. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Sociedade Brasileira de Pesquisa em Materiais - SBPMat. Characterization of mechanically alloyed and heat-treated Ti-7.5Si-22.5B and Ti-18Si-6B powders. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Sociedade Brasileira de Pesquisa em Materiais - SBPMat. High energy ball milling of powder Ti-Nb mixtures. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Sociedade Brasileira de Pesquisa em Materiais - SBPMat. Microstructural characterization of heat-treated Ti-Zr-Si-B alloys. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Sociedade Brasileira de Pesquisa em Materiais - SBPMat. On the iron contamination in mechanically alloyed Cr-Si powders. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Sociedade Brasileira de Pesquisa em Materiais - SBPMat. On the phase transformations during the heat treatment of mechanically alloyed Ti-30Si-5B and Ti-23.5Si-10B powders. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>X ENCONTRO DE INICIAÇÃO CIENTÍFICA e III Encontro de Pós-Graduação Stricto Sensu.X ENCONTRO DE INICIAÇÃO CIENTÍFICA e III Encontro de Pós-Graduação Stricto Sensu. 2004. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>X Encontro de Iniciação à Pesquisa.X Encontro de Iniciação à Pesquisa. 2004. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>XI Brazilian Meeting on Inorganic Chemistry. XI Brazilian Meeting on Inorganic Chemistry. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>XI SIMPEP-Simpósio de Engenharia de Produção.Desenvolvimento da cadeia de valor de produtos utilizando fibra de coco. 2004. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>XLII CONGRESSO BRASILEIRO DE GEOLOGIA. XLII CONGRESSO BRASILEIRO DE GEOLOGIA. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>XXVI Congreso Latinoamericano de Química. XXVI Congreso Latinoamericano de Química 27a Reunião Anual da Sociedade Brasileira de Química. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>XXVI Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat) - Porto Alegre/RS. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>XXVII Encontro Nacional de Física da Matéria Condensada. XXVII Encontro Nacional de Física da Matéria Condensada. 2004. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>. 26ª Reunião da Sociedade Brasileira de Química, 26 - 29 de maio. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>11th Brazilian Workshop on Semiconductor Physics. 11th Brazilian Workshop on Semiconductor Physics. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>1º Fórum das Universidades Públicas - Ciência e Tecnologia de Resíduos.1º Fórum das Universidades Públicas - Ciência e Tecnologia de Resíduos. 2003. (Outra).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>3° Encontro Nacional de Terras Raras.3° Encontro Nacional de Terras Raras, Seminário: Conversão Ascendente de Energia em Vidros, 2-3 novembro. 2003. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>47 Congresso Brasileiro de Cerâmica. 47 Congresso da ABC. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>8 Seminário Internacional de Alta Tecnologia. 2003. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Annual Meeting of International Commission os Glass and Concomitant Meetings.Annual Meeting of International Commission on Glass and the Concomitant meetings, held September 21-25, 2003. 2003. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Fourth International Latin-American Conference on Powder Technology. Hot pressing consolidation of the Ti-50Nb alloy. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>II Congresso Brasileiro de Engenharia de Fabricação. II Congresso Brasileiro de Engenharia de Fabricação, COBEF. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ISMANAM.Preparation of Ti3Si powders by high-energy milling. 2003. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>IV Encontro Regional da Sociedade Brasileira de Física.Modelagem Matemática de Burstings Epileptifomres em Tecidos Neuronais. 2003. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>IV ERSBF. IV encontro regional da sociedade brasileira de física - MG. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>IX Encontro de Iniciação à Pesquisa.IX Encontro de Iniciação à Pesquisa. 2003. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Second International Symposium on Non Crystalline Solids. Second International Symposium on Non Crystalline Solids. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>VII Simpósio de Geologia do Sudeste.VII Simpósio de Geologia do Sudeste. 2003. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>X Congresso de Iniciação Científica. Congresso de Iniciação Científica e Pós-graduação da USF. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>XI Seminário de Iniciação Científica da Universidade Federal de São João del-Rei.Modelagem Matemática de Burstings Epileptiformes em Tecidos Neuronais. 2003. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>XV Congresso Cearence de Odontologia. Simulação Computacional em 3D das Forças Mastigatórias na Mandíbula-Ferramenta para o Desenvolvimento de Materiais para Fixação Interna Rígida em Fraturas Faciais. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>XXVI Encontro Nacional de Física da Matéria condensada. XXVI Encontro Nacional de Física da Matéria condensada. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>XXXIII SEGESP - Semana de Estudos Geológicos do Estado de São Paulo.XXXIII SEGESP - Semana de Estudos Geológicos do Estado de São Paulo. 2003. (Encontro).</td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>57 Congresso Anual da ABM - Internacional. Seção Isotérmica a 1250oC do sistema Ti-Si-B na região compreendida entre Tiss-TiSis2-TiB2. 2002. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CBECIMAT. 15 Congresso Brasileiro de Engenharia e Ciência dos materiais. 2002. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>I Encontro da Sociedade Brasileira de Pesquisa em Materiais.I Encontro da Sociedade Brasileira de Pesquisa em Materiais. 2002. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SBCC.Da sociedade Brasileira de Crescimento de Cristais. 2002. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Semana de Tecnologia da Universidade São Francisco - Itatiba/SP.Mesa Redonda: A Universidade São Francisco e o Projeto de Moradia de Interesse Social. 2002. (Outra).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>V SIC - Simpósio de Iniciação Científica da UNESP - Rio Claro.V SIC - Simpósio de Iniciação Científica da UNESP - Rio Claro. 2002. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>VIII Encontro de Iniciação à Pesquisa.VIII Encontro de Iniciação à Pesquisa. 2002. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>XIC CIC - Congresso de Iniciação Científica da UNESP. XIV CIC - Congresso de Iniciação Científica da UNESP. 2002. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>XV Congresso Brasileiro de Engenharia e Ciência dos Materiais - CBECIMAT. Estudos de sinterização de ligas Ti-Si-B. 2002. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Xv Congresso brasileiro de Engenharia e Ciência dos Materiais - CBECIMAT. Sinterização de ligas Ti-Nb e Ti-Ta. 2002. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>XV Congresso Brasileiro de Engenharia e Ciência dos Materiais-CBECIMAT 2002. XV Congresso Brasileiro de Engenharia e Ciência dos Materiais - CBECIMAT 2002. 2002. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>XV Congresso Brasileiro de Engenharia e Ciência dos Materiais. XV Congresso Brasileiro de Engenharia e Ciência dos Materiais - CBECIMAT. 2002. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>XXV Encontro Nacional de Física da Matéria Condensada. XXV Encontro Nacional de Física da Matéria Condensada. 2002. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>XXXIV Congresso Brasileiro de Farmacologia e Terapêutica Experimental.Persistent hyperalgesia and cytokines. 2002. (Simpósio).</td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>'Nuove formulazione per grès porcellanato e monocottura. 2001. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>. 24ª Reunião da Sociedade Brasileira de Química, 28 - 31 de maio. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>. Rare Earth's - 2001 Brazil, september 22-26. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>. Sixth International Conference on Frontiers of Polymers and Advanced Materials, 4 a 9 março. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>.First International Symposium on Non-Crystalline Solids in Brazil/ Fifth Brazilian Symposium on Glasses and Related Materials, August 19-22. 2001. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>10th Brazilian Workshop on Semiconductor Physics. 10th Brazilian Workshop on Semiconductor Physics. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>1º Seminário sobre Grês Porcelanato.1º Seminário sobre Grês Porcelanato. 2001. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>6 Congresso Brasileiro de Polímeros - IX International Macromolecular Colloquium. 6 Congresso Brasileiro de Polímeros. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>7 Convegno Nazionale di reologia. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>8th International Conference on Electro-rheological Fluids and Magnetorheological Suspensions. Evaluation of a magnetorheological suspension in a shock absorber and in a magnetorheometer. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Comportamiento mecanico de baldosas ceramicas crudas, consideraciones teoricas y su aplicacion industrial. 2001. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>First International Symposium on Non-Crystalline Solids in Brazil and Fifth Brazilian Symposium on Glass and Related Materials. First International Symposium on Non-Crystalline Solids in Brazil and Fifth Brazilian Symposium on Glass and Related Materials. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>First International Workshop on Amorphous and Nanostructured chalcogenides. First International Workshop om Amorphous and Nanostructured chalcogenides. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>II Encontro Nacional e Tecnologia e Inovação em Materias-ENTIM. 2001. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>II Encontro Regional de Manutenção.II Encontro Regional de Manutenção. 2001. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Innovazione di prodotto e di processo nel gr~es porcellanato. 2001. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Resistenza Meccanica in crudo delle piastrelle ceramiche. 2001. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>REUNIÃO ANUAL DA SOCIEDADE BRASILEIRA DE QUÍMICA. REUNIÃO ANUAL DA SOCIEDADE BRASILEIRA DE QUÍMICA. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>VI Congresso Brasileiro de Polímeros; IX Internacional Macromolecular Colloquium - Gramado/RS. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>VII Congresso Brasieiro de Terapia Ocupacional. VII Congresso Brasieiro de Terapia Ocupacional. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>VII Encontro de Inciação À Pesquisa da UNIFOR.VII Encontro de Inciação À Pesquisa da UNIFOR. 2001. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>XVIII Congresso da Sociedade Brasileira de Microscopia e Microanálise. 2001. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>XXIV Encontro Nacional de Física da Matéria Condensada. XXIV Encontro Nacional de Física da Matéria Condensada. 2001. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>. 23ª Reunião Anual da Sociedade Brasileira de Química, 23-26 maio. 2000. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>.XII International Symposium on Non-Oxide Glasses and Advanced Materials, April 10-14. 2000. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>14o CONGRESSO BRASILEIRO DE ENGENHARIA E CIÊNCIA DOS MATERIAIS, CBECIMAT. 14o Congresso Brasileiro de Engenharia e Ciência dos Materiais.Participação: Apresentação de trabalhoTrabalho: Estudo do teor de nióbio no comportamento eletroquímico de fitas amorfas e nanocristalinas de FeBSiNbCu São Pedro 3 a 6 de dezembro de 2000.. 2000. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>44º Congresso Brasileiro de Cerâmica. 44º Congresso Brasileiro de Cerâmica. 2000. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Aggiornamento sulla qualità nel settore delle piastrelle di ceramica, certificazione di sistema, prodotto ed ambientale. 2000. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Congresso Brasileiro de Cerâmica. 44 Congresso da ABC. 2000. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Congrès annuel de la société française de chimie. Congrès annuel de la société française de chimie. 2000. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Crystalline Silica and oncogenesis. 2000. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Difettologia nel processo Ceramico.Estudo ddos principais defeitos durante a produção de produtos cerâmicos, principalmente revestimentos e pisos. 2000. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Fundamentos e últimos desenvolvimentos da tecnologia de fabricação de pisos e azulejos por via seca. 2000. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>I colori della Ceramica. 2000. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>I Encontro Nacional de Tecnologia e Inovação em Materiais - Universidade Federal de São Carlos - São Carlos/SP. 2000. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>I Encontro Nacional e Tecnologia e Inovação em Materias- ENTIM. 2000. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>II CECEMM - Congresso de Estudantes de Ciência e Engenharia de Materiais do Mercosul. II CECEMM - Congresso de Estudantes de Ciência e Engenharia de Materiais do Mercosul. 2000. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Physique en herbe. Physique en herbe. 2000. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Plano de negócios: estrutura e elaboração.O curso abrageu a temática da estruturação e elaboração de negócios. 2000. (Outra).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Seminário: Análise de Falhas em Componentes Plásticos - Auditório Principal do CENATEC Mário Amato em São Bernardo do Campo - SP. 2000. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Simpósio Materia 2000 - NOTIMAT 2000.Materia 2000 - NOTIMAT 2000. 2000. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Valutazione del ciclo di vita delle piastrelle di ceramica. 2000. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>VI Encontro de Iniciação à Pesquisa.VII Encontro de Iniciação à Pesquisa. 2000. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>VIII CIC - Congresso de Iniciação Científica da UFSCar. VIII CIC - Congresso de Iniciação Científica da UFSCar. 2000. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>XXIII Encontro Nacional de Física da Matéria Condensada. XXIII Encontro Nacional de Física da Matéria Condensada. 2000. (Congresso).</td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>. 22ª Reunião Anual da Sociedade Brasileira de Química, 25-28 maio. 1999. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>.4th Brazilian International Symposium On Glasses And Related Materials, 24-27 de novembro. 1999. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>1 Workshop sobre revestimentos cerâmicos. 1999. (Outra).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>2nd International Latin American Conference on Powder technology. Congresso sobre a tecnologia do pó. 1999. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>4 th Brazilian Symposium on Gasses and Related Materials.4 th Brazilian Symposium on Gasses and Related MaterialsParticipação: Apresentação de trabalho Trabalho: Relationship between structural changes and corrosion behavior of finemet alloys with diferent Nb contentesOuro Preto, 24 a 27 de novembro de 1999.. 1999. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>43 Congresso Brasileiro de Cerâmica. 43 Congresso da ABC. 1999. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>43º Congresso Brasileiro de Cerâmica. 43º Congresso Brasileiro de Cerâmica. 1999. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>7th International Conference on Electrorheological Fluids and Magnetorheologcial Suspensions. Temperatute effect on magneto-rheological suspension MRF-132LD (Lord Corp.) tested under shear flow in concentric cylinders. 1999. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>9th Brazilian Horkshop on Semiconductor Physics. 9th Brazilian Workshop on Semiconductor Physics. 1999. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Curso de esmaltação e decoração de pisos e azulejos cerâmicos. 1999. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Seminário sobre Ligas com Memória de Forma.Seminário proferido pelo Eng. Mec. Edson Paulo da Silva-MSc. 1999. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>VII CIC - Congresso de Iniciação Científica da UFSCar. VII CIC - Congresso de Iniciação Científica da UFSCar. 1999. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>VIII FETEC - Feira de Tecnologia Cerâmica do Colégio Maximiliano Gaidzinski.VIII FETEC - Feira de Tecnologia Cerâmica do Colégio Maximiliano Gaidzinski. 1999. (Outra).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>XVII Congresso da Sociedade Brasileira de Microscopia e Microanálise e X Congresso da Sociedade Brasileira. XVII Congresso da Sociedade Brasileira de Microscopia e Microanálise e X Con-gresso da Sociedade Brasileira de Biologia Celular Participação: Apresentação de trabalhoTrabalho: Influence of nanocrystallization on oxidation of Fe84Nb7B9 amorphous alloy Santos 13 a 16 de outubro de 1999.. 1999. (Congresso).</td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>. 21ª Reunião Anual da Sociedade Brasileira de Química, 25-28 maio. 1998. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>. 42° Congresso Brasileiro de Cerâmica, 4º Ibero Americano de Cerámica, Vidrios y Refractários, 3-6 junho. 1998. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>.3th Brazilian Symposium on Glasses and Related Materials, August 25-28. 1998. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>13 Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMAT). Estudo das cerâmicas condutoras do tipo BIMEVOX. 1998. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>13 Congresso Brasileiro de Engenharia e Ciência dos Materiais. 1998. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>3rd Brazilian Symposium on Glasses and Related MaterialsUNESP.3rd Brazilian Symposium on Glasses and Related Materials. 1998. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>42 congresso Brasileiro de Cerâmica. O efeito de aditivos na perda de escoamento de um concreto refratário auto-escoanete de ultrabaixo teor de cimento. 1998. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>42o Congresso Brasileiro de Cerâmica. 42o Congresso Brasileiro de Cerâmica. 1998. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Curso de Difração de raios-X - Teoria e manuseio do difratômetro Siemens 5005 e programas associados. 1998. (Outra).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>I Simpósio Brasileiro de Estruturologia.Caracterização Microestrutural de ligas Nb-Al obtidas via redução aluminotérmica do Nb2O5. 1998. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>I Simpósio Ibero-Americano de Cerâmica Eletro-Eletrônica.I Simpósio Ibero-Americano de Cerâmica Eletro-Eletrônica. 1998. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Palestras técnicas.Palestras: Forjamento de Materiais e Soldagem Plasma de Ligas Sinterizadas Ferrosas. 1998. (Outra).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Simpósio sobre Ciência e Eng. de Materiais no Mercosul.Simpósio sobre Ciência e Eng. de Materiais no Mercosul. 1998. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Soldagem TIG Pulsado de Ligas Sinterizadas à Base de Ferro, Fósforo e Níquel. 53 Congresso da ABM. 1998. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Workshop on Complex Systems. Workshop on Complex Systems. 1998. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>XXI Encontro Nacional de Física da Matéria Condensada. XXI Encontro Nacional de Física da Matéria Condensada. 1998. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>XXI Reunião Anual da Sociedade Brasileira de Química (SBQ) - Poços de Caldas/MG. 1998. (Outra).</td></tr>
+            </table></div><div id="dv-year-1997"><h3 class="year">1997</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>. 20ª Reunião da Sociedade Brasileira de Química, 24-27 maio. 1997. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>.IX Jornada Cientifica, 26 de outubro - 01 de novembro. 1997. (Outra).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>41o Congresso Brasileiro de Cerâmica. 41o Congresso Brasileiro de Cerâmica. 1997. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>5o Encontro da Sociedade Brasileira de Microscopia Eletrônica.5o Encontro da Sociedade Brasileira de Microscopia Eletrônica. 1997. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>5ta Jornada de Investigación.5ta Jornada de Investigación. 1997. (Outra).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>6th International Conference on Electro-rheological Fluids, Magneto-rheological Suspensions and their Applications. Characterization of an eletrorheological suspension of poly(vinyl alcohol) in corn oil. 1997. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Desenvolvimento de Ligas sinterizadas a base de Fe-P e Ni para aplicações de Engenharia. Congresso Brasileiro de Engenharia Mecanica - COBEM. 1997. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>II Simpósio de Ultrasónica.II Simpósio de Ultrasónica. 1997. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>XX Encontro Nacional de Física da Matéria Condensada. XX Encontro Nacional de Física da Matéria Condensada. 1997. (Congresso).</td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>. XXXVI Congresso Brasileiro de Química, 5 de setembro. 1996. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>.1ª Semóptica (Semana da óptica), 18-22 novembro. 1996. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>.II Simpósio Brasileiro de Vidros, 6-7 de novembro. 1996. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>.International Symposium on Glass Cyrstallization, november 3-6. 1996. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>.Semana Venha nos Conhecer, 28-30 agosto. 1996. (Outra).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>12 Congresso Brasileiro de Engenharia e Ciência dos Materiais. Produção de um aço ultra-baixo carbono por meio da redução aluminotérmica do Fe2O3 e posterior refino em forno de feixe eletrônico. 1996. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>40o Congresso Brasileiro de Cerâmica. 40o Congresso Brasileiro de Cerâmica. 1996. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>5th Brazilian Conference on Microscopy of Materials. 5th Brazilian Conference on Microscopy of Materials. 1996. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Congresso de Iniciação Científica- ASSER. Congresso de Iniciação Científica- ASSER. 1996. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Fluência em materiais refratários. 1996. (Outra).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Revelação e preparação de filmes fotográficos.O curso envolveu a metodologia utilizada para revelação e preparação de filmes fotográficos. 1996. (Outra).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>XII Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat) - Águas de Lindóia/SP. 1996. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>XIX Encontro Nacional de Física da Matéria Condensada. XIX Encontro Nacional de Física da Matéria Condensada. 1996. (Congresso).</td></tr>
+            </table></div><div id="dv-year-1995"><h3 class="year">1995</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>. 18a Reunião Anual da Sociedade Brasileira de Química, 30 de maio - 2 de junho. 1995. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>. 18ª Reunião Anual da Sociedade Brasileira de Química, 30 de maio - 2 de junho. 1995. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>. VII Congresso de Iniciação Científica, 21-26 de novembro. 1995. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>.VII Jornada Científica, 8-10 de junho. 1995. (Outra).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>39 Congresso Brasileiro de Cerâmica. Propriedades termomecânicas de CA e CA2 - componentes principais do cimento de aluminato de cálcio. 1995. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>39o Congresso Brasileiro de Cerâmica. 39o Congresso Brasileiro de Cerâmica. 1995. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>3o Congresso Interamericano de Microscopia Eletrônica. 3o Congresso Interamericano de Microscopia Eletrônica. 1995. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>50 Congresso Anual da ABM. Estudo comparativo entre as propriedades termomecânicas de concretos refratários de ultra baixo teor de cimento auto-escoantes e vibrados. 1995. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>UNITECR´95. The effect of cement substitution for ro--alumina partial additions on the mechanical properties of a low cement refractory concrete. 1995. (Congresso).</td></tr>
+            </table></div><div id="dv-year-1994"><h3 class="year">1994</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>11o Congresso Brasileiro de Eng. e Ciência dos Materiais - CBECIMAT. 11o Congresso Brasileiro de Eng. e Ciência dos Materiais - CBECIMAT. 1994. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>38 Congresso Brasileiro de Cerâmica. Efeito da adição de um agente hidráulico isento de CaO nas propriedades termomecânicas de um concreto refratário de baixo cimento. 1994. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>38o Congresso Brasileiro de Cerâmica. 38o Congresso Brasileiro de Cerâmica. 1994. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>IV Simpósio Brasileiro de Microscopia eletrônica e Técnicas Associadas À Pesquisa de Mateirais.IV Simpósio Brasileiro de Microscopia eletrônica e Técnicas Associadas À Pesquisa de Mateirais. 1994. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>XI Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat) - Águas de São Pedro/SP. 1994. (Congresso).</td></tr>
+            </table></div><div id="dv-year-1993"><h3 class="year">1993</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>I Congresso de Iniciação científica da UFSCar. Estudo de um concreto de ultra baixo teor de cimento sem adição de CAC. 1993. (Congresso).</td></tr>
+            </table></div><div id="dv-year-1992"><h3 class="year">1992</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>36 Congresso Brasileiro de Cerâmica. Efeito do MgO na propriedade elétrica e característica microestrutural de ZrO2 e CaO. 1992. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>36o Congresso Brasileiro de Cerâmica. 36o Congresso Brasileiro de Cerâmica. 1992. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Congresso de Pós Graduação em Ciência e Eng. de Materiais. Congresso de Pós Graduação em Ciência e Eng. de Materiais. 1992. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>IV Encontro Nacional de Ciências Térmicas (ENCIT) - Rio de Janeiro/RJ. 1992. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>XI Congresso de Iniciação Científica e Tecnológica em Engenharia. Caracterização de ligas V-Al produzidas por redução aluminotérmica. 1992. (Congresso).</td></tr>
+            </table></div><div id="dv-year-1991"><h3 class="year">1991</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>35 Congresso Brasileiro de Cerâmica e III Iberoamericano de Ceramica, Vidrios y refractarios. Compósitos fabricados a partir de óxido de alumínio sinterizado e infiltrado com resina polimérica. 1991. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>35o Congresso Brasileiro de Cerâmica. 35o Congresso Brasileiro de Cerâmica. 1991. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>X Congresso de iniciação científica e tecnológica em Engenharia. Estabilidade térmica do sistema ZrO2 - CaO. 1991. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>X Congresso de Iniciação científica e tecnológica em engenharia. Estudo da condutividade iônica do sistema ZrO2 - CaO. 1991. (Congresso).</td></tr>
+            </table></div><div id="dv-year-1990"><h3 class="year">1990</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>IX Congresso Brasileiro de Engenharia e Ciência dos Materiais (CBECIMat) - Águas de São Pedro/SP. 1990. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>IX Congresso de Iniciação Científica e tecnológica em Engenharia. Desenvolvimento de materiais compósitos a partir de matriz cerâmica infiltrada com resina polimérica. 1990. (Congresso).</td></tr>
+            </table></div><div id="dv-year-1988"><h3 class="year">1988</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>8o Congresso Brasileiro de Eng. e Ciência dos Materiais - CBECIMAT. 8o Congresso Brasileiro de Eng. e Ciência dos Materiais - CBECIMAT. 1988. (Congresso).</td></tr>
+            </table></div><div id="dv-year-1986"><h3 class="year">1986</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>7o Congresso Brasileiro de Eng. e Ciência dos Materiais. 7o Congresso Brasileiro de Eng. e Ciência dos Materiais. 1986. (Congresso).</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 14/02/2025 18:29:01<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

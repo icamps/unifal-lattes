@@ -1,0 +1,319 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Capítulos de livros publicados'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2000,
+1],
+[2003,
+1],
+[2004,
+4],
+[2007,
+1],
+[2010,
+1],
+[2011,
+1],
+[2012,
+1],
+[2013,
+4],
+[2014,
+4],
+[2018,
+4],
+[2019,
+9],
+[2020,
+11],
+[2021,
+16],
+[2022,
+4],
+[2023,
+5],
+[2024,
+3]]}]});
+        });
+        </script>
+        
+                <h3>Capítulos de livros publicados</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 70<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRE, RAFAELA S. ; Sanfelice, Rafaela C. ; DA COSTA, MARDOQUEU M. ; MERCANTE, LUIZA A. ; CORREA, DANIEL S. ; PAVINATTO, ADRIANA. <b>Commercial potential of biosensors. Biosensors in Precision Medicine. 1ed</b>. Em: . : Elsevier. 2024.p. 345-376. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Oliveira, Gustavo Thomaz Garcia de ; Oliveira, Ian Felix de ; Souza Junior, Roberto Felix de ; MAESTRELLI, SYLMA CARVALHO. <b>Manual on risks associated with lack of knowledge and lack of standardization in the use of ready-mixed concrete in construction sites: A useful tool for the user. Navigating through the knowledge of education. 1ed</b>. Em: . : Seven Editora. 2024.v. 1, p. 703-736. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>SILVA, A. C. ; CHAIA, N. ; Utada S. ; ALKMIN, L. B. ; Coelho, G.C. ; Phani Karamched ; TANG, Y. T. ; R. C. Reed ; NUNES, C. A.. <b>The Effect of Ti Replacement with Nb on the Long-Term Oxidation Behavior at High Temperature of Ni-Base Superalloys for Turbine Disc Applications. The Minerals, Metals & Materials Series. 1ed</b>. Em: . : Springer Nature Switzerland. 2024.p. 675-685. </td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Fanis, J.B. ; MAESTRELLI, S. C.. <b>SUPORTES POROSOS PARA IMOBILIZAÇÃO DA ENZIMA FTASE:REVIEW</b>. Em: MIlton dos Santos Barbosa; Rafael Leal da Silva; Roger Goulart Mello. (Org.). Tecnologias avançadas em Ciências Exatas: Desenvolvimentos recentes e perspectivas futuras,. 1ed.Rio de Janeiro. : E-publicar. 2023.v. 1, p. 61-79. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Loro, D.H. ; MAESTRELLI, S. C.. <b>TERMOPLÁSTICOS BIODEGRADÁVEIS DE BASE BIOLÓGICA:UM REVIEW</b>. Em: Edilene Dias Santos; Adilson Tadeu Basquerote Silva; Patrícia Gonçalves de Freitas. (Org.). Economia e Meio Ambiente: Diálogos interdisciplinares para a construção de um futuro sustentável. 1ed.Rio de Janeiro. : E-publicar. 2023.v. 1, p. 35-54. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>OLIVEIRA, J. S. ; Rodrigues, J.A. ; MAESTRELLI, S. C.. <b>Nanotechnology applied to packaging production: Review,. Connecting Expertise Multidisciplinary Development for the Future. 1ed.Rio de Janeiro</b>. Em: . : Seven Editora. 2023.v. 1, p. 1-21. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SANFELICE, RAFAELA CRISTINA; PAVINATTO, ADRIANA ; Terra, Idelma Aparecida Alves. <b>CARACTERIZAÇÃO DE FIBRAS ELETROFIADAS. Eletrofiação e nanofibras: fundamentos e aplicações. 1ed</b>. Em: . : Atena Editora. 2023.p. 76-107. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SILVA, G. G. B. ; SEMENSATO, L. M. S. ; Storion, A.G. ; MAESTRELLI, S. C.. <b>REVIEW: UTILIZAÇÃO DE ZnO PARA APLICAÇÕES FOTOCATALÍTICAS</b>. Em: Milson dos Santos Barbosa, Rafael Leal da Silva; Roger Goulart Mello. (Org.). Ciências Exatas: INvestigações, práticas e avanços científicos. 1ed.Rio de Janeiro. : E-publicar. 2023.v. 1, p. 68-84. </td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BENEDETTO, R. M. ; BOTELHO, E.C. ; GOMES, G. F. ; Antonio Ancelotti Jr. <b>New Advances in Thermoplastic Commingled Composites: Processing and Molecular Dynamics</b>. Em: Jorge, Ariosto B.; Anflor, Carla T. M.; Gomes, Guilherme F.; Carneiro, Sergio H. S.. (Org.). Fundamental Concepts and Models for the Direct Problem. 1ed.Brasília. : UnB. 2022.v. 2, p. 1-25. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Sanfelice, Rafaela C.; PAVINATTO, ADRIANA ; CORREA, DANIEL S. <b>Introdução à Nanotecnologia</b>. Em: Rafaela Cristina Sanfelice, Adriana Pavinatto, Daniel Souza Corrêa. (Org.). Nanotecnologia aplicada a polímeros. 1ed.São Paulo. : Blucher. 2022.v. 1, p. 27-48. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>SANFELICE, RAFAELA C; BALOGH, D. <b>Filmes por Centrifugação (Spin-Coating)</b>. Em: Rafaela Cristina Sanfelice, Adriana Pavinatto, Daniel Souza Corrêa. (Org.). Nanotecnologia aplicada a polímeros. 1ed.São Paulo. : Blucher. 2022.v. 1, p. 327-344. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Silva, G.R.da ; MIOLI, L. F. J. ; MAESTRELLI, S. C.. <b>APROVEITAMENTO DE PÓ DE MADEIRA NA CONSTRUÇÃO CIVIL</b>. Em: Adilson Tadeu Basquerote Silva; Érica de Melo Azevedo, Roger Goulart Mello. (Org.). Práticas e Pesquisas aplicadas em Ciencias Exatas. 1ed.Rio de Janeiro. : E-publicar. 2022.v. 1, p. 132-151. </td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Abdala, S.R. ; Rabelo, L.H. ; Ferraço, F. ; MAESTRELLI, S. C.. <b>ARGILA PARA FINS COSMÉTICOS: CARACTERIZAÇÃO E PROPRIEDADES</b>. Em: William de Jesus Ericeira Mochel Filho. (Org.). Legado Científico Brasileiro - Vol. 06. 1ed.São Luís. : Editora Pascal. 2021.v. 06, p. 231-239. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ARAUJO, A. V. ; PADUA, A. N. F. ; MORAES, A. C. P. ; GOMES, A. L. V. ; Sachs, Daniela. <b>Tratamento Farmacológico da COVID-19</b>. Em: Marileia Chaves Andrade. (Org.). COVID-19, uma abordagem multidisciplinar - da pesquisa à prática: o que sabemos com um ano da pandemia. 1ed.Itajubá. : FMIT. 2021.v. 1, p. 1-191. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bernardes, G.F. ; Rabelo, L.H. ; Roveri, C.D. ; MAESTRELLI, S. C.. <b>CARACTERIZAÇÃO TECNOLÓGICA DE UMA ARGILA DA REGIÃO DE CALDAS, MG</b>. Em: William de Jesus Ericeira Mochel Filho. (Org.). Legado Científico Brasileiro - Vol. 06. 1ed.São Luís. : Editora Pascal. 2021.v. 06, p. 114-125. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Faria, Isabela Cristina Ferreira ; Santos, Valquíria Claret dos ; MELO, MIRIAN DE LOURDES NORONHA MOTTA ; OLIVEIRA, VALESCA DONIZETI DE ; Gonçalves, Paulo Cesar. <b>ESTRUTURAS DE CONCRETO ARMADO: COLABORAÇÃO DO CONCRETO ENTRE FISSURAS</b>. Em: Henrique Ajuz Holzmann; João Dallamuta. (Org.). Força, Crescimento e Qualidade da Engenharia Civil no Brasil 2. 1ed.Ponta Grossa - PR. : Atena Editora. 2021.v. 1, p. 77-93. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>GARCIA, B. G. ; MELO, M. L. N. M.. <b>Cap 13 Estudo do processo de deformação e recristalização de uma liga de Al 4,5% Cu</b>. Em: Ernane Rosa Martins. (Org.). Ciência, tecnologia e inovação: Fatores de progresso e de desenvolvimento 3. 1ed.Ponta Grossa - PR. : Atena. 2021.v. 1, p. 131-144. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Jacon, Brenna Vieira ; Costa, Beatriz Caroline da ; Darcie, Leticia dos Reis ; GIRALDI, TANIA REGINA. <b>Estudo da utilização da serragem de eucalipto como adsorvente do corante Alaranjado de Metila. Processos Químicos e Biotecnológicos ¿ Volume 8. 1ed.Belo Horizonte</b>. Em: . : Editora Poisson. 2021.v. 8, p. 6-19. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MARIANO, NEIDE APARECIDA; Marinho, Diogo ; Dias, Julio Cezar ; Fernandes, Marcos Alexandre. <b>EFEITO DA TEMPERATURA E TEMPO DE AUSTENITIZAÇÃO NAS TRANSFORMAÇÕES DE FASE DA LIGA 13CR2NI0,1C. Ciência e Engenharia de Materiais, conceitos, fundamentos e aplicação. 1ed</b>. Em: . 2021.v. 1, p. 230-238. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MARIANO, NEIDE APARECIDA; MENDONÇA, RENATO DE. <b>TEMPERING EFFECT ON THE LOCALIZED CORROSION OF THE 13CR4NI0.02C AND 13CR1NI0.15C STEELS IN A SYNTHETIC MARINE ENVIRONMENT. DESVENDANDO A ENGENHARIA SUA ABRANGÊNCIA E MULTIDISCIPLINARIDADE. 1ed.Guarujá</b>. Em: . : Científica Digital. 2021.p. 298-307. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MARTINS, MARIA AUXILIADORA DE BARROS ; PINTO, F. B. ; WERDINE, DEMARCUS ; DOS SANTOS, VALQUIRIA CLARET ; Gonçalves, Paulo Cesar ; MELO, MIRIAN DE LOURDES NORONHA MOTTA ; BARROS, REGINA MAMBELI. <b>Chapter 19 Procedures for Additions of Wastes to Cementitious Composites ? A Review</b>. Em: Edited by R.A. Ilyas, S.M. Sapuan, and Emin Bayraktar. (Org.). Recycling of Plastics, Metals, and Their Composites. 1ed.Boca Raton / FL / USA. : Taylor & Francis Group, LLC. 2021.v. 1, p. 325-356. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>RANIERI, M. G. A. ; CAPELLATO, PATRICIA ; MARTINS, M. A. B. ; SANTOS, V. C. ; GONCALVES, P. C. ; ROQUE-SILVA, L. R. ; MELO, M. L. N. M. ; MELLO, A. S.. <b>Chapter 21 Cementitious Composites for Civil Construction Made with Marble and Granite Waste</b>. Em: Edited by R.A. Ilyas, S.M. Sapuan, and Emin Bayraktar. (Org.). Metals, and Their Composites. 1ed.Boca Raton / FL / USA. : Taylor & Francis Group, LLC. 2021.v. 1, p. 387-408. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ROQUE-SILVA, L. R. ; ALVES, A. P. M. ; SOUZA, MICHEL HENRY BACELAR DE ; COSTAL, G. Z. ; MARTINS, R. M. ; GONCALVES, P. C. ; PATRICIA, CAPELLATO ; RANIERI, M. G. A. ; TORRES, R. G. ; MELO, M. L. N. M. ; SANTOS, V. C.. <b>Chapter 20 Analysis of the Scientific Production of Cementitious Composites with Recycled Polymeric Materials</b>. Em: Edited by R.A. Ilyas, S.M. Sapuan, and Emin Bayraktar. (Org.). Recycling of Plastics, Metals, and Their Composites. 1ed.Boca Raton / FL / USA. : Taylor & Francis Group, LLC. 2021.v. 1, p. 357-408. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>SIQUEIRA, M. L. ; VILAS BOAS, S. B. ; Gatamorta, Fábio ; MENDONÇA, C. S. P. ; MELO, M. L. N. M.. <b>Chapter 16 Influence of Recycled Steel Scrap in Nodular Casting Iron Properties</b>. Em: Edited by R.A. Ilyas, S.M. Sapuan, and Emin Bayraktar. (Org.). Recycling of Plastics, Metals, and Their Composites. 1ed.Boca Raton / FL / USA. : Taylor & Francis Group, LLC. 2021.v. 1, p. 287-295. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Sorce, A.R. ; Caglieri, M.V.V. ; Rigo, E.C.S. ; MAESTRELLI, S. C.. <b>MINI-REVIEW: BIOMINERALIZAÇÃO EM CONCRETOS DE ALTO DESEMPENHO</b>. Em: Camila Pinheiro Nobre;Anna Christina Sanazario de Oliveira. (Org.). Estudos Ambientais e Agronômicos. 1ed.São Luis. : editora Pascal. 2021.v. 8, p. 7-25. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>STORION, A. G. ; Giraldi, Tânia Regina ; MAESTRELLI, S. C.. <b>ESTUDO DE NANOPARTÍCULAS DE TiO2:WO3 OBTIDAS POR MAE</b>. Em: William de Jesus Ericeira Mochel Filho. (Org.). Legado Científico Brasileiro - Vol. 06. 1ed.São Luís. : Editora Pascal. 2021.v. 06, p. 149-167. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Teodoro, K. B. R. ; Migliorini, F. L. ; Facure, M. H. M. ; SANFELICE, R. C. ; Martins, D. ; CORREA, D. S.. <b>Novel Chemical Based on Green Composite Materials for. Environmental Chemistry for a Sustainable World. 1ed</b>. Em: . : Springer International Publishing. 2021.p. 109-138. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>VASCONCELOS, A. J. ; SILVA, R. S. M. ; OLIVEIRA, P. J. ; MELO, M. L. N. M. ; ROCHA, O. F. L.. <b>Chapter 25 Influence of Iron Content on the Microstructure and Properties of Recycled Al?Si?Cu?Mg Alloys</b>. Em: Edited by R.A. Ilyas, S.M. Sapuan, and Emin Bayraktar. (Org.). Recycling of Plastics, Metals, and Their Composites. 1ed.Boca Raton / FL / USA. : Taylor & Francis Group, LLC. 2021.v. 1, p. 443-461. </td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BENEDETTO, R. M. ; BOTELHO, Edson Cocchieri ; ANCELOTTI JR., ANTONIO ; Putini, E. J. G.. <b>DESENVOLVIMENTO DE UM MODELO ANALÍTICO PARA PREVISÃO DA CAPACIDADE DE ABSORÇÃO DE ENERGIA DE IMPACTO EM COMPÓSITOS TERMOPLÁSTICOS COMMINGLED REFORÇADOS COM FIBRA DE CARBONO</b>. Em: Nardeli, Jéssica Verger. (Org.). Atividades de Ensino e de Pesquisa em Química 3. 1ed.Ponta Grossa. : Atena. 2020.v. 3, p. 118-125. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ferraço, F. ; Sylma Carvalho Maestrelli ; Boschi, A.O.. <b>Hue variation on ceramic tile during the decoration stage by laser engraved silicon cylinders method. Engenharia no Século XXI. 1ed.Belo Horizonte</b>. Em: . : Poisson. 2020.v. 1, p. 126-134. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GATAMORTA, F. ; Katundi, Dhurata ; BAYRAKTAR, E. ; Ferreira, L. M. P. ; MELO, M. L. N. M.. <b>Magnetic Shape Memory Composite (MSMC) Design from Intermetallic Cu-NiTi-MnAl-Fe3O4 Alloy as an Alternative Replacement for Actuators. Conference Proceedings of the Society for Experimental Mechanics Series. 1ed</b>. Em: . : Springer International Publishing. 2020.p. 47-53. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GATAMORTA, F. ; Miskioglu, Ibrahim ; BAYRAKTAR, E. ; MELO, M. L. N. M.. <b>Recycling of Aluminium-431 by High Energy Milling Reinforced with TiC-Mo-Cu for New Composites in Connection Applications. Conference Proceedings of the Society for Experimental Mechanics Series. 1ed</b>. Em: . : Springer International Publishing. 2020.p. 41-46. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>GIRALDI, T. R.; Nery, L.H. ; Guidio, J.D.C. ; Cantadori, B.. <b>Estudo da capacidade de adsorção de íons Mn2+ em cabelo. Estudo da capacidade de adsorção de íons Mn2+ em cabelo. 1ed.Belo Horizonte</b>. Em: . : Poisson. 2020.v. 11, p. 43-46. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Mancini, Maisa Helena ; Semensato, Lucca Monteiro Silva ; Estorari, Luis Fernando Baldo ; MAESTRELLI, S. C.. <b>PEÇAS POROSAS DE ZnO OBTIDAS A PARTIR DE FASE DE SACRIFÍCIO APLICADAS A PROCESSOS OXIDATIVOS AVANÇADOS PARA DESPOLUIÇÃO</b>. Em: CAMILA PINHEIRO NOBRE; ANNA CHRISTINA SANAZARIO DE OLIVEIRA. (Org.). ESTUDOS AMBIENTAIS E AGRONÔMICOS: RESULTADOS PARA O BRASIL. 1ed.São Luis. : Editora Pascal. 2020.v. 1, p. 139-150. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Neves, Paula Guimarães ; Munhoz, Rodrigo Amorim ; Morales, Sergio Andres Villalba ; MAESTRELLI, SYLMA CARVALHO. <b>Estudo da viabilidade de utilização de técnicas alternativas para a produção de peças porosas de ZnO para fotocatálise.. Meio Ambiente em Foco - Volume 11. 1ed</b>. Em: . : Editora Poisson. 2020.v. 11, p. 47-50. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Seguchi, Lucas Junji ; Savassi, Matheus ; Neto, Estácio T. Wanderley ; Silva, Milady Renata A. ; Barbosa, Nathália Vieira ; Silva, Flávio Soares ; Gimenes, Rossano ; Soares, Melina E.. <b>Degradation Caused by Partial Discharges in Insulation Oil: A Comparison Between Mineral and Vegetable Oils. Lecture Notes in Electrical Engineering. 1ed</b>. Em: . : Springer International Publishing. 2020.p. 130-138. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>STORION, ANA GABRIELA ; ROVERI, C. D. ; Ferraço, F. ; MAESTRELLI, S. C.. <b>ESTUDO CERÂMICO DAS ARGILAS CL-60, VERDETE E ARGILA VERMELHA CORUMBATAÍ</b>. Em: WILLIAM DE JESUS ERICEIRA MOCHEL FILHO. (Org.). Legado Científico Brasileiro. 1ed.São Luís. : Editora Pascal. 2020.v. 1, p. 1-314. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>VIVAS, M. G; Silva, Daniel L. ; MENDONCA, C. R. ; DE BONI, Leonardo. <b>First-order hyperpolarizability of organic molecules: hyper-Rayleigh scattering and applications</b>. Em: V.P. Gupta. (Org.). Molecular and Laser Spectroscopy: Advances and Applications. 1ed.Amsterdan. : Elsevier. 2020.v. 2, p. 1-646. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>XAVIER, A.R.C. ; Roveri, C.D.. <b>PROGRAMA TUTORIAL ACADÊMICO NO BACHARELADO INTERDISCIPLINAR EM CIÊNCIA E TECNOLOGIA: UMA EXPERIÊNCIA DE FORMAÇÃO DISCENTE (UNIVERSIDADE FEDERAL DE ALFENAS ? UNIFAL)</b>. Em: Carlos Eduardo Sampaio Burgos Dias; Michelle Cristine da Silva Toti; Helena Sampaio; Soely Aparecida Jorge Polydoro. (Org.). PROGRAMA TUTORIAL ACADÊMICO NO BACHARELADO INTERDISCIPLINAR EM CIÊNCIA E TECNOLOGIA: UMA EXPERIÊNCIA DE FORMAÇÃO DISCENTE (UNIVERSIDADE FEDERAL DE ALFENAS ? UNIFAL). 1ed.São Carlos. : Pedro e João Editores. 2020.v. 1, p. 265-282. </td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Almeida, Diego Henrique de ; Lago, Ana Cláudia Moraes do ; Grillo, Rodolfo Henrique Freitas ; MAESTRELLI, SYLMA CARVALHO ; ROVERI, CAROLINA DEL. <b>PROPRIEDADES DO CONCRETO FRESCO PRODUZIDO COM RESÍDUOS DE LOUÇA SANITÁRIA COMO AGREGADO. Educação, meio ambiente e território 2. 1ed</b>. Em: Profª Drª Antonella Carvalho de Oliveira. (Org.). Educação, Meio Ambiente e Território 2. 1ed.Belo Horizonte. : Antonella Carvalho de Oliveira. 2019.v. 3, p. 92-96. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Gatamorta, Fábio ; MENDONÇA, C. S. P. ; JUNQUEIRA, M. M. ; BAYRAKTAR, E. ; Andrade, B. G. ; Melo, M. de L. M. ; SILVA, G.. <b>Optimization of the High Energy Milling Process of Chips of a Stainless Steel Using the Response Surface Modeling</b>. Em: Thakre P., Singh R., Slipher G.. (Org.). Conference Proceedings of the Society for Experimental Mechanics Series. 1ed. : Springer International Publishing. 2019.v. 5, p. 237-242. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GOMES DE SOUSA, SARA RAQUEL ; Bombard, Antonio J. F.. <b>Redispersibility and its relevance in the formulation of magnetorheological fluids</b>. Em: Seung-Bok Choi; Weihua Li. (Org.). MAGNETORHEOLOGICAL MATERIALS AND THEIR APPLICATIONS. 1ed.London. : The Institution of Engineering and Technology - IET. 2019.v. 1, p. 1-18. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>KUFFNER, B. H. B. ; Silva, G. ; RODRIGUES, A.R. ; RODRIGUES, G.. <b>Influence of different percentages of alumina addition in the high energy ball milling process of the AISI 52100 steel</b>. Em: Tayronne de Almeida Rodrigues; João Leandro Neto; Dennyura Oliveira Galvão. (Org.). Meio ambiente, sustentabilidade e agroecologia. 1ed.ponta Grossa - PR. : Atena editora. 2019.v. 01, p. 283-289. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PEREIRA, A. C. ; NORONHA, M. L. C. ; FARIA, A. N. ; SACHS, D.. <b>FARMÁCIA CLÍNICA E O USO INDISCRIMINADO DE MEDICAMENTOS POR IDOSOS: OS RISCOS DA POLIFARMÁCIA</b>. Em: Carlos Eduardo Pulz Araujo; Iara Lúcia Tescarollo; Márcia Aparecida Antônio. (Org.). Farmácia clínica e atenção farmacêutica. 1ed.Ponta Grossa - Paraná -PR. : Atena editora. 2019.v. 1, p. 11-17. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Santos, Rodrigo Luz Baracho ; Vitorino, Jarbas Ribeiro ; Penha, Renata Neves ; MELO, MIRIAN DE LOURDES NORONHA MOTTA. <b>Avaliação das propriedades mecânicas de um aço bifásico tratado por têmpera e partição. Engenharia no Século XXI ¿ Volume 9. 1ed</b>. Em: . : Editora Poisson. 2019.v. 1, p. 50-56. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Semensato, Lucca Monteiro Silva ; Estorari, Luis Fernando Baldo ; Mancini, Maisa Helena ; Moreira, Veridiana Magalhães Costa ; STORION, ANA GABRIELA ; PALLONE, Eliria Maria de Jesus Agnolon ; Giraldi, Tânia Regina ; MAESTRELLI, SYLMA CARVALHO. <b>CARACTERIZAÇÃO E ANÁLISE COMPARATIVA DE PÓS NANOMÉTRICOS OBTIDOS POR MOAGEM DE ALTA ENERGIA COM E SEM LIXÍVIA ÁCIDA PARA APLICAÇÃO EM FOTOCATÁLISE. Estudos Transdisciplinares nas Engenharias 3. 1aed.Belo Horizonte</b>. Em: João Dallamuta. (Org.). Estudos Transdisciplinares nas Engenharias 3. 1ed.Belo Horizonte. : Atena Editora. 2019.v. 1, p. 80-92. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Semensato, Lucca Monteiro Silva ; Lemos, Vanessa Vilela ; Paiva, Gabriel de ; Estorari, Luis Fernando Baldo ; Mancini, Maisa Helena ; STORION, ANA GABRIELA ; PALLONE, Eliria Maria de Jesus Agnolon ; Giraldi, Tânia Regina ; MAESTRELLI, SYLMA CARVALHO. <b>AVALIAÇÃO DE NANOPARTÍCULAS DE TiO2 OBTIDAS POR MOAGEM DE ALTA ENERGIA COM E SEM LIXIVIAÇÃO. Estudos Transdisciplinares nas Engenharias 3. 1aed.Belo Horizonte</b>. Em: João Dallamuta. (Org.). Estudos Transdisciplinares nas Engenharias 3. 1ed.Belo Horizonte. : Atena Editora. 2019.v. 1, p. 149-160. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SILVA, ALINE DA ; Santos, José Maurício Pereira dos ; Penha, Renata Neves ; Vasconcelos, Ângela de Jesus ; SILVA, GILBERT ; RODRIGUES, CARLOS ALBERTO ; MELO, MÍRIAN DE LOURDES NORONHA MOTTA. <b>Correlação entre taxas de resfriamento, microdureza e condutividade elétrica da liga de alumínio AA2024. Engenharia no Século XXI ¿ Volume 9. 1ed</b>. Em: . : Editora Poisson. 2019.v. 1, p. 57-63. </td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MENDONÇA, C. S. P. ; GATAMORTA, F. ; JUNQUEIRA, M. M. ; SILVEIRA, L. R. ; GOMES, J. H. F. ; MELO, M. L. N. M. ; SILVA, G.. <b>Development Analysis of a Stainless Steel Produced by High Energy Milling Using Chips and the Addition of Vanadium Carbide. Conference Proceedings of the Society for Experimental Mechanics Series. 1ed</b>. Em: . : Springer International Publishing. 2018.p. 79-88. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>OLIVEIRA, L. F. ; Kuffner BHB ; DANIELA, SACHS ; GILBERT, SILVA ; Rodrigues G. <b>ESTUDO DA INFLUÊNCIA DA ADIÇÃO DE CARBETO DE VANÁDIO NA MOAGEM E NAS PROPRIEDADES MECÂNICAS DO AÇO AISI 52100, PRODUZIDO POR METALURGIA DO PÓ</b>. Em: Marcia Regina Werner Schneider Abdala. (Org.). Ciência e engenharia de materiais 2. 1ed.Ponta Grossa - PR. : Atena Editora. 2018.v. 2, p. 01-11. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Rocha, Leandro S.R. ; Simões, Alexandre Z. ; Cortés, Johan A. ; Ramirez, Miguel A. ; MOURA, FRANCISCO ; Foschini, Cesar R. ; Tararam, Ronald ; CILENSE, Mario ; LONGO, Elson ; Paiva-Santos, Carlos O.. <b>Nonvolatile memories. Magnetic, Ferroelectric, and Multiferroic Metal Oxides. 1ed</b>. Em: . : Elsevier. 2018.p. 275-282. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>VIVAS, M. G.; De BONI, L. ; MENDONCA, C. R.. <b>Two-Photon Spectroscopy of Organic Materials</b>. Em: V.P. Gupta. (Org.). Molecular and Laser Spectroscopy. 1ed. : Elsevier. 2018.v. 1, p. 165-188. </td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DE VICENTE, JUAN ; Bombard, Antonio J. F.. <b>CHAPTER 6. Thin-film Rheology and Tribology of Magnetorheological Fluids</b>. Em: Norman Wereley. (Org.). Smart Materials Series. 6ed.Cambridge. : Royal Society of Chemistry. 2014.p. 142-155. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Freschi, G.P.G ; Valdiviesso, G.A. ; MENDES, P. N. ; MAESTRELLI, S. C.. <b>O docente e a implantação do BI</b>. Em: Maria Emilia Almeida Cruz; Claudio Antonio de Andrade Lima; Amanda Rezende Costa Xavier. (Org.). Bacharelado Interdisciplinar - A experiência da Universidade Federal de Alfenas, no Campus avançado de Poços de Caldas. 1ed.Poços de Caldas. : progressiva. 2014.v. 1, p. 191-196. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Roveri, C.D. ; Cruz, M.E.A. ; Gambi, R.F.R ; RODRIGUEZ, R. P. ; MAESTRELLI, S. C.. <b>As unidades curriculares como subsídio à interdisciplinaridade em sala de aula</b>. Em: Maria Emilia Almeida Cruz; Claudio Antonio de Andrade Lima; Amanda Rezende Costa Xavier. (Org.). Bacharelado Interdisciplinar - A experiência da Universidade Federal de Alfenas, no Campus avançado de Poços de Caldas. 1ed.Poços de Caldas. : progressiva. 2014.v. 1, p. 125-143. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Roveri, C.D. ; Pamplin, P.A.Z. ; MAESTRELLI, S. C.. <b>Experiências Interdisciplinares no BCT</b>. Em: Maria Emilia Almeida Cruz; Claudio Antonio de Andrade Lima; Amanda Rezende Costa Xavier. (Org.). Bacharelado Interdisciplinar - A experiência da Universidade Federal de Alfenas, no Campus avançado de Poços de Caldas. 1ed.Poços de Caldas. : progressiva. 2014.v. 1, p. 145-152. </td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MARIANO, N.A.; Silveira, A.. <b>Programa de pós-graduação no campus avançado de Poços de Caldas: os mestrados em Ciência e Engenharia Ambiental e em Ciência e Engenharia de Materiais</b>. Em: Amanda Rezende Costa Xavier; Claudio Antônio de Andade Lima; Maria Emília Almeida da Cruz Torrês. (Org.). Bacharelado Interdisciplinar - A experiência da Universidade Federal de Alfenas, Campus Avançado de Poços de Caldas. 1ed.Poços de Caldas. : progressiva. 2013.v. 1, p. 227-232. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ROVERI, C.D.; Maria Emília Torres ; Raissa Fontelas Rosado Gambi ; Rodriguez, R.P. ; Sylma Carvalho Maestrelli. <b>As Unidades Curriculares como subsídio à Interdisciplinaridade em Sala de Aula</b>. Em: Amanda Rezende Costa Xavier; Cláudio Antônio de Andrade Lima; Maria Emília Almeida da Cruz Tôrres. (Org.). Bacharelado Interdisciplinar: A experiência da Universidade Federal de Alfenas no Campus Avançado de Poços de Caldas. 1ed.Poços de Caldas. : Editora Progressiva. 2013.v. 1, p. 125-144. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ROVERI, C.D.; Navarro, F.C. ; Freschi, G.P.G. ; Damasceno, L.H.S.. <b>A proposta dos Laboratórios Multidisciplinares como espaços interdisciplinares de formação</b>. Em: Amanda Rezende Costa Xavier; Cláudio Antônio de Andrade Lima; Maria Emília Almeida da Cruz Tôrres. (Org.). Bacharelado Interdisciplinar: A experiência da Universidade Federal de Alfenas no Campus Avançado de Poços de Caldas. 1ed.Poços de Caldas. : Editora Progressiva. 2013.v. 1, p. 153-162. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ROVERI, C.D.; Pampiln, P.A.Z. ; Sylma Carvalho Maestrelli. <b>Experiências Interdisciplinares no BCT</b>. Em: Amanda Rezende Costa Xavier; Cláudio Antônio de Andrade Lima; Maria Emília Almeida da Cruz Tôrres. (Org.). Bacharelado Interdisciplinar: A experiência da Universidade Federal de Alfenas no Campus Avançado de Poços de Caldas. 1ed.Poços de Caldas. : Editora Progressiva. 2013.v. 1, p. 145-152. </td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ribeiro, Sidney J.L. ; Eckert, Hellmut ; Santagneli, Silvia H. ; NALIN, Marcelo ; Poirier, Gael. <b>Glasses on the Nanoscale. Springer Handbook of Nanomaterials. 1ed</b>. Em: . : Springer. 2012.p. 1-1500. </td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CORREA, E. <b>O.; CORREA, E. O. ; Chapter 6 - Weldability of Iron Based Powder Metal Alloys Using Pulsed GTAW Process</b>. Em: Arc Welding. (Org.). Wladislav Sudnik. 01ed.New York. : INTECH. 2011.v. 1, p. 109-126. </td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BEZERRA, Eduardo Marcelo ; BRITO JUNIOR, Carlos A R ; ANCELOTTI JUNIOR, A. C. ; PARDINI, Luiz Cláudio. <b>Artificial Neural Networks for Predicting the Mechanical Behavior of Cement-Based Composites after 100 Cycles of Aging</b>. Em: S. M. Sapuan ; I. M. Mujtaba. (Org.). Composite Materials Technology - Neural Network Applications. 1ed.Boca Raton, FL. : CRC Press. 2010.v. 1, p. 163-187. </td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>POIRIER, G.; NALIN, Marcelo ; MESSADDEQ, Younes ; RIBEIRO, Sidney José Lima. <b>Oxide Glasses for Holographic Data Storage. Glasses for Photonic Technologies</b>. Em: . 2007.p. 86-90. </td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CORREA, E. O. <b>Capitulo 10 - Metalurgia, Materiais e Propriedades Mecânicas em Instalações Energéticas</b>. Em: Geração Termelétrica: Planejamento, Projeto e Operação. (Org.). Agencia Nacional de Energia Elétrica - ANEEL. 1ªed.Rio de Janeiro/ RJ. : INTERCIENCIA. 2004.v. 1, p. 573-631. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GIMENES, R.; ZAGHETE, M. A. ; BERTOLINI, M. J. ; VARELA, J. A. ; COELHO, L. O. ; FEREIRA JUNIOR, N.. <b>Composites PVDF-TrFE/BT used as bio-active membranes for enhancing bone regeneration</b>. Em: Yoseph Bar-Cohen. (Org.). Proceedings of SPIE: Smart Structures and Materials 2004: Electroactive Polymer Actuators and Devices (EAPAD). Bellinghan, WA. : SPIE. 2004.v. 5385, p. 539-547. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>RAMOS, A. S.; SILVÉRIO, Douglas Mariano ; SILVA, Gilbert ; RAMOS, Erika Coaglia Trindade ; CARDOSO, Katia Regina ; NUNES, Carlos Angelo. <b>Syntheses of TiB and TiB2 by high-energy ball milling</b>. Em: C. S. Kiminami; C. Bolfarini; W. J. Botta F.. (Org.). Metastable, Mechanically Alloyed and Nanocrystalline Materials 2003. Uetikon-Zuerich/Switzerland. : Trans Tech Publications Ltd. 2004.v. 20, p. 139-144. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SILVA, Gilbert ; RAMOS, Erika Coaglia Trindade ; SILVÉRIO, Douglas Mariano ; RAMOS, A. S. ; CARDOSO, Kátia Regina ; NUNES, Carlos Angelo. <b>Phase transformations during the preparation of Ti6Si2B by high-energy ball milling</b>. Em: C. S. Kiminami; C. Bolfarini; W. J. Botta F.. (Org.). Metastable, Mechanically Alloyed and Nanocrystalline Materials. Uetikon-Zuerich/Switzerland. : Trans Tech Publications Ltd. 2004.v. 20, p. 145-150. </td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>RAMOS, Erika Coaglia Trindade ; SILVA, Gilbert ; SILVÉRIO, Douglas Mariano ; RAMOS, A. S. ; CARDOSO, Katia Regina ; NUNES, Carlos Angelo. <b>Syntheses of Ta3Si, Ta2Si, Ta5Si3, and TaSi2 by mechanical alloying</b>. Em: C. S. Kiminami; C. Bolfarini; W. J. Botta F.. (Org.). Metastable, Mechanically Alloyed and Nanocrystalline Materials 2003. Uetikon-Zuerich / Switzerland. : Trans Tech Publications Ltd. 2003.v. 20, p. 201-206. </td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FERREIRA, S. H. ; SACHS, D ; CUNHA, F. Q. ; LORENZETTI, B. B.. <b>Persistent Hyperalgesia and cytokines</b>. Em: Saadé N.E.; Apkarin A V; Jabbur S J. (Org.). Pain and Neuroimmune Interactions. New York. : Kluwer academia/Plenum Publishers. 2000.p. 3-8. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 14/02/2025 18:29:01<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

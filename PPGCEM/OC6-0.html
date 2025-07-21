@@ -1,0 +1,621 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Orientações de outra natureza'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2003,
+1],
+[2004,
+5],
+[2005,
+1],
+[2006,
+1],
+[2007,
+1],
+[2008,
+8],
+[2009,
+4],
+[2010,
+10],
+[2011,
+5],
+[2012,
+10],
+[2013,
+15],
+[2014,
+12],
+[2015,
+26],
+[2016,
+32],
+[2017,
+17],
+[2018,
+30],
+[2019,
+18],
+[2020,
+4],
+[2021,
+5],
+[2022,
+8],
+[2023,
+3]]}]});
+        });
+        </script>
+        
+                <h3>Orientações de outra natureza</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 216<br>
+                    
+                    
+                    <div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Laura de Oliveira Figueredo. <b>Monitoria em Funções e Reações Químicas</b>. (Bacharelado Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Nicolas Lerione Nunes da Silva Nascimento. <b>Estágio Supervisionado na DANONE SN</b>. (Bacharelado Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Paulo Antonio Gabrioti Filho. <b>Monitoria de Funções e Reações Químicas</b>. (Bacharelado Interdisciplinar de Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Flávia Teófilo. <b>Orientação de Estágio docência: Química Experimental I</b>. (Bacharelado Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bruno Regis Borges da Costa Netto. <b>Monitoria na Disciplina Química Experimental II</b>. (Bacharelado Interdisciplinar de Ciência e Tecnologia) - Universidade Federal de Alfenas, UNIFAL. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Isabela Ferreira Amaral. <b>Monitoria-Laboratório Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>LARISSA AMARAL. <b>Orientadora de Estágio na Empresa Matsuda Minas Comércio e Indústria LTDA</b>. (Bacharelado Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Lavínia Monteiro. <b>Monitoria-Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Mayra Oliveira de Almeida. <b>Monitoria de Funções e Reações Químicas (ICT1226)</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Raphaela Santos Ferreira. <b>Orientação de Estágio Desenvolvido na Alcoa Alumínio S/A</b>. (Bacharelado Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Spyridion Haritos Borges. <b>LABMAT-Estágio supervisor</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARLA SÉRGIO BARBOZA. <b>DEMAE ? Departamento Municipal de Água e Esgoto - Poços de Caldas-Estágio supervisor</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ivens Chaves Anésio. <b>Estágio Curricular Engenharia de Minas - UNIFAL-MG</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Lavínia Monteiro. <b>Monitoria-Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Mayara Pontes Barbosa. <b>Monitoria-Disciplina Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Salomão Vieira Jacinto. <b>Estágio Curricular Engenharia de Minas - Empresa AMG Brasil SA</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Carla Sergio Barboza. <b>Monitoria-Disciplina Ciência e Tecnologia dos Materiais</b>. Orientação de outra natureza - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Jéferson Scott de Oliveira. <b>Monitoria-Disciplina Ciência e Tecnologia dos Materiais</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Renan Coutinho Guimarães. <b>Tutoria</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Spyridion Haritos Borges. <b>Monitoria-Disciplina Ciência e Tecnologia dos Materiais</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BEATRIZ GONÇALEZ ZAMAI JEFERSON S. OLIVEIRA LARISSA AM. <b>PM2: COLETA SELETIVA NA CIDADE DE POÇOS DE CALDAS: Avaliação do sistema de coleta seletiva.</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Brenda Caroline R Fraga. <b>Estágio Curricular no Prédio G</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bruno Alves Andrade. <b>Estágio Curricular: Laboratório de Ciências das Engenharias UNIFAL-MG</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAMILA ELIZABETH DE OLIVEIRA. <b>Estágio Curricular: Varginha Mineração e Loteamentos</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>DAIANE FAVERO ALVES. ESTÁGIO LAB. <b>MINERAÇÃO</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Daniele da Silva Campanholi. <b>Monitoria-Disciplina Laboratório de Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, UNIFAL-MG. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Emily Freire Vicente. <b>Tutoria</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Francielle Crispim Araújo. <b>Programa em Rede Grupo Fermag_IES?s</b>. (Engenharia de Materiais) - Universidade Federal de Itajubá, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4966915248252263">Fabrício Vieira de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Gabriela Claudio Tinti. <b>Monitoria-Disciplina Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, UNIFAL-MG. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>IANKA CARVALHO SIMÕES. <b>Estágio Curricular: GEOPRO BRASIL</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ISABEL CRISTINA ARAÚJO COSTA. <b>Estágio Curricular: Laboratório Analítico Teixeira & Filhos</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>LEANDRO POSTILHONE ROSA MAGALHÃES. <b>Estágio Curricular: SIDRASUL LTDA.</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MAURICIO PEREIRA DE ASSIS. <b>Estágio Curricular: Britador São Geraldo Eireli ME</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Raira Chefer Apolinario. <b>Monitoria-Disciplina Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>RAÍSSA SILVA MARQUES. <b>Estágio Curricular: SECRETARIA ESTADUAL DE MEIO AMBIENTE E DESENVOLVIMENTO SEMAD/MG</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Spyridion Haritos Borges. <b>Monitoria-Disciplina Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Thayna Rayanne da Silva. <b>Tutoria</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Vitor Guilherme de Oliveira. <b>Estágio Curricular - Mineração Curimbaba</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, Mineração Curimbaba. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Allan Jonnes da Silva. <b>Tutoria</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Luisa Costa Fiorito. <b>Orientação de Estágio Curricular</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>André Luis Guarda. <b>Orientação de Estágio Curricular</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Beatriz Lima Fernandes Mendes. <b>Tutoria</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Brenda Caroline Ribeiro Fraga. <b>Orientação de Estágio Curricular</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bruna de Sousa Cerny. <b>Tutoria</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Caroline Faria Alves. <b>Tutoria</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Daiane dos Reis Boaventura. <b>Tutoria</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Daiane Fávero Alves. <b>Orientação de Estágio Curricular</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Deborah Gouvêa Prado. <b>Orientação de Estágio Supervisionado - Curso de Engenharia Química-Realizado no LBMAT-UNIFAL-MG</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Gabriel Augusto Silva. <b>Orientação de Estágio Curricular</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GIANCARLO CORCETTI. <b>Estágio Curricular: GUTEMBERG CONSULTORIA E SERVIÇOS LTDA</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Hugo Leonardo Fiorellini Borges Otoni. <b>Programa de Extensão</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, Pró Reitoria de Extensão - UNIFAL-MG. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Isabela Dainezi. <b>Orientação de Estágio Supervisionado - Curso de Engenharia Química-Realizado Fattobene & Zanelato</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Isabela Dainezi. <b>Orientação de monitoria-disciplina Ciência e Tecnologia de Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>João Grillo Neto. <b>Orientação de monitoria-disciplina Ciência e Tecnologia de Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Lavínia Monteiro. <b>Tutoria</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Leandro P. Rosa Magalhães. <b>Orientação de Estágio Curricular</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>LILIAN TEIXEIRA DOS SANTOS. <b>Orientação de Estágio Supervisionado - Curso de Engenharia Química-Realizado no LBMAT-UNIFAL-MG</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Matheus Roberto Ramos Pereira. <b>Tutoria</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Mauricio Pereira de Assis. <b>Orientação de Estágio Curricular</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Monique Dias de Oliveira. <b>Orientação de monitoria-disciplina Ciência e Tecnologia de Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Natália Gualberto Ribeiro Loureiro Selvatti. <b>Programa de Extensão: Mineração para todos</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, Pró Reitoria de Extensão - UNIFAL-MG. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Paula Cintra Fernandes. <b>Programa de Extensão: Mineração para todos</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, Pró Reitoria de Extensão - UNIFAL-MG. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Pedro Paulo Lopes. <b>Orientação de Estágio Curricular</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Raíra Chefer Apolinario. <b>Orientação de Monitoria-Disciplina Ciência e Tecnologia dos Materiais</b>. (Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Rodrigo Henrique Lot. <b>Orientação de Estágio Curricular</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Tayná Cunha Souza. <b>Orientação de Estágio Curricular</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>TIAGO MENDES DE OLIVEIRA. <b>Estágio Curricular: Ferro+ Mineração S/A</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Walleson Pereira de Souza. <b>Bolsista-BIC-Junior</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALEX RAMOS LOBATO. <b>Estágio Curricular: USIMINAS</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Flavia Marchiori Cavalcanti. <b>Monitoria de Quimica Experimental I</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Brenda dos Santos Souza. <b>PROPRIEDADES FÍSICAS E QUÍMICAS DOS MINERAIS: APLICAÇÕES NO NOSSO DIA-A-DIA</b>. Orientação de outra natureza - Escola Estadual Parque das Nações, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Carly Mirela Baggio. <b>Monitoria de Quimica Experimental I</b>. (Bacharelado Interdisciplinar em Ciência e Tecnolog) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>DANILO MAZER PIGNATA. <b>ESTÁGIO INTERNO UNIFAL-MG CAMPUS POÇOS DE CALDAS</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>GUILHERME HENRIQUE CORRÊA. <b>Estágio Curricular: Laboratório de Mineração do ICT da Universidade Federal de Alfenas - UNIFAL ? MG</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Guilherme Vilela Ferreira. <b>Orientador de Estágio Obrigatório -Curso de Engenharia Química-Realizado : DMAE Poços de Caldas</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Isabella Cristina Pereira. <b>PATRIMÔNIO TERMAL REGIONAL: ESTUDOS DE ARGILAS DA REGIÃO DE POÇOS DE CALDAS, MG, VISANDO APLICAÇÕES GEOTERAPÊUTICAS</b>. Orientação de outra natureza - Escola Estadual Parque das Nações, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>João Antonio Ferreira Vilas Boas. <b>Orientação de monitoria-disciplina Ciência e Tecnologia de Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>João Antonio Vilas Boas. <b>Monitoria-Ciênica e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e tecnologia) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Larissa Ferrini Ferrari Alves. <b>Estágio Curricular- BALTEAU PRODUTOS ELÉTRICOS LTDA</b>. (Engenharia de Materiais) - Universidade Federal de Itajubá, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Luciano dos Reis Daines. <b>PATRIMÔNIO TERMAL REGIONAL: ESTUDOS DE ÁGUAS DA REGIÃO DE POÇOS DE CALDAS, MG, VISANDO APLICAÇÕES GEOTERAPÊUTICAS</b>. Orientação de outra natureza - Escola Estadual Parque das Nações, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Luis Fernado Baldo Estorari. <b>Monitoria de Quimica Experimental I</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Marco Antônio Quintiliano. <b>MAQUETES E EXPERIMENTOS PARA ENTENDER A GEOLOGIA DO PLANETA TERRA</b>. Orientação de outra natureza - Escola Estadual Parque das Nações, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Matheus Curti Veloso Carbonari. <b>Mineração para Todos: atividades de divulgação das atividades de Mineração para a comunidade</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, Pró Reitoria de Extensão - UNIFAL-MG. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Raira Chefer Apolinário. Orientação de monitoria-disciplina Lab. <b>de Ciência e Tecnologia de Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Rodolfo Ribeiro de Oliveira. <b>Estágio Curricular: MG Meio Ambiente, Engenharia e Topografia</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Abimael Carvalho. <b>Monitoria- Ciência e Tecnologia de Materiais</b>. (bacharelado em ciência e tecnologia) - UNIFAL-MG, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Alessandra Mendes de Queiroz. <b>Monitoria</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Alex Sandro Milagres Lacerda. <b>Monitoria</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Amanda Maria Carvalho. <b>Crescimento de Cristais a partir de Vinagre</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bruno Felisberto da Silva. <b>Estágio de Docência na UC ICT 019</b>. (Programa de Pós-graduação em Ciência e Engenharia de Materiais) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Daiane Fávero Alves. <b>Divulgação de atividades de Mineração através de Experimentos com Minerais</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, Pró Reitoria de Extensão - UNIFAL-MG. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Diógenes Ferreira de Almeida. <b>Estágio de Docência na UC ICT - 019</b>. (Programa de Pós-graduação em Ciência e Engenharia de Materiais) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Fabio Megda. <b>Monitoria de Química Experimental II-ICT34</b>. (Bacharelado Interdisciplinar em Ciência e Tecnolog) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Felipe de Oliveira Gonçalves. <b>Mineração Vitória Ltda</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Gabriel Barbosa Silveira. <b>Acompanhamento de Sondagens na empresa Queiroga Leite Ltda</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>GABRIEL RUBIO PIRILLO. <b>Atividades no DNPM</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Grasiela Otto. <b>Arcellor Mittal - France</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Gustavo Faria Fernandes. <b>ESTUDO DAS EQUAÇÕES DE EMPACOTAMENTO E DAS PROPRIEDADES DE CONCRETOS COM ADIÇÕES DE SIENITO</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>HENRIQUE LIMA SANTOS FERREIRA. <b>Desenvolvimento de Provas para Jogos Internacionais de Mineração</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, Pró Reitoria de Extensão - UNIFAL-MG. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Julio Cezar Andrade Dias Galdino. <b>Orientação de Estágio Supervisionado - Curso de Engenharia Química-Realizado no LABMAT-UNIFAL-MG</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Larissa Erina Shiraishi. <b>bolsita - BIC-JUNIOR - Preparação de amostras de açoinoxidável para ensaio de corrosão</b>. (Bacharelado em Ciência e tecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Larissa Sabino Tassoto. <b>Bolsista- BIC-JUNIOR - Ensaio de Corrosão para ensino médio</b>. (Bacharelado em Ciência e tecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Luana Pontara Lopes. <b>Monitoria- Laboratório de Ciência e Tecnologia de Materiais</b>. (bacharelado em ciência e tecnologia) - UNIFAL-MG, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Lucas Abrahão da Silva. <b>Crescimento de Cristais</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MATEUS MENDONÇA RAMOS SIMÕES. <b>Estágio Obrigatório</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>PAULA VOLPE PEREIRA. <b>Estágio Curricular: Geoway ? Geologia, Meio Ambiente e Mineração</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Raira Chefer Apolinário. Orientação de monitoria-disciplina Lab. <b>de Ciência e Tecnologia de Materiais</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Raphaella Helena Accessôr Nardini. <b>Estágio Obrigatório</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Raíra Chefer Apolinario. <b>Monitoria- Laboratório de Ciência e Tecnologia de Materiais</b>. (bacharelado em ciência e tecnologia) - UNIFAL-MG, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>RICARDO BONAFÉ COSTA. <b>Estágio Curricular: KARL HEINZ BAUERMEISTER</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Rodolfo Corrêa Serafim. <b>Equipe Mining Games - Divulgação e Treinamento</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, Pró Reitoria de Extensão - UNIFAL-MG. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>RODOLFO CORRÊA SERAFIM. <b>Estágio Obrigatório na Empresa Arcellor Mittal - Mina de Serra Azul</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>RODOLFO CORRÊA SERAFIM. Estágio Curricular: ARCELORMITTAL S.A. <b>| Mina de Serra Azul, Itatiaiuçu-MG</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Ronaldo Augusto Medeiros Fulgêncio. <b>Monitoria</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Shesnon Portugal Luz. <b>Monitoria- Ciência e Tecnologia de Materiais</b>. (bacharelado em ciência e tecnologia) - UNIFAL-MG, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Tayná Cunha Souza. <b>Monitoria</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>Tiago Mendes. <b>Estágio Obrigatório</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alessandra Mendes de Queiroz. <b>MOnitoria de CTM</b>. Orientação de outra natureza - UNIFAL - MG, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Brenda Batista de Oliveira. <b>Monitoria em Química Experimental I</b>. (Bacharelado Interdisciplinar em Ciência e Tecnolog) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Camila Polenttini de Oliveira. <b>Monitoria de Química Experimental II-ICT34</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Carly Mirela Baggio. <b>Monitoria de CTM</b>. Orientação de outra natureza - UNIFAL - MG, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Caroline Moraes da Cruz. <b>Relatório de EStágio realizado na TOGNI S/A MATERIAIS REFRATÁRIOS</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Debora Maria Lara Carielo. <b>Monitoria de Estrutura atômica e Molecular</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>EVANDRO HAKIME CUNHA. <b>Departamento de Engenharia ? Prefeitura Municipal de Ibiraci</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Everton Luiz Bovo. <b>MOnitoria de Ciência e Engenharia de materiais no 1 e 2 semestre de 2015</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, UNIFAL - MG. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Felipe de Paula Faria. <b>MOnitoria de Ciência e Engenharia de materiais no 1 e 2 semestre de 2015</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, UNIFAL - MG. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Flávio H.S. Moreira. <b>Estágio de Docência PPGCEA</b>. Orientação de outra natureza - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Janine. <b>Monitoria de Estrutura atômica e Molecular</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Jennifer Gabriele Camargo Ribeiro. <b>Monitoria em Química Experimental I - 2º semestre de 2015</b>. (Bacharelado Interdisciplinar em Ciência e Tecnolog) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>José Tadeu Gouvêa Júnior. <b>Estágio Obrigatório</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Larissa Erina Shiraishi. <b>bolsista- BIC-JUnior- Interação escola pública ensino médio com universidade</b>. (bacharelado em ciência e tecnologia) - UNIFAL-MG, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>LUIZ AUGUSTO BONILHA. <b>Experimentos de corrosão motivando alunos do ensino médio a Engenharia Química-projeto extensão</b>. (Interdisciplinar em Ciência e Tecnologia) - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Luiz Felipe Felix Gonçalves. <b>Organização de Coleções de Minerais e Rochas para Exposições</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Mariana Tavares de Oliveira. <b>MOnitoria de CTM</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Michelli Aparecida da Silva Brito. <b>MOnitoria de Ciência e Engenharia de materiais no 1 semestre de 2015</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, UNIFAL - MG. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>OLAVO DO LAGO OLIVEIRA. <b>Determinação da quantidade de ferrita delta de aços martensíticos de baixo carbono utilizando o programa de análise de imagens Quantikov</b>. Orientação de outra natureza - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Pedro Henrique de Souza. <b>Interação escola pública ensino médio com universidade</b>. (bacharelado em ciência e tecnologia) - UNIFAL-MG, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Pedro Henrique de Souza. <b>Bolsista -BIC-JUNIOR - Tratamento Térmico em Aços Inoxidáveis</b>. (Bacharelado em Ciência e tecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Pedro Luis Negrão de Assis. <b>Monitoria em Química Experimental I</b>. (Bacharelado Interdisciplinar em Ciência e Tecnolog) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Rafael Azevedo da Cunha. <b>Estágio de Docência - UC ICT 019</b>. (Programa de Pós-graduação em Ciência e Engenharia de Materiais) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>RICARDO BONAFÉ COSTA. <b>Estágio Obrigatório Empresa Karl Heinz</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Thayná Rayanne da Silva. <b>Organização de Experimentos para mostras em escolas de ensino médio</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Wilson Avila Silva Neto. <b>MOnitoria de Ciência e Engenharia de materiais no 1 e 2 semestre de 2015</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, UNIFAL - MG. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alex Marquiti Alves. <b>Monitoria de Tópicos em Física Quântica</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Carolina de Oliveira. <b>Monitoria de Estrutura atômica e Molecular</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bruna Pereira da Silva. <b>Estágio na empresa M&G - Fibras Brasil S/A: Avaliação das propriedades físicas de fibras anti chamas</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Eduardo Nicollas Miranda Mendes. <b>Monitoria em Química Experimental I ICT33 1º semestre</b>. Orientação de outra natureza - PROBIC/UNIFAL, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Hanna Stefanni Nunes Benites. <b>Estágio na empresa M&G - Fibras Brasil S/A: Avaliação das propriedades mecânicas de fibras anti chamas</b>. (Engenharia Química) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>José Tadeu Gouvêa Júnior. <b>Estágio Obrigatório - Geoway</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Larissa Carvalho. <b>Ações na Empresa Curimbaba Ltda</b>. (Engenharia Ambiental e Urbana) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Luan Soares. <b>Monitoria de Tópicos em Física Quântica</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Maquely Vicente. <b>Monitoria de Estrutura atômica e Molecular</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1312049227898761">Marcelo Gonçalves Vivas</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>PAULA OLIVEIRA FIGUEIREDO. <b>MML - Metais e Mineração Ltda</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Ricardo Bonafé Costa. <b>Monitoria na UC Caracterização Tecnológica de Minérios</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Vicente André Ferreira. <b>Mineração para todos: preparação de amostras para acervo didático e exposições junto à comunidade</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, Cnpq. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Angélica Pereira de Rezende Vilas Boas. <b>DIVULGAÇÃO DAS ATIVIDADES DA ENGENHAR IA DE MINAS NA ESCOLA ESTADUAL DAVID CAMPISTA</b>. Orientação de outra natureza - Escola Estadual David Campista, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Antonio Augusto de Sousa Costa. <b>Mineração para Todos: Iniciação Científica Júnior</b>. (Ensino Médio) - Escola Estadual David Campista, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Benaia E. M. Silva. <b>Experimentos de Corrosão, Motivando Alunos do Ensino Médio a Engenharia Química</b>. Orientação de outra natureza - UNIFAL-MG, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Caio Henrique Teixeira de Carvalho. <b>Monitoria de Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Camila Polettini de Oliveira. <b>Monitoria em Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Daniel Leite Almeida. <b>Monitoria na Unidade Curricular Pesquisa Mineral</b>. (Engenharia de Minas) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Diogo Nunes Domingos. <b>Células solares fotovoltaics</b>. (Engenharia de Energia) - Universidade Federal de Itajubá, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1123598835707364">Rero Marques Rubinger</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Felipe Henrique de Paula Silva. <b>Mineração para Todos: Iniciação Científica Júnior</b>. (Ensino Médio) - Escola Estadual David Campista, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Júlia T. Carvalho. <b>Experimentos de Corrosão, Motivando Alunos do Ensino Médio a Engenharia Química</b>. Orientação de outra natureza - UNIFAL-MG, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Layde Teixeira de Carvalho. <b>Monitoria de Ci~encia e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Maria Elisa Diniz Bucc. <b>Monitoria em Química Experimental I</b>. (Bacharelado Interdisciplinar em Ciência e Tecnolog) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Natália G. S. Costa. <b>Experimentos de Corrosão, Motivando Alunos do Ensino Médio a Engenharia Química</b>. Orientação de outra natureza - UNIFAL-MG, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Rafaela Junqueira de Faria. <b>Monitoria de Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Sabrina Sarkis de Andrade. <b>Monitoria de Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Vicente Andre ferreira. <b>MINERAÇÃO PARA TODOS - PREPARAÇÃO DE AMOSTRAS PARA ACERVO DIDÁTICO E EXPOSIÇÕES JUNTO À COMUNIDADE</b>. (Ensino Médio) - Escola Estadual David Campista, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Amanda Dezorzi Junqueira. <b>Monitoria de Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bruna Pereira da Silva. <b>Monitoria de Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Daiane Cristina Borghesi. <b>Monitoria de Ciência e Tecnologia dos materiais</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Isabela Alves Generoso. <b>ESTUDO COMPARATIVO DE MÉTODOS PARA DETERMINAÇÃO DE MATÉRIA ORGÂNICA EM ESTUDOS AMBIENTAIS</b>. Orientação de outra natureza - Universidade Federal de Alfenas, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Luis Paulo Angelini Marquitti. <b>Monitoria de Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Luis Phellipe Francisco. <b>Construção de um acervo de amostras metálicas para ser utilizado em aulas práticas de ciência e engenharia de materiais</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Maria Olívia G. de Moraes. <b>Monitoria de Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Mayara Dias Sena. <b>ESTUDO DE APLICAÇÃO DE MATÉRIAS-PRIMAS NÃO METÁLICAS DO NORDESTE DE SÃO PAULO E SUL/SUDESTE DE MINAS GERAIS</b>. Orientação de outra natureza - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Mário Sérgio da Silva Filho. <b>Desenvolvimento de métodos economicamente viáveis para tratamento de lixo eletrônico</b>. (Técnico em Química) - Colégio Técnico-UFMG, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4966915248252263">Fabrício Vieira de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Nathaly Cristiny Coelho dos Santos. <b>Monitoria na Unidade Curricular Mineralogia</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bruno Oliveira Thomazini. <b>Monitoria Quíca Experimental I</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Carlos Eduardo Dominguês da Mata. <b>Monitoria na Unidade Curricular Mineralogia</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Caroline da Costa Gonçalves. <b>Monitoria na Unidade Curricular Mineralogia</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Diogo Henrique Cota Marinho. <b>Monitoria de Ciência e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, UNIFAL-MG. 2011.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>, <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Fernanda Vilela de Aquino. <b>Monitoria de Ci~encia e Tecnologia dos Materiais</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, UNIFAL-MG. 2011.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>, <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adoney AS-Hue Haley Ganan. <b>Monitoria Voluntária na Disciplina de Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Gabriele Pereira Nunes. <b>Monitoria Voluntária na Disciplina de Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Andréia das Graças de Oliveira. <b>Apoio à disciplina Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Caroline da Costa Gonçalves. <b>Monitoria Voluntária em Mineralogia</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2156303155471766">Carolina Del Roveri</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Eddieh Mendes da Cunha. <b>Monitoria Voluntária na Disciplina de Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Grupo de discentes do BCT. <b>Estudo dos parâmetros que influenciam a adesão microbiana em suportes cerâmicos</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Grupo de discentes do ICT. <b>Pirita: caracterização, processamento e aplicações</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Grupo de Discentes do ICT. <b>ESTUDO DOS PARÂMETROS QUE INFLUENCIAM AS PROPRIEDADES DE MASSAS ASFÁLTICAS</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Lívia Marques Faustino. <b>Monitoria Voluntária na Disciplina de Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Marcelo Costa Flores. <b>Apoio à disciplina Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andressa Aparecida Alves. <b>Apoio à disciplina Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Fernanda Vilela de Aquino. <b>Apóio à Disciplina Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia-BCT) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Grupo de Discentes do ICT. <b>Estudo da viabilidade da reciclagem de poliésteres</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0216431851054031">Sylma Carvalho Maestrelli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Lara Jardim Grossi. <b>Monitoria da disciplina de Química Experimental I</b>. (Bacharelado em Ciência e Tecnologia) - Universidade Federal de Alfenas, . 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alexandre Flauzino Júnior. <b>Monitoria Voluntária na Disciplina de Química Inorgânica I</b>. (Bacharelado em Quimica) - Universidade Federal de Alfenas, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Leonardo Henrique Silva. <b>Monitoria da disciplina de Química Geral</b>. (Física - Licenciatura) - Universidade Federal de Alfenas, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Marcelo Soares de Camargo. <b>Efeito da têmpera nas propriedades mecânicas do aço CA6NM</b>. Automação e Sistema) - Universidade São Francisco, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Mariane Lara Cerminaro Trevisan. <b>Monitoria Voluntária de Química Geral</b>. (Ciências Biológicas - LIcenciatura) - Universidade Federal de Alfenas, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Nilian Carvalho Cabral. <b>Monitoria Voluntária na Disciplina de Química Inorgânica I</b>. (Bacharelado em Quimica) - Universidade Federal de Alfenas, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Raphael Antônio Borges Gomes. <b>Monitoria Voluntária na Disciplina de Química Inorgânica I</b>. (Bacharelado em Quimica) - Universidade Federal de Alfenas, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Suelen Ferreira Sucena. <b>Monitoria Voluntária na Disciplina de Química Inorgânica I</b>. (Bacharelado em Quimica) - Universidade Federal de Alfenas, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Thamires Furtado TEixeira. <b>Monitoria Voluntária na Disciplina de Química Geral</b>. (Biotecnologia) - Universidade Federal de Alfenas, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Marcela Chiaradia Masseli. <b>Caracterização microestrutural de uma liga Fe-Cr-C-Nb para solda de revestimento duro para uso sob condições altamente abrasivas</b>. Major Pereira, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4218586914073507">Edmilson Otoni Corrêa</a>.</font></td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>João Paulo Murolo. <b>Estudo da Sensitização em inox martensítico</b>. (Engenharia Civil) - Universidade São Francisco, . 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Francisco Sérgio Facó Pimentel Filho. <b>Monitoria da disciplina de Conforto Ambiental 2</b>. (Arquitetura e Urbanismo) - UNIFOR, UNIFOR. 2005.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alexandro Nakano Silva. <b>Estudo de sinterização de ligas Ti-Si-B.</b>. Orientação de outra natureza - Universidade do Vale do Paraíba, Fundação de Amparo à Pesquisa do Estado de São Paulo. 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4959152343828058">Alfeu Saraiva Ramos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Carla Silva Pavarina. <b>Monitoria em Quimica Orgânica Experimental</b>. Orientação de outra natureza - Universidade Federal de Uberlândia, . 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1332735257013789">Fabia Castro Cassanjes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Jefferson Fonseca. <b>Estudo da corrosão em ços inoxidáveis</b>. Automação e Sistema) - Universidade São Francisco, . 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Karen Strobel. <b>Técnicas de laboratórios para estudo do comportamento da resistência a corrosão em materiais metálicos</b>. Orientação de outra natureza - Universidade São Francisco, . 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0809795245116090">Neide Aparecida Mariano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Rômulo Cruz. <b>Monitoria da disciplina de Conforto Ambiental 2</b>. (Arquitetura e Urbanismo) - UNIFOR, UNIFOR. 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Eveline Damasceno Rodrigues. <b>Monitoria da disciplina de Conforto Ambiental 2</b>. (Arquitetura e Urbanismo) - UNIFOR, UNIFOR. 2003.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1931804914096511">Maria Virginia Gelfuso</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 14/02/2025 18:29:01<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

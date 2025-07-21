@@ -1,0 +1,569 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Ciência de Materiais (PPGCEM)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Resumos expandidos publicados em anais de congressos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1991,
+1],
+[1992,
+1],
+[1996,
+2],
+[1998,
+4],
+[1999,
+1],
+[2000,
+5],
+[2002,
+8],
+[2003,
+10],
+[2004,
+10],
+[2005,
+3],
+[2006,
+16],
+[2007,
+11],
+[2008,
+18],
+[2009,
+7],
+[2010,
+11],
+[2011,
+13],
+[2012,
+9],
+[2013,
+13],
+[2014,
+10],
+[2015,
+6],
+[2016,
+4],
+[2017,
+7],
+[2019,
+2],
+[2020,
+1],
+[2021,
+2],
+[2022,
+2],
+[2023,
+7]]}]});
+        });
+        </script>
+        
+                <h3>Resumos expandidos publicados em anais de congressos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 184<br>
+                    
+                    
+                    <div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Laís B. Borba ; Matheus S. Pimentel ; Mirian de Lourdes N. Motta ; Marilia Sonego ; LEYVA, M. E.. <b>POLYURETHANE WASTE AS A REDUCING AGENT OF SILVER NANOPARTICLES</b>. Em: 17° Congresso Brasileiro de Polímeros, 2023, Joinville. 17° Congresso Brasileiro de Polímeros, 2023. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Luana A. S. Braga ; Adhimar F. Oliveira ; LEYVA, M.E.. <b>CHITOSAN/ZN2+-CURCUMIN OR CU2+-CURCUMIN ANTIMICROBIAL MEMBRANES FOR PHOTODYNAMIC THERAPY</b>. Em: 17° Congresso Brasileiro de Polímeros, 2023, Joinville. 17° Congresso Brasileiro de Polímeros, 2023. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Luana A. S. Braga ; LEYVA, M. E. ; Adhimar F. Oliveira. <b>Complexos de Curcumina-Cobre e Curcumina-Zinco com potencial uso em terapia fotodinâmica</b>. Em: 35º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2023, Lavras. 35º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2023. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MAESTRELLI, S. C.; Fanis, J.B. ; MINUSSI, E. M. ; Perna, R.F. ; Teixeira, G.A.N. ; DURAN, K. A.. <b>Study of the Feasibility of Production of Titanium Oxide as a Porous Support for Whole Cells Immobilization with Enzymatic Activity</b>. Em: III. International Architectural Sciences & Applications Symposium, 2023, Nápoles. III. International Architectural Sciences & Applications Symposium, 2023. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Matheus S. Pimentel ; Laís B. Borba ; Mirian de Lourdes N. Motta ; Marilia Sonego ; LEYVA, M. E.. <b>UTILIZING POLYURETHANE WASTE IN THE PRODUCTION OF RIGID FOAMS:CHARACTERIZATION AND PROPERTIES</b>. Em: 17° Congresso Brasileiro de Polímeros, 2023, Joinville. 17° Congresso Brasileiro de Polímeros, 2023. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Maysa C. Marques ; Medeiros, Maria F. X. P. ; Adhimar F. Oliveira ; NETOS, E.T. ; LEYVA, M. E.. <b>ELETROSSÍNTESE DE NANOCOMPÓSITO DE ÓXIDO DE GRAFENO E COBRE COMO ADITIVO DISSIPADOR DE CALOR</b>. Em: XXIV SIMPÓSIO BRASILEIRO DE ELETROQUÍMICA E ELETROANALÍTICA, 2023, Porto Alegre. XXIV SIMPÓSIO BRASILEIRO DE ELETROQUÍMICA E ELETROANALÍTICA, 2023. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PORTES, F. S. C. ; Adhimar F. Oliveira ; LEYVA, M. E.. <b>GREEN SYNTHESIS OF TITANIUM DIOXIDE NANOPARTICLES FOR APPLICATION IN PHOTOVOLTAIC DEVICES</b>. Em: 17° Congresso Brasileiro de Polímeros, 2023, Joinville. 17° Congresso Brasileiro de Polímeros, 2023. </td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FERNANDES, T. C. ; GELFUSO, M.V. ; THOMAZINI, D. ; LENTE, M. H. ; EIRAS, J. A.. <b>Determination of thermodynamic parameters for growth of lead-free piezoelectric single crystals from the melt</b>. Em: XX Brazil MRS Meeting, 2022, Foz do Iguaçu. Anais do XX B-MRS Meeting, 2022. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MEGDA, F. ; MAESTRELLI, S. C. ; MAIORANO, A. E. ; Morales, S.A.V. ; Perna, R.F. ; Lopes, M.S.. <b>EVALUATION OF THE PARAMETERS FOR THE IMMOBILIZATION OF A FRUCTOSYLTRANSFERASE FROM Aspergillus oryzae IPT-301 ON DIFFERENT ZINC OXIDE SUPPORTS</b>. Em: XXIII SINAFERM & XIV SHEB & ENZITEC 2022, 2022, Armação de Búzios. PROCEEDINGS of the XXIII SINAFERM & XIV SHEB & ENZITEC 2022, v. 1, p. 1-1, 2022. </td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Cardoso, A.L.F. ; MAESTRELLI, S. C. ; FERNANDEZ, C. P. ; KIMINAMI, R. H. G. A. ; Gunnewiek, R.F.. <b>Microwave sinterability of nanostructured ZnO macroporous ceramic foams</b>. Em: XIX Brazilian MRS Meeting, 2021, Florianópolis. Proceedings of the XIX Brazilian MRS Meeting, v. 1, 2021. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Storion, A.G. ; Ferreira, J.A. ; MAESTRELLI, S. C. ; PALLONE, Eliria Maria de Jesus Agnolon. <b>Flash Sintering of ZnO ceramics: forming methods influences on the microstructural evolution</b>. Em: XIX Brazilian Materials Research Society Meeting (XIX B-MRS), 2021, Florianópolis. Proceedings of XIX Brazilian Materials Research Society Meeting (XIX B-MRS), v. 1, 2021. </td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>RALCOSKI, M. L. ; VIVAS, M.G.. <b>Understanding the photobleaching mechanisms of MEH-PPV</b>. Em: 43ª Reunião Anual da SBQ, 2020, Evento online. Understanding the photobleaching mechanisms of MEH-PPV, 2020. </td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MANOEL, D. S. ; DIPOLD, J. ; MARTINS, R. R. ; FONSECA, R. D. ; VOSS, T. ; WAAG, A. ; VIVAS, M. G. ; MENDONCA, C. R.. <b>Two-photon Absorption of GaN and AlxGa1-xN Thin Films</b>. Em: Frontiers in Optics + Laser Science APS/DLS, 2019, Washington, DC United States. Two-photon Absorption of GaN and AlxGa1-xN Thin Films, 2019. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SEMENSATO, L. M. S. ; MARIANO, NEIDE A. ; Barbosa, J.J ; Cruz, C. M. ; Maestrelli, S.. <b>Plasma nitriding aiming corrosion reduction in anodic stubs of electrolytic cells</b>. Em: XVIII Brazil MRS Meeting, 2019, Balneário Camboriú. Proceedings of the XVIII Brazil MRS Meeting, v. 1, p. 1-2, 2019. </td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Almeida, D.H. ; Lago, A.C.M ; Grillo, R.H.F ; Roveri, C.D. ; Maestrelli, S.. <b>PROPRIEDADES DO CONCRETO FRESCO PRODUZIDO COM RESÍDUOS DE LOUÇA SANITÁRIA COMO AGREGADO</b>. Em: 14 congresso nacional de Meio ambiente, 2017, Poços de Caldas. Anais do 14 congresso nacional de Meio ambiente, v. 1, p. 1-4, 2017. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CRUZ, A. W. ; OLIVEIRA, L. F. ; RODRIGUES, G. ; SILVA, G.. <b>Obtenção de porosidade em um compósito de aço inox 316L/NbC via metalurgia do pó utilizando agente porogênico</b>. Em: XIX Congresso dos Estudantes de Ciência e Engenharia de Materiais do Mercosul, 2017, Belo Horizonte -- MG. Anais do XIX CECEMM, v. 1, p. 1-1, 2017. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>DIPOLD, J. ; KOECKELBERGHS, GUY ; VIVAS, M. G. ; De BONI, L. ; MENDONCA, C. R.. <b>Two-Photon Circular-Linear Dichroism on a Binaphtalene-based Polymer</b>. Em: Fronties in Optics, 2017, Washington, DC. Two-Photon Circular-Linear Dichroism on a Binaphtalene-based Polymer, 2017. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Peçanha, L.O.O. ; MAESTRELLI, S. C. ; Giraldi, T.R.. <b>Imobilização e reaproveitamento de semicondutores a base de ZnO para aplicação em fotocatálise</b>. Em: IX workshop de nanotecnologia aplicada ao agronegócio, 2017, São Carlos. Anais do IX workshop de nanotecnologia aplicada ao agronegócio, v. 1, p. 1-1, 2017. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SILVA, G. ; MELO, M.L.N.M. ; STORINO, N. P. ; ROSA, M. Z. ; GOES, J. E. F. ; RODRIGUES, G.. <b>Obtenção de camadas à base de silicetos com alta resistência à oxidação, em ligas Nb-Si-B, utilizando o processo ?Halide Activated Pack Cementation? (HAPC)</b>. Em: XIX Congresso dos Estudantes de Ciência e Engenharia de Materiais do Mercosul, 2017, Belo Horizonte - MG. Anais do XIX CECEMM, v. 1, p. 1-1, 2017. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>STORINO, N. P. ; ROSA, M. Z. ; GOES, J. E. F. ; MELO, M.L.N.M. ; RODRIGUES, G.. <b>OBTENÇÃO DE CAMADAS À BASE DE SILICETOS COM ALTA RESISTÊNCIA À OXIDAÇÃO, EM LIGAS NB-SI-B UTILIZANDO O PROCESSO 'HALIDE ACTIVATED PACK CEMENTATION' (HAPC)</b>. Em: CECEMM, 2017, Belo Horizonte. anais do XIX CECEMM, 2017. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Storion, A.G. ; Giraldi, T.R. ; PALLONE, Eliria Maria de Jesus Agnolon ; MAESTRELLI, S. C.. <b>Estudo da influência da moagem de alta energia e lixiviação ácida na atividade fotocatalítica do óxido de zinco</b>. Em: IX Workshop de nanotecnologia aplicada ao Agronegócio, 2017, São Carlos. Anais do IX Workshop de nanotecnologia aplicada ao Agronegócio, v. 1, p. 1-1, 2017. </td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Amâncio, D.A. ; TOLEDO, J. V. R. ; CORREA, E.O.. <b>Use of diffraction eletron backscatter technique in microstructural characterization of materials</b>. Em: XV Brazilian Materials Research Society Meeting, 2016, Campinas. Proceedings of XV Brazilian MRS Meeting. São Paulo: SPPMat, v. 01, p. 01-02, 2016. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Amâncio, D.A. ; TOLEDO, J. V. R. ; CORREA, E.O.. <b>Sintering characteristics and properties of carbide WC-AISI 316L (stainless steel) with carbon addition</b>. Em: XV Brazilian Materials Research Society Meeting, 2016, Campinas. Proceedings of XV MRS Meeting. São Paulo: SBPMat, v. 01, p. 01-02, 2016. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FREITAS, G. P. ; LOPES, H. B. ; ALMEIDA, A. L. G. ; GIMENES, R. ; BELOTI, M. M. ; Rosa, Adalberto L.. <b>Effect of locally injected osteoblasts combined with a barrier membrane on the repair of bone defects</b>. Em: 10th World Biomaterials Congress, 2016, Montreal. Abstracts E-book 10th WBC. Montreal: Society for Biomateria, v. 1, p. 2200-2200, 2016. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Hirayama, D. ; ANCELOTTI JUNIOR, A. C. ; BOTELHO, Edson Cocchieri ; SARON, C. ; COSTA, M. L.. <b>Composite of recycled carbon fiber and polypropylene</b>. Em: SBPMAT, 2016, Campinas. XV Brazilian MRS Meeting, 2016. </td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>OLIVEIRA, A. C. ; VIVAS, MARCELO G. <b>Desenvolvimento de um sensor óptico baseado no fenômeno de Ressonância de Plásmon de Superfície</b>. Em: 67 Reunião Anual da SBPC, 2015, São Carlos. Desenvolvimento de um sensor óptico baseado no fenômeno de Ressonância de Plásmon de Superfície, 2015. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SIQUEIRA, A. S. F. ; VIVAS, M. G.. <b>Investigando processos ópticos não lineares através de medidas ópticas lineares</b>. Em: 67 Reunião Anual da SBPC, 2015, São Carlos. Investigando processos ópticos não lineares através de medidas ópticas lineares, 2015. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>VIVAS, M. G.; GERMINO, J. C. ; BARBOSA, C. A. ; De Boni, L. ; ATVARZ, T. D. Z. ; MENDONCA, C. R.. <b>Revealing the Dynamic of Excited State Proton Transfer of a Novel π-conjugated Salicylidene Chromophore</b>. Em: Encontro Latino Americano de Fotoquímica e Fotobiologia, 2015, Maresias. Revealing the Dynamic of Excited State Proton Transfer of a Novel π-conjugated Salicylidene Chromophore, 2015. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>VIVAS, M. G.; GERMINO, J. C. ; BARBOSA, C. A. ; DE BONI, Leonardo ; ATVARZ, T. D. Z. ; MENDONCA, C. R.. <b>Experimental and Theoretical study of effect of the Zn coordination complex on the excited state and two-photon absorption spectra of salicylidene compounds</b>. Em: Encontro Latino Americano de Fotoquímica e Fotobiologia, 2015, Maresias. Experimental and Theoretical study of effect of the Zn coordination complex on the excited state and two-photon absorption spectra of salicylidene compounds, 2015. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>VIVAS, MARCELO G; GERMINO, J. C. ; BARBOSA, C. A. ; DE BONI, Leonardo ; ATVARZ, T. D. Z. ; MENDONÇA, CLEBER R. <b>Revealing the Dynamic of Excited State Proton Transfer of a Novel π-conjugated Salicylidene Chromophore</b>. Em: European Conference on Lasers and Electro-Optics - European Quantum Electronics Conference, 2015, Munich. Revealing the Dynamic of Excited State Proton Transfer of a Novel π-conjugated Salicylidene Chromophore, 2015. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>VIVAS, MARCELO G; KOECKELBERGHS, G. ; MENDONÇA, CLEBER R ; DE BONI, Leonardo. <b>Giant Hyper-Rayleigh Scattering Observed in a Class of Chiral Polymers</b>. Em: European Conference on Lasers and Electro-Optics - European Quantum Electronics Conference, 2015, Munich. Giant Hyper-Rayleigh Scattering Observed in a Class of Chiral Polymers, 2015. </td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Amâncio, D.A. ; CORREA, E. O. ; CORREA, E. O. ; Silva, G. ; Melo, M.L.N.M ; TOLEDO, J. V. R.. <b>Influence of milling time on the particle size of powders tungsten carbide WC using inert gas</b>. Em: SBPMAT, 2014, João Pessoa. Anais do XIII Encontro da SBPMAT, v. 01, p. 01-01, 2014. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Amâncio, D.A. ; CORREA, E. O. ; CORREA, E. O. ; Silva, G. ; TOLEDO, J. V. R.. <b>Influence of the addition of TiC in powder metallurgy sintering of superalloy inconel 718</b>. Em: SBPMat, 2014, João Pessoa. Anais do XIII Encontro da Sociedade Brasileira de Pesquisa em Materiais (SBPMat), v. 01, p. 01-02, 2014. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>COURA, G. S. ; ESPANHOL-SOARES, MELINA ; SILVA, F.S. ; Gimenes, Rossano ; SILVA, M.R.A.. <b>Avaliação de método cromatográfico para determinação de 2-furfuraldeido em óleo mineral isolante</b>. Em: 54. Congresso Brasileiro de Química, 2014, Natal. Resumos 54. Congresso Brasileiro de Química, 2014. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>DINIZ, N. P. ; ESPANHOL-SOARES, MELINA ; Gimenes, Rossano ; SILVA, M.R.A.. <b>Validação de método para análise de bifenilas policloradas em terra Fuller contaminada com óleo de transformador</b>. Em: 54. Congresso Brasileiro de Química, 2014, Natal. Resumos do 54. Congresso Brasileiro de Química, 2014. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>KUFFNER, B. H. B. ; AMANCIO, D. A. ; RODRIGUES, G. ; SILVA, G. ; TOLEDO, J. V.. <b>Obtainment ofthe AISI 52100stel powder with WC addition through high enrgy ball milling</b>. Em: XIII encontro da SBPMat, 2014, João Pessoa. Anais do XIII Encontro da SBPMat, v. 1, p. 1, 2014. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>LIMA, C. L. J. ; CASSANJES, F. C. ; POIRIER, G.. <b>Caracterização de vidros fosfatos no sistema KPO3-Nb2O5</b>. Em: Congresso Científico-Cultura da Unifal-MG, 2014, Alfenas. Congresso Científico-Cultura da Unifal-MG, 2014. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>OLIVEIRA, V. D. ; SILVA, M. R. ; RODRIGUES, G. ; SILVA, G. ; MENDONCA, C. S. P. ; AMANCIO, D. A.. <b>Magnetic properties of manganese ferrite bixbyite</b>. Em: XIII encontro da SBPMat, 2014, João Pessoa. Anais do XIII da SBPMat, v. 1, p. 1, 2014. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Secches, Thais O. ; Medeiros, Maria F. X. P. ; LEYVA, M.E.. <b>Electroactive hydrogels based on poly (2-hydroxyethyl methacrylate) (pHEMA) and polyaniline</b>. Em: XIII Encontro da SBPMat, 2014, João Pessoa. Anais - XIII SBPMat - João Pessoa 2014, 2014. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SILVA, F.S. ; VARELLA, C. R. T. ; RODRIGUES, E. O. ; ESPANHOL-SOARES, MELINA ; Gimenes, Rossano ; SILVA, M.R.A.. <b>Validação de método para análise de bifenilas policloradas em terra Fuller contaminada com óleo de transformador</b>. Em: 54o Congresso Brasileiro de Química, 2014, Natal. Resumos do 54. Congresso Brasileiro de Química, 2014. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>SOUZA, J. C. L. ; VIVAS, M. G. ; MENDONCA, C. R. ; FERRARI, J. L. ; SCHIAVON, MARCO A.. <b>Determination of Size and Size Distribution of Water-Soluble CdTe Quantum Dots Synthesized by One-Pot Approach</b>. Em: International Conference on Quantum Dots, 2014, Pisa. International Conference on Quantum Dots, 2014. </td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Charlene A. Ribeiro ; Mateus Coli ; LEYVA, M.E.. <b>Electrochemical characterization of electroactive hybrid hydrogels</b>. Em: XII Encontro da SBPMat / Brazilian MRS Meeting, 2013, Campos do Jordão. XII Encontro da SBPMat / Brazilian MRS Meeting, 2013. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Charlene A. Ribeiro ; Mateus Coli ; LEYVA, M.E.. <b>CARACTERIZAÇÃO ELETROQUÍMICA DE HIDROGÉIS HÍBRIDOS ELETROATIVOS</b>. Em: VI Encontro da Rede Mineira de Química, 2013, itajubá. VI Encontro da Rede Mineira de Química, 2013. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FIGUEREDO, TARCÍSIO R. ; VIVAS, MARCELO ; Mendonca, Cleber R.. <b>TiO_2 Assisted Rhodamine B Photodegradation via Multiphotonic Excitation</b>. Em: Frontiers in Optics, 2013, p. JW3A.3, 2013. <a href="http://dx.doi.org/10.1364/FIO.2013.JW3A.3" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>LOPES, H. B. ; de SANTANA SANTOS, T. ; FREITAS, G. P. ; DE OLIVEIRA, F. S. ; GIMENES, R. ; ROSA, A. L. ; BELOTI, M. M.. <b>Gene expression analysis of bone tissue grown on P(VDF-TrFE)/BT membrane implanted in rat calvarial defects</b>. Em: 95 Annual Meeting, American Association of Oral and Maxillofacial Surgeons, 2013, Orlando. Journal of Oral and Maxillofacial Surgery. Amsterdan: Elsevier, v. 71, p. e88-e89, 2013. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LOPES, H. B. ; SANTOS, T. S. ; OLIVEIRA, F. S. ; FREITAS, G. P. ; ALMEIDA, A. L. G. ; GIMENES, R. ; ROSA, A. L. ; BELOTI, M. M.. <b>Effect of poly(vinylidene-trifluoroethylene)/barium titanate membrane on in vivo bone formation</b>. Em: 4th International Symposium on Surfaces and Interfaces for Biomaterials, 2013, Roma. European Cells and Materials. Davos: AO Foundation, v. 26, p. 74-74, 2013. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>OLIVEIRA, V. D. ; CORREA, R. C. ; SILVA, M. R. ; PERES, M. L. ; RUBINGER, R. M. ; RODRIGUES, G.. <b>Electrical and Magnetic Behavior of Manganese-Copper Ferrites</b>. Em: XII Encontro da SBPMAT, 2013, Campos do Jordão. Anais do XII Encontro do SBPMAT, v. 1, p. 1-1, 2013. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>OLIVEIRA, V. D. ; SILVA, M. R. ; RODRIGUES, G.. <b>Magnetic Behavior of Fe-Mn Oxides</b>. Em: XII Encontro da SBPMAT, 2013, Campos do Jordão. Anais do XII Encontro do SBPMAT, v. 1, p. 1-1, 2013. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PAULA, A. E. C. ; Charlene A. Ribeiro ; LEYVA, M.E.. <b>Electroinitiated polymerization of 2-hydroxyethylmethacrylate</b>. Em: XII Encontro da SBPMat / Brazilian MRS Meeting, 2013, Campos do Jordão. XII Encontro da SBPMat / Brazilian MRS Meeting, 2013. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>PAULA, A. E. C. ; Charlene A. Ribeiro ; LEYVA, M.E.. <b>SÍNTESE ELETROINICIADA DE POLI(2-HIDRÓXIETILMETACRILATO DE METILA)</b>. Em: VI Encontro da Rede Mineira de Química, 2013, itajubá. VI Encontro da Rede Mineira de Química, 2013. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Pereira, W. L ; Bertoli, I. R. ; Franzé, J. A. ; RAMOS, A. S ; MARIANO, N.A. ; ANGELO, C. ; RAMOS, Erika C. <b>Structural evaluation of Ti-Fe-Si-B alloys produced by high-energy ball milling and sintering</b>. Em: PTECH 2013: Ninth International Latin-American Conference on Powder Tech Latin-American Conference on Powder Technology, 2013, Jordão Campos. PTECH 2013: Ninth International Latin-American Conference on Powder Tech Latin-American Conference on Powder Technology, 2013. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>SILVA, M. R. ; OLIVEIRA, V. D. ; RIBEIRO, V. A. S. ; MENDONCA, C. S. P. ; PERES, M. L. ; RUBINGER, R. M. ; RODRIGUES, G.. <b>Magnetic and Electrical Properties of Copper-aluminate Ferrites</b>. Em: XII Encontro da SBPMAT, 2013, Campos do Jordão. Anais do XII Encontro do SBPMAT, v. 1, p. 1-1, 2013. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>SILVA, R. P. ; YAMANE, F. O. ; ROQUE, R. S. ; MELO, M.L.N.M. ; ANCELOTTI JUNIOR, A. C.. <b>Estudos das propriedades estáticas em tração de um laminado de fibra de carbono/epóxi fabricado por VARTM</b>. Em: 12º Congresso Brasileiro de Polímeros - CBPol, 2013, Florianópolis. Anais do 12º Congresso Brasileiro de Polímeros - CBPol, v. 1, 2013. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Vivas, Marcelo G.; SILVA, DANIEL ; DE BONI, Leonardo ; CANUTO, SYLVIO ; Mendonca, Cleber R.. <b>Two-Photon Circular-Linear Dichroism of Chiral Molecules Based on Phenylacetylene Moieties</b>. Em: Frontiers in Optics, 2013, Orlando. Frontiers in Optics 2013. Washington: OSA, p. FTu3A.6, 2013. <a href="http://dx.doi.org/10.1364/FIO.2013.FTu3A.6" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Gabriele Pereira Nunes ; Ribeiro, F. F. ; Manochio, C. ; Faustino, L.M. ; Roveri, C.D. ; Sylma Carvalho Maestrelli. <b>Caracterização Físico-Mecânica de Argilas Não Plásticas da Região de Poços de Caldas, MG</b>. Em: Congresso Brasileiro de Engenharia e Ciência dos Materiais, 2012, Joinville. Anais do Congresso Brasileiro de Engenharia e Ciência dos Materiais. São Paulo: ABC, v. 1, p. 433-437, 2012. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Aquino, F.V. ; MARIANO, N. A. ; Santos, M.T. ; Galdino, J.C.A.D. ; Marinho, D.H.C.. <b>EFEITO DO TRATAMENTO TÉRMICO NA RESISTÊNCIA À CORROSÃO DA LIGA 13Cr4Ni0,02C</b>. Em: Seminário de Iniciação Científica da UNIFAL-MG, 2012, poços de caldas. Seminário de Iniciação Científica da UNIFAL-MG, p. 1-1, 2012. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>OLIVEIRA, V. M. C. ; LEYVA, M. E.. <b>SÍNTESE E CARACTERIZAÇÃO DE HIDROGÉIS DE POLI(2-HIDRÓXIETILMETACRILATO) CONTENDO SULFATO DE CONDROITINA PARA APLICAÇÕES BIOMÉDICAS</b>. Em: XXVI Encontro Regional da Sociedade Brasileira de Química de Minas Gerais (ERSBQ-MG), 2012, Ouro Preto. Anais do XXVI Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2012. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Paiva, J. ; E.O. Correa ; CHAVES, R. R.. <b>Effect of thermal treatment and processing on microstructure and hardness of Ti-13Nb-13Zr alloy</b>. Em: XI Encontro da SBPMat, 2012, Florianópolis. Anais do XI Encontro da SBPMat, v. 01, p. 01-02, 2012. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Pereira, Camila ; FERREIRA, ELIVELTON ALVES ; CASSANJES, F. C. ; POIRIER, G.. <b>Synthesis, thermal characterization and structural study of glass in the (100-x)TeO2-xPb(PO3)2 binary system</b>. Em: IX Brazilian Symposium on Glass and Related Materials, 2012, Curitiba. Proceedings of IX Brazilian Symposium on Glass and Related Materials,, 2012. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Vivas, Marcelo G.; DE BONI, Leonardo ; MENDONCA, CLEBER ; ISHOW, ELENA. <b>Effect of Electron Withdrawing Substituents on the two-photon absorption Properties of a Novel Class of Push-Pull Triarylamine Compounds</b>. Em: Latin America Optics and Photonics Conference, 2012, p. LT2A.21, 2012. <a href="http://dx.doi.org/10.1364/LAOP.2012.LT2A.21" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Vivas, Marcelo G.; KOECKELBERGHS, GUY ; MENDONCA, CLEBER. <b>Influence of Conformational Change Induced by Solvent on the Two-photon Absorption spectrum of Poly(3,6 phenanthrene)s</b>. Em: Latin America Optics and Photonics Conference, 2012, p. LT2A.22, 2012. <a href="http://dx.doi.org/10.1364/LAOP.2012.LT2A.22" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ZANARDO, A. C. ; Campos, M.G.N. ; ALKMIN, L. B. ; Nunes, C. A. ; MARIANO, N. A. ; Ramos, A.S.. <b>Structural Evaluation Of Mechanically Alloyed And Hot-Pressed Ti-2Nb-22SI-11B And Ti-6Nb-22Si-11B Alloys</b>. Em: CONFERENCE ON METASTABLE AND NANOSTRUCTURED MATERIALS, NANOMAT, 2012, são carlos. CONFERENCE ON METASTABLE AND NANOSTRUCTURED MATERIALS, NANOMAT, v. 1, p. 1, 2012. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ZANARDO, Antenor ; PERINOTTO, José Alexandre de Jesus ; ETCHEBERE, M. L. C. ; Roveri, C.D.. <b>Petrografia dos diques clásticosda Formação Corumbataí (P), nordeste da Bacia Sedimentar do Paraná (Brasil)</b>. Em: 46 Congresso Brasileiro de Geologia, 2012, Santos. Anais do 46 Congresso Brasileiro de Geologia. São Paulo: SBG, v. 1, p. 45-45, 2012. </td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, A. C. ; AZEVEDO, R. S. ; Baldissera, M.R. ; COELHO, G.C. ; PAULA, A. S. ; DIAS, J. C. ; MELO, M.L.N.M. ; RODRIGUES, G.. <b>A influência de diferentes microestruturas bifásicas na tenacidade à fratura e dureza de um aço ARBL ao Mn e Si</b>. Em: XXXII CBRAVIC LATINDISPLAY, 2011, Itajubá - MG. Anais do XXXII CBRAVIC LATINDISPLAY, v. 1, p. 120, 2011. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANCELOTTI JUNIOR, A. C.; PARDINI, Luiz Cláudio ; GONCALVES, V. O. ; GARCIA, K.. <b>Avaliação do Limite de Deformação em Fadiga de Compósitos de Fibra de Carbono/epóxi sob Tração</b>. Em: 11º Congresso Brasileiro de Polímeros, 2011, Campos do Jordão. Anais do 11º Congresso Brasileiro de Polímeros, 2011. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Charlene A. Ribeiro ; Maria Elena Leyva ; A. A. A. de Queiroz. <b>Eletrosíntese Orgânica de Hidrogéis Químicos Termosensíveis</b>. Em: XXXII Congresso Brasileiro sobre Aplicação do Vácuo na Industria e Ciência (XXXII CBRAVIC) e LatinDisplay 2011, 2011, Itajubá. XXXII Congresso Brasileiro sobre Aplicação do Vácuo na Industria e Ciência (XXXII CBRAVIC) e LatinDisplay 2011, 2011. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Consolini, Gabriela ; MENDES, P. N. ; MAESTRELLI, S. C.. <b>Estudo da correlação de variáveis que interfiram na atuação do profissional de Engenharia Ambiental</b>. Em: X Encontro Mineiro de Estatística, 2011, São João Del Rei. Anais do X Encontro Mineiro de Estatística, 2011. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>DIAS, A. N. O. ; BERNARDES, A.P.G. ; Baldissera, M.R. ; MELO, M.L.N.M. ; PAULA, A. S. ; COELHO, G.C. ; RODRIGUES, G.. <b>Avaliação de propriedades mecânicas de um aço tipo LNE 500 com diferentes microestruturas</b>. Em: XXXII CBRAVIC LATINDISPLAY, 2011, Itajubá - MG. Anais do XXXII CBRAVIC LATINDISPLAY, v. 1, p. 184, 2011. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERRARO, L. G. ; GELFUSO, M. V. ; THOMAZINI, D.. <b>Polyurethane biopolymer made of frying oil</b>. Em: X Brazilian MRS Meeting, 2011, Gramado-RS. Anais do X Brazilian MRS Meeting, v. único, 2011. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Mateus Coli ; Maria Elena Leyva ; GARCIA, F. G. ; A. A. A. de Queiroz. <b>Sintese E Caracterização de Metalopolimeros Biocompativeis</b>. Em: XXXII Congresso Brasileiro sobre Aplicação do Vácuo na Industria e Ciência (XXXII CBRAVIC) e LatinDisplay 2011, 2011, Itajubá. XXXII Congresso Brasileiro sobre Aplicação do Vácuo na Industria e Ciência (XXXII CBRAVIC) e LatinDisplay 2011, 2011. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Mateus Coli ; Maria Elena Leyva ; Luiz C. Santa Maria ; GARCIA, F. G. ; A. A. A. de Queiroz. <b>Nanocompósitos metalopolímeros biocompatíveis</b>. Em: 11 Congresso Brasileiro de Polímeros, 2011, Campos do Jordão. Trabalhos do 11 Congresso Brasileiro de Polímeros, 2011. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Paiva, J. ; CHAVES, R. R. ; CORREA, E. O. ; CORREA, E. O.. <b>Analise da correlação entre microestrutura e dureza da liga Ti-13Nb-13Zr nas condições bruta de fusão, homogeneizada e trabalhada a frio</b>. Em: Congresso Brasileiro de aplicação do vácuo na industria e na ciência - CBRAVIC, 2011, Itajuba. Anais do XXXII congresso Brasileiro de Aplicação do Vácuo na Industria e na Ciência, v. 1, p. 01-02, 2011. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Paula C. O. Braga ; Maria Elena Leyva ; SOARES, D. A. W.. <b>Síntese e Caracterização de nanohíbridos Metalopolímero Polianilina-Prata para Aplicação com Biossensores</b>. Em: 11 Congresso Brasileiro de Polímeros, 2011, Campos do Jordão. Trabalhos do 11 Congresso Brasileiro de Polímeros, 2011. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>SILVA, E. M. ; COSTA, S. C. ; E.O. Correa ; SILVA, M. R.. <b>Propriedades Magnéticas de um aço inoxidável ferrítico AISI-409</b>. Em: Congresso Brasileiro de Aplicações de vácuo na indústria e na ciência, 2011, Itajuba. Anais do Congresso Brasileiro de Aplicações de vácuo na indústria e na ciência, v. 01, p. 1-1, 2011. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>SILVA, G. ; RODRIGUES, G. ; JÚNIOR, F.V. ; SILVA, M.B. ; SOUZA, E.. <b>Otimização dos parâmetros do processo de moagem do hidreto de nióbio pelo método de taguchi</b>. Em: XXXII CBRAVIC LATINDISPLAY, 2011, Itajubá - MG. Anais do XXXII CBRAVIC LATINDISPLAY, v. 1, p. 184, 2011. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Teixeira, L.N. ; Crippa, G.E. ; GIMENES, R. ; Zaghete, M.A. ; de Oliveira, P.T. ; ROSA, A. L. ; Beloti, M.M.. <b>Response of human alveolar bone-derived cells to a novel poly(vinylidene fluoride-trifluoroethylene)/barium titanate membrane</b>. Em: 3rd Joint Meeting of the European Calcified Tissue Society & the International Bone and Mineral Society, 2011, Atenas. Bone (New York, N.Y.), v. 48, p. S114-S114-S115, 2011. <a href="http://dx.doi.org/10.1016/j.bone.2011.03.201" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FERREIRA, PAULO HENRIQUE D. ; VIVAS, MARCELO GONÇALVES. ; SIQUEIRA, JONATHAS DE PAULA. ; DE BONI, Leonardo ; MISOGUTI, LINO ; MENDONÇA, CLEBER RENATO.. <b>Study of the Two-photon-induced Reduction of Gold Nanoparticles</b>. Em: Frontiers in Optics, 2010, Rochester. Frontiers in Optics 2010/Laser Science XXVI. Washington: OSA, p. JTuA46, 2010. <a href="http://dx.doi.org/10.1364/FIO.2010.JTuA46" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GAIO, L. H. P. ; TAVARES, R. A. A. ; FARIA, M. I. S. T. ; RODRIGUES, G. ; PAULA, A. S.. <b>Efeito da Microadição de Nb nas Temperaturas de Transformação de Fase de Aços de Baixo Carbono contendo Mn após a Laminação a Quente em Escala Piloto</b>. Em: IV Colóquio Técnico Científico do UniFOA, 2010, Volta Redonda - RJ. Anais do IV Colóquio Técnico Científico do UniFOA. Volta Redonda - RJ: Editora FOA, v. 1, p. 102-102, 2010. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GELFUSO, M. V.; THOMAZINI, D. ; QUARESMA, T. L.. <b>Synthesis and characterization of Nd3+ doped Pb1.02(Zr0.53Ti0.47)O3 obtained by hydrothermal process</b>. Em: IX Encontro Anual da Sociedade Brasileira de Pesquisa em Materiais (SBPMat), 2010, Ouro Preto. Anais do no IX Encontro Anual da Sociedade Brasileira de Pesquisa em Materiais (SBPMat), v. único, 2010. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GELFUSO, M. V.; THOMAZINI, D. ; QUARESMA, T. L.. <b>Structural and microstructural characterization of La3+ doped bismuth titanate powders obtained by microwave assisted hydrothermal process</b>. Em: IX Encontro Anual da Sociedade Brasileira de Pesquisa em Materiais (SBPMat), 2010, Ouro Preto. Anais do IX Encontro Anual da Sociedade Brasileira de Pesquisa em Materiais (SBPMat), v. único, 2010. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>M.A. Fernades ; MARIANO, N. A.. <b>Microstructural evaluation and effects of austenite resulting from tempering of 13Cr4Ni martensitic steel weld metals</b>. Em: Sociedade Brasileira de Pesquisa em Materiais - SBPMAT-2010, 2010, Ouro preto. Sociedade Brasileira de Pesquisa em Materiais - SBPMAT-2010, v. 1, p. 1-2, 2010. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MENDONCA, CLEBER ; FERREIRA, PAULO H. ; SIQUEIRA, JONATHAS ; MISOGUTI, LINO ; Vivas, Marcelo G. ; DOS SANTOS, DAVID S. ; DE BONI, Leonardo. <b>Femtosecond Pulse Shaping For Coherent Control Of Gold Nanoparticles Formation</b>. Em: Latin America Optics and Photonics Conference, 2010, Recife. Latin America Optics and Photonics Conference. Washington: OSA, p. TuG2, 2010. <a href="http://dx.doi.org/10.1364/LAOP.2010.TuG2" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MORENO, Maria Margarita Torres ; ZANARDO, Antenor ; ROVERI, C.D.. <b>Seleção de Matérias-Primas Argilosas para Compor Massas Cerâmicas Para Revestimento</b>. Em: 45 Congresso Brasileiro de Geologia, 2010, Belém. Anais do 45 Congresso Brasileiro de Geologia. Belém: SBGEO, v. 1, p. 34-34, 2010. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>TAVARES, R. A. A. ; GAIO, L. H. P. ; FARIA, M. I. S. T. ; RODRIGUES, G. ; PAULA, A. S.. <b>Determinação das temperaturas e seqüências de transformação de fases por dilatometria em aços baixo carbono contendo Mn e Si e microadição de Nb submetidos a diferentes ciclos térmicos</b>. Em: IV Colóquio Técnico Científico do UniFOA, 2010, Volta Redonda. Anais do IV Colóquio Técnico Científico co UniFOA. Volta Redonda - RJ: Editora FOA, v. 1, p. 39-39, 2010. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>TAVARES, R. A. A. ; GAIO, L. H. P. ; VIEIRA, L. C. A. ; RODRIGUES, G. ; PAULA, A. S. ; SOUZA, L. L.. <b>Influence of the Heating/Cooling Rates on the Phases Transformation and Microestruture of the Nb Microalloyed Low-Carbon Steels Containing Mn and Si</b>. Em: The 17 IFSM International Microscopy Congress - IMC 17, 2010, Rio de Janeiro. Anais do 17 IFSM International Microscopy Congress - IMC 17, v. 1, p. 1-1, 2010. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Vivas, Marcelo G.; DE BONI, Leonardo ; Mendonca, Cleber R.. <b>Polarization-Dependent Two-Photon Absorption of ?-Conjugated Molecules</b>. Em: Frontiers in Optics, 2010, p. JWA10, 2010. <a href="http://dx.doi.org/10.1364/FIO.2010.JWA10" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Vivas, Marcelo G.; Mendonca, Cleber R.. <b>Temperature Dependence of the Two-photon Absorption of Carotenoids</b>. Em: Latin America Optics and Photonics Conference, 2010, Recife. Latin America Optics and Photonics Conference. Washington: OSA, p. MB25, 2010. <a href="http://dx.doi.org/10.1364/LAOP.2010.MB25" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GELFUSO, M. V.; THOMAZINI, D.. <b>Water Action and Mechanical Properties of Coconut Fibers Reinforced Polyester Matrix</b>. Em: 15th International Conference on Composite Structures-ICCS 15, 2009, Porto. Proceeding of 15th International Conference on Composite Structures. Porto: Faculdade de Engenharia da Universidade do Porto-FEUP, v. unico, 2009. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GELFUSO, M. V.; THOMAZINI, D. ; CAVALCANTE, M. B.. <b>Properties of Coconut Fibers Reinforced Polypropylene Matrix</b>. Em: Proceedings of 11th International Conference on Advanced Materials, 2009, Rio de Janeiro. 11th International Conference on Advanced Materials. Rio de Janeiro, v. único, 2009. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Kássila R. F. Silva ; Lúcio F.S. Rosa ; Maria Elena Leyva ; A. A. A. de Queiroz ; GARCIA, F. G.. <b>Preparação e caracterização do compósito polianilina ? prata</b>. Em: 10o Congresso Brasileiro de Polímeros, 2009, Foz de Iguaçu, PR. 10o Congresso Brasileiro de Polímeros, 2009. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>M. G. Vivas; D. L. Silva ; Mendonça, C. R.. <b>Investigation of the Degenerate Two-Photon Absorption Cross-Section in all-trans Retinal: Nonlinear Spectrum and Molecular Structure</b>. Em: International Conference on Advanced Materials, 2009, Rio de janeiro. digital book, 2009. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>M. G. Vivas; SILVA, D. L. ; MENDONCA, C. R.. <b>Absorção de dois fótons degenerada de compostos carotenóides: Espectro não linear e cálculos teóricos</b>. Em: XIII Workshop do programa de pós-graduação em física do IFSC, 2009, São Carlos - SP. Abstract book, 2009. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>M.A. Fernades ; MARIANO, N. A.. <b>Effect of retained austenite resulting from tempering of supermartensitics stainless steel weld</b>. Em: 11th International Conference on Advanced Materials, ICAM, 2009, Rio de Janeiro. 11th International Conference on Advanced Materials, ICAM 2009, v. 1, p. 1-1, 2009. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MELO, M. L. N. M. ; Guimaraes, B. C. ; Hayama , A. O. F ; MARIANO, N. A.. <b>Annealing behavior of the AISI 430 ferritic stainless steel obtained by directional solidification</b>. Em: 11th International Conference on Advanced Materials, ICAM 2009, 2009. 11th International Conference on Advanced Materials, v. 1, p. 1, 2009. </td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>A. A. A. de Queiroz ; GONZÁLEZ, Filiberto ; Maria Elena Leyva ; HIGA, O. Z. ; SOUZA, F. M.. <b>Epoxy-amine networks for dental restorations</b>. Em: Encontro da Sociedade Brasileira de Pesquisa em Materiais - SBPMat, 2008, Guarujá, São Paulo. Encontro da Sociedade Brasileira de Pesquisa em Materiais - SBPMat, 2008. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARBOSA, J. A. C. ; LOPES, B. B. ; Baldissera, M.R. ; RODRIGUES, G.. <b>Determinação das frações volumétricas de ferrita e martensita, do aço 1011 so Si e Mn, em função da temperatura de têmpera, via simulação numérica e metalografia quantitativa</b>. Em: II Colóquio Técnico/Científico do UniFOA, 2008, Volta Redonda - RJ. Anais do II Colóquio Técnico/Científico do UniFOA. Volta Redonda RJ: Editora FOA, 2008. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BELOTI, M. M. ; Teixeira, L.N. ; FERREIRA, R.A. ; OLIVEIRA, P. T. ; PALIOTO, D.B. ; GIMENES, R. ; BERTOLINI, M. J. ; ZAGHETE, Maria Aparecida ; ROSA, A. L.. <b>Human periodontal ligament fibroblast response to a membrane of the composite poly(vinylidene-trifluoroethylene)/barium titanate</b>. Em: 8th World Biomaterials Congress, 2008, Amsterdam. 8th WBC Abstracts View(TM). Amsterdam, The Netherlands: 1264, p. 1264-1264, 2008. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>DA SILVEIRA, C.A. ; da Silva, M.R. ; SILVA, M. R. A. ; SOARES, D.A.W. ; GIMENES, R.. <b>A new route to recycling spent batteries</b>. Em: 7th Brazilian MRS Meeting, 2008, Guaruja - SP. CD-ROM de Anais do VI Encontro da SBPMat, p. D618-D618, 2008. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>GIMENES, R.; SÁ, F. G. ; SOARES, D.A.W. ; BERTOLINI, M. J. ; ZAGHETE, M. A. ; SILVA, M. R. A.. <b>Nb-doped PZT/Cement composites for sensors and actuators in civil engineering</b>. Em: 6th Brazilian MRS Meeting, 2007, Natal - RN. CD-ROM de Anais do VI Encontro da SBPMat, p. I638-I638, 2008. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Letícia Hirata Godoy ; ROVERI, C.D. ; MORALES, Norberto ; ZANARDO, Antenor. <b>Relationships between geological units in the southern edge of the São Francisco Craton</b>. Em: 44º Congresso Brasileiro de Geologia, 2008, Curitiba. Anais do 44º Congresso Brasileiro de Geologia. Curitiba: SBG PARANÁ, v. 1, p. 151-151, 2008. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Letícia Hirata Godoy ; ROVERI, C.D. ; ZANARDO, Antenor ; MORALES, Norberto. <b>Metamorfic Evolution of the Bom Jesus da Penha Ophiolitic Sequence, SE Brazil</b>. Em: 44ºCongresso Brasileiro de Geologia, 2008, Curitiba. Anais do 44ºCongresso Brasileiro de Geologia. Curitiba: SBG PARANÁ, v. 1, p. 122-122, 2008. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>LOPES, B. B. ; BARBOSA, J. A. C. ; Baldissera, M.R. ; FERREIRA, F. ; RODRIGUES, G.. <b>Determinação das propriedades mecânicas do aço 1011 ao si e Mn em função da temperatura de têmpera intercrítica</b>. Em: II Colóquio Técnico/Científico do UniFOA, 2008, Volta Redonda - RJ. Anais do II Colóquio Técnico/Científico do UniFOA. Volta Redonda - RJ: Editora FOA, 2008. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MARIANO, N. A.; OLIVEIRA, R. G. ; IAMARINO, E. B. ; RIGO, Eliana C S. <b>Corrosion Characterization of Titanium Alloys by Electrochemical Techniques in Artificial Saliva and SBF Solution</b>. Em: BIOCERAMICS 21, 2008, Búzios. BIOCERAMICS 21, p. 1-2, 2008. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>PERINOTTO, José Alexandre de Jesus ; ZANE, J.E. ; ETCHEBERE, M. L. C. ; ROVERI, C.D. ; MENEGAZZO, M. C. ; MORALES, Norberto. <b>Mapeamento Geológico da Folha São Pedro (SF-23-Y-A-IV), na escala 1:100.000</b>. Em: 44º Congresso Brasileiro de Geologia, 2008, Curitiba. Anais do 44º Congresso Brasileiro de Geologia. Curitiba: SBG PARANÁ, v. 1, p. 123-123, 2008. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>RANALLI, G. A. ; PALLONE NETO, A. S. ; OLIVEIRA, R. G. ; GALENDE, M. ; MARIANO, N. A.. <b>Effect of plasma nitriding and nitrocarburizing in corrosion and wear resistance.. In: VII ENCONTRO SBPMat, 2008, 2008, Guaruja</b>. Em: VII ENCONTRO SBPMat, 2008, p. 1-2, 2008. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ROVERI, C.D.; Letícia Hirata Godoy ; ZANARDO, Antenor ; MORENO, M.M.T. ; GIACOMELI, H.. <b>Matéria-prima cerâmica proveniente da Formação Aquidauana na Região de Jacuí-MG</b>. Em: 44º Congresso Brasileiro de Geologia, 2008, Curitiba. Anais do 44º Congresso Brasileiro de Geologia. Curitiba: SBG PARANÁ, v. 1, p. 123-123, 2008. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>ROVERI, C.D.; ZANARDO, Antenor ; MORENO, M.M.T. ; ROCHA, Rogers Raphael da. <b>REQUISITOS DAS MATERIAS-PRIMAS PARA A PRODUÇÃO DE REVESTIMENTOS CERÂMICOS POR VIA SECA</b>. Em: 44ºCongresso Brasileiro de Geologia, 2008, Curitiba. Anais do 44ºCongresso Brasileiro de Geologia. Curitiba: SBG PARANÁ, v. 1, p. 1-1, 2008. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Silva, D. F. ; DAMATO, Cesar Augusto ; BOTELHO, Edson Cocchieri ; RENÉ, Loic ; ANCELOTTI JUNIOR, A. C.. <b>Efeito do Condicionamento Higrotérmico na Resistência ao Cisalhamento Interlaminar do Compósito Hibrido Titânio/Fibras de Carbono/Epóxi</b>. Em: Congresso dos Estudantes de Ciência e Engenharia de Materiais, 2008, São Carlos. X CECEMM, 2008. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>ZANARDO, Antenor ; MORENO, M.M.T. ; ROVERI, C.D. ; ROCHA, Rogers Raphael da. <b>INFLUÊNCIA DA ALTERAÇÃO SUPÉRGENA NA TRABALHABILIDADE DAS ARGILAS DA FORMAÇÃO CORUMBATAÍ, NA REGIÃO DE RIO CLARO (SP)</b>. Em: 44º Congresso Brasileiro de Geologia, 2008, Curitiba. Anais do 44º Congresso Brasileiro de Geologia. Curitiba: SBG PARANÁ, v. 1, p. 11-11, 2008. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>ZANARDO, Antenor ; MORENO, M.M.T. ; ROVERI, C.D. ; ROCHA, Rogers Raphael da. <b>GÊNESE DA PRINCIPAL MATÉRIA-PRIMA UTILIZADA PELO PÓLO CERÂMICO DE SANTA GERTRUDES (SP)</b>. Em: 44º Congresso Brasileiro de Geologia, 2008, Curitiba. Anais do 44º Congresso Brasileiro de Geologia. Curitiba: SBG Paraná, v. 1, p. 1-1, 2008. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>ZANARDO, Antenor ; MORENO, M.M.T. ; ROVERI, C.D. ; ROCHA, Rogers Raphael da. <b>O PÓLO CERÂMICO DE SANTA GERTRUDES ? SP</b>. Em: 44ºCongresso Brasileiro de Geologia, 2008, Curitiba. Anais do 44ºCongresso Brasileiro de Geologia. Curitiba: SBG Paraná, v. 1, p. 1-1, 2008. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>ZANE, J.E. ; PERINOTTO, José Alexandre de Jesus ; ETCHEBERE, M. L. C. ; ROVERI, C.D. ; MENEGAZZO, M. C. ; MORALES, Norberto. <b>Mapeamento Geológico da Folha São Carlos do Pinhal (SF-23-Y-A), na escala 1:100.000</b>. Em: 44º Congresso Brasileiro de Geologia, 2008, Curitiba. Anais do 44º Congresso Brasileiro de Geologia. Curitiba: SBG PARANÁ, v. 1, p. 144-144, 2008. </td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDREZZA DE ALMEIDA AZZI ; ZANARDO, Antenor ; MACHADO, F. B. ; ROVERI, C.D.. <b>CARACTERIZAÇÃO DE ARGILAS DA FORMAÇÃO CORUMBATAÍ PROVENIENTES DA MINA ARGISSOLO - CORDEIRÓPOLIS - SP</b>. Em: X SIMPÓSIO DE GEOLOGIA DO SUDESTE, 2007, DIAMANTINA. ANAIS DO X SIMPÓSIO DE GEOLOGIA DO SUDESTE. BELO HORIZONTE: SBG - MG, v. ÚNICO, p. 117-117, 2007. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BOTELHO, Edson Cocchieri ; DAMATO, Cesar Augusto ; PARDINI, Luiz Cláudio ; RENÉ, Loic ; ANCELOTTI JUNIOR, A. C.. <b>Damping Behavior Evaluation of Titanium/Carbon Fiber/Epoxy Hybrid Laminates</b>. Em: 4 th International Conference on Science and Technology of Composite Materials, 2007, Rio de Janeiro. 4 th International Conference on Science and Technology of Composite Materials, 2007. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GIAROLA, V. M. ; M. G. Vivas ; de QUEIROZ, A.A.A.. <b>Estudo das propriedades Hemocompatíveis do Poliglicerol dendrítico por Ressonância de Plásmon de Superície</b>. Em: 10o Sicem, 2007, São Carlos - SP. digital book, 2007. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Letícia Hirata Godoy ; ZANARDO, Antenor ; ROVERI, C.D.. <b>OCORRÊNCIA DE SCHEELITA EM PETÚNIA, SUL DE MINAS GERAIS</b>. Em: X SIMPÓSIO DE GEOLOGIA DO SUDESTE, 2007, DIAMANTINA. ANAIS DO X SIMPÓSIO DE GEOLOGIA DO SUDESTE. DIAMANTINA: SBG - MG, v. ÚNICO, p. 134-134, 2007. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Letícia Hirata Godoy ; ZANARDO, Antenor ; ROVERI, C.D.. <b>GEOLOGIA DO DA PORÇÃO NORTE DO CINTURÃO DE CISALHAMENTO CAMPO DO MEIO, NA REGIÃO DE BOM JESUS DA PENHA - MG</b>. Em: X SIMPÓSIO DE GEOLOGIA DO SUDESTE, 2007, DIAMANTINA. ANAIS DO X SIMPÓSIO DE GEOLOGIA DO SUDESTE. BELO HORIZONTE: SBG - MG, v. ÚNICO, p. 34-34, 2007. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MACHADO, W. S. ; Lúcio F.S. Rosa ; Maria Elena Leyva ; Denise F. Laurito ; SOARES, D. A. W.. <b>Electric Conductive Composite Based on Polyaniline and Recycled Ground Tire Rubber</b>. Em: 6th Brazilian MRS Meeting - V Encontro SBPMat 2007, 2007, Natal. 6th Brazilian MRS Meeting - V Encontro SBPMat 2007, 2007. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MORENO, Maria Margarita Torres ; ROVERI, C.D. ; ZANARDO, Antenor ; ROCHA, Rogers Raphael da ; PRADO, Ana Cândida Almeida. <b>CARACTERIZAÇÃO DE ARGILAS DE ARENITO DO GRUPO ITARARÉ QUE AFLORAM NA PEDREIRA CAVINATO (LIMEIRA, SP)</b>. Em: X SIMPÓSIO DE GEOLOGIA DO SUDESTE, 2007, DIAMANTINA. ANAIS DO X SIMPÓSIO DE GEOLOGIA DO SUDESTE. BELO HORIZONTE: SBG - MG, v. ÚNICO, p. 118-118, 2007. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ROVERI, C.D.; ROCHA, Rogers Raphael da ; PRADO, Ana Cândida de Almeida ; ZANARDO, Antenor ; MORENO, Maria Margarita Torres. <b>PANORAMA MÍNERO-ECONÔMICO DO PÓLO CERÂMICO DE SANTA GERTRUDES ? SP</b>. Em: X SIMPÓSIO DE GEOLOGIA DO SUDESTE, 2007, DIAMANTINA. ANAIS DO X SIMPÓSIO DE GEOLOGIA DO SUDESTE. BELO HORIZONTE: SOCIEDADE BRASILEIRA DE GEOLOGIA - MG, v. ÚNICO, p. 135-135, 2007. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ROVERI, C.D.; ROCHA, Rogers Raphael da ; ZANARDO, Antenor ; MORENO, Maria Margarita Torres ; Raimundo Humberto C. Lima. <b>COMPARAÇÃO GEOLÓGICA E TECNOLÓGICA DE MATÉRIAS-PRIMAS LOCALIZADAS NA BASE DA FORMAÇÃO CORUMBATAÍ - SP</b>. Em: X SIMPÓSIO DE GEOLOGIA DO SUDESTE, 2007, DIAMANTINA. ANAIS DO X SIMPÓSIO DE GEOLOGIA DO SUDESTE. BELO HORIZONTE: SOCIEDADE BRASILEIRA DE GEOLOGIA - MG, v. ÚNICO, p. 121-121, 2007. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ROVERI, C.D.; ZANARDO, Antenor ; MORENO, Maria Margarita Torres. <b>VARIAÇÃO MINERALÓGICA DE MATERIAIS DA MINA TUTE (RIO CLARO, SP)</b>. Em: X SIMPÓSIO DE GEOLOGIA DO SUDESTE, 2007, DIAMANTINA. ANAIS DO X SIMPÓSIO DE GEOLOGIA DO SUDESTE. BELO HORIZONTE: SOCIEDADE BRASILEIRA DE GEOLOGIA - MG, v. ÚNICO, 2007. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ZANARDO, Antenor ; ROVERI, C.D. ; NATAL, Marcos Natal de Souza ; MORENO, Maria Margarita Torres ; IBRAHIM, Liliane. <b>DIAGÊNESE DA FORMAÇÃO CORUMBATAÍ NA REGIÃO DE RIO CLARO-SP</b>. Em: X SIMPÓSIO DE GEOLOGIA DO SUDESTE, 2007, DIAMANTINA. ANAIS DO X SIMPÓSIO DE GEOLOGIA DO SUDESTE. BELO HORIZONTE: SBG - MG, v. ÚNICO, p. 64-64, 2007. </td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>COCHER, Pablo Xavier Do Prado Martin ; ROVERI, C.D. ; ZANARDO, Antenor. <b>Comparação entre Meteoritos e Asteróides Brasileiros</b>. Em: XLIII Congresso Brasileiro de Geologia, 2006, Aracaju. XLIII Congresso Brasileiro de Geologia. Aracaju: SBG, v. 1, p. 75-75, 2006. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FERRARI, Kátia Regina ; FIGUEIREDO FILHO, Paulo Miranda de ; ZANARDO, Antenor ; CUCHIERATO, Gláucia ; ROVERI, C.D. ; PIETROBON, Matheus Ortega ; MICHELON, Diogo ; MOTTA, José Francisco Marciano. <b>An Ecomic-Environmetal Approach to the Clay Mining Activities in the Santa Gertrudes Ceramic Pole-SP, Brazil</b>. Em: IX World Congress on Ceramic Tile Quality - Qualicer, 2006, Castellón-Espanha. Qualicer 2006. Castellón: CÁMARA CASTELLÓN E COLÉGIO OFICIAL DE INGENIEROS SUPERIORES INDUSTRIALES, 2006. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GELFUSO, M. V. <b>Parceria /Interação / Integração entre a prática da Monitoria e da Pesquisa Científica - Compósito Fibra de Coco/Polímero</b>. Em: IX Encontro de Iniciação a Docência, 2006, Fortaleza. Anais do IX Encontro de Iniciação a Docência, v. único, 2006. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>LIMA, Alex Pereira de ; MUROLO, João Paulo ; RIGO, Eliana C S ; MARIANO, N. A.. <b>Efeito do recobrimento de hidroxiapatita em titânio comercialmente puro na resistência à corrosão</b>. Em: XXVII CONGRESSO BRASILEIRO DE APLICAÇÕES DE VÁCUO NA INDÚSTRIA E NA CIÊNCIA, CBRAVIC, 2006, tatiba, SP. XXVII CONGRESSO BRASILEIRO DE APLICAÇÕES DE VÁCUO NA INDÚSTRIA E NA CIÊNCIA, CBRAVIC. Itatiba: Visual ID/Brasil Dream Tour, p. 1-1, 2006. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>M. G. Vivas; GIAROLA, V. M. ; de QUEIROZ, A.A.A.. <b>Study of the blood compatibility of polyglycerol dendrimers by using the surface plasmon resonance sensor</b>. Em: World Polymer Congress - Macro 2006, 2006, Rio de Janeiro. digital book, 2006. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Maria Elena Leyva. <b>Enhance toughening of high density polyethylene with ground rubber tire</b>. Em: World Polymer Congress, Macro 2006, 2006, Rio de Janeiro. World Polymer Congress, Macro 2006, 2006. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Maria Elena Leyva. <b>Thermoplastic elastomeric composition based on ground rubber tire</b>. Em: World Polymer Congress, Macro 2006, 2006, Rio de Janeiro. World Polymer Congress, Macro 2006, 2006. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Maria Elena Leyva. <b>Termoplástico Elastomerico a base de Pó de pneus Reciclado</b>. Em: 17º Congresso Brasileiro de Engenharia e Ciência dos Materiais, CBECIMat 2006, 2006, Foz de Iguaçu. 17º Congresso Brasileiro de Engenharia e Ciência dos Materiais, CBECIMat 2006, 2006. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MARIANO, N. A.; STROBEL FILHO, Eloy ; MUROLO, João Paulo ; PEREIRA, V.F.. <b>Pitting Corrosion of Martensitic Stainless Steel</b>. Em: V Encontro da Sociedade Brasileira de Pesquisas em Materiais, SBPMat, 2006, Florianópolis. V Encontro da Sociedade Brasileira de Pesquisas em Materiais, SBPMat,, p. 1-2, 2006. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>PRADO, Ana Cândida de Almeida ; ROVERI, C.D. ; MORENO, Maria Margarita Torres ; ZANARDO, Antenor ; MOTTA, José Francisco Marciano ; MENEGAZZO, Ana Paula M. <b>Reologia de diferentes litotipos da Formação Corumbataí</b>. Em: XLIII Congresso Brasileiro de Geologia, 2006, Aracaju. ANAIS DO XLIII Congresso Brasileiro de Geologia. São Paulo: SBG, v. 1, p. 64-64, 2006. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>PRADO, Ana Cândida de Almeida ; ZANARDO, Antenor ; MORENO, Maria Margarita Torres ; ROVERI, C.D. ; COUTINHO JÚNIOR, Tercílio A. <b>Rheology of clays from the Corumbataí Formation and their application in porcelain tile production</b>. Em: IX World Congress on Ceramic Tile Quality - Qualicer, 2006, Castellón-Espanha. Qualicer 2006. Castellón: CÁMARA CASTELLÓN E COLÉGIO OFICIAL DE INGENIEROS SUPERIORES INDUSTRIALES, v. 3, p. 245-249, 2006. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ROVERI, C.D.; ZANARDO, Antenor ; MASSON, Marcos Roberto ; MOTTA, José Francisco Marciano. <b>Viabilidade de Uso de Argilas Provenientes da MIna Tute (Rio Claro-SP) para a Produção de Revestimentos Cerâmicos Via úmida</b>. Em: XLIII Congresso Brasileiro de Geologia, 2006, Aracaju. XLIII Congresso Brasileiro de Geologia. Aracaju: SBG, v. 1, p. 65-65, 2006. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>ROVERI, C.D.; ZANARDO, Antenor ; MORENO, Maria Margarita Torres ; PRADO, Ana Cândida de Almeida ; MASSON, Marcos Roberto ; BERNARDES, Eduardo Silveira ; MOTTA, José Francisco Marciano ; IBRAHIM, Liliane. <b>Compositional Variation of the Corumbataí Formation and Mine Locations in the Ceramic Pole of Santa Gertrudes-Brazil</b>. Em: IX World Congress on Ceramic Tile Quality - Qualicer, 2006, Castellón-Espanha. Qualicer 2006. Castellón: CÁMARA CASTELLÓN E COLÉGIO OFICIAL DE INGENIEROS SUPERIORES INDUSTRIALES, v. 3, p. 185-188, 2006. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>TCACENCO, Liliane Maia ; ROVERI, C.D. ; MONTANHEIRO, Filipe ; ZANARDO, Antenor. <b>Ocorrência de Zircão na Formação Rio Claro - SP</b>. Em: XLIII Congresso Brasileiro de Geologia, 2006, Aracaju. XLIII Congresso Brasileiro de Geologia. SP: SBG, v. 1, p. 80-80, 2006. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>ZANARDO, Antenor ; MORENO, Maria Margarita Torres ; ROVERI, C.D. ; PRADO, Ana Cândida de Almeida ; MASSON, Marcos Roberto ; MOTTA, José Francisco Marciano ; IBRAHIM, Liliane. <b>Mineralogical and Textural Characteristics of the Raw Material used inDry Milling in the Ceramic Pole of Santa Gertrudes-Brazil</b>. Em: IX World Congress on Ceramic Tile Quality - Qualicer, 2006, Castellón - Espanha. Qualicer 2006. Castellón: CÁMARA CASTELLÓN E COLÉGIO OFICIAL DE INGENIEROS SUPERIORES INDUSTRIALES, v. 3, p. 181-184, 2006. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>ZANARDO, Antenor ; ROVERI, C.D. ; MOREN, Maria Margarita Torres ; NATAL, Marcos Natal de Souza. <b>Evidências de Hidrotermalismo na Formação Corumbataí, na Região de Rio Claro (SP)</b>. Em: XLIII Congresso Brasileiro de Geologia, 2006, Aracaju. XLIII Congresso Brasileiro de Geologia. São Paulo: SBG, v. 1, p. 61-61, 2006. </td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BELOTI, M. M. ; GIMENES, R. ; ZAGHETE, Maria Aparecida ; BERTOLINI, M. J. ; ROSA, A. L.. <b>Guided tissue regeneration: in vitro biocompatibility of a novel membrane of the composite poly(vinylidene-trifluorethylene)/barium titanate</b>. Em: Biosurf VI ?Surface-Tissue Interaction?, 2005, Lausanne. EUROPEAN CELLS AND MATERIALS, v. 10, p. STE2-STE2, 2005. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MAESTRELLI, S. C.; Fornari Jr, C.C.M. ; Barquete, D.M. ; Queiroz, M.L. S.. <b>Diagnóstico do perfil sócio-econômico dos ingressos e egressos do curso de engenharia de produção e sistemas da UESC</b>. Em: XXV ENEGEP, 2005, POrto Alegre. Anais do XXV ENEGEP, 2005. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>TOMMASELLI, Maria Aparecida Garcia ; MARIANO, N. A. ; KURI, Sebastião Elias. <b>Admixtures effect in concrete on the steel surface microstrucutre</b>. Em: XX CONGRESSO DA SOCIEDADE BRASILEIRA DE MICROSCOPIA E MICROANÁLISE, CSBMM, 2005, Àguas de Lindoia. XX CONGRESSO DA SOCIEDADE BRASILEIRA DE MICROSCOPIA E MICROANÁLISE, CSBMM, p. 1-1, 2005. </td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDO, A. Z. ; MARIANO, N. A.. <b>Polarização potenciodinâmica cíclica na determinação da resistência a corrosão</b>. Em: X ENCONTRO DE INICIAÇÃO CIENTÍFICA e III Encontro de Pós-Graduação Stricto Sensu, 2004, v. 1, p. 35, 2004. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>PIETROBON, Matheus Ortega ; ROVERI, C.D. ; ZANARDO, Antenor. <b>OBTENÇÃO, ORGANIZAÇÃO E ARQUIVAMENTO DE DADOS DA MATÉRIA-PRIMA UTILIZADA PELO PÓLO CERÂMICO DE SANTA GERTRUDES(SP)</b>. Em: CONGRESSO DE INICIAÇÃO CIENTÍFICA DA UNESP - XVI, 2004, Ilha Solteira. Anais do CONGRESSO DE INICIAÇÃO CIENTÍFICA, XVI, 2004. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ROVERI, C.D.; FERRARI, Kátia Regina ; FIGUEIREDO FILHO, Paulo Miranda de ; BOSCHI, Anselmo Ortega ; ZANARDO, Antenor ; ALMEIDA, Marisa ; ALMEIDA, Erasto Boretti de ; COROADO, José F ; CARVALHO, Sebastião G de. <b>Study of fluorine content variation on ore (clay) of Corumbataí Formation at ceramic Pole of Sta Gertrudes, Brazil</b>. Em: WORLD CONGRESS ON CERAMIC TILE QUALITY, VII, 2004, Castellón. Anais VII WORLD CONGRESS ON CERAMIC TILE QUALITY. 2004, v. 1, p. 22-23, 2004. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ROVERI, C.D.; MAIA, Geisa Ferreira ; ZANARDO, Antenor ; MOTTA, José Francisco Marciano. <b>CARACTERIZAÇÃO QUÍMICO-MINERALÓGICA E PETROGRÁFICA DE ARGILAS DA FORMAÇÃO CORUMBATAÍ, VISANDO O CONTROLE DIMENSIONAL E DE FORMATO DE REVESTIMENTOS CERÂMICOS PRODUZIDOS NO PÓLO DE SANTA GERTRUDES (SP)</b>. Em: CONGRESSO DE INICIAÇÃO CIENTÍFICA DA UNESP - XVI, 2004, Ilha Solteira. Anais do CONGRESSO DE INICIAÇÃO CIENTÍFICA, XVI, 2004. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ROVERI, C.D.; PRADO, A.C.A. ; MUZZI, Talita de Oliveira ; MOTTA, J.F.M. ; ZANARDO, Antenor ; MORENO, M.M.T.. <b>DEFLOCULAÇÃO DE ARGILAS PROVENIENTES DE MINAS DO PÓLO CERÂMICO DE SANTA GERTRUDES</b>. Em: XLII CONGRESSO BRASILEIRO DE GEOLOGIA, 2004, ARAXÁ. Anais do 42º CONGRESSO BRASILEIRO DE GEOLOGIA, 2004. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ROVERI, C.D.; ZANARDO, Antenor ; MUZZI, Talita de Oliveira ; MOTTA, José Francisco Marciano. <b>CARACTERIZAÇÃO REOLÓGICA DE ARGILAS DA FORMAÇÃO CORUMBATAÍ (REGIÃO DE SANTA GERTRUDES), VISANDO AUMENTO DE QUALIDADE DOS PRODUTOS CERÂMICOS PARA EXPORTAÇÃO</b>. Em: CONGRESSO DE INICIAÇÃO CIENTÍFICA DA UNESP - XVI, 2004, Ilha Solteira. Anais do CONGRESSO DE INICIAÇÃO CIENTÍFICA, XVI, 2004. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>STROBEL FILHO, Eloy ; MARIANO, N. A.. <b>Estudo do Comportamento do Aço CA6NM em Ambientes de Trabalho com Variação da Concentração de Íons de Cloro</b>. Em: X ENCONTRO DE INICIAÇÃO CIENTÍFICA e III Encontro de Pós-Graduação Stricto Sensu, 2004, Itatiba. X ENCONTRO DE INICIAÇÃO CIENTÍFICA e III Encontro de Pós-Graduação Stricto Sensu. Itatiba: Universidade São Francisco, v. 1, p. 32-32, 2004. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ZANARDO, Antenor ; ROVERI, C.D. ; BERNARDES, Eduardo Silveira ; PRADO, A.C.A.. <b>APLICAÇÃO DA ANÁLISE MICROSCÓPICA NA MATÉRIA-PRIMA DA FORMAÇÃO CORUMBATAÍ, NA REGIÃO DE RIO CLARO - SP</b>. Em: XLII CONGRESSO BRASILEIRO DE GEOLOGIA, 2004, Araxá. Anais do 42º Congresso Brasileiro de Geologia, 2004. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ZANARDO, Antenor ; ROVERI, C.D. ; FERRARI, Kátia Regina ; MORENO, Maria Margarita Torres ; MOTTA, José Francisco Marciano ; MASSON, Marcos Roberto ; PRADO, Ana Cândida de Almeida ; FIGUEIREDO FILHO, Paulo Miranda de ; CHRISTOFOLETTI, S.R. ; THOMAZELLA, H.R.. <b>A FORMAÇÃO CORUMBATAÍ NA REGIÃO DE RIO CLARO E A INDÚSTRIA CERÂMICA POR VIA SECA</b>. Em: XLII CONGRESSO BRASILEIRO DE GEOLOGIA, 2004, Araxá. ANAIS DO XLII CONGRESSO BRASILEIRO DE GEOLOGIA, 2004. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ZANARDO, Antenor ; ROVERI, C.D. ; MORENO, Maria Margarita Torres ; MASSON, Marcos Roberto ; BERNARDES, Eduardo Silveira. <b>PETROGRAFIA DA FORMAÇÃO CORUMBATAÍ NA REGIÃO DE RIO CLARO-SP</b>. Em: XLII CONGRESSO BRASILEIRO DE GEOLOGIA, 2004, Araxá. Anais do XLII CONGRESSO BRASILEIRO DE GEOLOGIA, 2004. </td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANCELOTTI JUNIOR, A. C.; PARDINI, Luiz Cláudio ; BARROS, Everaldo ; SILVA, Ailton. <b>Evaluation of Dynamic Properties of Carbon Epoxy Laminates with Different Ply Orientations by Damping Measurements</b>. Em: 7º Congresso Brasileiro de Polímeros, 2003, Belo Horizonte. Anais da ABPol, 2003. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FALCAO, ; C.A.C, B. ; G., B. ; L.H., A. ; ARAUJO, Cid de ; POIRIER, G. ; MESSADDEQ, Younes ; POULAIN, M.. <b>Visible and near-infrared nonlinear properties of tungstate fluorophosphate glasses</b>. Em: Second International Symposium on Non-Crystalline Solids, 2003, Campos do Jordão. Proc. of the Second International Symposium on Non-Crystalline Solids, 2003. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FERNANDES NETO, T. R. ; GELFUSO, M. V. ; LUNARDI, A. ; THOMAZINI, D.. <b>Automatização de um Forno de Microondas para Sinterização de corpos Cerâmicos</b>. Em: IX Encontro de Iniciação à Pesquisa, 2003, Fortaleza. Resumo de anais do IX Encontro de Iniciação à Pesquisa. Fortaleza: Gráfica UNIFOR, v. CV/ET, p. 309, 2003. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>FONTELES, E. F. ; PITA NETO, I. C. ; VIANA, F. A. C. ; THOMAZINI, D. ; GELFUSO, M. V.. <b>Simulação Computacional das Forças Mastigatórias em uma Mandíbula-Desenvolvimento de materiais parar Fiixação Interna Rígida em Fraturas Faciais</b>. Em: IX Encontro de Iniciação à Pesquisa, 2003, Fortaleza. IX Encontro de Iniciação à Pes, v. único, 2003. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FONTELES, E. F. ; THOMAZINI, D. ; GELFUSO, M. V.. <b>Caracterização Mecânica do Compósito Fibra de Coco/Polímero</b>. Em: IX Encontro de Iniciação à Pesquisa, 2003, Fortaleza. Anais de Resumos do IX Encontro de Iniciação à Pesquisa. Fortaleza: Gráfica UNIFOR, v. CV/ET, p. 305, 2003. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARIANO, N. A.; BAGNATO, O. R. ; SERAPHIM, R. M.. <b>Structural analysis of a cast martensitic stainless steel</b>. Em: XIX Congresso da Sociedade Brasileira de Microscopia e Microanálise, 2003, Caxambu. XIX Congresso da Sociedade Brasileira de Microscopia e Microanálise, 2003. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>NASCIMENTO, T. Á. C. do ; FONTELES, E. F. ; THOMAZINI, D. ; GELFUSO, M. V.. <b>Confecção de Òrteses Baseadas em Simulação</b>. Em: IX Encontro de INiciação à Pesquisa, 2003, Fortaleza. Anais do IX Encontro de INiciação à Pesquisa, 2003. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ROVERI, C.D.; FERRARI, K.R. ; FIGUEIREDO FILHO, Paulo Miranda de ; BOSCHI, Anselmo Ortega ; ZANARDO, Antenor ; BELLOBRAYDIC, A. ; SILVA, Luciano Luis da. <b>Estudo da Viabilidade técnica da utilização de resíduos químicos como aditivos da massa de fabricação de tijolos</b>. Em: VII Simpósio de Geologia do Sudeste, 2003, São Pedro. Anais do SIMPÓSIO DE GEOLOGIA DO SUDESTE, VIII, p. 187-187, 2003. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ROVERI, C.D.; MOTTA, José Francisco Marciano ; FERRARI, K.R. ; FIGUEIREDO FILHO, Paulo Miranda de ; ZANARDO, Antenor ; CARVALHO, S.G.. <b>Reintegração de Resíduos Sólidos à Fabricação de revestimentos cerâmicos e telhas visando diminuição do impacto ambiental</b>. Em: VII Simpósio de Geologia do Sudeste, 2003, S. Pedro. Anais do SIMPÓSIO DE GEOLOGIA DO SUDESTE, VIII, p. 189-189, 2003. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ROVERI, C.D.; PRADO, Ana Cândida de Almeida ; MORENO, Maria Margarita Torres ; ZANARDO, Antenor ; FERRARI, K.R.. <b>Recentes Avanços no Conhecimento Geológico-tecnológico da Formação Corumbataí</b>. Em: VII Simpósio de Geologia do Sudeste, 2003, São Pedro. Anais do SIMPÓSIO DE GEOLOGIA DO SUDESTE, VIII, p. 181-181, 2003. </td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANCELOTTI JUNIOR, A. C.; PARDINI, Luiz Cláudio ; MACIEL, Marco Antonio Diniz. <b>Porosity Evaluation in Carbon Epoxy Laminates</b>. Em: Congresso Brasileiro de Carbono, 2002, Piracicaba. I Congresso Brasileiro de Carbono, p. 16-16, 2002. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ARAUJO, R.E. ; ARAUJO, Cid de ; POIRIER, G. ; POULAIN, M. ; MESSADDEQ, Younes. <b>Non linear optical absorption of antimony and lead oxyhalide glasses</b>. Em: 13th International Symposium on Non-Oxide Glasses and New Optical Glasses, 2002, Pardubice. Technical Digest, 2002. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>POIRIER, G.; JEREZ, V. A. ; ARAUJO, Cid de ; MESSADDEQ, Younes ; RIBEIRO, Sidney José Lima ; POULAIN, M.. <b>Excited states characteristics and frequency upconversion in Tm3+ doped tungstate fluorophosphate glasses</b>. Em: 13th International Symposium on Non-Oxide Glasses and New optical Glasses, 2002, Pardubice. Technical Digest, 2002. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>POIRIER, G.; MESSADDEQ, Younes ; RIBEIRO, Sidney José Lima ; JEREZ, V. A. ; POULAIN, M. ; ARAUJO, Cid de. <b>Spectroscopic properties of Tm3+ in tungstate fluorophosphate glasses</b>. Em: INTERNATIONAL SYMPOSIUM ON NON-OXIDE GLASS AND NEW OPTICAL GLASSES, 2002, Pardubice. Proceedings of the 13 International Symposium On Non-Oxide Glass And New Optical Glasses, v. 13, 2002. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ROVERI, C.D.; FERRARI, K.R. ; FIGUEIREDO FILHO, Paulo Miranda de ; ZANARDO, Antenor. <b>Utilização do Resíduo Sólido Raspa de Esmalte, da Indústria de Revestimentos Cerâmicos, como Aditivo na Massa para Fabricação de Telhas - Resultados Preliminares</b>. Em: V SIC - Simpósio de Iniciação Científica da UNESP - Rio Claro, 2002, Rio Claro. Anais do SIMPÓSIO DE INICIAÇÃO CIENTÍFICA, V, p. 86-86, 2002. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ROVERI, C.D.; MIYASHITA, A.M. ; LIMA, C.M. ; MASSON, Marcos Roberto ; ZANARDO, Antenor. <b>Usos Potenciais de Argilas de uma Várzea do Baixo Rio Sorocaba</b>. Em: V SIC - Simpósio de Iniciação Científica da UNESP - Rio Claro, 2002, Rio Claro. Anais do SIMPÓSIO DE INICIAÇÃO CIENTÍFICA, V, p. 85-85, 2002. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ROVERI, C.D.; MIYASHITA, A.M. ; LIMA, C.M. ; MASSON, Marcos Roberto ; ZANARDO, Antenor. <b>Estudo da Viabilidade de Utilização das Argilas de Várzea da Região de Laranjal Paulista em Produtos Cerâmicos</b>. Em: CONGRESSO DE INICIAÇÃO CIENTÍFICA, XIV., 2002, Presidente Prudente. Anais do CONGRESSO DE INICIAÇÃO CIENTÍFICA, XIV, 2002. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ROVERI, C.D.; ZANARDO, Antenor. <b>Estudo da Viabilidade do Uso de Matérias Primas das Formações Corumbataí e Irati na Produção de Placas Cerâmicas Tipo Monoporosa</b>. Em: V SIC - Simpósio de Iniciação Científica da UNESP - Rio Claro, 2002, Rio Claro. Anais do SIMPÓSIO DE INICIAÇÃO CIENTÍFICA, V, p. 83-83, 2002. </td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANCELOTTI JUNIOR, A. C.; COSTA, Necesio Gomes ; GOES, Marcelo Luiz de. <b>Uso da Fibra de Sisal como Reforço em Compósitos de Matriz Termoplástica Reciclada POM-Poliacetal</b>. Em: Congresso Anual da ABM, 2000, Rio de Janeiro. Anais do 55º Congresso da ABM, p. 1854-1861, 2000. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANCELOTTI JUNIOR, A. C.; COSTA, Necesio Gomes ; GÓES, Marcelo Luiz de ; DIAS, José Célio. <b>Estudo da Influência do Grafite nas Propriedades do POM (Poliacetal) Copolímero</b>. Em: Congresso Anual da ABM, 2000, Rio de Janeiro. Anais do 55º Congresso da ABM, p. 1718-1723, 2000. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CASSANJES, F. C.; COURROL, L. C. ; GOMES, L. ; MESSADDEQ, Y. ; RIBEIRO, S. J. L.. <b>Time dependence and energy-transfer mechanisms in Tm3+, Ho3+ and Tm3+-Ho3+ doped alkali niobium tellurite glasses sensitezed by Yb3+</b>. Em: XII International Symposium on Non-Oxide Glasses and Advanced Materials, 2000, Florianópolis. Proceedings of the international symposium on non-oxide glasses and advanced materials, v. 12, p. 140-144, 2000. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>RAMOS, A. S.; BAPTISTA, C. A. P. R. ; RODRIGUES JR, D. ; REIS, F. P. ; TADDEI, e B. <b>Microscopic features related to fatigue crack growth in titanium</b>. Em: MICROMAT, 2000, São Pedro. Proceedings of the 7th Brazilian Conference on Microscopy of Materials - ACTA MICROSCÓPICA, v. 9, p. 201-202, 2000. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SILVA, Luciano Luis da ; ROVERI, C.D. ; QUINTEIRO, E. ; BOSCHI, Anselmo Ortega. <b>Influência do Ciclo de Queima sobre a Porosidade de Vidrados</b>. Em: VIII CIC - Congresso de Iniciação Científica da UFSCar, 2000, São Carlos. VIII CIC - Congresso de Iniciação Científica da UFSCar, 2000. </td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ROVERI, C.D.; MELCHIADES, F.G. ; BOSCHI, Anselmo Ortega. <b>Estudo da Deformação Piroplástica em Revestimentos Cerâmicos</b>. Em: VII CIC - Congresso de Iniciação Científica da UFSCar, 1999, São Carlos. Anais do Congresso de Iniciação Científica, 1999. </td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASSANJES, F. C.; MATAI, D. ; VARELA, J. A. ; ZAGHETE, M. A. ; RIBEIRO, S. J. L.. <b>Vidros no sistema 80TeO2-10Nb2O5-10(0,5K2O-0,5Li2O): caracterização espectroscópica e incorporação da fase LiNbO3</b>. Em: 42º Congresso Brasileiro de Cerâmica, 1998, Poços de Caldas. Anais do 42° Congresso Brasileiro de Cerâmica, v. 2, p. 702-704, 1998. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASSANJES, F. C.; MATAI, D. ; ZAGHETE, M. A. ; VARELA, J. A. ; MESSADDEQ, Y. ; RIBEIRO, S. J. L.. <b>TeO2 based glass ceramics materials</b>. Em: 11 th International Symposium on Non-Oxide & New Optical Glasses, 1998, Sheffield. Extended Abstracts - 11 th International Symposium on Non-Oxide & New Optical Glasses, 1998. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MATAI, D. ; CASSANJES, F. C. ; VARELA, J. A. ; ZAGHETE, M. A. ; RIBEIRO, S. J. L.. <b>Preparação e caracterização de PLZT dopado com neodímio ou európio para uso em vitrocerâmicas</b>. Em: 42º Congresso Brasileiro de Cerâmica, 1998, Poços de Caldas. Anais do 42º Congresso Brasileiro de Cerâmica, 1998. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SOUZA, D. A. P. de ; CAPRI NETO, A. ; NUNES, Carlos Angelo ; RAMOS, A. S.. <b>Desenvolvimento de métodos de análise via IPC-AES para caracterização química de ligas V-Al</b>. Em: Seminário de Iniciação Científica da FAENQUIL, 1998, Lorena. Seminário de Iniciação Científica da FAENQUIL, p. 22, 1998. </td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GELFUSO, M. V.; SANTOS, C. V. ; EIRAS, J. A.. <b>Produção de Cerâmicas de PZT pelo Método Tape-Casting</b>. Em: IV Congresso de Iniciação Científica, 1996, Saõ Carlos. Anais de Resumos. Saõ Carlos: Gráfica UFSCar, v. único, p. 191, 1996. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>THOMAZINI, D. ; GELFUSO, M. V. ; EIRAS, J. A.. <b>Caracterização Física de Cerâmica a Base de Titanato de Bismuto</b>. Em: IV Congresso de Iniciação Científica, 1996, São Carlos. Anais de Resumos. São Carlos: Gráfica UFSCar, v. único, p. 192, 1996. </td></tr>
+            </table></div><div id="dv-year-1992"><h3 class="year">1992</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MAESTRELLI, S. C.; SOUZA, D. M. P. F.. <b>Efeito do MgO na propriedade elétrica e característica microestrutural de ZrO2 e CaO</b>. Em: 36 Congresso Brasileiro de Cerâmica, 1992, Caxambu. Anais do 36 Congresso Brasileiro de Cerâmica, 1992. </td></tr>
+            </table></div><div id="dv-year-1991"><h3 class="year">1991</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MAESTRELLI, S. C.; SOUZA, D. M. P. F.. <b>Estabilidade térmica do sistema ZrO2 - CaO</b>. Em: X Congresso de iniciação científica e tecnológica em Engenharia, 1991, Sâo Carlos. Anais do X Congresso de iniciação científica e tecnológica em Engenharia, p. 355, 1991. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 14/02/2025 18:29:01<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              
