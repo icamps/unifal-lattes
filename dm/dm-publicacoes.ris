@@ -1,6 +1,19 @@
 
 
 TY  - JOUR
+AU  - FERREIRA, LUCAS COSTA LIMA ; Costa, André Luiz Caliari ; MORENO, ANGELA LEITE
+TI  - Classification of brain tumors in magnetic resonance images using a Convolutional Neural Network
+JO  - The Journal of Engineering and Exact Sciences
+VL  - 11
+IS  - 
+SP  - 21317
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.18540/jcecvl11iss1pp21317
+L3  - 2527-1075
+ER  - 
+
+TY  - JOUR
 AU  - GUSMAO, M. G. ; DE OLIVEIRA, ANDERSON JOSÉ
 TI  - Singularidades como geradoras de constelações de sinais e triângulos hiperbólicos
 JO  - BRAZILIAN ELECTRONIC JOURNAL OF MATHEMATICS
@@ -24,6 +37,32 @@ EP  - 21
 PY  - 2025
 L2  - http://dx.doi.org/10.14393/bejom-v6-2025-74304
 L3  - 2675-1313
+ER  - 
+
+TY  - JOUR
+AU  - OLIVEIRA, VANESSA NOGUEIRA ; ALVES, RAFAELA DE OLIVEIRA ; CARDOSO, RAFAEL PABLO FARIAS ; REIS, BRENO APARECIDO SANTOS DOS ; LOPES, RONALDO ANDRÉ ; CARDOSO, ANDRÉA ; SOUZA JÚNIOR, JOSÉ CARLOS DE
+TI  - Torre de Hanói nas aulas de Matemática: Contribuições para o ensino de progressão geométrica
+JO  - SIGMAE
+VL  - 14
+IS  - 
+SP  - 1
+EP  - 12
+PY  - 2025
+L2  - http://dx.doi.org/10.29327/2520355.14.4-1
+L3  - 2317-0840
+ER  - 
+
+TY  - JOUR
+AU  - QUEIROZ, CÁTIA REGINA DE OLIVEIRA QUILLES ; VIEIRA, VANDENBERG LOPES ; GUARDIA, GIULIANO GADIOLI LA ; ALBUQUERQUE, CLARICE DIAS DE ; OLIVEIRA, ANDERSON JOSÉ DE ; LIMA, LEANDRO BEZERRA DE ; JÚNIOR, REGINALDO PALAZZO
+TI  - Hyperbolic Lattices Derived From Denser Tessellations
+JO  - IEEE Access
+VL  - 13
+IS  - 
+SP  - 145088
+EP  - 145104
+PY  - 2025
+L2  - http://dx.doi.org/10.1109/access.2025.3599469
+L3  - 2169-3536
 ER  - 
 
 TY  - JOUR
@@ -1595,7 +1634,7 @@ IS  -
 SP  - 1
 EP  - 18
 PY  - 2013
-L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
+L2  - 
 L3  - 1072-6691
 ER  - 
 
@@ -1803,7 +1842,7 @@ IS  -
 SP  - 1
 EP  - 13
 PY  - 2012
-L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
+L2  - 
 L3  - 1072-6691
 ER  - 
 
@@ -2102,7 +2141,7 @@ IS  -
 SP  - 1
 EP  - 12
 PY  - 2010
-L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
+L2  - 
 L3  - 1417-3875
 ER  - 
 
@@ -2180,7 +2219,7 @@ IS  -
 SP  - 1
 EP  - 23
 PY  - 2009
-L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
+L2  - 
 L3  - 1417-3875
 ER  - 
 
@@ -2354,6 +2393,16 @@ L3  -
 ER  - 
 
 TY  - BOOK
+AU  - SILVA, GUILHERME HENRIQUE GOMES DA; LIMA, I. M. S. (Org.) ; RODRIGUES, F. A. G. (Org.)
+TI  - Educação Matemática Crítica e a (In)justiça social: práticas pedagógicas e formação de professores (e-book)
+IS  - 2
+PY  - 2025
+VL  - 
+SP  - 317
+EP  - 
+ER  - 
+
+TY  - BOOK
 AU  - SILVA, GUILHERME HENRIQUE GOMES DA; JULIO, R. S. (Org.)
 TI  - Educação Matemática para e com idosos : práticas pedagógicas e pesquisas emergentes
 IS  - 1
@@ -2448,6 +2497,18 @@ EP  - 1274
 ER  - 
 
 TY  - CHAP
+AU  - Silva, L. G. A. ; QUILLES QUEIROZ, C.R.O.
+T1  - Jogos de Tabuleiro no Ensino de Números Inteiros: O Jogo ?Corrida Zahl"
+TI  - José Maurício Schneedorf Ferreira da Silva; Luiz Antonio Staub Mafra; Luiz Eduardo da Silva.. (Org.). Recursos Educacionais Abertos: compartilhando experiências na Universidade Federal de Alfenas (UNIFAL-MG). 1ed.São Paulo
+IS  - 
+PB  - Pimenta Cultural
+PY  - 2025
+VL  - 1
+SP  - 32
+EP  - 45
+ER  - 
+
+TY  - CHAP
 AU  - SILVA, R. J. ; COSTA, A. L. C. ; MORENO, A. L.
 T1  - Classificação de Parkinson usando as Características da Voz pela Rede Neural Elipsoide ART Autoexpansível
 TI  - Poliana Mendes de Souza. (Org.). Ciência e Tecnologia Interdisciplinar: progressos e evidências. 1ed.Recife
@@ -2457,6 +2518,18 @@ PY  - 2025
 VL  - 
 SP  - 1275
 EP  - 1286
+ER  - 
+
+TY  - CHAP
+AU  - CARMO, J. S. ; LAUTER, S. L. ; GOMES DA SILVA, GUILHERME HENRIQUE ; SANTOS, D. E. L. ; HENKLAIN, M. H. O. ; SANTOS, E. M.
+T1  - Ansiedade, microagressões e procrastinação como manifestação de aversão à matemática
+TI  - Etienne Lautenschlager; Jammerson Yuri da Silva; Verônica Medeiros Pereira. (Org.). Neurociência e Educação Matemática em diálogo para as múltiplas aprendizagens e a divulgação científica no Seridó/RN. 1ed.Campinas
+IS  - 
+PB  - Cognoscere Editora
+PY  - 2024
+VL  - 
+SP  - 37
+EP  - 62
 ER  - 
 
 TY  - CHAP
@@ -4064,6 +4137,17 @@ SP  - 31
 EP  - 38
 PY  - 2004
 L2  - 
+ER  - 
+
+TY  - CONF
+AU  - CARDOSO, ANDRÉA ; JR., JOSÉ C. DE SOUZA ; LOPES, RONALDO A.
+T1  - Kirigami e o conjunto de Cantor
+TI  - v. 11 n. 1 (2025): CNMAC 2024, 2025, Ipojuca
+VL  - 11
+SP  - 
+EP  - 
+PY  - 2024
+L2  - http://dx.doi.org/10.5540/03.2025.011.01.0419
 ER  - 
 
 TY  - CONF

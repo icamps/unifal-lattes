@@ -1,6 +1,6 @@
 {
 "nodes":[
-{ "name":"Adélcio Carlos de Oliveira", "idlattes":"0487113229071944", "rotulo":"[Sem rotulo]", "collaborationrank":1.4594594240188599 },
+{ "name":"Adélcio Carlos de Oliveira", "idlattes":"0487113229071944", "rotulo":"[Sem rotulo]", "collaborationrank":1.4594593048095703 },
 { "name":"André Luiz Mota", "idlattes":"8453016139576761", "rotulo":"[Sem rotulo]", "collaborationrank":1.369814157485962 },
 { "name":"Anibal Thiago Bezerra", "idlattes":"8478305453281130", "rotulo":"[Sem rotulo]", "collaborationrank":1.0 },
 { "name":"Cássius Anderson Miquele de Melo", "idlattes":"4002033080997386", "rotulo":"[Sem rotulo]", "collaborationrank":1.0 },
@@ -8,30 +8,30 @@
 { "name":"Fernando Gonçalves Gardim", "idlattes":"2425549033248106", "rotulo":"[Sem rotulo]", "collaborationrank":0.15000000596046448 },
 { "name":"Gustavo do Amaral Valdiviesso", "idlattes":"4023778019418442", "rotulo":"[Sem rotulo]", "collaborationrank":1.0 },
 { "name":"Heron Carlos de Godoy Caldas", "idlattes":"1373657423991547", "rotulo":"[Sem rotulo]", "collaborationrank":1.189643383026123 },
-{ "name":"Humberto Cesar Fernandes Lemos", "idlattes":"8374281747074655", "rotulo":"[Sem rotulo]", "collaborationrank":0.46013519167900085 },
+{ "name":"Humberto Cesar Fernandes Lemos", "idlattes":"8374281747074655", "rotulo":"[Sem rotulo]", "collaborationrank":0.5635135173797607 },
 { "name":"Ihosvany Camps Rodríguez", "idlattes":"3732563704810366", "rotulo":"[Sem rotulo]", "collaborationrank":1.0 },
 { "name":"Jean Carlos Coelho Felipe", "idlattes":"1513522824340750", "rotulo":"[Sem rotulo]", "collaborationrank":0.15000000596046448 },
-{ "name":"Leticia Ribeiro de Paiva", "idlattes":"9428416479663144", "rotulo":"[Sem rotulo]", "collaborationrank":0.7138820886611938 },
+{ "name":"Leticia Ribeiro de Paiva", "idlattes":"9428416479663144", "rotulo":"[Sem rotulo]", "collaborationrank":0.6462162733078003 },
 { "name":"Lizardo Henrique Cerqueira Moreira Nunes", "idlattes":"9320579515635433", "rotulo":"[Sem rotulo]", "collaborationrank":0.4405424892902374 },
 { "name":"Marcelo Gonçalves Vivas", "idlattes":"1312049227898761", "rotulo":"[Sem rotulo]", "collaborationrank":0.15000000596046448 },
-{ "name":"Marcelo Martins de Oliveira", "idlattes":"2091568617999217", "rotulo":"[Sem rotulo]", "collaborationrank":0.8266584873199463 },
+{ "name":"Marcelo Martins de Oliveira", "idlattes":"2091568617999217", "rotulo":"[Sem rotulo]", "collaborationrank":0.8943243622779846 },
 { "name":"Rodrigo Rocha Cuzinatto", "idlattes":"8073303573679522", "rotulo":"[Sem rotulo]", "collaborationrank":1.0 },
-{ "name":"Sidiney Geraldo Alves", "idlattes":"4536440727635518", "rotulo":"[Sem rotulo]", "collaborationrank":1.4594594240188599 },
+{ "name":"Sidiney Geraldo Alves", "idlattes":"4536440727635518", "rotulo":"[Sem rotulo]", "collaborationrank":1.4594591856002808 },
 { "name":"Walter Filgueira de Azevedo Junior", "idlattes":"4183276948524704", "rotulo":"[Sem rotulo]", "collaborationrank":1.0 },
 { "name":"Iara Tosta e Melo", "idlattes":"7286059807128292", "rotulo":"[Sem rotulo]", "collaborationrank":0.15000000596046448 },
 { "name":"Jordana Torrico Ferreira", "idlattes":"2740598136336384", "rotulo":"[Sem rotulo]", "collaborationrank":0.15000000596046448 },
-{ "name":"Maurício Reis e Silva Júnior", "idlattes":"7617696183555654", "rotulo":"[Sem rotulo]", "collaborationrank":1.080405592918396 }
+{ "name":"Maurício Reis e Silva Júnior", "idlattes":"7617696183555654", "rotulo":"[Sem rotulo]", "collaborationrank":0.9770270586013794 }
 ],
 "links":[
-{ "source":0, "target":8, "value":2.0 },
+{ "source":0, "target":8, "value":3.0 },
 { "source":0, "target":20, "value":6.0 },
 { "source":1, "target":7, "value":13.0 },
 { "source":1, "target":12, "value":3.0 },
-{ "source":2, "target":6, "value":9.0 },
+{ "source":2, "target":6, "value":11.0 },
 { "source":3, "target":15, "value":10.0 },
 { "source":7, "target":12, "value":1.0 },
 { "source":9, "target":17, "value":1.0 },
-{ "source":11, "target":16, "value":5.0 },
+{ "source":11, "target":16, "value":4.0 },
 { "source":14, "target":16, "value":6.0 }
 ]
 }

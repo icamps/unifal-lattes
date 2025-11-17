@@ -35,7 +35,7 @@ strict graph grafo1 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Geovani Rodrigues [18]",
+		label="Geovani Rodrigues [19]",
 		pos="547.5,238.5",
 		width=1.8194];
 	0 -- 10	[pos="292.34,341.92 329.25,334.36 379.28,322.35 421.5,306 439.86,298.89 443.11,294.23 460.5,285 484.14,272.46 511.5,258.18 529.14,249.02"];
@@ -43,7 +43,7 @@ strict graph grafo1 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Nabil Chaia [4]",
+		label="Nabil Chaia [5]",
 		pos="364.5,181.5",
 		width=1.25];
 	0 -- 15	[pos="241.99,341.85 248.12,319.64 265.68,264.1 296.5,228 309.78,212.44 329.64,199.99 344.47,192.07"];
@@ -158,7 +158,7 @@ strict graph grafo1 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Francisco Moura Filho [2]",
+		label="Francisco Moura Filho [3]",
 		pos="1041.5,238.5",
 		width=1.9583];
 	8 -- 19	[pos="996.51,227.98 948.98,217.93 874.46,202.16 826.81,192.09"];
@@ -166,7 +166,7 @@ strict graph grafo1 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Reny Angela Renzetti [1]",
+		label="Reny Angela Renzetti [2]",
 		pos="942.5,181.5",
 		width=1.9028];
 	8 -- 18	[pos="1024.3,227.92 1006.2,217.89 977.99,202.22 959.88,192.16"];

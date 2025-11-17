@@ -66,6 +66,19 @@ L3  - 0028-0836
 ER  - 
 
 TY  - JOUR
+AU  - AIELLO, S. ; ALBERT, A. ; ALHEBSI, A.R. ; ALSHAMSI, M. ; ALVES GARRE, S. ; AMBROSONE, A. ; AMELI, F. ; ANDRE, M. ; APHECETCHE, L. ; ARDID, M. ; ARDID, S. ; ATMANI, H. ; AUBLIN, J. ; BADARACCO, F. ; BAILLY-SALINS, L. ; BARDAOVÁ, Z. ; BARET, B. ; BARIEGO-QUINTANA, A. ; BECHERINI, Y. ; TOSTA E MELO, I. ; et.al
+TI  - gSeaGen code by KM3NeT: An efficient tool to propagate muons simulated with CORSIKA
+JO  - COMPUTER PHYSICS COMMUNICATIONS
+VL  - 314
+IS  - 
+SP  - 109660
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.1016/j.cpc.2025.109660
+L3  - 0010-4655
+ER  - 
+
+TY  - JOUR
 AU  - AIELLO, S. ; ALBERT, A. ; ALHEBSI, A.R. ; ALSHAMSI, M. ; ALVES GARRE, S. ; AMBROSONE, A. ; AMELI, F. ; ANDRE, M. ; APHECETCHE, L. ; ARDID, M. ; ARDID, S. ; AUBLIN, J. ; BADARACCO, F. ; BAILLY-SALINS, L. ; BARDAč ; BARET, B. ; BARIEGO-QUINTANA, A. ; BECHERINI, Y. ; BENDAHMAN, M. ; TOSTA E MELO, I. ; et.al
 TI  - Search for non-standard neutrino interactions with the first six detection units of KM3NeT/ORCA
 JO  - JOURNAL OF COSMOLOGY AND ASTROPARTICLE PHYSICS
@@ -105,6 +118,19 @@ L3  - 0929-8673
 ER  - 
 
 TY  - JOUR
+AU  - BERTIN, M. C. ; CUZINATTO, R. R. ; PIMENTEL, B. M. ; PAQUIYAURI, J. A.
+TI  - The Lyra-Schwarzschild Spacetime
+JO  - UNIVERSE
+VL  - 11
+IS  - 
+SP  - 315
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.3390/universe11090315
+L3  - 2218-1997
+ER  - 
+
+TY  - JOUR
 AU  - BRITO, L. C. T. ; FELIPE, J. C. C. ; LEHUM, A. C. ; NASCIMENTO, J. R. ; PETROV, A. Y.
 TI  - Modified Euler-Heisenberg effective action and proper-time method in Lorentz-Violating scalar QED
 JO  - INTERNATIONAL JOURNAL OF MODERN PHYSICS A
@@ -128,6 +154,19 @@ EP  - 1
 PY  - 2025
 L2  - http://dx.doi.org/10.1142/S0219749925300025
 L3  - 0219-7499
+ER  - 
+
+TY  - JOUR
+AU  - Camps, Ihosvany; KÜNZEL, STEPHAN R. ; SCHUBERT, MARIO ; SINGH, RAMENDRA K.
+TI  - Editorial: Opportunities and challenges in drug repurposing
+JO  - Frontiers in Pharmacology
+VL  - 16
+IS  - 
+SP  - 1709217
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.3389/fphar.2025.1709217
+L3  - 1663-9812
 ER  - 
 
 TY  - JOUR
@@ -183,6 +222,19 @@ L3  - 0924-4247
 ER  - 
 
 TY  - JOUR
+AU  - FARGNOLI, H. G. ; FELIPE, J. C. C. ; Gazzola, G.
+TI  - Ambiguities in the generation of CFJ-terms in a QED with dimension-5 operators in one loop
+JO  - EUROPEAN PHYSICAL JOURNAL C. PARTICLES AND FIELDS
+VL  - 85
+IS  - 
+SP  - 1028
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.1140/epjc/s10052-025-14788-5
+L3  - 1434-6052
+ER  - 
+
+TY  - JOUR
 AU  - G. Ropón-Palacios ; J. Pérez-Silva ; E. A. Gervacio-Villarreal ; J. P. R. Galarza ; M. Chenet-Zuta ; K. Otazu ; I. N. Aguila ; H. D. Wong ; Frida Sosa-Amay ; I. Camps
 TI  - Integrated computational biophysics approach for drug discovery against Nipah virus
 JO  - BIOCHEMICAL AND BIOPHYSICAL RESEARCH COMMUNICATIONS
@@ -232,6 +284,45 @@ EP  - 139641
 PY  - 2025
 L2  - http://dx.doi.org/10.1016/j.molstruc.2024.139641
 L3  - 0022-2860
+ER  - 
+
+TY  - JOUR
+AU  - L. G. D. DOS SANTOS, MARIA ; C. OLIVEIRA, ADÉLCIO
+TI  - Dynamical Quantumness Transition Induced by Reset Dynamics: The Jaynes-Cummings Model
+JO  - BRAZILIAN JOURNAL OF PHYSICS
+VL  - 55
+IS  - 
+SP  - 223
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.1007/s13538-025-01855-1
+L3  - 0103-9733
+ER  - 
+
+TY  - JOUR
+AU  - L. R. Paiva ; Alves, Sidiney G. ; DESOUZA, O. ; MIRAMONTES, O.
+TI  - Emergent dynamical phases and collective motion in termites
+JO  - Journal of The Royal Society Interface
+VL  - 22
+IS  - 
+SP  - 20250097
+EP  - 
+PY  - 2025
+L2  - 
+L3  - 1742-5662
+ER  - 
+
+TY  - JOUR
+AU  - LOPES, CÁSSIA MILENE RIBEIRO ; DE ARAÚJO, LEONARDO PEREIRA ; MARIANO, CAIO PACÍFICO ; FALLEIROS, LORENA ; de Azevedo Junior, Walter Filgueira ; COELHO, LUIZ FELIPE LEOMIL ; DA SILVEIRA, NELSON JOSÉ FREITAS
+TI  - Bioisosteric and Virtual Screening Approach to Identify Natural Inhibitors of Chikunguya alphavirus nsP3
+JO  - Cell Biochemistry and Biophysics
+VL  - 83
+IS  - 
+SP  - 1
+EP  - 9
+PY  - 2025
+L2  - http://dx.doi.org/10.1007/s12013-025-01849-5
+L3  - 1559-0283
 ER  - 
 
 TY  - JOUR
@@ -313,19 +404,6 @@ L3  - 2177-3793
 ER  - 
 
 TY  - JOUR
-AU  - S. S. Hassan ; M. Irfan ; R. M. Abid Khan ; F-A Khan ; S. Rana ; M. I. Qureshi ; A. Siddiqa ; N. M. Sultan ; A. Ullah ; A. Wisal ; I. Camps ; Z. Basharat ; A. Karim ; M. Imran ; Paulo V.S.D. de Carvalho ; M. Shafique ; F. Shaheen
-TI  - Targeting druggable proteins hisB, aroC, and trpD in the co-diphtheria infection caused by Corynebacterium ulcerans with Traditional Chinese Medicine
-JO  - HELIYON
-VL  - 1
-IS  - 
-SP  - e42444
-EP  - 
-PY  - 2025
-L2  - http://dx.doi.org/10.1016/j.heliyon.2025.e42444
-L3  - 2405-8440
-ER  - 
-
-TY  - JOUR
 AU  - SANTOS, LEANDRO MARCOS ; ARAÚJO, LEONARDO PEREIRA DE ; FALLEIROS, LORENA ; MARIANO, CAIO PACÍFICO ; JUNIOR, WALTER FILGUEIRA DE AZEVEDO ; SILVEIRA, Nelson José Freitas da
 TI  - Medicinal Chemistry behind Capivasertib Discovery: Seventh Magic Bullet of the Fragment-based Drug Design Approved for Oncology
 JO  - CURRENT MEDICINAL CHEMISTRY
@@ -362,6 +440,266 @@ EP  - 17
 PY  - 2025
 L2  - http://dx.doi.org/10.2174/0109298673334631241208131015
 L3  - 0929-8673
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - GW241011 and GW241110: Exploring Binary Formation and Fundamental Physics with Asymmetric, High-spin Black Hole Coalescences
+JO  - Astrophysical Journal Letters
+VL  - 993
+IS  - 
+SP  - L21
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.3847/2041-8213/
+L3  - 2041-8205
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - Directional Search for Persistent Gravitational Waves: Results from the First Part of LIGO-Virgo-KAGRA's Fourth Observing Run
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2510.17487
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - Constraining gamma-ray burst parameters with the first ultra-high energy neutrino event KM3-230213A
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2509.14895
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - GW250114: Testing Hawking?s Area Law and the Kerr Nature of Black Holes
+JO  - PHYSICAL REVIEW LETTERS
+VL  - 135
+IS  - 
+SP  - 111403
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.1103/kw5g
+L3  - 0031-9007
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - Directed searches for gravitational waves from ultralight vector boson clouds around merger remnant and galactic black holes during the first part of the fourth LIGO-Virgo-KAGRA observing run
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2509.07352
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - GWTC-4.0: Constraints on the Cosmic Expansion Rate and Modified Gravitational-wave Propagation
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2509.04348
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - Upper Limits on the Isotropic Gravitational-Wave Background from the first part of LIGO, Virgo, and KAGRA's fourth Observing Run
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2508.20721
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - GWTC-4.0: Population Properties of Merging Compact Binaries
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2508.18083
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - GWTC-4.0: Updating the Gravitational-Wave Transient Catalog with Observations from the First Part of the Fourth LIGO-Virgo-KAGRA Observing Run
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2508.1808
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - GWTC-4.0: Methods for Identifying and Characterizing Gravitational-wave Transients
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2508.18081
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - GWTC-4.0: An Introduction to Version 4.0 of the Gravitational-Wave Transient Catalog
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2508.18080
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - Open Data from LIGO, Virgo, and KAGRA through the First Part of the Fourth Observing Run
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2508.18079
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - GW231123: a Binary Black Hole Merger with Total Mass 190-265 M⊙
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2507.08219
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - The Online Data Filter for the KM3NeT Neutrino Telescopes
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2506.05881
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - KM3NeT Constraint on Lorentz-Violating Superluminal Neutrino Velocity
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2502.12070
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - On the Potential Galactic Origin of the Ultra-High-Energy Event KM3-230213A
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2502.08387
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - The ultra-high-energy event KM3-230213A within the global neutrino landscape
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2502.08173
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - Search for Continuous Gravitational Waves from Known Pulsars in the First Part of the Fourth LIGO-Virgo-KAGRA Observing Run
+JO  - The Astrophysical Journal
+VL  - 983
+IS  - 
+SP  - 99
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.3847/1538-4357/
+L3  - 2041-8213
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - First Searches for Dark Matter with the KM3NeT Neutrino Telescopes
+JO  - ArXiv Quantum Physics e-print
+VL  - -
+IS  - 
+SP  - 
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.48550/arXiv.2411.10092
+L3  - 0705-3010
+ER  - 
+
+TY  - JOUR
+AU  - TOSTA E MELO, I
+TI  - Search for gravitational waves emitted from SN 2023ixf
+JO  - The Astrophysical Journal
+VL  - 985
+IS  - 
+SP  - 183
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.3847/1538-4357
+L3  - 2041-8213
 ER  - 
 
 TY  - JOUR
@@ -534,6 +872,32 @@ L3  - 1402-4896
 ER  - 
 
 TY  - JOUR
+AU  - AGUIAR, C. ; DATTANI, N. ; Camps, I.
+TI  - Electronic and structural properties of Möbius boron-nitride and carbon nanobelts
+JO  - Discover Nano
+VL  - 19
+IS  - 
+SP  - 63
+EP  - 
+PY  - 2024
+L2  - http://dx.doi.org/10.1186/s11671-024-03967-0
+L3  - 2731-9229
+ER  - 
+
+TY  - JOUR
+AU  - AGUIAR, CINTHIA ; Camps, Ihosvany
+TI  - Molecular Docking in Drug Discovery: Techniques, Applications, and Advancements
+JO  - CURRENT MEDICINAL CHEMISTRY
+VL  - 32
+IS  - 
+SP  - 5924
+EP  - 5938
+PY  - 2024
+L2  - http://dx.doi.org/10.2174/0109298673325827240926081845
+L3  - 0929-8673
+ER  - 
+
+TY  - JOUR
 AU  - AIELLO, S. ; ALBERT, A. ; ALSHAMSI, M. ; ALVES GARRE, S. ; ALY, Z. ; AMBROSONE, A. ; AMELI, F. ; ANDRE, M. ; ANDROUTSOU, E. ; ANGUITA, M. ; APHECETCHE, L. ; ARDID, M. ; ARDID, S. ; ATMANI, H. ; AUBLIN, J. ; BADARACCO, F. ; BAILLY-SALINS, L. ; BARDAč ; BARET, B. ; TOSTA E MELO, I. ; et.al
 TI  - Astronomy potential of KM3NeT/ARCA
 JO  - EUROPEAN PHYSICAL JOURNAL C. PARTICLES AND FIELDS
@@ -635,32 +999,6 @@ EP  -
 PY  - 2024
 L2  - http://dx.doi.org/10.1016/j.surfin.2024.104874
 L3  - 2468-0230
-ER  - 
-
-TY  - JOUR
-AU  - C. Aguiar ; I. Camps
-TI  - Molecular Docking in Drug Discovery: Techniques, Applications, and Advancements
-JO  - CURRENT MEDICINAL CHEMISTRY
-VL  - 32
-IS  - 
-SP  - 39415575
-EP  - 
-PY  - 2024
-L2  - http://dx.doi.org/10.2174/0109298673325827240926081845
-L3  - 0929-8673
-ER  - 
-
-TY  - JOUR
-AU  - C. Aguiar ; N. Dattani ; Camps, I.
-TI  - Electronic and structural properties of Möbius boron-nitride and carbon nanobelts
-JO  - Discover Nano
-VL  - 19
-IS  - 
-SP  - 63
-EP  - 
-PY  - 2024
-L2  - http://dx.doi.org/10.1186/s11671-024-03967-0
-L3  - 2731-9229
 ER  - 
 
 TY  - JOUR
@@ -2601,19 +2939,6 @@ L3  - 2470-0010
 ER  - 
 
 TY  - JOUR
-AU  - ABBOTT, R. ; ABBOTT, T.'D. ; ACERNESE, F. ; ACKLEY, K. ; ADAMS, C. ; ADHIKARI, N. ; ADHIKARI, R.'X. ; ADYA, V.'B. ; AFFELDT, C. ; AGARWAL, D. ; AGATHOS, M. ; AGATSUMA, K. ; AGGARWAL, N. ; AGUIAR, O.'D. ; AIELLO, L. ; AIN, A. ; AJITH, P. ; AKUTSU, T. ; ALBANESI, S. ; TOSTA E MELO, I. ; et.al
-TI  - All-sky search for long-duration gravitational-wave bursts in the third Advanced LIGO and Advanced Virgo run
-JO  - PHYSICAL REVIEW D
-VL  - 104
-IS  - 
-SP  - .
-EP  - 
-PY  - 2021
-L2  - http://dx.doi.org/10.1103/physrevd.104.102001
-L3  - 2470-0010
-ER  - 
-
-TY  - JOUR
 AU  - ABED ABUD, A. ; ABI, B. ; ACCIARRI, R. ; ACERO, M.A. ; ADAMES, M.R. ; ADAMOV, G. ; ADAMS, D. ; ADINOLFI, M. ; ADUSZKIEWICZ, A. ; AGUILAR, J. ; AHMAD, Z. ; AHMED, J. ; ALI-MOHAMMADZADEH, B. ; ALION, T. ; ALLISON, K. ; ALONSO MONSALVE, S. ; ALRASHED, M. ; ALT, C. ; ALTON, A. ; Valdiviesso, G. ; et.al
 TI  - Searching for solar KDAR with DUNE
 JO  - JOURNAL OF COSMOLOGY AND ASTROPARTICLE PHYSICS
@@ -2793,6 +3118,19 @@ EP  -
 PY  - 2021
 L2  - http://dx.doi.org/10.1142/S0129183121501552
 L3  - 0129-1831
+ER  - 
+
+TY  - JOUR
+AU  - COUTO, P. T. ; RODRIGUEZ, R. P. ; RIBEIRO, R. ; VALDIVIESSO, G. A.
+TI  - Using hypothesis testing on the mass-transfer effect with sulfate removal as an application
+JO  - ENVIRONMENTAL TECHNOLOGY
+VL  - 42
+IS  - 
+SP  - 2805
+EP  - 2814
+PY  - 2021
+L2  - http://dx.doi.org/10.1080/09593330.2020.1714745
+L3  - 0959-3330
 ER  - 
 
 TY  - JOUR
@@ -5612,7 +5950,7 @@ IS  -
 SP  - 2
 EP  - 2
 PY  - 2015
-L2  - http://dx.doi.org/10.2174/138945011701151217100907
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.2174/138945011701151217100907&md5=e7d64466c5462ff67f278ee79296e198
 L3  - 1389-4501
 ER  - 
 
@@ -7536,7 +7874,7 @@ IS  -
 SP  - 12
 EP  - 
 PY  - 2010
-L2  - http://dx.doi.org/10.1186/1471-2105-11-12
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.1186/1471-2105-11-12&md5=f46effdcc9518dc18e3c7036021466cb
 L3  - 1471-2105
 ER  - 
 
@@ -7718,7 +8056,7 @@ IS  -
 SP  - 919c
 EP  - 924c
 PY  - 2009
-L2  - http://dx.doi.org/10.1016/j.nuclphysa.2009.10.142
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.1016/j.nuclphysa.2009.10.142&md5=492604ed5b812bd276196c77984735a4
 L3  - 0375-9474
 ER  - 
 
@@ -10188,7 +10526,7 @@ IS  -
 SP  - 36214
 EP  - 
 PY  - 2003
-L2  - http://dx.doi.org/10.1103/PhysRevE.68.036214
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.1103/physreve.68.036214&md5=750cac4ef084e224630880554bbef581
 L3  - 1063-651X
 ER  - 
 
@@ -10474,7 +10812,7 @@ IS  - 1
 SP  - 1
 EP  - 9
 PY  - 2001
-L2  - 
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
 L3  - 0843-6061
 ER  - 
 
@@ -10500,7 +10838,7 @@ IS  -
 SP  - 12531
 EP  - 
 PY  - 2001
-L2  - http://dx.doi.org/10.1103/PhysRevB.64.125311
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.1103/physrevb.64.125311&md5=35fefd6119b0d92d8006582b9231011e
 L3  - 0163-1829
 ER  - 
 
@@ -11033,7 +11371,7 @@ IS  - 14
 SP  - 1041
 EP  - 1049
 PY  - 1997
-L2  - http://dx.doi.org/10.1142/S0217732397001060
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.1142/s0217732397001060&md5=25976a1d0c9ffa4b7a8f6e51c9ac043a
 L3  - 0217-7323
 ER  - 
 
@@ -11100,6 +11438,16 @@ EP  - 621
 PY  - 1995
 L2  - http://dx.doi.org/10.1107/s0108270194009868
 L3  - 0108-2701
+ER  - 
+
+TY  - BOOK
+AU  - AZEVEDO, WALTER
+TI  - Docking Screens for Drug Discovery (Hardcover)
+IS  - 2
+PY  - 2025
+VL  - 1
+SP  - 314
+EP  - 
 ER  - 
 
 TY  - BOOK

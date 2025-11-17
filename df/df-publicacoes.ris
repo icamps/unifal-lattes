@@ -53,6 +53,19 @@ L3  - 2468-0230
 ER  - 
 
 TY  - JOUR
+AU  - Camps, Ihosvany; KÜNZEL, STEPHAN R. ; SCHUBERT, MARIO ; SINGH, RAMENDRA K.
+TI  - Editorial: Opportunities and challenges in drug repurposing
+JO  - Frontiers in Pharmacology
+VL  - 16
+IS  - 
+SP  - 1709217
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.3389/fphar.2025.1709217
+L3  - 1663-9812
+ER  - 
+
+TY  - JOUR
 AU  - CARVALHO, HIAGO MAURILIO LOPES ; NUNES, RICARDO WAGNER ; MATOS, MATHEUS J. S. ; REBELLO SOUSA DIAS, MARIAMA ; BEZERRA, Anibal Thiago
 TI  - Anisotropic Optical Response of Gold-Silver Alloys
 JO  - Physica Status Solidi-Rapid Research Letters
@@ -63,6 +76,19 @@ EP  -
 PY  - 2025
 L2  - http://dx.doi.org/10.1002/pssr.202400410
 L3  - 1862-6254
+ER  - 
+
+TY  - JOUR
+AU  - FERREIRA, LENON COUTO ; ROBERTO JUNIOR, ARTUR JUSTINIANO
+TI  - O estudo da máquina de Atwood com o aplicativo MobTracker
+JO  - A Física na Escola (Online)
+VL  - 23
+IS  - 
+SP  - e240223
+EP  - 
+PY  - 2025
+L2  - http://dx.doi.org/10.59727/fne.v23i1.223
+L3  - 1983-6430
 ER  - 
 
 TY  - JOUR
@@ -105,16 +131,16 @@ L3  - 1696-8352
 ER  - 
 
 TY  - JOUR
-AU  - S. S. Hassan ; M. Irfan ; R. M. Abid Khan ; F-A Khan ; S. Rana ; M. I. Qureshi ; A. Siddiqa ; N. M. Sultan ; A. Ullah ; A. Wisal ; I. Camps ; Z. Basharat ; A. Karim ; M. Imran ; Paulo V.S.D. de Carvalho ; M. Shafique ; F. Shaheen
-TI  - Targeting druggable proteins hisB, aroC, and trpD in the co-diphtheria infection caused by Corynebacterium ulcerans with Traditional Chinese Medicine
-JO  - HELIYON
-VL  - 1
+AU  - SOLTAU, SAMUEL BUENO
+TI  - The Covariant Relativistic Derivation of De Broglie Relation
+JO  - SITIENTIBUS : UNIVERSIDADE DE FEIRA DE SANTANA (SÉRIE CIÊNCIAS FÍSICAS)
+VL  - 21
 IS  - 
-SP  - e42444
+SP  - 11937
 EP  - 
 PY  - 2025
-L2  - http://dx.doi.org/10.1016/j.heliyon.2025.e42444
-L3  - 2405-8440
+L2  - http://dx.doi.org/10.13102/sscf.v21i.11937
+L3  - 2675-3286
 ER  - 
 
 TY  - JOUR
@@ -183,6 +209,32 @@ L3  - 2470-0010
 ER  - 
 
 TY  - JOUR
+AU  - AGUIAR, C. ; DATTANI, N. ; Camps, I.
+TI  - Electronic and structural properties of Möbius boron-nitride and carbon nanobelts
+JO  - Discover Nano
+VL  - 19
+IS  - 
+SP  - 63
+EP  - 
+PY  - 2024
+L2  - http://dx.doi.org/10.1186/s11671-024-03967-0
+L3  - 2731-9229
+ER  - 
+
+TY  - JOUR
+AU  - AGUIAR, CINTHIA ; Camps, Ihosvany
+TI  - Molecular Docking in Drug Discovery: Techniques, Applications, and Advancements
+JO  - CURRENT MEDICINAL CHEMISTRY
+VL  - 32
+IS  - 
+SP  - 5924
+EP  - 5938
+PY  - 2024
+L2  - http://dx.doi.org/10.2174/0109298673325827240926081845
+L3  - 0929-8673
+ER  - 
+
+TY  - JOUR
 AU  - ARRUDA, TIAGO JOSÉ
 TI  - Electric and magnetic toroidal dipole excitations in core-shell spheres
 JO  - PHYSICAL REVIEW B
@@ -219,32 +271,6 @@ EP  -
 PY  - 2024
 L2  - http://dx.doi.org/10.1016/j.surfin.2024.104874
 L3  - 2468-0230
-ER  - 
-
-TY  - JOUR
-AU  - C. Aguiar ; I. Camps
-TI  - Molecular Docking in Drug Discovery: Techniques, Applications, and Advancements
-JO  - CURRENT MEDICINAL CHEMISTRY
-VL  - 32
-IS  - 
-SP  - 39415575
-EP  - 
-PY  - 2024
-L2  - http://dx.doi.org/10.2174/0109298673325827240926081845
-L3  - 0929-8673
-ER  - 
-
-TY  - JOUR
-AU  - C. Aguiar ; N. Dattani ; Camps, I.
-TI  - Electronic and structural properties of Möbius boron-nitride and carbon nanobelts
-JO  - Discover Nano
-VL  - 19
-IS  - 
-SP  - 63
-EP  - 
-PY  - 2024
-L2  - http://dx.doi.org/10.1186/s11671-024-03967-0
-L3  - 2731-9229
 ER  - 
 
 TY  - JOUR
@@ -1615,7 +1641,7 @@ ER  -
 TY  - JOUR
 AU  - COSTA, K. D. ; SOLTAU, S. B.
 TI  - A Física da Flauta Doce: um estudo das notas nas posições comuns e alternativas
-JO  - Caderno de Física da UEFS
+JO  - CADERNO DE FÍSICA DA UEFS
 VL  - 14
 IS  - 
 SP  - 1401.1
@@ -2030,7 +2056,7 @@ ER  -
 
 TY  - JOUR
 AU  - SILVA, J. F. ; SOLTAU, S. B.
-TI  - MEDINDO O PLANETA TERRA: UM EXPERIMENTO COM ABORDAGEM INTERDISCIPLINAR
+TI  - Medindo o planeta Terra: Um experimento com abordagem interdisciplinar
 JO  - Exacta Revista do Departamento de Ciências Exatas e Tecnológicas do Uni BH
 VL  - 7
 IS  - 
@@ -2154,7 +2180,7 @@ IS  -
 SP  - 1
 EP  - 9
 PY  - 2013
-L2  - http://dx.doi.org/10.12785/jocr/010101
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.12785/jocr/010101&md5=6b5b50768a1b57b9ca92ac3f0e68e572
 L3  - 2314-4564
 ER  - 
 
@@ -2310,7 +2336,7 @@ IS  -
 SP  - 1
 EP  - 6
 PY  - 2012
-L2  - http://dx.doi.org/10.1590/s1806-11172012000400014
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.1590/s1806-11172012000300006&md5=d90d6ceec75aac80edc9b1c7c5b2de15
 L3  - 1806-1117
 ER  - 
 
@@ -2882,7 +2908,7 @@ IS  -
 SP  - 1
 EP  - 4
 PY  - 2006
-L2  - http://dx.doi.org/10.1155/JAMMC/2006/42987
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.1155/jammc/2006/20384&md5=2cd9b92641d651448aca4f3676aca91a
 L3  - 1463-9246
 ER  - 
 
@@ -3025,7 +3051,7 @@ IS  -
 SP  - 1
 EP  - 
 PY  - 2005
-L2  - 
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
 L3  - 1518-0204
 ER  - 
 
@@ -3038,7 +3064,7 @@ IS  -
 SP  - 1
 EP  - 
 PY  - 2005
-L2  - 
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
 L3  - 1518-0204
 ER  - 
 
@@ -3155,7 +3181,7 @@ IS  -
 SP  - 52
 EP  - 
 PY  - 2004
-L2  - 
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
 L3  - 1677-3055
 ER  - 
 
@@ -3285,7 +3311,7 @@ IS  -
 SP  - 12531
 EP  - 
 PY  - 2001
-L2  - http://dx.doi.org/10.1103/PhysRevB.64.125311
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.1103/physrevb.64.125311&md5=35fefd6119b0d92d8006582b9231011e
 L3  - 0163-1829
 ER  - 
 
@@ -3376,7 +3402,7 @@ IS  - 19
 SP  - 2483
 EP  - 2488
 PY  - 2000
-L2  - 
+L2  - http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49
 L3  - 
 ER  - 
 

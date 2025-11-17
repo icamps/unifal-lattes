@@ -12,7 +12,7 @@ strict graph grafo2 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Anderson José de Oliveira [7]",
+		label="Anderson José de Oliveira [8]",
 		pos="250.91,286.5",
 		width=2.1944];
 	1	[URL="membro-6016565950437007.html",
@@ -30,11 +30,11 @@ strict graph grafo2 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Cátia R. de O. Quilles Queiroz [3]",
+		label="Cátia R. de O. Quilles Queiroz [4]",
 		pos="309.91,220.5",
 		width=2.4861];
 	0 -- 3	[fontsize=8,
-		label=3.0,
+		label=4.0,
 		lp="289.91,253.5",
 		pos="259.87,275.78 270.96,263.75 289.73,243.38 300.86,231.31"];
 	6	[URL="membro-5817829882396943.html",

@@ -1,0 +1,415 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Programa de Pós Graduação em Física (PPGF-UNIFAL)</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Programa de Pós Graduação em Física (PPGF-UNIFAL)</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de produção bibliográfica'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1990,
+1],
+[1992,
+1],
+[1994,
+1],
+[1995,
+2],
+[1996,
+4],
+[1997,
+11],
+[1998,
+10],
+[1999,
+6],
+[2000,
+26],
+[2001,
+25],
+[2002,
+33],
+[2003,
+33],
+[2004,
+40],
+[2005,
+50],
+[2006,
+47],
+[2007,
+33],
+[2008,
+40],
+[2009,
+25],
+[2010,
+41],
+[2011,
+37],
+[2012,
+53],
+[2013,
+28],
+[2014,
+38],
+[2015,
+35],
+[2016,
+39],
+[2017,
+36],
+[2018,
+42],
+[2019,
+44],
+[2020,
+38],
+[2021,
+71],
+[2022,
+50],
+[2023,
+45],
+[2024,
+65],
+[2025,
+50]]}]});
+        });
+        </script>
+        
+                <h3>Total de produção bibliográfica</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 1100<br>
+                    
+                    <center>Página: <a href="PB-0.html">1</a> &nbsp;<b>2</b> &nbsp;</center>
+                    <div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>21. &nbsp;</td> <td>de MELO, C. A. M.; PIMENTEL, Bruto Max. <b>Princípio Variacional de Schwinger, Espalhamento e Sistemas Quânticos à Temperatura Finita</b>. Em: <font color=#330066>XXV Congresso Paulo Leal Ferreira de Física Teórica</font>, p. 117-121, 2002.</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>de MELO, C. A. M.; PIMENTEL, Bruto Max. <b>Princípio Variacional de Schwinger e Mecânica Estatística: Cavidades Ressonantes e Átomos Frios</b>. Em: <font color=#330066>Simpósio Rumos da Física Estatística no Brasil.</font>, p. 195-199, 2002.</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>FADEL, Valmir ; de azevedo wf. <b>Aluno do ibilce pesquisa com prêmio Nobel</b>. Diário da Região (São José do Rio Preto/SP), 20 out. 2002. </td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>GARDIM, F. G.; NATALE, A. A.. <b>Lagrangeano de uma Força Central e Variável de Ângulo-Ação</b>. 2002. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>GASPAR, R. T. ; CANDURI, F. ; CAMERA JUNIOR, Joao Carlos ; SILVEIRA, Nelson J F ; de azevedo wf. <b>Analysis in Inhibition of Cyclin-dependent kinase 1 by roscovitine and flavopiridol</b>. Em: Workshop on Molecular Modeling in Biophysics - Methods and Applications - Satellite meeting of the 2002 IUPAB International Biophysics Congress, 2002, Rio de Janeiro-RJ. Workshop on Molecular Modeling in Biophysics - Methods and Applications - Satellite meeting of the 2002 IUPAB International Biophysics Congress, p. 25-25, 2002. </td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>M. G. Vivas; SCALON, J. D. ; ALMEIDA, A. -C. G. ; TEIXEIRA, H. Z. ; DUARTE, M. A. ; CARVALHO, R. S.. <b>A depressão Alastrante Sustentada por Mecanismos Não-Sinápticos - Modelo Matemático</b>. Em: X Seminário de Iniciação Científica da Universidade Federal de São João del-Rei, 2002, São João del-Rei. abstract book, 2002. </td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Makler, S. S. ; Camps, I.. <b>The coherence of the AlGaAs-GaAs phonon laser</b>. <font color=#330066>PHYSICA B-CONDENSED MATTER</font>. v. 316C, p. 300-303, issn: 0921-4526, 2002. <a href="http://dx.doi.org/10.1016/S0921-4526(02)00491-X" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A4</b></font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>MEDEIROS, L. G. ; CUZINATTO, R. R. ; ALDROVANDI, R.. <b>A Equação de Estado de um Sistema com Interação Aplicada à Cosmologia</b>. Em: XXV Congresso Paulo Leal Ferreira, 2003, São Paulo. XXV Congresso Paulo Leal Ferreira. São Paulo: Editora Livraria da Física, p. 102-106, 2002. </td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>PEREIRA, José Henrique ; CANDURI, F. ; PALMA, Mário Sérgio ; de azevedo wf. <b>Molecular Model of Shikimate Kinase from Mycobacterium tuberculosis</b>. Em: Workshop on Molecular Modeling in Biophysics - Methods and Applications - Satellite meeting of the 2002 IUPAB International Biophysics Congress, 2002, Rio de Janeiro-RJ. Workshop on Molecular Modeling in Biophysics - Methods and Applications - Satellite meeting of the 2002 IUPAB International Biophysics Congress, p. 25-25, 2002. </td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>RODRIGUES, A. M. ; SCALON, J. D. ; ALMEIDA, A. -C. G. ; TEIXEIRA, H. Z. ; DUARTE, M. A. ; M. G. Vivas. <b>A depressão Alastrante Sustentada por mecanismos não-sinápticos - Modelo Matemático</b>. 2002. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>SANTOS, Giovani Cesar dos ; CABRERA, M P ; de azevedo wf ; OLIVIERI, Johnny Rizzieri ; RUGGIERO NETO, João. <b>Self-Association of Mastoparan B in Solution</b>. Em: XXXI Reunião Anual da SBBQ, 2002, Caxambu-MG. SBBQ. São Paulo: Sociedade Brasileira de Bioquimica e Biologia Molecular, v. XXXI, p. 219-219, 2002. </td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SILVEIRA, Nelson J F ; CAMERA JUNIOR, Joao Carlos ; CANDURI, F. ; de azevedo wf. <b>Comparative Modelling: Problems and Solution Using Modeller</b>. Em: Workshop on Molecular Modeling in Biophysics - Methods and Applications - Satellite meeting of the 2002 IUPAB International Biophysics Congress, 2002, Rio de Janeiro-RJ. Workshop on Molecular Modeling in Biophysics - Methods and Applications - Satellite meeting of the 2002 IUPAB International Biophysics Congress, p. 30-30, 2002. </td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SOUSA, G. F. ; FILGUEIRAS, C. A. L. ; MASCARENHAS, Y. P. ; de azevedo wf. <b>Synthesis, spectroscopy characterization and X-ray crystallographic studies of trans-[PtC12(Pet3)(PySOR)] complexes, where PySOR=(2-methylsulphinyl)-pyridine and (2-n-propylsulphinyl)pyridine</b>. <font color=#330066>Transition Metal Chemistry</font>. v. 27, n. 4, p. 433-436, issn: 0340-4285, 2002. <a href="http://dx.doi.org/10.1023/a:1015040116062" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A3</b></font></td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Camps, I.; Makler, S. S.. <b>Study of the emission properties of a phonon laser</b>. Em: XXIV Encontro Nacional de Física da Matéria Condensada, 2001, São Lourenço, 2001. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Camps, I.; Makler, S. S. ; Pastawski, H. M. ; Torres, L. E. F.. <b>GaAs-AlxGa1-xAs double-barrier heterostructure phonon laser: A full quantum treatment</b>. <font color=#330066>Physical Review. B, Condensed Matter. (Cessou 1997. Cont. 1098-0121 Physical Review. B, Condensed Matter and Materials Physics)</font>. v. 64, p. 12531, issn: 0163-1829, 2001. <a href="http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=10.1103/physrevb.64.125311&md5=35fefd6119b0d92d8006582b9231011e" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CANDURI, F. ; TEODORO, L. G. V. L. ; FADEL, Valmir ; LORENZI, C. C. B. ; HIAL, V. ; GOMES, R. A. S. ; RUGGIERO NETO, João ; de azevedo wf. <b>Structure of Human Uropepsin at 2.45 A Resolution</b>. <font color=#330066>Acta Crystallographica. Section D, Biological Crystallography</font>. v. 57, p. 1560-1570, issn: 0907-4449, 2001. <a href="http://dx.doi.org/10.1107/S0907444901013865" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA CRYSTALLOGRAPHICA. SECTION D, BIOLOGICAL CRYSTALLOGRAPHY)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>de azevedo wf. <b>Modelagem Molecular de Toxinas</b>. Em: 2o. Workshop Temático do CAT: Análise Estrutural e Funcional de Peptídeos Tóxicos, 2001, São Paulo-SP. Workshop Temático do CAT, v. 2o, 2001. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>de azevedo wf; CAMERA JUNIOR, Joao Carlos. <b>Vantagens dos Softwares Cristalográficos em Linux</b>. Em: XIII Congresso de Iniciação Científica da UNESP, 2001, Bauru-SP. CIC. São Paulo: UNESP, v. XIII, p. 96-96, 2001. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>de azevedo wf; DELATORRE, Plinio. <b>A Influência do Fator de Vibração Térmica na Densidade Eletrônica de Cristais Bidimensionais</b>. <font color=#330066>Revista Brasileira de Ensino de Física (São Paulo)</font>. v. 23, n. 2, p. 211-214, issn: 1806-1117, 2001.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>de azevedo wf; FADEL, Valmir ; TEODORO, L. G. V. L. ; HIAL, V. ; GOMES, R. A. S.. <b>Molecular Model for the Binary Complex of Uropepsin and Pepstatin</b>. <font color=#330066>Biochemical and Biophysical Research Communications</font>. v. 287, n. 1, p. 277-281, issn: 0006-291X, 2001. <a href="http://dx.doi.org/10.1006/bbrc.2001.5555" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A2</b></font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>de MELO, C. A. M.; PIMENTEL, Bruto Max ; POMPÉIA, Pedro José. <b>Schwinger´s Principle and the B-Field Formalism for the Free Electromagnetic Field</b>. Em: <font color=#330066>XXII Encontro Nacional de Física de Partículas e Campos</font>, 2001.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>DELATORRE, Plinio ; de azevedo wf. <b>Simulação de Densidade Eletrônica para Cristais Unidimensionais e Bidimensionais</b>. <font color=#330066>Revista Brasileira de Ensino de Física</font>. v. 23, p. 63-73, issn: 0102-4744, 2001.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DELATORRE, Plinio ; de azevedo wf. <b>Simulation of Electron Density Maps for Two-Dimensional Crystal Structures Using Mathematica</b>. <font color=#330066>Journal of Applied Crystallography</font>. v. 34, p. 658-660, issn: 0021-8898, 2001. <a href="http://dx.doi.org/10.1107/s0021889801009724" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A2</b></font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>DELATORRE, Plinio ; OLIVIERI, Johnny Rizzieri ; RUGGIERO NETO, João ; LORENZI, C. C. B. ; CANDURI, F. ; FADEL, Valmir ; KONNO, K. ; PALMA, Mário Sérgio ; YAMANE, Tetsuo ; de azevedo wf. <b>Preliminary cryocrystallography analysis of an eumenine mastoparan toxin isolated from the venom of the wasp "Anterhynchium flavomarginatum micado"</b>. <font color=#330066>Biochimica et Biophysica Acta. Protein Structure and Molecular Enzymology</font>. v. 1545, p. 372-376, issn: 0167-4838, 2001. <a href="http://dx.doi.org/10.1016/s0167-4838(00)00192-8" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BIOCHIMICA ET BIOPHYSICA ACTA. PROTEIN STRUCTURE AND MOLECULAR ENZYMOLOGY)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>DELATORRE, Plinio ; SMARRA, A. L. S. ; FADEL, Valmir ; CANDURI, F. ; DELLAMANO, M. ; BONILLA-RODRIGUEZ, G. O. ; de azevedo wf. <b>Purification, Crystallization and Patterson search of heamoglobin IV from the armoured catfish "Liposarcus anisitsi"</b>. <font color=#330066>Acta Crystallographica. Section D, Biological Crystallography</font>. v. 57, p. 1329-1331, issn: 0907-4449, 2001. <a href="http://dx.doi.org/10.1107/s0907444901012057" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA CRYSTALLOGRAPHICA. SECTION D, BIOLOGICAL CRYSTALLOGRAPHY)</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>FONSECA, J. C. I. ; Honda R ; DELATORRE, Plinio ; FADEL, Valmir ; BONILLA-RODRIGUES, G. O. ; de azevedo wf. <b>Crystallization and Preliminary X-Ray Analysis Using Synchrotron Radiation of Hemoglobin-II from the Fish Brycon Cephalus</b>. Em: XXX reunião Anual da SBBq, 2001, Caxambu-MG. Reunião Anual da SBBq. São Paulo: Sociedade Brasileira de Bioquímica e Biologia Molecular, v. XXX, p. 162-162, 2001. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>GARDIM, F. G.; CORREIA, E.. <b>Correlação Entre as Atividades Explosivas e as Características das Regiões Ativas do Sol</b>. 2001. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>GARDIM, F. G.; CORREIA, E.. <b>Correlação Entre as Atividades Explosivas e as Características das Regiões Ativas do Sol</b>. 2001. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Honda R ; FAÇA, V. M. ; GREENE, J. L. ; LOMBARDI, F. R. ; de azevedo wf ; BONILLA-RODRIGUES, G. O.. <b>A Minor Hemoglobin from Brycon cephalus (Matrinxa) Shows Striking Similarity with Trout (Onchorhynchus mykiss) HB-I</b>. Em: XXX Reunião Anual da SBBq, 2001, Caxambu-MG. Reunião Anual da SBBq. São Paulo: Sociedade Brasileira de Bioquímica e Biologia Molecular, v. XXX, p. 162-162, 2001. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>KONNO, K ; HISADA, M. ; FONTANA, R. ; LORENZI, C. C. B. ; NAOKI, H. ; ITAGAKI, Y. ; MIWA, A. ; KAWAI, N. ; NAKATA, Y. ; YASUHARA, T. ; RUGGIERO NETO, João ; de azevedo wf ; PALMA, Mário Sérgio ; NAKAJIMA, T.. <b>Anoplin, a Novel Antimicrobial Peptide from the Venom of the Solitary Wasp "Anoplius smariensis"</b>. <font color=#330066>Biochimica et Biophysica Acta. Protein Structure and Molecular Enzymology</font>. v. 1550, n. 1, p. 70-80, issn: 0167-4838, 2001. <a href="http://dx.doi.org/10.1016/s0167-4838(01)00271-0" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BIOCHIMICA ET BIOPHYSICA ACTA. PROTEIN STRUCTURE AND MOLECULAR ENZYMOLOGY)</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>LOMBARDI, F. R. ; Honda R ; TAYAR, G. ; de azevedo wf ; BONILLA-RODRIGUES, G. O.. <b>Hemoglobins of Helicops Modestus and Crotalus durissus terrificus Crystallization Tetramic Stability and Conformational Changes</b>. Em: XXX Reunião Anual da SBBq, 2001, Caxambu-MG. Reunião Anual da SBBq. São Paulo: Sociedade Brasileira de Bioquímica e Biologia Molecular, v. XXX, p. 162-162, 2001. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>LORENZI, C. C. B. ; PEREIRA, José Henrique ; KONNO, K. ; PALMA, Mário Sérgio ; RUGGIERO NETO, João ; de azevedo wf. <b>CD Analysis and Molecular Modeling of Anoplin a New Class of Amphiphilic alfa-Helical Peptide from Solitary Wasp Venom</b>. Em: XXX Reunião Anual da SBBq, 2001, Caxambu-MG. Reunião Anual da SBBq. São Paulo: Sociedade Brasileira de Bioquímica e Biologia Molecular, v. XXX, p. 204-204, 2001. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Pinheiro, A. S. ; RUGGIERO NETO, João ; KONNO, K. ; de azevedo wf ; Almeida FC ; Valente AP. <b>Three-dimensional structure determination of a 14-residue peptide toxin from wasp venom by nuclear magnetic resonance</b>. Em: XXX Reunião Anual da Sociedade Brasileira de Bioquímica e Biologia Molecular, 2001, Caxambu-MG. Programa e Resumos da XXX Reunião Anual da SBBq 2001. São Paulo: SBBq, v. 2001, p. 162-162, 2001. </td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Pinheiro, A. S. ; RUGGIERO NETO, João ; KONNO, K. ; de azevedo wf ; Valente AP ; Almeida FC. <b>Estrutura tridimensional do mastoparano HR-1 por RMN</b>. Em: 2o. Workshop Temático do CAT: Análise Estrutural e Funcional de Peptídeos Tóxicos, 2001, São Paulo-SP. Workshop Temático do CAT, v. 2o, 2001. </td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>RUGGIERO NETO, João ; LORENZI, C. C. B. ; SANTOS, Giovani Cesar dos ; de azevedo wf ; KONNO, K. ; PALMA, Mário Sérgio ; Almeida FC. <b>Estudo conformacional de mastoparanos por dicroismo circular</b>. Em: 2o. Workshop Temático do CAT: Análise Estrutural e Funcional de Peptídeos Tóxicos, 2001, São Paulo-SP. Wokshop Temático do CAT, v. 2o, 2001. </td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SCOPEL, W. L. ; CUZINATTO, R. R. ; TABACNIKS, Manfredo Harri ; FANTINI, M. C. A. ; ALAYO, M. I. ; PEREYRA, I.. <b>Chemical and morphological properties of amorphous silicon oxynitride films deposited by plasma enhanced chemical vapor deposition</b>. <font color=#330066>JOURNAL OF NON-CRYSTALLINE SOLIDS</font>. v. 288, n. 1, p. 88-95, issn: 0022-3093, 2001. <a href="http://dx.doi.org/10.1016/s0022-3093(01)00608-1" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>SEIXAS, F. A. V. ; de azevedo wf ; COLOMBO, M. F.. <b>X-Ray Crystallographic Structure of Human HB-Co Complex to IHP</b>. Em: XXX Reunião Anual da SBBq, 2001, Caxambu-MG. Reunião Anual da SBBq. São Paulo: Sociedade Brasileira de Bioquímica e Biologia Molecular, v. XXX, p. 162-162, 2001. </td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>SEIXAS, F. A. V. ; de azevedo wf ; COLOMBO, M. F.. <b>Functional and Crystallographic evidence for cooperative oxigen binding to hemoglobin without quaternary strutural changes</b>. Em: 15th Symposium of the Protein Society, 2001, Philadelphia. Protein Science. Philadelphia, v. 10, p. 152-153, 2001. </td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Camps, I.; Makler, S. S.. <b>The operation threshold of a double barrier phonon laser</b>. <font color=#330066>SOLID STATE COMMUNICATIONS</font>. v. 116, n. 4, p. 191-196, issn: 0038-1098, 2000. <a href="http://dx.doi.org/10.1016/S0038-1098(00)00312-4" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A4</b></font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Camps, I.; Makler, S. S.. <b>Synergetics of a phonon laser</b>. Em: XXIII Encontro Nacional de Física da Matéria Condensada, 2000, São Lourenço, 2000. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CANDURI, F. ; DELATORRE, Plinio ; FADEL, Valmir ; LORENZI, C. C. B. ; OLIVIERI, Johnny Rizzieri ; RUGGIERO NETO, João ; KONNO, K. ; PALMA, Mário Sérgio ; YAMANE, Tetsuo ; de azevedo wf. <b>Crystallization and preliminary X-ray diffraction analysis of a eumenine mastoparan toxin: a new class of mast-cell degranulating peptide in the wasp venom</b>. <font color=#330066>Acta Crystallographica. Section D, Biological Crystallography</font>. v. 56, p. 1434-1436, issn: 0907-4449, 2000. <a href="http://dx.doi.org/10.1107/s0907444900009719" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA CRYSTALLOGRAPHICA. SECTION D, BIOLOGICAL CRYSTALLOGRAPHY)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CANDURI, F. ; TEODORO, L. G. V. L. ; LORENZI, C. C. B. ; HIAL, V. ; GOMES, R. A. S. ; RUGGIERO NETO, João ; de azevedo wf. <b>Structural Model of Human Uropepsin Complexed with Pepstatin</b>. Em: XXIX Reunião Anual da SBBQ, 2000, Caxambu-MG. Reunião Anual da SBBq. São Paulo: Sociedade Brasileira de Bioquímica e Biologia Molecular, v. XXIX, p. 131-131, 2000. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CONRADO, J. ; Honda R ; BONILLA-RODRIGUES, G. O. ; de azevedo wf. <b>Crystallization of Carbomonoxy from of Hemoglobin-I from the fish Brycon Cephalus</b>. Em: XV Reunião da Sociedade Brasileira de Cristalografia, 2000, Campinas-SP. Reunião da SBC. São Paulo: Sociedade Brasileira de Cristalografia, v. XV, p. 26-26, 2000. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>de azevedo wf. <b>Structural Analysis of an Eumenine Mastoparan Toxin. A New Class of Mast Cell Degranulating Peptide in the Wasp Venom</b>. Em: VI Simpósio da Sociedade Brasileira de Toxinologia, 2000, São Pedro-SP. Simpósio da SBT, v. VI, p. 111-111, 2000. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>de azevedo wf; OLIVIERI, Johnny Rizzieri. <b>O Ibilce e a pesquisa. diário da região (S. J</b>. do Rio Preto), São José do Rio Preto/SP, p. 3A-3A, 11 out. 2000. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>de MELO, C. A. M.; PIMENTEL, Bruto Max. <b>Mecânica Quântica Quaterniônica a la Schwinger</b>. Em: <font color=#330066>XXI Encontro Nacional de Física de Partículas e Campos</font>, 2000.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>de MELO, C. A. M.; PIMENTEL, Bruto Max. <b>Cinemática Quântica a la Schwinger</b>. 2000. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DELATORRE, Plinio ; DELLAMANO, M. ; FADEL, Valmir ; Honda R ; SMARRA, A. L. S. ; CANDURI, F. ; OLIVIERI, Johnny Rizzieri ; BONILLA-RODRIGUEZ, G. O. ; de azevedo wf. <b>Crystallographic studies of fish hemoglobins</b>. <font color=#330066>Eclética Química (Araraquara)</font>. v. 25, p. 147-159, issn: 0100-4670, 2000.<font color="#254117"><b>Qualis: B3</b></font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>DELATORRE, Plinio ; FADEL, Valmir ; de azevedo wf. <b>Simulação de Densidade Eletrônica para Cristais Unidimensionais e Bidimensionais</b>. Em: XV Reunião da Sociedade Brasileira de Cristalografia, 2000, Campinas-SP. Reunião da SBC. São Paulo: Sociedade Brasileira de Cristalografia, v. XV, p. 73-73, 2000. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>DELATORRE, Plinio ; SMARRA, A. L. S. ; FADEL, Valmir ; CANDURI, F. ; DELLAMANO, M. ; BONILLA-RODRIGUES, G. O. ; de azevedo wf. <b>Purification, Crystallization and Patterson Search of Hemoglobin-IV from the Armored Catfish Liposarcus Anisitsi</b>. Em: IV Congresso de Biofísica do Cone-Sul, 2000, Campinas-SP. Congresso de Biofísica do Cone-Sul, v. IV, p. 77, 2000. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>FADEL, Valmir ; Honda R ; DELLAMANO, M. ; SMARRA, A. L. S. ; DELATORRE, Plinio ; OLIVIERI, Johnny Rizzieri ; BONILLA-RODRIGUEZ, G. O. ; de azevedo wf. <b>Purification, crystallization, and preliminary X-ray diffraction analysis of carbomonoxy hemoglobin-II from the fish "Piaractus mesopotamicus" (Pacu)</b>. <font color=#330066>Acta Crystallographica. Section D, Biological Crystallography</font>. v. 56, p. 366-367, issn: 0907-4449, 2000. <a href="http://dx.doi.org/10.1107/s0907444900000585" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA CRYSTALLOGRAPHICA. SECTION D, BIOLOGICAL CRYSTALLOGRAPHY)</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>FADEL, Valmir ; SMARRA, A. L. S. ; OLIVIERI, Johnny Rizzieri ; COLOMBO, M. F. ; BONILLA-RODRIGUES, G. O. ; de azevedo wf. <b>Estrutura Cristalina da Meta-Hemoglobina I do Lobo Guará (Chrysocyn brachiurus) a 1.87 A</b>. Em: XV Reunião da Sociedade Brasileira de Cristalografia, 2000, Campinas-SP. Reunião SBC. São Paulo: Sociedade Brasileira de Cristalografia, v. XV, p. 21-21, 2000. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>GARDIM, F. G.; CORREIA, E.. <b>Estudo de Evolução do Grau de Polarização de Centros Ativos Solares Durante Explosões</b>. 2000. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>GARDIM, F. G.; CORREIA, E.. <b>Estudo de Evolução do Grau de Polarização de Centros Ativos Solares Durante Explosões</b>. 2000. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Honda R ; DELATORRE, Plinio ; FADEL, Valmir ; CANDURI, F. ; DELLAMANO, M. ; de azevedo wf ; BONILLA-RODRIGUEZ, G. O.. <b>Crystallization, preliminary X-ray analysis and molecular-replacement solution of the carboxy form of haemoglobin I from the fish Brycon cephalus</b>. <font color=#330066>Acta Crystallographica. Section D, Biological Crystallography</font>. v. 56, n. 12, p. 1685-1687, issn: 0907-4449, 2000. <a href="http://dx.doi.org/10.1107/s0907444900015262" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA CRYSTALLOGRAPHICA. SECTION D, BIOLOGICAL CRYSTALLOGRAPHY)</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>HONDA, R T ; LOMBARDI, F. R. ; de azevedo wf ; BONILLA-RODRIGUEZ, G. O.. <b>Oxygen Binding, Allosteric Control and Conformational Changes Hemoglobins I and II from Brycon cephalus (pisces)</b>. Em: XXIX Reunião Anual da SBBq, 2000, Caxambu-MG. Reunião Anual da SBBq. São Paulo: Sociedade Brasileira de Bioquímica e Biologia Molecular, v. XXIX, p. 152-152, 2000. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>LORENZI, C. C. B. ; CANDURI, F. ; DELATORRE, Plinio ; FADEL, Valmir ; PEREIRA, José Henrique ; OLIVIERI, Johnny Rizzieri ; RUGGIERO NETO, João ; KONNO, K. ; PALMA, Mário Sérgio ; YAMANE, Tetsuo ; de azevedo wf. <b>Preliminary Crystallographic Studies of an Eumenine Mastoparan Toxin</b>. Em: XV Reunião da Sociedade Brasileira de Cristalografia, 2000, Campinas-SP. Reunião da SBC. São Paulo: Sociedade Brasileira de Cristalografia, v. XV, p. 24-24, 2000. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Makler, S. S. ; Camps, I. ; Weberszpil, J. ; Tuyarot, D. E.. <b>A double-barrier heterostructure generator of terahertz phonons: many-body effects</b>. <font color=#330066>JOURNAL OF PHYSICS-CONDENSED MATTER</font>. v. 12, n. 13, p. 3149-3272, issn: 0953-8984, 2000. <a href="http://dx.doi.org/10.1088/0953-8984/12/13/322" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A3</b></font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>PEREIRA, José Henrique ; CANDURI, F. ; DELATORRE, Plinio ; FADEL, Valmir ; LORENZI, C. C. B. ; OLIVIERI, Johnny Rizzieri ; RUGGIERO NETO, João ; KONNO, K. ; YAMANE, Tetsuo ; de azevedo wf. <b>Crystallization of HR-1 a Synthetic Mastopan Peptide</b>. Em: XV Reunião da Sociedade Brasileira de Cristalografia, 2000, Campinas-SP. Reunião da SBC. São Paulo: Sociedade Brasileira de Cristalografia, v. XV, p. 25-25, 2000. </td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SANTO-ORCERO, D. ; ZACHARIAS, C. R. ; OLIVIERI, Johnny Rizzieri ; de azevedo wf. <b>Beowufand Mosix Class Supercomputers Applied to Computational Biophysics</b>. Em: IV Congresso de Biofísica do Cone-Sul, 2000, Campinas-SP. Congresso de Biofísica do Cone-Sul, v. IV, p. 86, 2000. </td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SANTO-ORCERO, D. ; ZACHARIAS, C. R. ; OLIVIERI, Johnny Rizzieri ; de azevedo wf. <b>Mosix Class Supercomputers Applied to Computational Chemistry</b>. Em: XV Reunião da Sociedade Brasileira de Cristalografia, 2000, Campinas-SP. Reunião da SBC. São Paulo: Sociedade Brasileira de Cristalografia, v. XV, p. 75-75, 2000. </td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>SEIXAS, F. A. V. ; de azevedo wf ; COLOMBO, M. F.. <b>Estruturas da Carbomonoxi Hb Bovina na Presença e Ausência de Ânios</b>. Em: XV Reunião da Sociedade Brasileira de Cristalografia, 2000, Campinas-SP. Reuniao da SBC. São paulo: Sociedade Brasileira de Cristalografia, v. XV, p. 22-22, 2000. </td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>SMARRA, A. L. S. ; de azevedo wf ; FADEL, Valmir ; DELATORRE, Plinio ; DELLAMANO, M. ; COLOMBO, M. F. ; BONILLA-RODRIGUEZ, G. O.. <b>Purification, crystallization, and preliminary X-ray analysis of hemoglobin-I from the armored catfish "Liposarcus anisitsi"</b>. <font color=#330066>Acta Crystallographica. Section D, Biological Crystallography</font>. v. D56, p. 495-497, issn: 0907-4449, 2000. <a href="http://dx.doi.org/10.1107/s0907444900001724" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA CRYSTALLOGRAPHICA. SECTION D, BIOLOGICAL CRYSTALLOGRAPHY)</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Valdiviesso, G.; GAMA, M. C. ; MAIA JR, A.. <b>Spectrum of Polytropic Fluids: A Statistical Approach</b>. Em: <font color=#330066>Encontro Nacional de Física de Partículas e Campos</font>, 2000.</td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Camps, I.; Makler, S. S.. <b>New features in a DBH phonon laser</b>. Em: XXII Encontro Nacional de Fisica da Materia Condensada, 1999, São Lourenço, 1999. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Camps, I.; Makler, S. S. ; Anda, E. V.. <b>A quantum formalism for a terahertz acoustic laser</b>. <font color=#330066>BRAZILIAN JOURNAL OF PHYSICS</font>. v. 29, n. 4, p. 694-701, issn: 0103-9733, 1999. <a href="http://dx.doi.org/10.1590/S0103-97331999000400015" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A3</b></font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CUZINATTO, R. R.; FANTINI, M. C. A.. <b>Determinação da densidade de filmes pelo método de flutuação</b>. 1999. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>de azevedo wf; WARD, R. J. ; GUTIÉRREZ, J. M. ; ARNI, R. K.. <b>Structure of a Lys49-Phospholipase A2 homologue isolated from the venom of "Bothrops nummifer" (jumping viper)</b>. <font color=#330066>Toxicon</font>. v. 37, p. 371-384, issn: 0041-0101, 1999. <a href="http://dx.doi.org/10.1016/s0041-0101(98)00189-5" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A4</b></font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SEIXAS, F. A. V. ; de azevedo wf ; COLOMBO, M. F.. <b>Crystallization and X-Ray diffraction data analysis of human deoxy-hemoglobin A0 stripped of any anions</b>. <font color=#330066>Acta Crystallographica. Section D, Biological Crystallography</font>. v. 55, p. 1914-1916, issn: 0907-4449, 1999. <a href="http://dx.doi.org/10.1107/s0907444999009750" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA CRYSTALLOGRAPHICA. SECTION D, BIOLOGICAL CRYSTALLOGRAPHY)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SMARRA, A. L. S. ; FADEL, Valmir ; DELLAMANO, M. ; OLIVIERI, Johnny Rizzieri ; de azevedo wf ; BONILLA-RODRIGUEZ, G. O.. <b>Crystallization, preliminary  X-ray diffraction analysis, and Patterson search of Oxyhemoglobin-I of the wolf ("Chrysocyon brachiurus")</b>. <font color=#330066>Acta Crystallographica. Section D, Biological Crystallography</font>. v. 55, p. 1618-1619, issn: 0907-4449, 1999. <a href="http://dx.doi.org/10.1107/s0907444999009725" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA CRYSTALLOGRAPHICA. SECTION D, BIOLOGICAL CRYSTALLOGRAPHY)</td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Camps, I.; Makler, S. S. ; Anda, E. V. ; Vasilevskiy, M. I.. <b>A quantum treatment for the kinetic equations of a saser</b>. Em: XXI Encontro Nacional de Física da Materia Condensada, 1998, Caxambu, 1998. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CANDURI, F. ; WARD, R. J. ; de azevedo wf ; GOMES, R. A. S. ; ARNI, R. K.. <b>Purification and partial characterization of Cathepsin D from Porcine ("Sus scrofa") liver using affinity chromatography</b>. <font color=#330066>Biochemistry and Molecular Biology International</font>. v. 45, p. 797-803, issn: 1039-9712, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BIOCHEMISTRY AND MOLECULAR BIOLOGY INTERNATIONAL)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>de azevedo wf; CANDURI, F. ; TEODORO, L. G. V. L. ; LORENZI, C. C. B. ; GOMES, R. A. S. ; FONTES, M. R. M. ; ARNI, R. K. ; AZEVEDO JR, W. F.. <b>Crystallization, preliminary X-Ray analysis, and Patterson search of a new aspartic protease Isolated from human urine</b>. <font color=#330066>Biochemistry and Molecular Biology International</font>. v. 46, p. 355-363, issn: 1039-9712, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BIOCHEMISTRY AND MOLECULAR BIOLOGY INTERNATIONAL)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>de azevedo wf; FONTES, M. R. M. ; WARD, R. J. ; LOMBARDI, F. R. ; CINTRA, A. C. O. ; GIGLIO, J. R. ; ARNI, R. K.. <b>Crystallization of SIII-SPIII, a phospholipase A2 isolated from the venom of "Bothrops jararacussu"</b>. <font color=#330066>Protein and Peptide Letters</font>. v. 5, p. 181-184, issn: 0929-8665, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (PROTEIN AND PEPTIDE LETTERS)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>de azevedo wf; GIOTTO, M. T. S. ; GARRATT, R. ; OLIVA, G. ; MASCARENHAS, Y. P. ; AZEVEDO JR, W. F. ; GIGLIO, J. R. ; CINTRA, A. C. O. ; ARNI, R. K. ; WARD, R.. <b>Crystallographic and spectroscopy characterization of a molecular hinge: conformation change In bothropstoxin I, a dimeric K49-phospholipase homologue</b>. <font color=#330066>Proteins</font>. v. 30, n. 30, p. 442-454, issn: 0887-3585, 1998. <a href="http://dx.doi.org/10.1002/(SICI)1097-0134(19980301)30:4<442::AID-PROT11>3.0.CO;2-I" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A3</b></font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>de azevedo wf; WARD, R. J. ; CANDURI, F. ; SOARES, A. ; GIGLIO, J. R. ; ARNI, R. K.. <b>Crystal structure of piratoxin-I: a calcium-independent, myotoxic phospholipase A2-homologue from "Bothrops pirajai" venom</b>. <font color=#330066>Toxicon</font>. v. 36, p. 1395-1406, issn: 0041-0101, 1998. <a href="http://dx.doi.org/10.1016/s0041-0101(98)00017-8" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A4</b></font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>de azevedo wf; WARD, R. J. ; GUTIÉRREZ, J. M. ; DIAZ, C. ; ARNI, R. K.. <b>Crystallization and preliminary X-ray diffraction analysis of a Lys49-PLA2 homologue from "Cerrophidion godmani" venom</b>. <font color=#330066>Protein and Peptide Letters</font>. v. 5, p. 121-126, issn: 0929-8665, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (PROTEIN AND PEPTIDE LETTERS)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>LOMBARDI, F. R. ; FONTES, M. R. M. ; SOUZA, G. M. O. ; COELHO, L. C. B. B. ; ARNI, R. K. ; de azevedo wf. <b>Crystallization and preliminary X-ray analysis of "Parkia pendula" lectin</b>. <font color=#330066>Protein and Peptide Letters</font>. v. 5, p. 117-120, issn: 0929-8665, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (PROTEIN AND PEPTIDE LETTERS)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Sánchez, M. ; Gómez, A. S. ; Peña, R. ; Escabosa, A. ; Prutskij, T. ; Camps, I. ; González, J. C.. <b>Temperature dependence of the peak power conversion efficiency for AlGaAs diode lasers</b>. Em: <font color=#330066>II International Workshop on Optoelectronic Materials and their Applications (including Solar Cells)</font>, p. 279-281, 1998.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>WARD, R. J. ; de azevedo wf ; ARNI, R. K.. <b>At Interface: Crystal structures of phospholipases A2</b>. <font color=#330066>Toxicon</font>. v. 36, p. 1623-1633, issn: 0041-0101, 1998. <a href="http://dx.doi.org/10.1016/S0041-0101(98)00155-X" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A4</b></font></td></tr>
+            </table></div><div id="dv-year-1997"><h3 class="year">1997</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Camps, I.; González, J. C. ; Sánchez, M.. <b>Calculation of the thermal resistance and temperature distribution in blue-green semiconductor lasers</b>. <font color=#330066>SEMICONDUCTOR SCIENCE AND TECHNOLOGY</font>. v. 12, n. 12, p. 1574-1578, issn: 0268-1242, 1997. <a href="http://dx.doi.org/10.1088/0268-1242/12/12/005" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A2</b></font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Camps, I.; Sánchez, M. ; González, J. C.. <b>Power conversion efficiency in AlGaAs lasers diodes. Theory and experiment</b>. Em: <font color=#330066>Symposium on Lasers and Their Applications</font>, p. 314, 1997.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Camps, I.; Sánchez, M. ; González, J. C.. <b>Power conversion efficiency in multiquantum well lasers</b>. Em: <font color=#330066>Nanoestructura'97. Reunión de sistemas de baja dimensionalidad y sus aplicaciones</font>, 1997.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>de azevedo wf; AZEVEDO JR, W. F. ; WARD, R. J. ; ARNI, R. K. ; GIGLIO, J. R.. <b>"Crystal Structure Of Piratoxin I A Calcium-Independent Phospholipase-Like Myotoxic Protein From Bothrops Pirajai Venom"</b>. Em: VIII Workshop Anual de Usuários do LNLS, 1997. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>de azevedo wf; AZEVEDO JR, W. F. ; WARD, R. J. ; LOMBARDI, F. R. ; GIGLIO, J. R. ; FONTES, M. R. M. ; ARNI, R. K.. <b>Crystal structure of myotoxin-II: a myotoxic phospholipase A2- homologue from "Bothrops moojeni" venom</b>. <font color=#330066>Protein and Peptide Letters</font>. v. 4, n. 5, p. 329-334, issn: 0929-8665, 1997.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (PROTEIN AND PEPTIDE LETTERS)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>de azevedo wf; AZEVEDO JR, W. F. ; WARD, R. J. ; LOMBARDI, F. R. ; SOARES, A. M. ; GIGLIO, J. R. ; FONTES, M. R. M. ; ARNI, R. K.. <b>Crystal Structure Of Myotoxin-Ii: A Myotoxic Phospholipase A2-Homologue From Bothrops Moojeni Venom</b>. Em: VIII Workshop Anual de Usuarios do LNLS, v. 01, 1997. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>de azevedo wf; FONTES, M. R. M. ; AZEVEDO JR, W. F. ; GUTIÉRREZ, J. M. ; ARNI, R. K.. <b>"The Crystal Structure Of A Phospholipase-Like From Bothrops Godmani Venom"</b>. Em: VIII WORKSHOP ANUAL DE USUARIOS DO LNLS, v. 1, 1997. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>de azevedo wf; LECLERC, S. J. ; MEIJER, L. ; HAVLICEK, L. ; STRNAD, M. ; KIM, S. H.. <b>Inhibition of cyclin-dependent kinases by purine analogues: crystal structure  of human cdk2 complexed with roscovitine</b>. <font color=#330066>European Journal of Biochemistry</font>. v. 243, n. 243, p. 518-526, issn: 0014-2956, 1997. <a href="http://dx.doi.org/10.1111/j.1432-1033.1997.0518a.x" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#F88017"><b>Qualis: C</b></font> (EUROPEAN JOURNAL OF CHEMISTRY)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>de azevedo wf; LOMBARDI, F. R. ; FONTES, M. R. M. ; COELHO, L. C. B. B. ; ARNI, R. K. ; AZEVEDO JR, W. F.. <b>"Cristalização e Análise Cristalografica Preliminar das Lectinas Parkia Platycephala e Isoforma de Parkia Pendula"</b>. Em: VIII Workshop Anual de Usuarios do LNLS, 1997. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>de azevedo wf; SMARRA, A. L. S. ; ARNI, R. K. ; AZEVEDO JR, W. F. ; COLOMBO, M. F. ; BONILLA-RODRIGUES, G. O.. <b>Crystallization and X-Ray diffraction data analysis of oxyhemoglobin-I from the catfish "Liposarcus anisitsi" (PISCES)</b>. <font color=#330066>Protein and Peptide Letters</font>. v. 4, n. 5, p. 349-354, issn: 0929-8665, 1997.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (PROTEIN AND PEPTIDE LETTERS)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>de azevedo wf; SMARRA, A. L. S. ; ARNI, R. K. ; AZEVEDO JR, W. F. ; COLOMBO, M. F. ; BONILLA-RODRIGUEZ, G. O.. <b>Purification, Crystallization And X- Ray Diffraction Data Analysis Of Oxyhemoglobin-I From The Catfish-Liposarsus Anisitsi (Pisces)</b>. Em: VIII WORKSHOP ANUAL DE USUARIOS DO LNLS, v. 1, 1997. </td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>de azevedo wf; H-, J. J. M. ; SCHULZE-GAHMEN, U. ; WORLAND, P. J. ; SAUSVILLE, E. ; KIM, S. H.. <b>Structural basis for specificity and potency of a flavonoid inhibitor of human CDK2, a cell cycle kinase</b>. <font color=#330066>PNAS. Proceedings of the National Academy of Sciences of the United States of America</font>. v. 93, p. 2735-2740, issn: 0027-8424, 1996.<font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>KIM, S. H. ; SCHULZE-GAHMEN, U. ; BRANDSEN, J. ; de azevedo wf. <b>Strutural Basis For Chemical Inhibition Of Cdk2</b>. Em: L. Meijer, S. Guidet, L. Vogel. (Org.). PROGRESS IN CELL CYCLE RESEARCH. 1ed.New York, USA. : Plenum Press. 1996.v. 02, p. 137-145. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Marin, E. ; Camps, I. ; Sánchez, M. ; Días, P.. <b>Thermal resistance of double heterostructure separate confinement GaAs/AlGaAs semiconductor lasers in stripe geometry configuration</b>. <font color=#330066>REVISTA MEXICANA DE FISICA</font>. v. 42, n. 3, p. 414, issn: 0035-001X, 1996.<font color="#254117"><b>Qualis: B2</b></font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Sánchez, M. ; Camps, I. ; González, J. C. ; Días, P. ; Prutskij, T. A.. <b>Cavity length dependence of the peak conversion efficiency in AlGaAs lasers</b>. <font color=#330066>JOURNAL OF APPLIED PHYSICS</font>. v. 79, n. 7, p. 3796, issn: 0021-8979, 1996. <a href="http://dx.doi.org/10.1063/1.361384" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#254117"><b>Qualis: A1</b></font></td></tr>
+            </table></div><div id="dv-year-1995"><h3 class="year">1995</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Camps, I.; González, J. C. ; Sánchez, M. ; Días, P. ; Marin, E. ; Prutskij, T.. <b>Influencia de la longitud de la cavidad y la longitud de onda de emisión en la eficiencia de conversión en láseres de AlGaAs</b>. Em: <font color=#330066>V Encuentro Latinoamericano sobre Óptica</font>, v. I, p. 140, 1995.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>de azevedo wf; MASCARENHAS, Y. P. ; SOUSA, G. F. ; FILGUEIRAS, C. A. L.. <b>Cis-[1,2-Bis (Propylsulfinyl) Ethane-S,S']- Dichloroplatinum(II)</b>. <font color=#330066>Acta Crystallographica. Section C, Crystal Structure Communications</font>. v. 51, n. 51, p. 619-621, issn: 0108-2701, 1995. <a href="http://dx.doi.org/10.1107/s0108270194009868" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ACTA CRYSTALLOGRAPHICA. SECTION C, CRYSTAL STRUCTURE COMMUNICATIONS)</td></tr>
+            </table></div><div id="dv-year-1994"><h3 class="year">1994</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>de azevedo wf; GIOTTO, M. T. S. ; AZEVEDO, W. F. ; HORJALES, E. J. ; OLIVA, G. ; GARRATT, R. ; CINTRA, A. C. O. ; GIGLIO, R. ; ARAÚJO, H. S. S. ; MASCARENHAS, Y. P.. <b>"Crystallization And Preliminary X-Ray Crystallographic Analysis Of A Lys49 Phospholypase A2 (Bthtx-I) Extracted From The Venom Of Bothops Jararacussu"</b>. Em: American Crystallographic Association Annual Meeting, v. 01, 1994. </td></tr>
+            </table></div><div id="dv-year-1992"><h3 class="year">1992</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>de azevedo wf; MASCARENHAS, Y. P.. <b>Estrutura Cristalina do Trans Dicloro[ (Trietilfosfina) (2-metilsulfinil) pirina] platina(II)</b>. Em: XV Encontro Nacional de Física da Matéria Condensada, 1992, Caxambu-MG. ENFMC. São Paulo: Sociedade Brasileira de Física, v. XV, p. 78-78, 1992. </td></tr>
+            </table></div><div id="dv-year-1990"><h3 class="year">1990</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>de azevedo wf; TROMBELLA, C. A. ; MASCARENHAS, Y. P. ; MACEDO, J. C. D.. <b>Estudo da Porosidade do Caulim e do Metauclim</b>. Em: XIII Encontro Nacional de Física da Matéria Condensada, 1990, Caxambu-MG. ENFMC. São Paulo: Sociedade Brasileira de Física, v. XIII, p. 44-44, 1990. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1914 até 2114
+<br>Data de processamento: 17/11/2025 17:29:14<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:icamps@unifal-mg.edu.br">icamps@unifal-mg.edu.br</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

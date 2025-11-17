@@ -41,7 +41,7 @@ strict graph grafo2 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Geovani Rodrigues [18]",
+		label="Geovani Rodrigues [19]",
 		pos="521.5,274.5",
 		width=1.8194];
 	0 -- 10	[fontsize=8,
@@ -52,7 +52,7 @@ strict graph grafo2 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Nabil Chaia [4]",
+		label="Nabil Chaia [5]",
 		pos="340.5,208.5",
 		width=1.25];
 	0 -- 15	[fontsize=8,
@@ -123,7 +123,7 @@ strict graph grafo2 {
 		lp="101.5,175.5",
 		pos="80.052,329.88 86.569,317.65 96.5,295.71 96.5,275.5 96.5,275.5 96.5,275.5 96.5,75.5 96.5,26.879 245.05,14.914 336.15,12.148"];
 	10 -- 15	[fontsize=8,
-		label=3.0,
+		label=4.0,
 		lp="446.5,241.5",
 		pos="494.4,263.92 460.18,251.82 401.66,231.12 367.49,219.04"];
 	10 -- 14	[fontsize=8,
@@ -239,7 +239,7 @@ strict graph grafo2 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Francisco Moura Filho [2]",
+		label="Francisco Moura Filho [3]",
 		pos="1126.5,274.5",
 		width=1.9583];
 	8 -- 19	[fontsize=8,
@@ -250,11 +250,11 @@ strict graph grafo2 {
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Reny Angela Renzetti [1]",
+		label="Reny Angela Renzetti [2]",
 		pos="1126.5,208.5",
 		width=1.9028];
 	8 -- 18	[fontsize=8,
-		label=1.0,
+		label=2.0,
 		lp="1131.5,241.5",
 		pos="1126.5,263.78 1126.5,251.75 1126.5,231.38 1126.5,219.31"];
 	11	[URL="membro-1312049227898761.html",
